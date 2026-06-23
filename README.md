@@ -1,2575 +1,6269 @@
-<!DOCTYPE html>
-<html
-  lang="en"
-  
-  data-color-mode="auto" data-light-theme="light" data-dark-theme="dark"
-  data-a11y-animated-images="system" data-a11y-link-underlines="true"
-  
-  >
-
-    <style>
-:root {
-  --fontStack-monospace: "Monaspace Neon", ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace !important;
-}
-</style>
-
-
-
-
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-  <link rel="dns-prefetch" href="https://github.githubassets.com">
-  <link rel="dns-prefetch" href="https://avatars.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
-  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
-  <link rel="preconnect" href="https://github.githubassets.com" crossorigin>
-  <link rel="preconnect" href="https://avatars.githubusercontent.com">
-
-  
-
-
-  <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/light-4fded0090af0ad58.css" /><link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/dark-06381ff23d863842.css" /><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-cf8e26bc17e62ebc.css" /><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-3a437477a570cc40.css" /><link data-color-theme="light_colorblind_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind_high_contrast-39b6c209db5491c9.css" /><link data-color-theme="light_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia-3822234d6c03b00b.css" /><link data-color-theme="light_tritanopia_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia_high_contrast-33857254a8064bf7.css" /><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-9023e6605402defb.css" /><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-37023bf69d8e0e34.css" /><link data-color-theme="dark_colorblind_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind_high_contrast-486bd43e01a2c0ec.css" /><link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia-838ba2a5070c5b09.css" /><link data-color-theme="dark_tritanopia_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia_high_contrast-2aa7245dc545d61f.css" /><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-29ef2eb185e7de1c.css" /><link data-color-theme="dark_dimmed_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed_high_contrast-8eed6b212f10f1b9.css" />
-
-  <style type="text/css">
-    :root {
-      --tab-size-preference: 4;
-    }
-
-    pre, code {
-      tab-size: var(--tab-size-preference);
-    }
-  </style>
-
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-primitives-b39ad27f3538ace3.css" />
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-tailwind-compatible-922f4e76aead6d80.css" />
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/global-d48a62bded9d70d6.css" />
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/github-00f96c544004ae1e.css" />
-    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/tailwind-ee832f465450400b.css" />
-  <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/repository-5c3491d57145b94f.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/code-15243af6e91879dd.css" />
-
-  
-
-  <script type="application/json" id="client-env">{"locale":"en","featureFlags":["actions_custom_images_storage_billing_ui_visibility","actions_image_version_event","actions_workflow_language_service_allow_case_function","actions_workflow_language_service_allow_concurrency_queue","agent_author_search_expansion","agent_author_search_expansion_ui_pulls","agent_conflict_resolution","agent_plane_disable_bypass_permissions_mode_tile","alternate_user_config_repo","artifact_ui_v2","billing_discount_threshold_notification","billing_ui_budget_pagination_enabled","billing_user_level_budgets","billing_user_level_budgets_manage","ccr_implement_suggestion_refresh","code_scanning_dfa_degraded_experience_notice","code_view_checks_live_updates","code_view_raf_sticky_lines","codemirror_inp_optimizations","codespaces_prebuild_region_target_update","codeview_sidebar_combined_payload","coding_agent_model_selection","coding_agent_model_selection_all_skus","coding_agent_session_ai_credits","coding_agent_third_party_model_ui","comment_viewer_copy_raw_markdown","contentful_primer_code_blocks","copilot_agent_snippy","copilot_api_agentic_issue_marshal_yaml","copilot_ask_mode_dropdown","copilot_automation_suggest_tools_enabled","copilot_automations_suggested_automations","copilot_capi_error_response_telemetry","copilot_chat_attach_multiple_images","copilot_chat_auto_mode_picker_paid","copilot_chat_category_rate_limit_messages","copilot_chat_clear_model_selection_for_default_change","copilot_chat_contextual_suggestions_updated","copilot_chat_disable_model_picker_while_streaming","copilot_chat_docked_panel","copilot_chat_enable_tool_call_logs","copilot_chat_increase_token_padding","copilot_chat_input_commands","copilot_chat_interspersed_tool_calls","copilot_chat_max_upsell","copilot_chat_models_browser_cache","copilot_chat_opening_thread_switch","copilot_chat_prettify_pasted_code","copilot_chat_reduce_quota_checks","copilot_chat_vision_in_claude","copilot_chat_vision_preview_gate","copilot_cli_install_cta_max_plan","copilot_cloud_agent_always_categorize_models_in_model_picker","copilot_coding_agent_tbb_quota_banner","copilot_custom_copilots","copilot_custom_copilots_feature_preview","copilot_diff_explain_conversation_intent","copilot_diff_reference_context","copilot_duplicate_thread","copilot_extensions_removal_on_marketplace","copilot_file_block_ref_matching","copilot_fix_blank_side_panel","copilot_fix_failed_workflows","copilot_fix_failed_workflows_all_skus","copilot_ftp_hyperspace_upgrade_prompt","copilot_hide_hovercard","copilot_immersive_code_block_transition_wrap","copilot_immersive_embedded_deferred_payload","copilot_immersive_embedded_draggable","copilot_immersive_embedded_header_button","copilot_immersive_embedded_implicit_references","copilot_immersive_embedded_skip_copilot_api_token_for_dotcom_context","copilot_immersive_file_block_transition_open","copilot_immersive_file_preview_keep_mounted","copilot_immersive_job_result_preview","copilot_immersive_suggestion_pills","copilot_immersive_task_hyperlinking","copilot_immersive_task_within_chat_thread","copilot_issue_list_show_more","copilot_mc_cli_resume_any_users_task","copilot_mc_nudges","copilot_mission_control_agent_filtering","copilot_mission_control_always_send_integration_id","copilot_mission_control_environment_list_icons","copilot_mission_control_initial_data_spinner","copilot_mission_control_sandbox_remote_bypass","copilot_mission_control_session_filters","copilot_mission_control_task_alive_updates","copilot_mission_control_task_sharing","copilot_org_policy_page_focus_mode","copilot_plans_signups_enabled","copilot_pr_chat_enhancements","copilot_premium_request_quotas","copilot_redirect_header_button_to_agents","copilot_resource_panel","copilot_scroll_preview_tabs","copilot_share_active_subthread","copilot_spaces_ga","copilot_spaces_individual_policies_ga","copilot_spark_empty_state","copilot_spark_handle_nil_friendly_name","copilot_swe_agent_authorization_status_ui","copilot_swe_agent_hide_model_picker_if_only_auto","copilot_swe_agent_pr_comment_model_picker","copilot_swe_agent_pull_request_merged_trigger","copilot_swe_agent_pull_request_opened_trigger","copilot_swe_agent_pull_request_synchronize_trigger","copilot_swe_agent_use_subagents","copilot_task_api_github_rest_style","copilot_token_based_billing","copilot_unconfigured_is_inherited","copilot_user_can_upgrade_plan_field","copilot_workbench_ubb","custom_properties_core_reusable_property_value_field","dashboard_indexeddb_caching","dashboard_lists_max_age_filter","dashboard_surface_needs_action_ci_running","dashboard_universe_2025","dashboard_universe_2025_feedback_dialog","fgpat_permissions_selector_redesign","flex_cta_groups_mvp","ga_enterprise_teams_ui","global_nav_react","global_nav_repo_picker_experiment","hide_groups_list_for_few_groups","hyperspace_2025_logged_out_batch_1","hyperspace_2025_logged_out_batch_2","hyperspace_2025_logged_out_batch_3","ipm_budget_deep_linking","ipm_global_transactional_message_agents","ipm_global_transactional_message_copilot","ipm_global_transactional_message_issues","ipm_global_transactional_message_prs","ipm_global_transactional_message_repos","ipm_global_transactional_message_spaces","issue_cca_modal_open","issue_cca_multi_assign_modal","issue_cca_visualization","issue_fields_global_search","issue_inline_avatars","issue_pinned_views_index_page","issue_pinned_views_preheat_sidebar_links","issue_pinned_views_projects_react","issues_data_router","issues_expanded_file_types","issues_lazy_load_comment_box_suggestions","issues_react_chrome_container_query_fix","issues_react_include_bots_in_pickers","issues_react_ui_feedback","issues_search_type_gql","landing_pages_ninetailed","landing_pages_web_vitals_tracking","lifecycle_label_name_updates","low_quality_classifier","marketing_pages_search_explore_provider","memex_default_issue_create_repository","memex_live_update_hovercard","memex_mwl_filter_field_delimiter","memex_remove_deprecated_type_issue","memex_roadmap_drag_style","merge_status_header_feedback","oauth_authorize_clickjacking_protection","octocaptcha_origin_optimization","pr_sfv_new_diff_fetch","prs_css_anchor_positioning","prs_live_updates_issue_comments","prs_load_all_alerts","prx_files","pull_request_commit_checks_dialog","pull_request_files_virtualization","pull_request_inbox_customize_sections","pull_request_inbox_section_query_popover","pull_request_overview_panel_edit_description","pull_request_virtualization_image_estimate","react_blob_isolate_code_lines","react_blob_overlay","react_data_router_tanstack_allowed","react_remove_styled_components","react_sandbox_future_tanstack","repos_contributors_limited_default_range","repository_suggester_elastic_search","rules_insights_filter_bar_created","rules_required_reviewers_block_description","sample_network_conn_type","secret_scanning_pattern_alerts_link","security_center_artifact_filters_popover","semantic_similarity_duplicate_issue_detection","session_logs_ungroup_reasoning_text","site_github_app_ga_page","site_global_nav_spark_models_removed","spark_prompt_secret_scanning","spark_server_connection_status","suppress_automated_browser_vitals","team_review_requested_by_user_filter","track_notifications_settings_usage","viewscreen_sandbox","warn_inaccessible_attachments","webp_support","workbench_store_readonly"],"login":"VishalManikandan1626","copilotApiOverrideUrl":"https://api.individual.githubcopilot.com"}</script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/wp-runtime-c1552e6529c40fad.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/fetch-utilities-9ee17519ce9e3c2d.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/78205-3a6ea5cfe3fb27f2.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/85924-f1da419719ff9817.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/34646-9e02c4dd156ad561.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/environment-84f18c48c0047c1d.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/runtime-helpers-1dea47d70a855c49.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/296-a6802cc4838f56c7.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/96232-cd0338265f60ea3c.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/57131-5bc8eba5c8fc646b.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/816-774d14a8cd9b309c.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/37037-6984c88de5bfa6ee.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/81683-7fb5e5fde80fac9b.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/64458-8ba18065e4acf029.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/46740-2ad47934ee602ae7.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/30058-b1ba959ed9338250.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/github-elements-154663ce355fbdf3.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/element-registry-7eae3b1714eaafec.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/react-core-6758c924d7fd34a2.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/react-lib-84a0f3ff745a6c51.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/63143-9834767acbea50f3.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/79039-2fc69f86776b329f.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/88475-2de66b4993b12d53.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/2887-998ebe08466c5cd8.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/26533-dfc05901dc9c505a.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/46477-f95fdfc496e9b0a7.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/70507-70c508b0411e7274.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/53320-3f507f98e028dd42.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/46287-129b636a11ebc339.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/23548-4d280712b30a1f41.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/89627-ba5b3cb882e1ebde.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/55682-153e8edc1a4a674f.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/49029-cc0e3b68f08333e5.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/99328-f289ba5ff17bd302.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/behaviors-86908fdfd21723bf.js" defer="defer"></script>
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/react-core.f379f23153c4347d.module.css" />
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/61272-70a9b1d064908221.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/notifications-global-6ad97c0f0c98db4a.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/57639-7789b6bcbd790e92.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/81276-3add6fba73352893.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/19930-093550dfcaa84ff5.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/codespaces-3493295ae0139c4d.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/778-72d963ac01ec30d5.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/70206-5d502024eba295bc.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/repositories-7576af67f3388ef6.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/39890-ea637e2d6e07bcb0.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/code-menu-74afb00b2ced4b9a.js" defer="defer"></script>
-  
-  <script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/primer-react-1cbafc24ef5f5e7d.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/octicons-react-ad81b26f4cfaa5de.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/97458-23c84353633f2974.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/68751-8ae833d61fa1dcf8.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/68033-500b5d6f61c85148.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/437-f369302b5a30316b.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/41328-c0eb6926392c50ed.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/7463-c4bd1db840718ba5.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/27600-a8a741eaa771e6d4.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/71308-a71f88c477354d13.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/58246-a3325c25ca0beb63.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/55539-8483381eda4cc7fd.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/26186-c2a9637df6de4365.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/68735-e704d1c0804bc761.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/83912-9dfa545305f2d3cf.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/68469-1d696a6971097c86.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/40828-a140429903f1ef3c.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/50480-c638e97848dacf1e.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/63000-559a189c36ddcb8e.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/30914-8561a0fd12453d45.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/33684-f9fa24f1036408fb.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/1334-97c0a8caa666b144.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/66231-226eb9421f384022.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/79407-9ef69b575f4b8f11.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/2204-26be6eb681a6af05.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/50288-386f0bb2af978d77.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/52957-03dd1b09a3e66832.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/84360-727edc9d228395a7.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/68212-344ffb2f3a4a74a6.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/75577-0dc4028002fe910d.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/76987-4014b283df4fd8a1.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/53275-48842ecd23a291b3.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/4253-03cf60be496e5bf2.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/38567-3ea58f7f936173f4.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/63806-0ac235bc21c63772.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/34583-e61d28df8bef03f7.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/50110-e6732c5a52e2a1af.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/98451-ed0e9bcff5243e00.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/33897-a034cb4f917ec5e1.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/62392-2fab5b7c6b4873d1.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/40921-c57a2a4539d84b4e.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/32020-bd9d569cc7f531ea.js" defer="defer"></script>
-<script crossorigin="anonymous" type="module" src="https://github.githubassets.com/assets/code-view-38183abc980a21f2.js" defer="defer"></script>
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.d18392e72f73b5a6.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/84360.991965ee78490963.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/63806.e16f2317d4f879b1.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/code-view.830649bcd4d9f88e.module.css" />
-
-
-  <title>VishalManikandan1626/Task1</title>
-
-
-
-  <meta name="route-pattern" content="/:user_id/:repository" data-turbo-transient>
-  <meta name="route-controller" content="files" data-turbo-transient>
-  <meta name="route-action" content="disambiguate" data-turbo-transient>
-  <meta name="fetch-nonce" content="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d">
-
-    
-  <meta name="current-catalog-service-hash" content="f3abb0cc802f3d7b95fc8762b94bdcb13bf39634c40c357301c4aa1d67a256fb">
-
-
-  <meta name="request-id" content="76F2:2FBBB1:59C8B6:674C0A:6A3A2776" data-turbo-transient="true" /><meta name="html-safe-nonce" content="b104dd785073fbd06b81c0e94d78230347a7569bb288f89209c8b40db310b028" data-turbo-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6bnVsbCwicmVxdWVzdF9pZCI6Ijc2RjI6MkZCQkIxOjU5QzhCNjo2NzRDMEE6NkEzQTI3NzYiLCJ2aXNpdG9yX2lkIjoiNTY4MzAwMTY5MDU0MjIyMzAiLCJyZWdpb25fZWRnZSI6ImNlbnRyYWxpbmRpYSIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-turbo-transient="true" /><meta name="visitor-hmac" content="f00edca9480b4faccc225990e7d8a0d4f00238a586330936bac16b1cd22eba95" data-turbo-transient="true" />
-
-
-    <meta name="hovercard-subject-tag" content="repository:1277730479" data-turbo-transient>
-
-
-  <meta name="github-keyboard-shortcuts" content="repository,copilot" data-turbo-transient="true" />
-  
-
-  <meta name="selected-link" value="repo_source" data-turbo-transient>
-  <link rel="assets" href="https://github.githubassets.com/">
-
-    <meta name="google-site-verification" content="Apib7-x98H0j5cPqHWwSMm6dNU4GmODRoqxLiDzdx9I">
-
-<meta name="octolytics-url" content="https://collector.github.com/github/collect" /><meta name="octolytics-actor-id" content="213896920" /><meta name="octolytics-actor-login" content="VishalManikandan1626" /><meta name="octolytics-actor-hash" content="aa31d2ad46086c7e70084cd58bb800c9042e0c157d8de9eb325b92c6dacaf20b" />
-
-
-
-
-
-  <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-turbo-transient="true" />
-
-  
-
-
-
-
-    <meta name="user-login" content="VishalManikandan1626">
-
-  <link rel="sudo-modal" href="/sessions/sudo_modal">
-
-    <meta name="viewport" content="width=device-width">
-
-    
-
-      <meta name="description" content="Contribute to VishalManikandan1626/Task1 development by creating an account on GitHub.">
-
-      <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
-
-    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
-    <meta property="fb:app_id" content="1401488693436528">
-    <meta name="apple-itunes-app" content="app-id=1477376905, app-argument=https://github.com/VishalManikandan1626/Task1" />
-
-      <meta name="twitter:image" content="https://opengraph.githubassets.com/953aabde3c4d289c4f71908627a72bc385ca346587a8250844d5da0fd4548786/VishalManikandan1626/Task1" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="VishalManikandan1626/Task1" /><meta name="twitter:description" content="Contribute to VishalManikandan1626/Task1 development by creating an account on GitHub." />
-  <meta property="og:image" content="https://opengraph.githubassets.com/953aabde3c4d289c4f71908627a72bc385ca346587a8250844d5da0fd4548786/VishalManikandan1626/Task1" /><meta property="og:image:alt" content="Contribute to VishalManikandan1626/Task1 development by creating an account on GitHub." /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="VishalManikandan1626/Task1" /><meta property="og:url" content="https://github.com/VishalManikandan1626/Task1" /><meta property="og:description" content="Contribute to VishalManikandan1626/Task1 development by creating an account on GitHub." />
-  
-
-
-      <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/213896920/ws?session=eyJ2IjoiVjMiLCJ1IjoyMTM4OTY5MjAsInMiOjIxNTkyODc5NTgsImMiOjM4OTU4NDUwODUsInQiOjE3ODIxOTYwODd9--ab33440c3dbf602c55bc0c146b81247fb8990e6520d82ec605d6b6b18180ca8f" data-refresh-url="/_alive" data-session-id="43cb330fd96f418c1886b954cb6a6c9b605dbb4355335dccf12b96216112b865">
-      <link rel="shared-web-socket-src" href="/assets-cdn/worker/socket-worker-310827049a9185cc.js">
-
-      <link rel="service-worker-src" href="/assets-cdn/worker/service-worker-c24bdf59787a5284.js?current_user=VishalManikandan1626&amp;errors_url=https%3A%2F%2Fapi.github.com%2F_private%2Fbrowser%2Ferrors&amp;release=b1555ff4ee9b94d19cfb01bf64f3d7dbc9502180&amp;actor_id=213896920&amp;is_staff=false&amp;analytics_collector_url=https%3A%2F%2Fcollector.github.com%2Fgithub%2Fcollect">
-
-      <meta name="hostname" content="github.com">
-
-
-      <meta name="keyboard-shortcuts-preference" content="all">
-      <meta name="hovercards-preference" content="true">
-      <meta name="announcement-preference-hovercard" content="true">
-
-        <meta name="expected-hostname" content="github.com">
-
-
-  <meta http-equiv="x-pjax-version" content="dd8aea45c1213915043c56f7987ea83b024b4c2d97e4e4b1f326f3302884fd4c" data-turbo-track="reload">
-  <meta http-equiv="x-pjax-csp-version" content="cb4cffb7c023f774818cf728eb860debf1fc8ecf88a20487b238da276df1eb7d" data-turbo-track="reload">
-  <meta http-equiv="x-pjax-css-version" content="273c8f3bcd4311277894218fedbb4c7cedbdaf03a8d64a8b2f596fa0ee31ff30" data-turbo-track="reload">
-  <meta http-equiv="x-pjax-js-version" content="5bcbab4dc361ea8abda6f3cd9de6479c46cece027fc247adfab37d114f25f451" data-turbo-track="reload">
-
-  <meta name="turbo-cache-control" content="no-preview" data-turbo-transient="">
-
-      <meta name="turbo-cache-control" content="no-cache" data-turbo-transient>
-
-    <meta data-hydrostats="publish">
-
-  <meta name="go-import" content="github.com/VishalManikandan1626/Task1 git https://github.com/VishalManikandan1626/Task1.git">
-
-  <meta name="octolytics-dimension-user_id" content="213896920" /><meta name="octolytics-dimension-user_login" content="VishalManikandan1626" /><meta name="octolytics-dimension-repository_id" content="1277730479" /><meta name="octolytics-dimension-repository_nwo" content="VishalManikandan1626/Task1" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="1277730479" /><meta name="octolytics-dimension-repository_network_root_nwo" content="VishalManikandan1626/Task1" />
-  <meta name="current-repo-nwo" content="VishalManikandan1626/Task1" />
-
-
-
-    
-
-    <meta name="turbo-body-classes" content="logged-in env-production page-responsive">
-  <meta name="disable-turbo" content="false">
-
-
-  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
-
-  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
-
-    <meta name="release" content="b1555ff4ee9b94d19cfb01bf64f3d7dbc9502180" data-turbo-track="reload">
-  <meta name="ui-target" content="full">
-
-  <link rel="mask-icon" href="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg" color="#000000">
-  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg" data-base-href="https://github.githubassets.com/favicons/favicon">
-
-<meta name="theme-color" content="#1e2327">
-<meta name="color-scheme" content="light dark" />
-
-
-  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NEXUS ZONE | SEZ Business Registry & Control Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0a0f1e;
+        --bg2: #070a14;
+        --panel: rgba(20, 36, 68, 0.55);
+        --panel2: rgba(22, 42, 84, 0.35);
+        --stroke: rgba(201, 168, 76, 0.25);
+        --stroke2: rgba(120, 150, 255, 0.25);
+        --text: #eaf0ff;
+        --muted: rgba(234, 240, 255, 0.7);
+        --muted2: rgba(234, 240, 255, 0.55);
+        --gold: #c9a84c;
+        --slate: #1e2a45;
+        --blue: #4da3ff;
+        --green: #2fe38b;
+        --amber: #f2b84b;
+        --red: #e35d6a;
+        --ink: #071022;
+
+        --shadowGold: 0 0 0 1px rgba(201, 168, 76, 0.22), 0 10px 50px rgba(0, 0, 0, 0.55);
+        --shadowPanel: 0 0 0 1px rgba(120, 150, 255, 0.12), 0 16px 60px rgba(0, 0, 0, 0.5);
+
+        --radius-xl: 18px;
+        --radius-lg: 14px;
+        --radius-md: 12px;
+        --radius-sm: 10px;
+        --radius-xs: 9px;
+
+        --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        --serif: "Cormorant Garamond", ui-serif, Georgia, "Times New Roman", Times, serif;
+
+        --sidebarW: 280px;
+        --sidebarWCollapsed: 82px;
+      }
+
+      body.light {
+        --bg: #f4f7ff;
+        --bg2: #eef2ff;
+        --panel: rgba(255, 255, 255, 0.62);
+        --panel2: rgba(255, 255, 255, 0.4);
+        --stroke: rgba(201, 168, 76, 0.35);
+        --stroke2: rgba(60, 110, 255, 0.25);
+        --text: #091025;
+        --muted: rgba(9, 16, 37, 0.68);
+        --muted2: rgba(9, 16, 37, 0.52);
+        --shadowGold: 0 0 0 1px rgba(201, 168, 76, 0.28), 0 10px 50px rgba(0, 0, 0, 0.12);
+        --shadowPanel: 0 0 0 1px rgba(60, 110, 255, 0.13), 0 16px 60px rgba(0, 0, 0, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        font-family: var(--mono);
+        background: radial-gradient(1100px 700px at 10% 0%, rgba(201, 168, 76, 0.08), transparent 55%),
+          radial-gradient(900px 500px at 95% 10%, rgba(77, 163, 255, 0.10), transparent 50%),
+          linear-gradient(180deg, var(--bg), var(--bg2));
+        color: var(--text);
+        overflow-x: hidden;
+      }
+
+      /* Animated dot grid backdrop */
+      .bg-grid {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        background-image: radial-gradient(circle at 1px 1px, rgba(201, 168, 76, 0.16) 1px, transparent 1px);
+        background-size: 22px 22px;
+        opacity: 0.55;
+        animation: gridPulse 9s ease-in-out infinite;
+        transform: translateZ(0);
+      }
+      body.light .bg-grid {
+        opacity: 0.35;
+      }
+
+      @keyframes gridPulse {
+        0% {
+          filter: hue-rotate(0deg);
+          transform: scale(1) translate3d(0, 0, 0);
+        }
+        50% {
+          filter: hue-rotate(8deg);
+          transform: scale(1.02) translate3d(0, 0, 0);
+        }
+        100% {
+          filter: hue-rotate(0deg);
+          transform: scale(1) translate3d(0, 0, 0);
+        }
+      }
+
+      /* Layout */
+      .app {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: var(--sidebarW) 1fr;
+        min-height: 100vh;
+      }
+
+      @media (max-width: 980px) {
+        .app {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        padding: 18px 14px;
+        border-right: 1px solid rgba(201, 168, 76, 0.12);
+        background: linear-gradient(180deg, rgba(10, 15, 30, 0.85), rgba(10, 15, 30, 0.35));
+        backdrop-filter: blur(10px);
+        transition: width 240ms ease, transform 240ms ease, padding 240ms ease;
+        overflow: hidden;
+      }
+      @media (max-width: 980px) {
+        .sidebar {
+          position: fixed;
+          inset: 0 auto 0 0;
+          width: min(340px, 88vw);
+          transform: translateX(-110%);
+          z-index: 20;
+          border-right: 1px solid rgba(201, 168, 76, 0.18);
+        }
+        .sidebar.open {
+          transform: translateX(0%);
+        }
+      }
+
+      .sidebar.collapsed {
+        width: var(--sidebarWCollapsed);
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .sidebar-top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 6px 14px 6px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+      }
+      .logo .mark {
+        width: 36px;
+        height: 36px;
+        display: grid;
+        place-items: center;
+        border-radius: 12px;
+        background: radial-gradient(circle at 30% 25%, rgba(201, 168, 76, 0.9), rgba(201, 168, 76, 0.08)),
+          linear-gradient(180deg, rgba(201, 168, 76, 0.16), transparent);
+        box-shadow: 0 0 0 1px rgba(201, 168, 76, 0.25), 0 12px 30px rgba(0, 0, 0, 0.35);
+      }
+      .logo h1 {
+        margin: 0;
+        font-family: var(--serif);
+        letter-spacing: 0.4px;
+        font-size: 20px;
+        line-height: 1.05;
+        white-space: nowrap;
+      }
+      .logo .sub {
+        font-size: 12px;
+        color: var(--muted2);
+        margin-top: 2px;
+      }
+      .sidebar.collapsed .logo .text {
+        display: none;
+      }
+
+      .role-badge {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 10px;
+        border-radius: 999px;
+        background: rgba(201, 168, 76, 0.10);
+        border: 1px solid rgba(201, 168, 76, 0.25);
+        box-shadow: 0 0 20px rgba(201, 168, 76, 0.10);
+        color: var(--gold);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+      }
+
+      .nav {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .nav-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        padding: 12px 12px;
+        border-radius: 14px;
+        background: transparent;
+        border: 1px solid transparent;
+        color: var(--muted);
+        cursor: pointer;
+        transition: background 180ms ease, border-color 180ms ease, transform 180ms ease, color 180ms ease;
+        user-select: none;
+      }
+      .nav-btn:hover {
+        transform: translateY(-1px);
+        background: rgba(30, 42, 69, 0.35);
+        border-color: rgba(120, 150, 255, 0.18);
+        color: var(--text);
+      }
+      .nav-btn.active {
+        background: linear-gradient(180deg, rgba(201, 168, 76, 0.16), rgba(30, 42, 69, 0.28));
+        border-color: rgba(201, 168, 76, 0.32);
+        color: var(--text);
+        box-shadow: 0 0 0 1px rgba(201, 168, 76, 0.12), 0 0 35px rgba(201, 168, 76, 0.12);
+      }
+      .nav-btn .icon {
+        width: 28px;
+        text-align: center;
+        font-size: 16px;
+      }
+      .sidebar.collapsed .nav-btn .label {
+        display: none;
+      }
+
+      /* Main */
+      .main {
+        padding: 20px 22px 46px 22px;
+      }
+      @media (max-width: 980px) {
+        .main {
+          padding: 16px 14px 46px 14px;
+        }
+      }
+
+      .mobile-topbar {
+        display: none;
+      }
+      @media (max-width: 980px) {
+        .mobile-topbar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          margin-bottom: 14px;
+        }
+      }
+
+      .hamburger {
+        border: 1px solid rgba(201, 168, 76, 0.25);
+        background: rgba(201, 168, 76, 0.08);
+        color: var(--gold);
+        border-radius: 12px;
+        padding: 10px 12px;
+        cursor: pointer;
+        transition: transform 160ms ease, background 160ms ease;
+      }
+      .hamburger:hover {
+        transform: translateY(-1px);
+        background: rgba(201, 168, 76, 0.12);
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        padding: 12px 14px;
+        border-radius: var(--radius-lg);
+        background: linear-gradient(180deg, rgba(10, 15, 30, 0.65), rgba(10, 15, 30, 0.35));
+        border: 1px solid rgba(201, 168, 76, 0.14);
+        box-shadow: 0 0 0 1px rgba(120, 150, 255, 0.08);
+        backdrop-filter: blur(14px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+
+      .topbar-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+      }
+      .welcome {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+      }
+      .welcome .title {
+        font-family: var(--serif);
+        font-size: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .welcome .date {
+        font-size: 12px;
+        color: var(--muted2);
+        margin-top: 2px;
+      }
+
+      .topbar-mid {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-width: 240px;
+      }
+      .search {
+        width: min(680px, 100%);
+        position: relative;
+      }
+      .search input {
+        width: 100%;
+        padding: 12px 14px 12px 44px;
+        border-radius: 14px;
+        background: rgba(15, 22, 45, 0.55);
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        color: var(--text);
+        outline: none;
+        transition: border-color 160ms ease, box-shadow 160ms ease;
+      }
+      body.light .search input {
+        background: rgba(255, 255, 255, 0.72);
+        border-color: rgba(60, 110, 255, 0.20);
+      }
+      .search input:focus {
+        border-color: rgba(201, 168, 76, 0.45);
+        box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.16);
+      }
+      .search .lens {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.9;
+        color: var(--gold);
+      }
+      .search-results {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: calc(100% + 8px);
+        background: rgba(10, 15, 30, 0.85);
+        border: 1px solid rgba(201, 168, 76, 0.22);
+        border-radius: 14px;
+        box-shadow: var(--shadowPanel);
+        overflow: hidden;
+        display: none;
+        max-height: 320px;
+        overflow-y: auto;
+      }
+      body.light .search-results {
+        background: rgba(255, 255, 255, 0.92);
+      }
+      .search-results.show {
+        display: block;
+      }
+      .search-results .item {
+        padding: 12px 12px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+        border-top: 1px solid rgba(201, 168, 76, 0.08);
+      }
+      .search-results .item:first-child {
+        border-top: none;
+      }
+      .search-results .item:hover {
+        background: rgba(201, 168, 76, 0.10);
+      }
+      .search-results .pill {
+        font-size: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(30, 42, 69, 0.55);
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        color: var(--muted);
+        white-space: nowrap;
+      }
+      .search-results .txt {
+        min-width: 0;
+      }
+      .search-results .txt .a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .search-results .txt .b {
+        font-size: 12px;
+        color: var(--muted2);
+        margin-top: 2px;
+      }
+
+      .topbar-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+
+      .icon-btn {
+        width: 42px;
+        height: 42px;
+        border-radius: 14px;
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        background: rgba(15, 22, 45, 0.45);
+        color: var(--text);
+        cursor: pointer;
+        transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+        display: grid;
+        place-items: center;
+      }
+      body.light .icon-btn {
+        background: rgba(255, 255, 255, 0.7);
+      }
+      .icon-btn:hover {
+        transform: translateY(-1px);
+        border-color: rgba(201, 168, 76, 0.35);
+        background: rgba(201, 168, 76, 0.08);
+      }
+
+      .notif-wrap {
+        position: relative;
+      }
+      .notif-panel {
+        position: absolute;
+        top: calc(100% + 12px);
+        right: 0;
+        width: min(420px, 86vw);
+        background: rgba(10, 15, 30, 0.9);
+        border: 1px solid rgba(201, 168, 76, 0.22);
+        border-radius: 16px;
+        box-shadow: var(--shadowPanel);
+        overflow: hidden;
+        display: none;
+      }
+      body.light .notif-panel {
+        background: rgba(255, 255, 255, 0.93);
+      }
+      .notif-panel.show {
+        display: block;
+      }
+      .notif-panel .head {
+        padding: 12px 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(201, 168, 76, 0.10);
+      }
+      .notif-panel .head .h {
+        font-family: var(--serif);
+        font-size: 18px;
+      }
+      .notif-panel .list {
+        max-height: 320px;
+        overflow-y: auto;
+      }
+      .notif-item {
+        padding: 12px 14px;
+        display: flex;
+        gap: 12px;
+        border-top: 1px solid rgba(201, 168, 76, 0.08);
+        cursor: pointer;
+      }
+      .notif-item:hover {
+        background: rgba(201, 168, 76, 0.08);
+      }
+      .notif-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 99px;
+        margin-top: 3px;
+        box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+      }
+      .notif-item .txt {
+        min-width: 0;
+      }
+      .notif-item .txt .a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .notif-item .txt .b {
+        margin-top: 3px;
+        font-size: 12px;
+        color: var(--muted2);
+      }
+
+      .avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 16px;
+        border: 1px solid rgba(201, 168, 76, 0.25);
+        background: radial-gradient(circle at 30% 25%, rgba(201, 168, 76, 0.35), rgba(77, 163, 255, 0.12)),
+          rgba(15, 22, 45, 0.45);
+        display: grid;
+        place-items: center;
+        font-family: var(--serif);
+        font-weight: 700;
+      }
+
+      /* Floating GOD MODE badge */
+      .god-float {
+        position: fixed;
+        top: 18px;
+        right: 18px;
+        z-index: 50;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(201, 168, 76, 0.14);
+        border: 1px solid rgba(201, 168, 76, 0.35);
+        color: var(--gold);
+        box-shadow: 0 0 40px rgba(201, 168, 76, 0.18), 0 0 0 1px rgba(201, 168, 76, 0.12);
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: transform 160ms ease;
+      }
+      .god-float:hover {
+        transform: translateY(-2px);
+      }
+      .god-float .bolt {
+        width: 26px;
+        height: 26px;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        background: rgba(201, 168, 76, 0.12);
+        border: 1px solid rgba(201, 168, 76, 0.25);
+      }
+      @media (max-width: 980px) {
+        .god-float {
+          right: 12px;
+          top: 12px;
+          padding: 9px 12px;
+        }
+      }
+
+      /* Views */
+      .view {
+        display: none;
+      }
+      .view.active {
+        display: block;
+      }
+
+      /* Animation on load */
+      .fade-stagger {
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 600ms ease, transform 600ms ease;
+      }
+      .fade-stagger.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .section-title {
+        font-family: var(--serif);
+        font-size: 26px;
+        margin: 4px 0 14px 0;
+        letter-spacing: 0.4px;
+      }
+      .subtext {
+        color: var(--muted2);
+        font-size: 12px;
+        margin-top: -10px;
+        margin-bottom: 18px;
+      }
+
+      /* Cards */
+      .kpi-row {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(140px, 1fr));
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+      @media (max-width: 1180px) {
+        .kpi-row {
+          grid-template-columns: repeat(3, minmax(140px, 1fr));
+        }
+      }
+      @media (max-width: 560px) {
+        .kpi-row {
+          grid-template-columns: repeat(2, minmax(120px, 1fr));
+        }
+      }
+
+      .card {
+        border-radius: var(--radius-xl);
+        background: linear-gradient(180deg, rgba(30, 42, 69, 0.48), rgba(15, 22, 45, 0.32));
+        border: 1px solid rgba(201, 168, 76, 0.18);
+        box-shadow: var(--shadowPanel);
+        padding: 14px 14px;
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .card:before {
+        content: "";
+        position: absolute;
+        inset: -40px;
+        background: radial-gradient(circle at 30% 20%, rgba(201, 168, 76, 0.22), transparent 55%);
+        opacity: 0.0;
+        transition: opacity 180ms ease;
+      }
+      .card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(201, 168, 76, 0.32);
+        box-shadow: var(--shadowGold);
+      }
+      .card:hover:before {
+        opacity: 1;
+      }
+      .kpi-card .label {
+        color: var(--muted2);
+        font-size: 12px;
+        margin-bottom: 10px;
+        letter-spacing: 0.2px;
+      }
+      .kpi-card .value {
+        font-family: var(--serif);
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+      }
+      .kpi-card .trend {
+        margin-top: 10px;
+        font-size: 12px;
+        color: var(--muted);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      /* Two column layout */
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 16px;
+      }
+      @media (max-width: 980px) {
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .list-card {
+        padding: 14px 14px;
+      }
+      .card-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+      .card-head .h {
+        font-family: var(--serif);
+        font-size: 18px;
+        letter-spacing: 0.2px;
+      }
+      .card-head .meta {
+        color: var(--muted2);
+        font-size: 12px;
+      }
+
+      .feed {
+        max-height: 340px;
+        overflow-y: auto;
+        padding-right: 6px;
+      }
+      .feed-item {
+        display: flex;
+        gap: 12px;
+        padding: 12px 12px;
+        border-radius: 14px;
+        background: rgba(30, 42, 69, 0.20);
+        border: 1px solid rgba(120, 150, 255, 0.12);
+        transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+        margin-bottom: 10px;
+      }
+      .feed-item:hover {
+        transform: translateY(-2px);
+        border-color: rgba(201, 168, 76, 0.28);
+        background: rgba(201, 168, 76, 0.06);
+      }
+      .feed-item .avatar-mini {
+        width: 38px;
+        height: 38px;
+        border-radius: 16px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(201, 168, 76, 0.20);
+        background: rgba(15, 22, 45, 0.45);
+        flex: none;
+      }
+      .feed-item .t {
+        min-width: 0;
+      }
+      .feed-item .t .a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px;
+      }
+      .feed-item .t .b {
+        margin-top: 4px;
+        color: var(--muted2);
+        font-size: 12px;
+      }
+
+      /* Mini-table */
+      .table-wrap {
+        overflow: auto;
+        border-radius: 16px;
+        border: 1px solid rgba(120, 150, 255, 0.12);
+        background: rgba(10, 15, 30, 0.25);
+      }
+      body.light .table-wrap {
+        background: rgba(255, 255, 255, 0.4);
+      }
+      table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        font-size: 12px;
+      }
+      thead th {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: linear-gradient(180deg, rgba(15, 22, 45, 0.92), rgba(15, 22, 45, 0.55));
+        border-bottom: 1px solid rgba(201, 168, 76, 0.18);
+        padding: 12px 10px;
+        text-align: left;
+        color: var(--muted);
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+      }
+      body.light thead th {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.62));
+      }
+      tbody td {
+        padding: 12px 10px;
+        border-bottom: 1px solid rgba(120, 150, 255, 0.10);
+      }
+      tbody tr:nth-child(even) td {
+        background: rgba(30, 42, 69, 0.16);
+      }
+      tbody tr:hover td {
+        background: rgba(201, 168, 76, 0.08);
+      }
+
+      .sortable {
+        cursor: pointer;
+      }
+      .sortable:hover {
+        color: var(--text);
+      }
+
+      /* Badges */
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        font-size: 12px;
+        color: var(--muted);
+        background: rgba(30, 42, 69, 0.35);
+        white-space: nowrap;
+      }
+      .pill:before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 99px;
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 18px rgba(0, 0, 0, 0.25);
+      }
+
+      .pill.active {
+        color: rgba(47, 227, 139, 0.95);
+        border-color: rgba(47, 227, 139, 0.28);
+        background: rgba(47, 227, 139, 0.08);
+      }
+      .pill.active:before {
+        background: rgba(47, 227, 139, 0.9);
+      }
+      .pill.pending {
+        color: rgba(242, 184, 75, 0.98);
+        border-color: rgba(242, 184, 75, 0.28);
+        background: rgba(242, 184, 75, 0.08);
+      }
+      .pill.pending:before {
+        background: rgba(242, 184, 75, 0.9);
+      }
+      .pill.suspended {
+        color: rgba(227, 93, 106, 0.98);
+        border-color: rgba(227, 93, 106, 0.3);
+        background: rgba(227, 93, 106, 0.08);
+      }
+      .pill.suspended:before {
+        background: rgba(227, 93, 106, 0.95);
+      }
+      .pill.processing {
+        color: rgba(77, 163, 255, 0.98);
+        border-color: rgba(77, 163, 255, 0.3);
+        background: rgba(77, 163, 255, 0.08);
+      }
+      .pill.processing:before {
+        background: rgba(77, 163, 255, 0.95);
+      }
+      .pill.deregistered {
+        color: rgba(30, 42, 69, 0.95);
+        border-color: rgba(20, 30, 55, 0.5);
+        background: rgba(20, 30, 55, 0.35);
+      }
+      .pill.deregistered:before {
+        background: rgba(20, 30, 55, 0.85);
+      }
+
+      .priority {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        background: rgba(30, 42, 69, 0.25);
+        color: var(--muted);
+        white-space: nowrap;
+      }
+      .priority.high {
+        color: rgba(227, 93, 106, 1);
+        border-color: rgba(227, 93, 106, 0.35);
+        background: rgba(227, 93, 106, 0.08);
+      }
+      .priority.medium {
+        color: rgba(242, 184, 75, 1);
+        border-color: rgba(242, 184, 75, 0.35);
+        background: rgba(242, 184, 75, 0.08);
+      }
+      .priority.low {
+        color: rgba(77, 163, 255, 1);
+        border-color: rgba(77, 163, 255, 0.35);
+        background: rgba(77, 163, 255, 0.08);
+      }
+
+      /* Buttons */
+      .btn {
+        border-radius: 14px;
+        padding: 10px 12px;
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        background: rgba(15, 22, 45, 0.45);
+        color: var(--text);
+        cursor: pointer;
+        transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+        font-family: var(--mono);
+        font-size: 12px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        user-select: none;
+      }
+      body.light .btn {
+        background: rgba(255, 255, 255, 0.72);
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+        border-color: rgba(201, 168, 76, 0.32);
+        background: rgba(201, 168, 76, 0.08);
+      }
+      .btn.primary {
+        border-color: rgba(201, 168, 76, 0.40);
+        background: rgba(201, 168, 76, 0.14);
+        color: var(--gold);
+      }
+      .btn.danger {
+        border-color: rgba(227, 93, 106, 0.40);
+        background: rgba(227, 93, 106, 0.10);
+        color: rgba(227, 93, 106, 1);
+      }
+      .btn.blue {
+        border-color: rgba(77, 163, 255, 0.40);
+        background: rgba(77, 163, 255, 0.10);
+        color: rgba(77, 163, 255, 1);
+      }
+      .btn.small {
+        padding: 8px 10px;
+        border-radius: 12px;
+        font-size: 12px;
+      }
+
+      .btn.ghost {
+        background: transparent;
+        border-color: rgba(201, 168, 76, 0.18);
+      }
+
+      /* Dashboard map */
+      .map-card {
+        padding: 14px 14px;
+        margin-top: 18px;
+      }
+      .map-wrap {
+        background: rgba(30, 42, 69, 0.18);
+        border: 1px solid rgba(120, 150, 255, 0.12);
+        border-radius: 18px;
+        padding: 14px;
+      }
+      .map-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+      .legend {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .leg {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 12px;
+        color: var(--muted2);
+      }
+      .swatch {
+        width: 12px;
+        height: 12px;
+        border-radius: 3px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .swatch.green {
+        background: rgba(47, 227, 139, 0.25);
+        border-color: rgba(47, 227, 139, 0.55);
+      }
+      .swatch.amber {
+        background: rgba(242, 184, 75, 0.25);
+        border-color: rgba(242, 184, 75, 0.55);
+      }
+      .swatch.red {
+        background: rgba(227, 93, 106, 0.20);
+        border-color: rgba(227, 93, 106, 0.55);
+      }
+
+      .map-svg {
+        width: 100%;
+        height: 260px;
+      }
+      .zone-sector {
+        cursor: pointer;
+        transition: filter 180ms ease, transform 180ms ease, opacity 180ms ease;
+      }
+      .zone-sector:hover {
+        filter: brightness(1.18);
+        transform: translateY(-1px);
+      }
+
+      .zone-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 12px;
+      }
+      @media (max-width: 780px) {
+        .zone-details {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .occupancy-bar {
+        border-radius: 14px;
+        background: rgba(30, 42, 69, 0.22);
+        border: 1px solid rgba(120, 150, 255, 0.12);
+        padding: 12px 12px;
+      }
+      .occupancy-bar .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .occupancy-bar .name {
+        font-family: var(--serif);
+        font-size: 18px;
+      }
+      .occupancy-bar .pct {
+        font-size: 12px;
+        color: var(--muted2);
+      }
+      .bar-track {
+        margin-top: 10px;
+        height: 12px;
+        border-radius: 999px;
+        background: rgba(120, 150, 255, 0.15);
+        overflow: hidden;
+        border: 1px solid rgba(120, 150, 255, 0.12);
+      }
+      .bar-fill {
+        height: 100%;
+        width: 50%;
+        border-radius: 999px;
+        background: linear-gradient(90deg, rgba(47, 227, 139, 0.35), rgba(201, 168, 76, 0.45));
+        transition: width 260ms ease;
+      }
+      .bar-fill.amber {
+        background: linear-gradient(90deg, rgba(242, 184, 75, 0.35), rgba(201, 168, 76, 0.45));
+      }
+      .bar-fill.red {
+        background: linear-gradient(90deg, rgba(227, 93, 106, 0.35), rgba(201, 168, 76, 0.45));
+      }
+
+      .util-grid {
+        border-radius: 14px;
+        background: rgba(30, 42, 69, 0.22);
+        border: 1px solid rgba(120, 150, 255, 0.12);
+        padding: 12px 12px;
+      }
+      .util-grid .uhead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .util-grid .uhead .name {
+        font-family: var(--serif);
+        font-size: 18px;
+      }
+      .util-grid .items {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .util-pill {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        background: rgba(15, 22, 45, 0.35);
+        font-size: 12px;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+      .util-pill .s {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: rgba(47, 227, 139, 0.7);
+        box-shadow: 0 0 24px rgba(47, 227, 139, 0.15);
+      }
+      .util-pill.amber .s {
+        background: rgba(242, 184, 75, 0.9);
+        box-shadow: 0 0 24px rgba(242, 184, 75, 0.15);
+      }
+      .util-pill.red .s {
+        background: rgba(227, 93, 106, 0.95);
+        box-shadow: 0 0 24px rgba(227, 93, 106, 0.15);
+      }
+
+      /* Filters */
+      .toolbar {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 14px;
+      }
+      .filters {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        min-width: 170px;
+      }
+      .field .lab {
+        font-size: 12px;
+        color: var(--muted2);
+      }
+      .field input,
+      .field select {
+        padding: 11px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        background: rgba(15, 22, 45, 0.45);
+        color: var(--text);
+        outline: none;
+      }
+      body.light .field input,
+      body.light .field select {
+        background: rgba(255, 255, 255, 0.72);
+      }
+      .field input:focus,
+      .field select:focus {
+        border-color: rgba(201, 168, 76, 0.45);
+        box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.16);
+      }
+
+      /* Drawer */
+      .drawer-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(4px);
+        display: none;
+        z-index: 60;
+        opacity: 0;
+        transition: opacity 180ms ease;
+      }
+      .drawer-backdrop.show {
+        display: block;
+        opacity: 1;
+      }
+      .drawer {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: min(560px, 96vw);
+        background: linear-gradient(180deg, rgba(10, 15, 30, 0.95), rgba(10, 15, 30, 0.78));
+        border-left: 1px solid rgba(201, 168, 76, 0.22);
+        z-index: 70;
+        transform: translateX(110%);
+        transition: transform 240ms ease;
+        display: flex;
+        flex-direction: column;
+      }
+      .drawer.open {
+        transform: translateX(0%);
+      }
+      .drawer .dhead {
+        padding: 16px 16px 12px 16px;
+        border-bottom: 1px solid rgba(201, 168, 76, 0.14);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .drawer .dhead .left {
+        min-width: 0;
+      }
+      .drawer .dhead .name {
+        font-family: var(--serif);
+        font-size: 22px;
+        margin-bottom: 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .drawer .dhead .meta {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .reg-badge {
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(201, 168, 76, 0.25);
+        background: rgba(201, 168, 76, 0.08);
+        color: var(--gold);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+      .drawer .close-btn {
+        width: 42px;
+        height: 42px;
+        border-radius: 16px;
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        background: rgba(15, 22, 45, 0.45);
+        color: var(--text);
+        cursor: pointer;
+      }
+      .drawer .dbody {
+        padding: 14px 16px 20px 16px;
+        overflow-y: auto;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .tab {
+        border-radius: 999px;
+        padding: 8px 12px;
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        background: rgba(15, 22, 45, 0.35);
+        color: var(--muted);
+        cursor: pointer;
+        user-select: none;
+        transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .tab:hover {
+        transform: translateY(-1px);
+        border-color: rgba(201, 168, 76, 0.32);
+        background: rgba(201, 168, 76, 0.08);
+        color: var(--text);
+      }
+      .tab.active {
+        border-color: rgba(201, 168, 76, 0.45);
+        background: rgba(201, 168, 76, 0.14);
+        color: var(--gold);
+      }
+      .drawer-section {
+        display: none;
+      }
+      .drawer-section.active {
+        display: block;
+      }
+      .kv-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      @media (max-width: 500px) {
+        .kv-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .kv {
+        padding: 12px 12px;
+        border-radius: 16px;
+        border: 1px solid rgba(120, 150, 255, 0.12);
+        background: rgba(30, 42, 69, 0.18);
+      }
+      .kv .k {
+        color: var(--muted2);
+        font-size: 12px;
+      }
+      .kv .v {
+        margin-top: 6px;
+        font-size: 13px;
+        color: var(--text);
+      }
+
+      .quick-actions {
+        margin-top: 14px;
+        padding: 12px 12px;
+        border-radius: 18px;
+        background: rgba(30, 42, 69, 0.16);
+        border: 1px solid rgba(201, 168, 76, 0.16);
+      }
+      .quick-actions .qahead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .quick-actions .qahead .t {
+        font-family: var(--serif);
+        font-size: 18px;
+      }
+      .quick-actions .list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .doc-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .doc-item {
+        border-radius: 16px;
+        border: 1px solid rgba(120, 150, 255, 0.12);
+        background: rgba(30, 42, 69, 0.18);
+        padding: 12px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .doc-item .left {
+        min-width: 0;
+      }
+      .doc-item .left .a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px;
+      }
+      .doc-item .left .b {
+        margin-top: 4px;
+        color: var(--muted2);
+        font-size: 12px;
+      }
+
+      /* Modal / overlays */
+      .modal-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.52);
+        backdrop-filter: blur(4px);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 90;
+        padding: 18px;
+      }
+      .modal-backdrop.show {
+        display: flex;
+      }
+
+      .modal {
+        width: min(520px, 96vw);
+        border-radius: 22px;
+        background: linear-gradient(180deg, rgba(10, 15, 30, 0.95), rgba(10, 15, 30, 0.75));
+        border: 1px solid rgba(201, 168, 76, 0.24);
+        box-shadow: var(--shadowPanel);
+        padding: 16px 16px;
+      }
+      body.light .modal {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.72));
+      }
+      .modal .mhead {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(201, 168, 76, 0.12);
+      }
+      .modal .mhead .h {
+        font-family: var(--serif);
+        font-size: 20px;
+      }
+      .modal .mhead .x {
+        width: 42px;
+        height: 42px;
+        border-radius: 16px;
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        background: rgba(15, 22, 45, 0.45);
+        color: var(--text);
+        cursor: pointer;
+      }
+      .modal .mbody {
+        padding-top: 12px;
+      }
+      .pin-hint {
+        color: var(--muted2);
+        font-size: 12px;
+        margin: 6px 0 12px 0;
+      }
+      .pin-row {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .pin-digit {
+        width: 52px;
+        height: 56px;
+        border-radius: 16px;
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        background: rgba(15, 22, 45, 0.45);
+        display: grid;
+        place-items: center;
+        font-family: var(--mono);
+        font-size: 22px;
+        color: var(--gold);
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+        transition: transform 160ms ease, border-color 160ms ease;
+      }
+      .pin-digit.active {
+        transform: translateY(-2px);
+        border-color: rgba(201, 168, 76, 0.45);
+        box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.15);
+      }
+      .pin-digit.error {
+        border-color: rgba(227, 93, 106, 0.55);
+        box-shadow: 0 0 0 3px rgba(227, 93, 106, 0.15);
+        animation: shake 240ms ease-in-out;
+      }
+      @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-6px);
+        }
+        50% {
+          transform: translateX(6px);
+        }
+        75% {
+          transform: translateX(-4px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .pin-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 14px;
+      }
+      .pin-input-hidden {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      /* Context menu */
+      .context-menu {
+        position: fixed;
+        z-index: 80;
+        width: 220px;
+        background: rgba(10, 15, 30, 0.92);
+        border: 1px solid rgba(201, 168, 76, 0.25);
+        border-radius: 16px;
+        box-shadow: var(--shadowPanel);
+        overflow: hidden;
+        display: none;
+      }
+      body.light .context-menu {
+        background: rgba(255, 255, 255, 0.93);
+      }
+      .context-menu.show {
+        display: block;
+      }
+      .context-menu .item {
+        padding: 12px 12px;
+        cursor: pointer;
+        border-top: 1px solid rgba(201, 168, 76, 0.08);
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .context-menu .item:first-child {
+        border-top: none;
+      }
+      .context-menu .item:hover {
+        background: rgba(201, 168, 76, 0.09);
+        color: var(--text);
+      }
+
+      /* Toast */
+      .toasts {
+        position: fixed;
+        bottom: 14px;
+        left: 14px;
+        z-index: 95;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .toast {
+        border-radius: 16px;
+        background: rgba(10, 15, 30, 0.90);
+        border: 1px solid rgba(201, 168, 76, 0.25);
+        box-shadow: var(--shadowPanel);
+        padding: 12px 12px;
+        min-width: 260px;
+        animation: toastIn 240ms ease;
+      }
+      body.light .toast {
+        background: rgba(255, 255, 255, 0.95);
+      }
+      @keyframes toastIn {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .toast .t {
+        font-family: var(--serif);
+        font-size: 16px;
+      }
+      .toast .s {
+        margin-top: 3px;
+        color: var(--muted2);
+        font-size: 12px;
+      }
+
+      /* Kanban */
+      .kanban {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(170px, 1fr));
+        gap: 12px;
+      }
+      @media (max-width: 1160px) {
+        .kanban {
+          grid-template-columns: repeat(2, minmax(170px, 1fr));
+        }
+      }
+      @media (max-width: 620px) {
+        .kanban {
+          grid-template-columns: 1fr;
+        }
+      }
+      .kan-col {
+        border-radius: 18px;
+        border: 1px solid rgba(120, 150, 255, 0.14);
+        background: rgba(30, 42, 69, 0.14);
+        padding: 12px 12px;
+        min-height: 260px;
+      }
+      .kan-col .hc {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .kan-col .hc .t {
+        font-family: var(--serif);
+        font-size: 18px;
+      }
+      .kan-col .hc .count {
+        color: var(--muted2);
+        font-size: 12px;
+      }
+      .kan-card {
+        border-radius: 16px;
+        border: 1px solid rgba(201, 168, 76, 0.18);
+        background: rgba(15, 22, 45, 0.38);
+        padding: 12px 12px;
+        margin-bottom: 10px;
+        transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+      }
+      .kan-card:hover {
+        transform: translateY(-2px);
+        border-color: rgba(201, 168, 76, 0.32);
+        background: rgba(201, 168, 76, 0.07);
+      }
+      .kan-card .top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .kan-card .cn {
+        font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+      }
+      .kan-card .meta {
+        margin-top: 6px;
+        color: var(--muted2);
+        font-size: 12px;
+      }
+      .reviewer {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .reviewer .av {
+        width: 22px;
+        height: 22px;
+        border-radius: 10px;
+        border: 1px solid rgba(201, 168, 76, 0.22);
+        background: rgba(30, 42, 69, 0.35);
+        display: grid;
+        place-items: center;
+        font-size: 11px;
+        color: var(--gold);
+        font-weight: 700;
+        flex: none;
+      }
+      .progress-sla {
+        margin-top: 10px;
+        border-radius: 999px;
+        height: 10px;
+        background: rgba(120, 150, 255, 0.15);
+        border: 1px solid rgba(120, 150, 255, 0.12);
+        overflow: hidden;
+      }
+      .progress-sla .fill {
+        height: 100%;
+        width: 60%;
+        background: rgba(47, 227, 139, 0.7);
+        transition: width 260ms ease;
+      }
+      .progress-sla.amber .fill {
+        background: rgba(242, 184, 75, 0.75);
+      }
+      .progress-sla.red .fill {
+        background: rgba(227, 93, 106, 0.82);
+      }
+      .kan-card .act {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      /* License grid */
+      .filter-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+      .fcard {
+        cursor: pointer;
+        border-radius: 999px;
+        padding: 10px 14px;
+        border: 1px solid rgba(120, 150, 255, 0.18);
+        background: rgba(15, 22, 45, 0.35);
+        color: var(--muted);
+        transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, color 160ms ease;
+        user-select: none;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .fcard:hover {
+        transform: translateY(-1px);
+        border-color: rgba(201, 168, 76, 0.32);
+        background: rgba(201, 168, 76, 0.08);
+        color: var(--text);
+      }
+      .fcard.active {
+        border-color: rgba(201, 168, 76, 0.45);
+        background: rgba(201, 168, 76, 0.14);
+        color: var(--gold);
+      }
+
+      /* Authority override panels */
+      .god-panel {
+        border-radius: 22px;
+        padding: 14px 14px;
+        border: 1px solid rgba(201, 168, 76, 0.28);
+        background: linear-gradient(180deg, rgba(201, 168, 76, 0.10), rgba(30, 42, 69, 0.14));
+        box-shadow: 0 0 40px rgba(201, 168, 76, 0.10);
+      }
+      .god-panel .ghead {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .god-panel .ghead .t {
+        font-family: var(--serif);
+        font-size: 20px;
+      }
+      .god-panel .ghead .note {
+        font-size: 12px;
+        color: var(--muted2);
+      }
+      .god-panel .controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .warning-badge {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(227, 93, 106, 0.35);
+        background: rgba(227, 93, 106, 0.10);
+        color: rgba(227, 93, 106, 1);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      /* Investor cards */
+      .investor-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
+        gap: 14px;
+      }
+      @media (max-width: 980px) {
+        .investor-grid {
+          grid-template-columns: repeat(2, minmax(220px, 1fr));
+        }
+      }
+      @media (max-width: 580px) {
+        .investor-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .profile-card {
+        padding: 14px 14px;
+      }
+      .profile-top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .profile-top .av {
+        width: 56px;
+        height: 56px;
+        border-radius: 20px;
+        border: 1px solid rgba(201, 168, 76, 0.22);
+        background: rgba(15, 22, 45, 0.35);
+        display: grid;
+        place-items: center;
+        font-family: var(--serif);
+        font-size: 18px;
+        color: var(--gold);
+        font-weight: 700;
+        flex: none;
+      }
+      .profile-top .nm {
+        min-width: 0;
+      }
+      .profile-top .nm .a {
+        font-family: var(--serif);
+        font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .profile-top .nm .b {
+        margin-top: 4px;
+        color: var(--muted2);
+        font-size: 12px;
+      }
+
+      .profile-kv {
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .profile-kv .row {
+        padding: 12px 12px;
+        border-radius: 16px;
+        border: 1px solid rgba(120, 150, 255, 0.12);
+        background: rgba(30, 42, 69, 0.18);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .profile-kv .row .k {
+        color: var(--muted2);
+        font-size: 12px;
+      }
+      .profile-kv .row .v {
+        font-size: 12px;
+        color: var(--text);
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .profile-act {
+        margin-top: 12px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      /* Gauge & CSS charts */
+      .gauge {
+        height: 140px;
+        display: grid;
+        place-items: center;
+      }
+      .gauge .ring {
+        width: 120px;
+        height: 120px;
+        border-radius: 999px;
+        background: conic-gradient(rgba(47, 227, 139, 0.9) 0deg, rgba(47, 227, 139, 0.9) var(--deg), rgba(120, 150, 255, 0.18) var(--deg), rgba(120, 150, 255, 0.18) 360deg);
+        display: grid;
+        place-items: center;
+        position: relative;
+        box-shadow: 0 0 50px rgba(47, 227, 139, 0.12);
+      }
+      .gauge .ring:before {
+        content: "";
+        width: 88px;
+        height: 88px;
+        border-radius: 999px;
+        background: linear-gradient(180deg, rgba(30, 42, 69, 0.55), rgba(15, 22, 45, 0.35));
+        border: 1px solid rgba(120, 150, 255, 0.16);
+        position: absolute;
+      }
+      .gauge .ring .txt {
+        position: relative;
+        font-family: var(--serif);
+        font-size: 26px;
+        font-weight: 700;
+      }
+      .gauge .ring .sub {
+        margin-top: 4px;
+        font-size: 12px;
+        color: var(--muted2);
+      }
+
+      .donut {
+        width: 160px;
+        height: 160px;
+        border-radius: 999px;
+        background: conic-gradient(
+          rgba(201, 168, 76, 0.95) 0 144deg,
+          rgba(77, 163, 255, 0.85) 144deg 216deg,
+          rgba(242, 184, 75, 0.9) 216deg 270deg,
+          rgba(227, 93, 106, 0.85) 270deg 298deg,
+          rgba(120, 150, 255, 0.65) 298deg 360deg
+        );
+        position: relative;
+        display: grid;
+        place-items: center;
+        box-shadow: 0 0 60px rgba(201, 168, 76, 0.12);
+      }
+      .donut:before {
+        content: "";
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        border-radius: 999px;
+        background: linear-gradient(180deg, rgba(30, 42, 69, 0.55), rgba(15, 22, 45, 0.35));
+        border: 1px solid rgba(120, 150, 255, 0.16);
+      }
+      .donut .center {
+        position: relative;
+        text-align: center;
+      }
+      .donut .center .a {
+        font-family: var(--serif);
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .donut .center .b {
+        margin-top: 4px;
+        color: var(--muted2);
+        font-size: 12px;
+      }
+
+      .bars {
+        display: flex;
+        gap: 10px;
+        align-items: flex-end;
+        height: 180px;
+        padding: 10px 10px 0 10px;
+      }
+      .bars .bar {
+        flex: 1;
+        min-width: 14px;
+        border-radius: 10px;
+        background: linear-gradient(180deg, rgba(201, 168, 76, 0.75), rgba(77, 163, 255, 0.22));
+        border: 1px solid rgba(201, 168, 76, 0.20);
+        box-shadow: 0 0 30px rgba(201, 168, 76, 0.08);
+        opacity: 0.95;
+      }
+
+      /* Risk matrix */
+      .risk-matrix {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      .risk-cell {
+        border-radius: 16px;
+        border: 1px solid rgba(120, 150, 255, 0.12);
+        background: rgba(30, 42, 69, 0.18);
+        padding: 12px 12px;
+        min-height: 120px;
+        position: relative;
+      }
+      .risk-cell .lab {
+        color: var(--muted2);
+        font-size: 12px;
+      }
+      .risk-cell .dots {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .risk-dot {
+        width: 14px;
+        height: 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(47, 227, 139, 0.25);
+        box-shadow: 0 0 24px rgba(47, 227, 139, 0.10);
+      }
+      .risk-dot.amber {
+        background: rgba(242, 184, 75, 0.28);
+        box-shadow: 0 0 24px rgba(242, 184, 75, 0.12);
+      }
+      .risk-dot.red {
+        background: rgba(227, 93, 106, 0.30);
+        box-shadow: 0 0 24px rgba(227, 93, 106, 0.12);
+      }
+
+      /* Accessibility helper */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+
+      /* Toggle switch */
+      .switch {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+      }
+      .switch input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .switch .track {
+        width: 46px;
+        height: 26px;
+        border-radius: 999px;
+        background: rgba(120, 150, 255, 0.12);
+        border: 1px solid rgba(120, 150, 255, 0.22);
+        transition: background 160ms ease, border-color 160ms ease;
+        position: relative;
+      }
+      .switch .track::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 999px;
+        background: rgba(201, 168, 76, 0.85);
+        box-shadow: 0 0 30px rgba(201, 168, 76, 0.16);
+        position: absolute;
+        top: 2px;
+        left: 3px;
+        transition: transform 160ms ease, left 160ms ease;
+      }
+      .switch input:checked + .track {
+        background: rgba(201, 168, 76, 0.16);
+        border-color: rgba(201, 168, 76, 0.42);
+      }
+      .switch input:checked + .track::after {
+        left: 22px;
+      }
+
+      /* Sidebar overlay for mobile */
+      .sidebar-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.35);
+        display: none;
+        z-index: 10;
+      }
+      .sidebar-backdrop.show {
+        display: block;
+      }
+    </style>
   </head>
 
-  <body class="logged-in env-production page-responsive" style="word-wrap: break-word;" >
-    <div data-turbo-body class="logged-in env-production page-responsive" style="word-wrap: break-word;" >
-      <div id="__primerPortalRoot__" style="z-index: 1000; position: absolute; width: 100%;" data-turbo-permanent></div>
-      
-
-    <div class="position-relative header-wrapper js-header-wrapper ">
-      <a href="#start-of-content" data-skip-target-assigned="false" class="tmp-p-3 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content">Skip to content</a>
-
-      <span data-view-component="true" class="progress-pjax-loader Progress position-fixed width-full">
-    <span style="width: 0%;" data-view-component="true" class="Progress-item progress-pjax-loader-bar left-0 top-0 color-bg-accent-emphasis"></span>
-</span>      
-      <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.d18392e72f73b5a6.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/keyboard-shortcuts-dialog.182bb7552d3acdf1.module.css" />
-
-<react-partial
-  partial-name="keyboard-shortcuts-dialog"
-  data-ssr="false"
-  data-attempted-ssr="false"
-  data-react-profiling="false"
->
-  
-  <script type="application/json" data-target="react-partial.embeddedData">{"props":{"docsUrl":"https://docs.github.com/get-started/accessibility/keyboard-shortcuts"}}</script>
-  <div data-target="react-partial.reactRoot"></div>
-</react-partial>
-
-
-
-
-
-      
-
-          
-
-                  <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.d18392e72f73b5a6.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/84360.991965ee78490963.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/global-nav-bar.ff0486761b19b1e3.module.css" />
-
-<react-partial
-  partial-name="global-nav-bar"
-  data-ssr="true"
-  data-attempted-ssr="true"
-  data-react-profiling="false"
->
-  
-  <script type="application/json" data-target="react-partial.embeddedData">{"props":{"contextRegion":{"crumbs":[{"crumb_type":"user","label":"VishalManikandan1626","is_root":false,"href":"/VishalManikandan1626"},{"crumb_type":"repository","label":"Task1","is_root":false,"href":"/VishalManikandan1626/Task1"}],"localNavigation":[{"id":"code","icon":"code","label":"Code","href":"/VishalManikandan1626/Task1","selectedLinks":["repo_source","repo_downloads","repo_commits","repo_releases","repo_tags","repo_branches","repo_packages","repo_deployments","repo_attestations"],"popoverTarget":false,"commandId":"repositories:go-to-code","reactNav":{"appTarget":"code-view","anchor":"code-view-repo-link"},"turboNav":{"frame":"repo-content-turbo-frame"}},{"id":"issues","icon":"issue-opened","label":"Issues","href":"/VishalManikandan1626/Task1/issues","selectedLinks":["repo_issues","repo_labels","repo_milestones"],"count":0,"popoverTarget":false,"commandId":"repositories:go-to-issues","reactNav":{"appTarget":"issues-react","anchor":null},"turboNav":{"frame":"repo-content-turbo-frame"}},{"id":"pull-requests","icon":"git-pull-request","label":"Pull requests","href":"/VishalManikandan1626/Task1/pulls","selectedLinks":["repo_pulls","checks"],"count":0,"popoverTarget":false,"commandId":"repositories:go-to-pull-requests","reactNav":{"appTarget":null,"anchor":null},"turboNav":{"frame":"repo-content-turbo-frame"}},{"id":"actions","icon":"play","label":"Actions","href":"/VishalManikandan1626/Task1/actions","selectedLinks":["repo_actions"],"popoverTarget":false,"commandId":"repositories:go-to-actions","reactNav":{"appTarget":null,"anchor":null},"turboNav":{"frame":"repo-content-turbo-frame"}},{"id":"projects","icon":"table","label":"Projects","href":"/VishalManikandan1626/Task1/projects","selectedLinks":["repo_projects","new_repo_project","repo_project"],"popoverTarget":false,"commandId":"repositories:go-to-projects","reactNav":{"appTarget":null,"anchor":null},"turboNav":{"frame":"repo-content-turbo-frame"}},{"id":"wiki","icon":"book","label":"Wiki","href":"/VishalManikandan1626/Task1/wiki","selectedLinks":["repo_wiki"],"popoverTarget":false,"commandId":"repositories:go-to-wiki","reactNav":{"appTarget":null,"anchor":null},"turboNav":{"frame":"repo-content-turbo-frame"}},{"id":"security-and-quality","icon":"shield","label":"Security and quality","href":"/VishalManikandan1626/Task1/security","selectedLinks":["security","overview","alerts","policy","token_scanning","code_scanning"],"count":0,"popoverTarget":false,"commandId":"repositories:go-to-security","reactNav":{"appTarget":null,"anchor":null},"turboNav":{"frame":"repo-content-turbo-frame"}},{"id":"insights","icon":"graph","label":"Insights","href":"/VishalManikandan1626/Task1/pulse","selectedLinks":["repo_graphs","repo_contributors","dependency_graph","dependabot_updates","pulse","people","community"],"popoverTarget":false,"commandId":"repositories:go-to-insights","reactNav":{"appTarget":null,"anchor":null},"turboNav":{"frame":"repo-content-turbo-frame"}},{"id":"settings","icon":"gear","label":"Settings","href":"/VishalManikandan1626/Task1/settings","selectedLinks":["code_review_limits","code_quality","codespaces_repository_settings","collaborators","custom_tabs","github_models_repo_settings","hooks","integration_installations","interaction_limits","issue_template_editor","key_links_settings","license_policy","notifications","repo_announcements","repo_branch_settings","repo_custom_properties","repo_keys_settings","repo_pages_settings","repo_protected_tags_settings","repo_rule_insights","repo_rule_insights_dashboard","repo_rules_bypass_requests","repo_rulesets","repo_settings_copilot_coding_guidelines","repo_settings_copilot_content_exclusion","repo_settings_copilot_mcp","repo_settings_copilot_swe_agent","repo_settings","reported_content","repository_actions_settings_add_new_runner","repository_actions_settings_general","repository_actions_settings_runner_details","repository_actions_settings_runners","repository_actions_settings","repository_actions_settings_policies","repository_actions_settings_oidc_configuration","repository_environments","role_details","secrets_settings_actions","secrets_settings_agents","secrets_settings_codespaces","secrets_settings_dependabot","secrets","security_analysis","security_products"],"popoverTarget":false,"commandId":"repositories:go-to-settings","reactNav":{"appTarget":null,"anchor":null},"turboNav":{"frame":"repo-content-turbo-frame"}}],"localNavigationUpdateChannel":"eyJjIjoicmVwbzoxMjc3NzMwNDc5OnVzZXI6MjEzODk2OTIwOnNldHRpbmdzIiwidCI6MTc4MjE5NjA4Nn0=--ae346b97596c21e8051409270465d24e622dd76566dd4e4883af479ba8f75117","selectedLink":null,"currentPath":"/VishalManikandan1626/Task1"},"userMenu":{"owner":{"login":"VishalManikandan1626","name":null,"avatarUrl":"https://avatars.githubusercontent.com/u/213896920?v=4"}},"headerLogo":{"href":"/","aria-label":"Homepage "},"notifications":{"indicatorMode":"none","websocketChannel":"eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MjEzODk2OTIwIiwidCI6MTc4MjE5NjA4Nn0=--94944608741d22790291ddda2f9fab22fda95e285c27b244ddbe650e667c21ef","fetchIndicatorSrc":"/notifications/indicator","fetchIndicatorEnabled":true},"issues":{"href":"/issues"},"pulls":{"href":"/pulls"},"contributedRepos":{"show":true,"href":"/repos"},"copilot":{"show":true,"showAgentsButton":false,"copilotChatUrl":"/github-copilot/chat?skip_anchor=true","copilotApiUrl":"https://api.individual.githubcopilot.com"},"search":{"show":true,"showCommandPalette":false,"isSearchPage":false,"isJumpToSearch":false,"searchContext":{"scope":"repo:VishalManikandan1626/Task1","current_repo_name":"Task1","current_repo_nwo":"VishalManikandan1626/Task1","user_id":"VishalManikandan1626"}},"enterpriseBanner":{"show":false},"globalTransactionalMessage":null,"payloadsUrl":"/_global-navigation/payloads.json?v=1"}}</script>
-  <div data-target="react-partial.reactRoot"><link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/213896920?v=4&amp;size=64"/><header role="banner" aria-label="Global Navigation Menu" class="GlobalNav styles-module__appHeader__YzYWk prc-Stack-Stack-UQ9k6" data-gap="none" data-direction="vertical" data-align="stretch" data-wrap="nowrap" data-justify="start" data-padding="none"><div class="prc-Stack-Stack-UQ9k6" data-direction="horizontal" data-align="center" data-wrap="nowrap" data-justify="center" data-padding="none"><div data-testid="top-nav-left" class="styles-module__left__Fylw7 styles-module__withLocalNavigation__rjTJ_ prc-Stack-Stack-UQ9k6" data-gap="condensed" data-direction="horizontal" data-align="stretch" data-wrap="nowrap" data-justify="start" data-padding="normal"><div data-loading-wrapper="true"><button data-component="IconButton" type="button" aria-haspopup="dialog" class="prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible" aria-labelledby="_R_apb_"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-three-bars" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"></path></svg></button></div><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true" id="_R_apb_">Open menu</span><a data-component="IconButton" type="button" class="prc-Button-ButtonBase-9n-Xk styles-module__appHeaderHome__nkA_U prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible" aria-labelledby="_R_cpb_" href="/" data-discover="true"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-mark-github" viewBox="0 0 24 24" width="32" height="32" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"></path></svg></a><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true"><span id="_R_cpb_">Homepage <span class="prc-src-InternalVisuallyHidden-2YaI6">(<!-- -->g then d<!-- -->)</span></span><span class="prc-TooltipV2-KeybindingHintContainer-Ymj-3 prc-TooltipV2-HasTextBefore-fdOXj" aria-hidden="true" data-component="Tooltip.KeybindingHintContainer"><kbd class="prc-KeybindingHint-KeybindingHint-qpYIs prc-Text-Text-9mHv3" data-testid="keybinding-hint" data-component="KeybindingHint"><span class="prc-components-Chord-DdhWN prc-components-ChordOnEmphasis-O-4BS prc-components-ChordSmall-c-P-x prc-Text-Text-9mHv3" data-kbd-chord="true"> <span class="prc-src-InternalVisuallyHidden-2YaI6">g</span><span aria-hidden="true">G</span></span><span class="prc-src-InternalVisuallyHidden-2YaI6">then</span> <span class="prc-components-Chord-DdhWN prc-components-ChordOnEmphasis-O-4BS prc-components-ChordSmall-c-P-x prc-Text-Text-9mHv3" data-kbd-chord="true"> <span class="prc-src-InternalVisuallyHidden-2YaI6">d</span><span aria-hidden="true">D</span></span></kbd></span></span><div class="d-none"></div></div><div data-testid="top-nav-center" class="styles-module__center__R3QRv styles-module__withLocalNavigation__rjTJ_ prc-Stack-Stack-UQ9k6" data-gap="condensed" data-direction="horizontal" data-align="stretch" data-wrap="nowrap" data-justify="start" data-padding="normal"><nav class="styles-module__contextRegion__VbSp2 prc-Breadcrumbs-BreadcrumbsBase-3Gb-B" aria-label="Breadcrumbs" data-overflow="menu" data-variant="normal" data-component="Breadcrumbs"><ol class="prc-Breadcrumbs-BreadcrumbsList-BKjpe"><li class="prc-Breadcrumbs-ItemWrapper-k0NLn"><a class="styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ" data-component="Breadcrumbs.Item" href="/VishalManikandan1626" data-discover="true"><span class="">VishalManikandan1626</span></a></li><li class="prc-Breadcrumbs-ItemWrapper-k0NLn"><a class="styles-module__contextCrumb__IzGIq styles-module__contextCrumbLast__tI2e3 styles-module__repoPickerCrumb__dk81Q prc-Breadcrumbs-Item-jcraJ" data-component="Breadcrumbs.Item" href="/VishalManikandan1626/Task1" data-discover="true">Task1</a><div class="d-none"></div><button data-component="IconButton" type="button" aria-haspopup="true" aria-expanded="false" tabindex="0" class="prc-Button-ButtonBase-9n-Xk styles-module__contextCrumb__IzGIq styles-module__repoPickerDropdownButton__WjHYX prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="small" data-variant="invisible" aria-labelledby="_R_rmj9b_" id="_R_3mj9b_"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-triangle-down" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></button><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true"><span id="_R_rmj9b_">Switch repository<span class="prc-src-InternalVisuallyHidden-2YaI6">(<!-- -->alt shift r<!-- -->)</span></span><span class="prc-TooltipV2-KeybindingHintContainer-Ymj-3 prc-TooltipV2-HasTextBefore-fdOXj" aria-hidden="true" data-component="Tooltip.KeybindingHintContainer"><kbd class="prc-KeybindingHint-KeybindingHint-qpYIs prc-Text-Text-9mHv3" data-testid="keybinding-hint" data-component="KeybindingHint"><span class="prc-components-Chord-DdhWN prc-components-ChordOnEmphasis-O-4BS prc-components-ChordSmall-c-P-x prc-Text-Text-9mHv3" data-kbd-chord="true"> <span class="prc-src-InternalVisuallyHidden-2YaI6">alt</span><span aria-hidden="true">Alt</span> <span class="prc-src-InternalVisuallyHidden-2YaI6">shift</span><span aria-hidden="true">⇧</span> <span class="prc-src-InternalVisuallyHidden-2YaI6">r</span><span aria-hidden="true">R</span></span></kbd></span></span></li></ol></nav><div class="Search-module__searchButtonGroup__aetw5 prc-ButtonGroup-ButtonGroup-vFUrY" data-component="ButtonGroup"><div><button data-component="Button" type="button" aria-label="Search or jump to…" class="prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ Search-module__searchButton__aiE0a" data-loading="false" data-size="medium" data-variant="invisible"><span data-component="buttonContent" data-align="center" class="prc-Button-ButtonContent-Iohp5"><span data-component="leadingVisual" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-search" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path></svg></span><span data-component="text" class="prc-Button-Label-FWkx3"><span class="Search-module__placeholder__p9hbG Search-module__text__veSYi Search-module__value__TFoak">Type <kbd class="Search-module__kbd__WCskr">/</kbd> to search</span></span></span></button></div><div></div></div><button data-component="IconButton" type="button" class="prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ Search-module__smallSearchButton___8Gvn prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible" aria-labelledby="_R_2l9b_"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-search" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path></svg></button><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true"><span id="_R_2l9b_">Search or jump to…<span class="prc-src-InternalVisuallyHidden-2YaI6">(<!-- -->forward slash<!-- -->)</span></span><span class="prc-TooltipV2-KeybindingHintContainer-Ymj-3 prc-TooltipV2-HasTextBefore-fdOXj" aria-hidden="true" data-component="Tooltip.KeybindingHintContainer"><kbd class="prc-KeybindingHint-KeybindingHint-qpYIs prc-Text-Text-9mHv3" data-testid="keybinding-hint" data-component="KeybindingHint"><span class="prc-components-Chord-DdhWN prc-components-ChordOnEmphasis-O-4BS prc-components-ChordSmall-c-P-x prc-Text-Text-9mHv3" data-kbd-chord="true"> <span class="prc-src-InternalVisuallyHidden-2YaI6">forward slash</span><span aria-hidden="true">/</span></span></kbd></span></span><div class="d-none"></div><div class="d-none"></div></div><div data-testid="top-nav-right" class="styles-module__right__mlBQg styles-module__withLocalNavigation__rjTJ_ prc-Stack-Stack-UQ9k6" data-gap="condensed" data-direction="horizontal" data-align="center" data-wrap="nowrap" data-justify="start" data-padding="normal"><div data-testid="top-bar-actions" class="prc-Stack-Stack-UQ9k6" data-gap="condensed" data-direction="horizontal" data-align="center" data-wrap="nowrap" data-justify="start" data-padding="none"><div class="hide-sm hide-md"><div class="CopilotItems-module__Wrapper__BFG9q"><div class="prc-ButtonGroup-ButtonGroup-vFUrY" data-component="ButtonGroup"><div><a data-component="IconButton" type="button" class="prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible" aria-labelledby="_R_akjpb_" href="/copilot" data-discover="true"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-copilot" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path></svg></a><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true" id="_R_akjpb_">Chat with Copilot</span></div><div><div class="d-none"></div><button data-component="ActionMenu.Button" type="button" aria-label="Open Copilot…" aria-haspopup="true" aria-expanded="false" tabindex="0" class="prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ CopilotItems-module__CopilotMenu__DVdfE" data-loading="false" data-size="medium" data-variant="invisible" id="_R_kkjpb_"><span data-component="buttonContent" data-align="center" class="prc-Button-ButtonContent-Iohp5"><span data-component="leadingVisual" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-copilot" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path></svg></span></span><span data-component="trailingAction" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-triangle-down" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></span></button></div></div></div></div><div class="styles-module__itemDivider__nunbs hide-sm hide-md"></div><button data-component="ActionMenu.Button" type="button" aria-haspopup="true" aria-expanded="false" tabindex="0" class="prc-Button-ButtonBase-9n-Xk GlobalCreateMenu-module__actionMenuButton__Hj_iB" data-loading="false" data-size="medium" data-variant="invisible" aria-labelledby="global-create-menu-tooltip-_R_1jpb_" id="_R_5jpb_"><span data-component="buttonContent" data-align="center" class="prc-Button-ButtonContent-Iohp5"><span data-component="leadingVisual" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-plus" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg></span></span><span data-component="trailingAction" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-triangle-down" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></span></button><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true" id="global-create-menu-tooltip-_R_1jpb_">Create new...</span><div class="hide-sm hide-md prc-Stack-Stack-UQ9k6" data-gap="condensed" data-direction="horizontal" data-align="center" data-wrap="nowrap" data-justify="start" data-padding="none"><a data-component="IconButton" type="button" class="prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible" aria-labelledby="_R_m3pb_" href="/issues" data-discover="true"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-issue-opened" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path></svg></a><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true" id="_R_m3pb_">All issues</span><a data-component="IconButton" type="button" class="prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible" aria-labelledby="_R_q3pb_" href="/pulls" data-discover="true"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-git-pull-request" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path></svg></a><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true" id="_R_q3pb_">All pull requests</span><a data-component="IconButton" type="button" class="prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible" aria-labelledby="_R_u3pb_" href="/repos" data-discover="true"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-repo" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg></a><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true" id="_R_u3pb_">All repositories</span><div class="d-none"></div></div></div><a data-component="IconButton" type="button" class="prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible" aria-labelledby="_R_lpb_" href="/notifications" data-discover="true"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-inbox" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z"></path></svg></a><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true"><span id="_R_lpb_">You have no unread notifications<span class="prc-src-InternalVisuallyHidden-2YaI6">(<!-- -->g then n<!-- -->)</span></span><span class="prc-TooltipV2-KeybindingHintContainer-Ymj-3 prc-TooltipV2-HasTextBefore-fdOXj" aria-hidden="true" data-component="Tooltip.KeybindingHintContainer"><kbd class="prc-KeybindingHint-KeybindingHint-qpYIs prc-Text-Text-9mHv3" data-testid="keybinding-hint" data-component="KeybindingHint"><span class="prc-components-Chord-DdhWN prc-components-ChordOnEmphasis-O-4BS prc-components-ChordSmall-c-P-x prc-Text-Text-9mHv3" data-kbd-chord="true"> <span class="prc-src-InternalVisuallyHidden-2YaI6">g</span><span aria-hidden="true">G</span></span><span class="prc-src-InternalVisuallyHidden-2YaI6">then</span> <span class="prc-components-Chord-DdhWN prc-components-ChordOnEmphasis-O-4BS prc-components-ChordSmall-c-P-x prc-Text-Text-9mHv3" data-kbd-chord="true"> <span class="prc-src-InternalVisuallyHidden-2YaI6">n</span><span aria-hidden="true">N</span></span></kbd></span></span><div class="d-none"></div><div class="GlobalNavUserMenu-module__container__NaVIt"><button data-component="IconButton" type="button" aria-haspopup="menu" data-login="VishalManikandan1626" class="prc-Button-ButtonBase-9n-Xk GlobalNavUserMenu-module__anchor__Dcej6 prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible" aria-labelledby="_R_2npb_"><img data-component="Avatar" class="prc-Avatar-Avatar-0xaUi" alt="User avatar" width="32" height="32" style="--avatarSize-regular:32px" src="https://avatars.githubusercontent.com/u/213896920?v=4&amp;size=64" data-testid="github-avatar"/></button><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true" id="_R_2npb_">Open user navigation menu</span></div></div></div><h2 class="prc-src-InternalVisuallyHidden-2YaI6">Repository navigation</h2><nav class="prc-components-UnderlineWrapper-eT-Yj LocalNavigation-module__LocalNavigation__b0Xc0" aria-label="Repository" data-variant="inset" data-overflow-measured="false"><ul class="prc-components-UnderlineItemList-xKlKC" role="list"><li class="prc-UnderlineNav-UnderlineNavItem-syRjR"><a href="/VishalManikandan1626/Task1" aria-current="page" data-tab-item="code" data-react-nav="code-view" data-react-nav-anchor="code-view-repo-link" data-turbo-frame="repo-content-turbo-frame" class="prc-components-UnderlineItem-7fP-n" data-discover="true"><span data-component="icon"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-code" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path></svg></span><span data-component="text" data-content="Code">Code</span></a></li><li class="prc-UnderlineNav-UnderlineNavItem-syRjR"><a href="/VishalManikandan1626/Task1/issues" data-tab-item="issues" data-react-nav="issues-react" data-turbo-frame="repo-content-turbo-frame" class="prc-components-UnderlineItem-7fP-n" data-discover="true"><span data-component="icon"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-issue-opened" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path></svg></span><span data-component="text" data-content="Issues">Issues</span></a></li><li class="prc-UnderlineNav-UnderlineNavItem-syRjR"><a href="/VishalManikandan1626/Task1/pulls" data-tab-item="pull-requests" data-turbo-frame="repo-content-turbo-frame" class="prc-components-UnderlineItem-7fP-n" data-discover="true"><span data-component="icon"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-git-pull-request" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path></svg></span><span data-component="text" data-content="Pull requests">Pull requests</span></a></li><li class="prc-UnderlineNav-UnderlineNavItem-syRjR"><a href="/VishalManikandan1626/Task1/actions" data-tab-item="actions" data-turbo-frame="repo-content-turbo-frame" class="prc-components-UnderlineItem-7fP-n" data-discover="true"><span data-component="icon"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-play" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773 4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z"></path></svg></span><span data-component="text" data-content="Actions">Actions</span></a></li><li class="prc-UnderlineNav-UnderlineNavItem-syRjR"><a href="/VishalManikandan1626/Task1/projects" data-tab-item="projects" data-turbo-frame="repo-content-turbo-frame" class="prc-components-UnderlineItem-7fP-n" data-discover="true"><span data-component="icon"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-table" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z"></path></svg></span><span data-component="text" data-content="Projects">Projects</span></a></li><li class="prc-UnderlineNav-UnderlineNavItem-syRjR"><a href="/VishalManikandan1626/Task1/wiki" data-tab-item="wiki" data-turbo-frame="repo-content-turbo-frame" class="prc-components-UnderlineItem-7fP-n" data-discover="true"><span data-component="icon"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-book" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path></svg></span><span data-component="text" data-content="Wiki">Wiki</span></a></li><li class="prc-UnderlineNav-UnderlineNavItem-syRjR"><a href="/VishalManikandan1626/Task1/security" data-tab-item="security-and-quality" data-turbo-frame="repo-content-turbo-frame" class="prc-components-UnderlineItem-7fP-n" data-discover="true"><span data-component="icon"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-shield" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg></span><span data-component="text" data-content="Security and quality">Security and quality</span></a></li><li class="prc-UnderlineNav-UnderlineNavItem-syRjR"><a href="/VishalManikandan1626/Task1/pulse" data-tab-item="insights" data-turbo-frame="repo-content-turbo-frame" class="prc-components-UnderlineItem-7fP-n" data-discover="true"><span data-component="icon"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-graph" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path></svg></span><span data-component="text" data-content="Insights">Insights</span></a></li><li class="prc-UnderlineNav-UnderlineNavItem-syRjR"><a href="/VishalManikandan1626/Task1/settings" data-tab-item="settings" data-turbo-frame="repo-content-turbo-frame" class="prc-components-UnderlineItem-7fP-n" data-discover="true"><span data-component="icon"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-gear" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M8 0a8.2 8.2 0 0 1 .701.031C9.444.095 9.99.645 10.16 1.29l.288 1.107c.018.066.079.158.212.224.231.114.454.243.668.386.123.082.233.09.299.071l1.103-.303c.644-.176 1.392.021 1.82.63.27.385.506.792.704 1.218.315.675.111 1.422-.364 1.891l-.814.806c-.049.048-.098.147-.088.294.016.257.016.515 0 .772-.01.147.038.246.088.294l.814.806c.475.469.679 1.216.364 1.891a7.977 7.977 0 0 1-.704 1.217c-.428.61-1.176.807-1.82.63l-1.102-.302c-.067-.019-.177-.011-.3.071a5.909 5.909 0 0 1-.668.386c-.133.066-.194.158-.211.224l-.29 1.106c-.168.646-.715 1.196-1.458 1.26a8.006 8.006 0 0 1-1.402 0c-.743-.064-1.289-.614-1.458-1.26l-.289-1.106c-.018-.066-.079-.158-.212-.224a5.738 5.738 0 0 1-.668-.386c-.123-.082-.233-.09-.299-.071l-1.103.303c-.644.176-1.392-.021-1.82-.63a8.12 8.12 0 0 1-.704-1.218c-.315-.675-.111-1.422.363-1.891l.815-.806c.05-.048.098-.147.088-.294a6.214 6.214 0 0 1 0-.772c.01-.147-.038-.246-.088-.294l-.815-.806C.635 6.045.431 5.298.746 4.623a7.92 7.92 0 0 1 .704-1.217c.428-.61 1.176-.807 1.82-.63l1.102.302c.067.019.177.011.3-.071.214-.143.437-.272.668-.386.133-.066.194-.158.211-.224l.29-1.106C6.009.645 6.556.095 7.299.03 7.53.01 7.764 0 8 0Zm-.571 1.525c-.036.003-.108.036-.137.146l-.289 1.105c-.147.561-.549.967-.998 1.189-.173.086-.34.183-.5.29-.417.278-.97.423-1.529.27l-1.103-.303c-.109-.03-.175.016-.195.045-.22.312-.412.644-.573.99-.014.031-.021.11.059.19l.815.806c.411.406.562.957.53 1.456a4.709 4.709 0 0 0 0 .582c.032.499-.119 1.05-.53 1.456l-.815.806c-.081.08-.073.159-.059.19.162.346.353.677.573.989.02.03.085.076.195.046l1.102-.303c.56-.153 1.113-.008 1.53.27.161.107.328.204.501.29.447.222.85.629.997 1.189l.289 1.105c.029.109.101.143.137.146a6.6 6.6 0 0 0 1.142 0c.036-.003.108-.036.137-.146l.289-1.105c.147-.561.549-.967.998-1.189.173-.086.34-.183.5-.29.417-.278.97-.423 1.529-.27l1.103.303c.109.029.175-.016.195-.045.22-.313.411-.644.573-.99.014-.031.021-.11-.059-.19l-.815-.806c-.411-.406-.562-.957-.53-1.456a4.709 4.709 0 0 0 0-.582c-.032-.499.119-1.05.53-1.456l.815-.806c.081-.08.073-.159.059-.19a6.464 6.464 0 0 0-.573-.989c-.02-.03-.085-.076-.195-.046l-1.102.303c-.56.153-1.113.008-1.53-.27a4.44 4.44 0 0 0-.501-.29c-.447-.222-.85-.629-.997-1.189l-.289-1.105c-.029-.11-.101-.143-.137-.146a6.6 6.6 0 0 0-1.142 0ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM9.5 8a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 8Z"></path></svg></span><span data-component="text" data-content="Settings">Settings</span></a></li></ul></nav><div class="d-none"></div></header><script type="application/json" id="__PRIMER_DATA__R_0___">{"resolvedServerColorMode":"day"}</script></div>
-</react-partial>
-
-
-      <div class="js-global-bar" style="display: none;">
-        
-
-
-<qbsearch-input class="search-input" data-scope="repo:VishalManikandan1626/Task1" data-custom-scopes-path="/search/custom_scopes" data-delete-custom-scopes-csrf="zLBGqWJkEevA4bpgPC430lAXGI8D3CyM5IaswoCcMiuU1b2e5QM2MT7a773IsMNl5OlTAJNw9fz2TbvYWw3Uvg" data-max-custom-scopes="10" data-header-redesign-enabled="true" data-initial-value="" data-blackbird-suggestions-path="/search/suggestions" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations" data-current-repository="VishalManikandan1626/Task1" data-current-org="" data-current-owner="VishalManikandan1626" data-logged-in="true" data-copilot-chat-enabled="false" data-nl-search-enabled="false">
-  <div
-    class="search-input-container search-with-dialog position-relative d-flex flex-row flex-items-center height-auto color-bg-transparent border-0 color-fg-subtle mx-0"
-    data-action="click:qbsearch-input#searchInputContainerClicked"
-  >
-
-    <input type="hidden" name="type" class="js-site-search-type-field">
-
-    
-<div class="Overlay--hidden " data-modal-dialog-overlay>
-  <modal-dialog data-action="close:qbsearch-input#handleClose cancel:qbsearch-input#handleClose" data-target="qbsearch-input.searchSuggestionsDialog" role="dialog" id="search-suggestions-dialog" aria-modal="true" aria-labelledby="search-suggestions-dialog-header" data-view-component="true" class="Overlay Overlay--width-medium Overlay--height-auto">
-      <h1 id="search-suggestions-dialog-header" class="sr-only">Search code, repositories, users, issues, pull requests...</h1>
-    <div class="Overlay-body Overlay-body--paddingNone">
-      
-          <div data-view-component="true">        <div class="search-suggestions position-absolute width-full color-shadow-large border color-fg-default color-bg-default overflow-hidden d-flex flex-column query-builder-container"
-          style="border-radius: 12px;"
-          data-target="qbsearch-input.queryBuilderContainer"
-          hidden
-        >
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="query-builder-test-form" action="" accept-charset="UTF-8" method="get">
-  <query-builder data-target="qbsearch-input.queryBuilder" id="query-builder-query-builder-test" data-filter-key=":" data-view-component="true" class="QueryBuilder search-query-builder">
-    <div class="FormControl FormControl--fullWidth">
-      <label id="query-builder-test-label" for="query-builder-test" class="FormControl-label sr-only">
-        Search
-      </label>
-      <div
-        class="QueryBuilder-StyledInput width-fit "
-        data-target="query-builder.styledInput"
-      >
-          <span id="query-builder-test-leadingvisual-wrap" class="FormControl-input-leadingVisualWrap QueryBuilder-leadingVisualWrap">
-            <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search FormControl-input-leadingVisual">
-    <path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path>
-</svg>
-          </span>
-        <div data-target="query-builder.styledInputContainer" class="QueryBuilder-StyledInputContainer">
-          <div
-            aria-hidden="true"
-            class="QueryBuilder-StyledInputContent"
-            data-target="query-builder.styledInputContent"
-          ></div>
-          <div class="QueryBuilder-InputWrapper">
-            <div aria-hidden="true" class="QueryBuilder-Sizer" data-target="query-builder.sizer"></div>
-            <input id="query-builder-test" name="query-builder-test" value="" autocomplete="off" type="text" role="combobox" spellcheck="false" aria-expanded="false" aria-describedby="validation-f3820408-e7ad-412c-8c0f-e838b1336753" data-target="query-builder.input" data-action="
-          input:query-builder#inputChange
-          blur:query-builder#inputBlur
-          keydown:query-builder#inputKeydown
-          focus:query-builder#inputFocus
-        " data-view-component="true" class="FormControl-input QueryBuilder-Input FormControl-medium" />
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div id="app" class="app">
+      <aside id="sidebar" class="sidebar" aria-label="Sidebar Navigation">
+        <div class="sidebar-top">
+          <div class="logo">
+            <div class="mark" aria-hidden="true">
+              <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 0.8L18.2 5.6V12.4L10 17.2L1.8 12.4V5.6L10 0.8Z"
+                  stroke="rgba(7,16,34,0.95)"
+                  stroke-width="1.2"
+                />
+                <path
+                  d="M10 2.7L16.3 6.4V11.6L10 15.3L3.7 11.6V6.4L10 2.7Z"
+                  fill="rgba(201,168,76,0.35)"
+                  stroke="rgba(201,168,76,0.8)"
+                  stroke-width="0.9"
+                />
+              </svg>
+            </div>
+            <div class="text">
+              <h1>NEXUS ZONE</h1>
+              <div class="sub">SEZ Registry & Control</div>
+            </div>
           </div>
         </div>
-          <span data-target="query-builder.clearButton" hidden>
-            <span class="sr-only" id="query-builder-test-clear">Clear</span>
-            <button role="button" id="query-builder-test-clear-button" aria-labelledby="query-builder-test-clear query-builder-test-label" data-action="
-                  click:query-builder#clear
-                  focus:query-builder#clearButtonFocus
-                  blur:query-builder#clearButtonBlur
-                " variant="small" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium mr-1 tmp-mr-1 px-2 tmp-px-2 py-0 tmp-py-0 d-flex flex-items-center rounded-1 color-fg-muted">  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x-circle-fill Button-visual">
-    <path d="M2.343 13.657A8 8 0 1 1 13.658 2.343 8 8 0 0 1 2.343 13.657ZM6.03 4.97a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042L6.94 8 4.97 9.97a.749.749 0 0 0 .326 1.275.749.749 0 0 0 .734-.215L8 9.06l1.97 1.97a.749.749 0 0 0 1.275-.326.749.749 0 0 0-.215-.734L9.06 8l1.97-1.97a.749.749 0 0 0-.326-1.275.749.749 0 0 0-.734.215L8 6.94Z"></path>
-</svg>
-</button>
 
-          </span>
-      </div>
-      <template id="search-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search">
-    <path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path>
-</svg>
-</template>
-
-<template id="code-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
-    <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-</template>
-
-<template id="file-code-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-code">
-    <path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0Zm1.72 4.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.47-1.47-1.47-1.47a.75.75 0 0 1 0-1.06ZM3.28 7.78 1.81 9.25l1.47 1.47a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-2-2a.75.75 0 0 1 0-1.06l2-2a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Zm8.22-6.218V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"></path>
-</svg>
-</template>
-
-<template id="history-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-history">
-    <path d="m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z"></path>
-</svg>
-</template>
-
-<template id="repo-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo">
-    <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-</svg>
-</template>
-
-<template id="bookmark-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-bookmark">
-    <path d="M3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.751.751 0 0 1 3 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-</template>
-
-<template id="plus-circle-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-plus-circle">
-    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7.25-3.25v2.5h2.5a.75.75 0 0 1 0 1.5h-2.5v2.5a.75.75 0 0 1-1.5 0v-2.5h-2.5a.75.75 0 0 1 0-1.5h2.5v-2.5a.75.75 0 0 1 1.5 0Z"></path>
-</svg>
-</template>
-
-<template id="circle-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill">
-    <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
-</svg>
-</template>
-
-<template id="trash-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-trash">
-    <path d="M11 1.75V3h2.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75ZM4.496 6.675l.66 6.6a.25.25 0 0 0 .249.225h5.19a.25.25 0 0 0 .249-.225l.66-6.6a.75.75 0 0 1 1.492.149l-.66 6.6A1.748 1.748 0 0 1 10.595 15h-5.19a1.75 1.75 0 0 1-1.741-1.575l-.66-6.6a.75.75 0 1 1 1.492-.15ZM6.5 1.75V3h3V1.75a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25Z"></path>
-</svg>
-</template>
-
-<template id="team-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-people">
-    <path d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z"></path>
-</svg>
-</template>
-
-<template id="project-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project">
-    <path d="M1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0ZM1.5 1.75v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25ZM11.75 3a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 1-1.5 0v-7.5a.75.75 0 0 1 .75-.75Zm-8.25.75a.75.75 0 0 1 1.5 0v5.5a.75.75 0 0 1-1.5 0ZM8 3a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 3Z"></path>
-</svg>
-</template>
-
-<template id="pencil-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil">
-    <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path>
-</svg>
-</template>
-
-<template id="copilot-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copilot">
-    <path d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path>
-</svg>
-</template>
-
-<template id="copilot-error-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copilot-error">
-    <path d="M16 11.24c0 .112-.072.274-.21.467L13 9.688V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-.198 0-.388-.009-.571-.029L6.833 5.226a4.01 4.01 0 0 0 .17-.782c.117-.935-.037-1.395-.241-1.614-.193-.206-.637-.413-1.682-.297-.683.076-1.115.231-1.395.415l-1.257-.91c.579-.564 1.413-.877 2.485-.996 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095Zm-5.083-8.707c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Zm2.511 11.074c-1.393.776-3.272 1.428-5.43 1.428-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.18-.455-.241-.963-.252-1.475L.31 4.107A.747.747 0 0 1 0 3.509V3.49a.748.748 0 0 1 .625-.73c.156-.026.306.047.435.139l14.667 10.578a.592.592 0 0 1 .227.264.752.752 0 0 1 .046.249v.022a.75.75 0 0 1-1.19.596Zm-1.367-.991L5.635 7.964a5.128 5.128 0 0 1-.889.073c-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433 1.539 0 3.089-.505 4.063-.934Z"></path>
-</svg>
-</template>
-
-<template id="workflow-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-workflow">
-    <path d="M0 1.75C0 .784.784 0 1.75 0h3.5C6.216 0 7 .784 7 1.75v3.5A1.75 1.75 0 0 1 5.25 7H4v4a1 1 0 0 0 1 1h4v-1.25C9 9.784 9.784 9 10.75 9h3.5c.966 0 1.75.784 1.75 1.75v3.5A1.75 1.75 0 0 1 14.25 16h-3.5A1.75 1.75 0 0 1 9 14.25v-.75H5A2.5 2.5 0 0 1 2.5 11V7h-.75A1.75 1.75 0 0 1 0 5.25Zm1.75-.25a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 0 0 .25-.25v-3.5a.25.25 0 0 0-.25-.25Zm9 9a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 0 0 .25-.25v-3.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-</template>
-
-<template id="book-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book">
-    <path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path>
-</svg>
-</template>
-
-<template id="code-review-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code-review">
-    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 13H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25v-8.5C0 1.784.784 1 1.75 1ZM1.5 2.75v8.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Zm5.28 1.72a.75.75 0 0 1 0 1.06L5.31 7l1.47 1.47a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-2-2a.75.75 0 0 1 0-1.06l2-2a.75.75 0 0 1 1.06 0Zm2.44 0a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.69 7 9.22 5.53a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-</template>
-
-<template id="codespaces-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-codespaces">
-    <path d="M0 11.25c0-.966.784-1.75 1.75-1.75h12.5c.966 0 1.75.784 1.75 1.75v3A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm2-9.5C2 .784 2.784 0 3.75 0h8.5C13.216 0 14 .784 14 1.75v5a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 2 6.75Zm1.75-.25a.25.25 0 0 0-.25.25v5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5a.25.25 0 0 0-.25-.25Zm-2 9.5a.25.25 0 0 0-.25.25v3c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-3a.25.25 0 0 0-.25-.25Z"></path><path d="M7 12.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm-4 0a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Z"></path>
-</svg>
-</template>
-
-<template id="comment-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-comment">
-    <path d="M1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0 1 13.25 12H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 13.543V12H2.75A1.75 1.75 0 0 1 1 10.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-</template>
-
-<template id="comment-discussion-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-comment-discussion">
-    <path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"></path>
-</svg>
-</template>
-
-<template id="organization-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-organization">
-    <path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path>
-</svg>
-</template>
-
-<template id="rocket-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-rocket">
-    <path d="M14.064 0h.186C15.216 0 16 .784 16 1.75v.186a8.752 8.752 0 0 1-2.564 6.186l-.458.459c-.314.314-.641.616-.979.904v3.207c0 .608-.315 1.172-.833 1.49l-2.774 1.707a.749.749 0 0 1-1.11-.418l-.954-3.102a1.214 1.214 0 0 1-.145-.125L3.754 9.816a1.218 1.218 0 0 1-.124-.145L.528 8.717a.749.749 0 0 1-.418-1.11l1.71-2.774A1.748 1.748 0 0 1 3.31 4h3.204c.288-.338.59-.665.904-.979l.459-.458A8.749 8.749 0 0 1 14.064 0ZM8.938 3.623h-.002l-.458.458c-.76.76-1.437 1.598-2.02 2.5l-1.5 2.317 2.143 2.143 2.317-1.5c.902-.583 1.74-1.26 2.499-2.02l.459-.458a7.25 7.25 0 0 0 2.123-5.127V1.75a.25.25 0 0 0-.25-.25h-.186a7.249 7.249 0 0 0-5.125 2.123ZM3.56 14.56c-.732.732-2.334 1.045-3.005 1.148a.234.234 0 0 1-.201-.064.234.234 0 0 1-.064-.201c.103-.671.416-2.273 1.15-3.003a1.502 1.502 0 1 1 2.12 2.12Zm6.94-3.935c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 0 0 .119-.213ZM3.678 8.116 5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 0 0-.213.119l-1.2 1.95ZM12 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
-</svg>
-</template>
-
-<template id="shield-check-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-shield-check">
-    <path d="m8.533.133 5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667l5.25-1.68a1.748 1.748 0 0 1 1.066 0Zm-.61 1.429.001.001-5.25 1.68a.251.251 0 0 0-.174.237V7c0 1.36.275 2.666 1.057 3.859.784 1.194 2.121 2.342 4.366 3.298a.196.196 0 0 0 .154 0c2.245-.957 3.582-2.103 4.366-3.297C13.225 9.666 13.5 8.358 13.5 7V3.48a.25.25 0 0 0-.174-.238l-5.25-1.68a.25.25 0 0 0-.153 0ZM11.28 6.28l-3.5 3.5a.75.75 0 0 1-1.06 0l-1.5-1.5a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l.97.97 2.97-2.97a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path>
-</svg>
-</template>
-
-<template id="heart-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart">
-    <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
-</svg>
-</template>
-
-<template id="server-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-server">
-    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v4c0 .372-.116.717-.314 1 .198.283.314.628.314 1v4a1.75 1.75 0 0 1-1.75 1.75H1.75A1.75 1.75 0 0 1 0 12.75v-4c0-.358.109-.707.314-1a1.739 1.739 0 0 1-.314-1v-4C0 1.784.784 1 1.75 1ZM1.5 2.75v4c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-4a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Zm.25 5.75a.25.25 0 0 0-.25.25v4c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-4a.25.25 0 0 0-.25-.25ZM7 4.75A.75.75 0 0 1 7.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5A.75.75 0 0 1 7 4.75ZM7.75 10h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM3 4.75A.75.75 0 0 1 3.75 4h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 4.75ZM3.75 10h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path>
-</svg>
-</template>
-
-<template id="globe-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-globe">
-    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM5.78 8.75a9.64 9.64 0 0 0 1.363 4.177c.255.426.542.832.857 1.215.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a9.927 9.927 0 0 0-.857 1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.507 6.507 0 0 0 4.666 5.5c-.123-.181-.24-.365-.352-.552-.715-1.192-1.437-2.874-1.581-4.948Zm-2.733-1.5h2.733c.144-2.074.866-3.756 1.58-4.948.12-.197.237-.381.353-.552a6.507 6.507 0 0 0-4.666 5.5Zm10.181 1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.507 6.507 0 0 0 4.666-5.5Zm2.733-1.5a6.507 6.507 0 0 0-4.666-5.5c.123.181.24.365.353.552.714 1.192 1.436 2.874 1.58 4.948Z"></path>
-</svg>
-</template>
-
-<template id="issue-opened-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-issue-opened">
-    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
-</svg>
-</template>
-
-<template id="device-mobile-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-device-mobile">
-    <path d="M3.75 0h8.5C13.216 0 14 .784 14 1.75v12.5A1.75 1.75 0 0 1 12.25 16h-8.5A1.75 1.75 0 0 1 2 14.25V1.75C2 .784 2.784 0 3.75 0ZM3.5 1.75v12.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM8 13a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
-</svg>
-</template>
-
-<template id="package-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-package">
-    <path d="m8.878.392 5.25 3.045c.54.314.872.89.872 1.514v6.098a1.75 1.75 0 0 1-.872 1.514l-5.25 3.045a1.75 1.75 0 0 1-1.756 0l-5.25-3.045A1.75 1.75 0 0 1 1 11.049V4.951c0-.624.332-1.201.872-1.514L7.122.392a1.75 1.75 0 0 1 1.756 0ZM7.875 1.69l-4.63 2.685L8 7.133l4.755-2.758-4.63-2.685a.248.248 0 0 0-.25 0ZM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432Zm6.25 8.271 4.625-2.683a.25.25 0 0 0 .125-.216V5.677L8.75 8.432Z"></path>
-</svg>
-</template>
-
-<template id="credit-card-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-credit-card">
-    <path d="M10.75 9a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5h-1.5Z"></path><path d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25ZM14.5 6.5h-13v5.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Zm0-2.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25V5h13Z"></path>
-</svg>
-</template>
-
-<template id="play-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-play">
-    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773 4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z"></path>
-</svg>
-</template>
-
-<template id="gift-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-gift">
-    <path d="M2 2.75A2.75 2.75 0 0 1 4.75 0c.983 0 1.873.42 2.57 1.232.268.318.497.668.68 1.042.183-.375.411-.725.68-1.044C9.376.42 10.266 0 11.25 0a2.75 2.75 0 0 1 2.45 4h.55c.966 0 1.75.784 1.75 1.75v2c0 .698-.409 1.301-1 1.582v4.918A1.75 1.75 0 0 1 13.25 16H2.75A1.75 1.75 0 0 1 1 14.25V9.332C.409 9.05 0 8.448 0 7.75v-2C0 4.784.784 4 1.75 4h.55c-.192-.375-.3-.8-.3-1.25ZM7.25 9.5H2.5v4.75c0 .138.112.25.25.25h4.5Zm1.5 0v5h4.5a.25.25 0 0 0 .25-.25V9.5Zm0-4V8h5.5a.25.25 0 0 0 .25-.25v-2a.25.25 0 0 0-.25-.25Zm-7 0a.25.25 0 0 0-.25.25v2c0 .138.112.25.25.25h5.5V5.5h-5.5Zm3-4a1.25 1.25 0 0 0 0 2.5h2.309c-.233-.818-.542-1.401-.878-1.793-.43-.502-.915-.707-1.431-.707ZM8.941 4h2.309a1.25 1.25 0 0 0 0-2.5c-.516 0-1 .205-1.43.707-.337.392-.646.975-.879 1.793Z"></path>
-</svg>
-</template>
-
-<template id="code-square-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code-square">
-    <path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25Zm7.47 3.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L10.69 8 9.22 6.53a.75.75 0 0 1 0-1.06ZM6.78 6.53 5.31 8l1.47 1.47a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-2-2a.75.75 0 0 1 0-1.06l2-2a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path>
-</svg>
-</template>
-
-<template id="device-desktop-icon">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-device-desktop">
-    <path d="M14.25 1c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0 1 14.25 12h-3.727c.099 1.041.52 1.872 1.292 2.757A.752.752 0 0 1 11.25 16h-6.5a.75.75 0 0 1-.565-1.243c.772-.885 1.192-1.716 1.292-2.757H1.75A1.75 1.75 0 0 1 0 10.25v-7.5C0 1.784.784 1 1.75 1ZM1.75 2.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25ZM9.018 12H6.982a5.72 5.72 0 0 1-.765 2.5h3.566a5.72 5.72 0 0 1-.765-2.5Z"></path>
-</svg>
-</template>
-
-        <div class="position-relative">
-                        <ul
-              role="listbox"
-              class="ActionListWrap QueryBuilder-ListWrap"
-              aria-label="Suggestions"
-              data-action="
-                combobox-commit:query-builder#comboboxCommit
-                mousedown:query-builder#resultsMousedown
-              "
-              data-target="query-builder.resultsList"
-              data-persist-list=false
-              id="query-builder-test-results"
-              tabindex="-1"
-            ></ul>
-
+        <div class="role-badge">
+          <span aria-hidden="true">🛡️</span>
+          <span>GOD MODE — Super Admin</span>
         </div>
-      <div class="FormControl-inlineValidation" id="validation-f3820408-e7ad-412c-8c0f-e838b1336753" hidden="hidden">
-        <span class="FormControl-inlineValidation--visual">
-          <svg aria-hidden="true" data-component="Octicon" height="12" viewBox="0 0 12 12" version="1.1" width="12" data-view-component="true" class="octicon octicon-alert-fill">
-    <path d="M4.855.708c.5-.896 1.79-.896 2.29 0l4.675 8.351a1.312 1.312 0 0 1-1.146 1.954H1.33A1.313 1.313 0 0 1 .183 9.058ZM7 7V3H5v4Zm-1 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
-</svg>
-        </span>
-        <span></span>
-</div>    </div>
-    <div data-target="query-builder.screenReaderFeedback" aria-live="polite" aria-atomic="true" class="sr-only"></div>
-</query-builder></form>
-          <div class="d-flex flex-row color-fg-muted tmp-px-3 text-small color-bg-default search-feedback-prompt">
-            <a target="_blank" href="https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax" data-view-component="true" class="Link color-fg-accent text-normal ml-2 tmp-ml-2">Search syntax tips</a>            <div class="d-flex flex-1"></div>
-              <button data-action="click:qbsearch-input#showFeedbackDialog" type="button" data-view-component="true" class="Button--link Button--medium Button color-fg-accent text-normal ml-2 tmp-ml-2">  <span class="Button-content">
-    <span class="Button-label">Give feedback</span>
-  </span>
-</button>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-btn active" data-view="dashboard" type="button">
+            <span class="icon" aria-hidden="true">🏠</span>
+            <span class="label">Dashboard</span>
+          </button>
+          <button class="nav-btn" data-view="registry" type="button">
+            <span class="icon" aria-hidden="true">🏢</span>
+            <span class="label">Business Registry</span>
+          </button>
+          <button class="nav-btn" data-view="applications" type="button">
+            <span class="icon" aria-hidden="true">📋</span>
+            <span class="label">Applications & Approvals</span>
+          </button>
+          <button class="nav-btn" data-view="licenses" type="button">
+            <span class="icon" aria-hidden="true">🪪</span>
+            <span class="label">License Management</span>
+          </button>
+          <button class="nav-btn" data-view="investors" type="button">
+            <span class="icon" aria-hidden="true">👤</span>
+            <span class="label">Investor Profiles</span>
+          </button>
+          <button class="nav-btn" data-view="infrastructure" type="button">
+            <span class="icon" aria-hidden="true">🏗️</span>
+            <span class="label">Zone Infrastructure</span>
+          </button>
+          <button class="nav-btn" data-view="fees" type="button">
+            <span class="icon" aria-hidden="true">💰</span>
+            <span class="label">Fees & Invoicing</span>
+          </button>
+          <button class="nav-btn" data-view="compliance" type="button">
+            <span class="icon" aria-hidden="true">🔍</span>
+            <span class="label">Compliance & Audits</span>
+          </button>
+          <button class="nav-btn" data-view="analytics" type="button">
+            <span class="icon" aria-hidden="true">📊</span>
+            <span class="label">Analytics & Reports</span>
+          </button>
+          <button class="nav-btn" data-view="settings" type="button">
+            <span class="icon" aria-hidden="true">⚙️</span>
+            <span class="label">System Settings</span>
+          </button>
+          <button class="nav-btn" data-view="portal" type="button">
+            <span class="icon" aria-hidden="true">🌐</span>
+            <span class="label">Portal Configuration</span>
+          </button>
+          <button class="nav-btn" data-view="permissions" type="button">
+            <span class="icon" aria-hidden="true">🔐</span>
+            <span class="label">Access & Permissions</span>
+          </button>
+        </nav>
+      </aside>
+
+      <div id="sidebarBackdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+      <div class="main">
+        <div class="mobile-topbar">
+          <button id="mobileMenuBtn" class="hamburger" type="button">☰</button>
+          <div class="section-title" style="margin:0;font-size:20px;">NEXUS ZONE</div>
+          <button id="mobileGodBtn" class="hamburger" type="button" title="Open God Mode Console (G)">⚡</button>
+        </div>
+
+        <header class="topbar" aria-label="Top Bar">
+          <div class="topbar-left">
+            <div class="welcome">
+              <div id="topbarTitle" class="title">Welcome back, Administrator</div>
+              <div id="topbarDate" class="date">—</div>
+            </div>
           </div>
-        </div>
-</div>
 
-    </div>
-</modal-dialog></div>
-  </div>
-  <div data-action="click:qbsearch-input#retract" class="dark-backdrop position-fixed" hidden data-target="qbsearch-input.darkBackdrop"></div>
-  <div class="color-fg-default">
-    
-<dialog-helper>
-  <dialog data-target="qbsearch-input.feedbackDialog" data-action="close:qbsearch-input#handleDialogClose cancel:qbsearch-input#handleDialogClose" id="feedback-dialog" aria-modal="true" aria-labelledby="feedback-dialog-title" aria-describedby="feedback-dialog-description" data-view-component="true" class="Overlay Overlay-whenNarrow Overlay--size-medium Overlay--motion-scaleFade Overlay--disableScroll">
-    <div data-view-component="true" class="Overlay-header">
-  <div class="Overlay-headerContentWrap">
-    <div class="Overlay-titleWrap">
-      <h1 class="Overlay-title " id="feedback-dialog-title">
-        Provide feedback
-      </h1>
-        
-    </div>
-    <div class="Overlay-actionWrap">
-      <button data-close-dialog-id="feedback-dialog" aria-label="Close" aria-label="Close" type="button" data-view-component="true" class="close-button Overlay-closeButton"><svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg></button>
-    </div>
-  </div>
-  
-</div>
-      <scrollable-region data-labelled-by="feedback-dialog-title">
-        <div data-view-component="true" class="Overlay-body">        <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="code-search-feedback-form" data-turbo="false" action="/search/feedback" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="QUGRian1_l7NHEAndxfwBjIA-9X7co5LqybOWHCTia34NB56PZtgsAO0AkPlHqvJ2k3TxIs-suS1QZTDX7PP5w" />
-          <p>We read every piece of feedback, and take your input very seriously.</p>
-          <textarea name="feedback" class="form-control width-full mb-2" style="height: 120px" id="feedback"></textarea>
-          <input name="include_email" id="include_email" aria-label="Include my email address so I can be contacted" class="form-control mr-2" type="checkbox">
-          <label for="include_email" style="font-weight: normal">Include my email address so I can be contacted</label>
-</form></div>
-      </scrollable-region>
-      <div data-view-component="true" class="Overlay-footer Overlay-footer--alignEnd">          <button data-close-dialog-id="feedback-dialog" type="button" data-view-component="true" class="btn">    Cancel
-</button>
-          <button form="code-search-feedback-form" data-action="click:qbsearch-input#submitFeedback" type="submit" data-view-component="true" class="btn-primary btn">    Submit feedback
-</button>
-</div>
-</dialog></dialog-helper>
-
-    <custom-scopes data-target="qbsearch-input.customScopesManager">
-    
-<dialog-helper>
-  <dialog data-target="custom-scopes.customScopesModalDialog" data-action="close:qbsearch-input#handleDialogClose cancel:qbsearch-input#handleDialogClose" id="custom-scopes-dialog" aria-modal="true" aria-labelledby="custom-scopes-dialog-title" aria-describedby="custom-scopes-dialog-description" data-view-component="true" class="Overlay Overlay-whenNarrow Overlay--size-medium Overlay--motion-scaleFade Overlay--disableScroll">
-    <div data-view-component="true" class="Overlay-header Overlay-header--divided">
-  <div class="Overlay-headerContentWrap">
-    <div class="Overlay-titleWrap">
-      <h1 class="Overlay-title " id="custom-scopes-dialog-title">
-        Saved searches
-      </h1>
-        <h2 id="custom-scopes-dialog-description" class="Overlay-description">Use saved searches to filter your results more quickly</h2>
-    </div>
-    <div class="Overlay-actionWrap">
-      <button data-close-dialog-id="custom-scopes-dialog" aria-label="Close" aria-label="Close" type="button" data-view-component="true" class="close-button Overlay-closeButton"><svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg></button>
-    </div>
-  </div>
-  
-</div>
-      <scrollable-region data-labelled-by="custom-scopes-dialog-title">
-        <div data-view-component="true" class="Overlay-body">        <div data-target="custom-scopes.customScopesModalDialogFlash"></div>
-
-        <div hidden class="create-custom-scope-form" data-target="custom-scopes.createCustomScopeForm">
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="custom-scopes-dialog-form" data-turbo="false" action="/search/custom_scopes" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="iZpJgNc869Y6eoCdNwomxXysMH78o6ljUUZMRvLEjL532wU9Hc-bGBp9YiDLk9mRkm3A6AiNDuj_8e9akfahDw" />
-          <div data-target="custom-scopes.customScopesModalDialogFlash"></div>
-
-          <input type="hidden" id="custom_scope_id" name="custom_scope_id" data-target="custom-scopes.customScopesIdField">
-
-          <div class="form-group">
-            <label for="custom_scope_name">Name</label>
-            <auto-check src="/search/custom_scopes/check_name" required>
+          <div class="topbar-mid">
+            <div class="search" role="search">
+              <span class="lens" aria-hidden="true">⌕</span>
               <input
-                type="text"
-                name="custom_scope_name"
-                id="custom_scope_name"
-                data-target="custom-scopes.customScopesNameField"
-                class="form-control"
+                id="globalSearch"
+                type="search"
+                placeholder="Global Search: companies, investors, licenses, invoices..."
                 autocomplete="off"
-                placeholder="github-ruby"
-                required
-                maxlength="50">
-              <input type="hidden" value="n-F6B6RwsHCT9BJOHUpLZJ_6RXVCJ7ME1b3FgcdrX3M-r0MplkayGP23wzyoMdep2IjrLI0Eny7dXCcRF1JpRQ" data-csrf="true" />
-            </auto-check>
+              />
+              <div id="searchResults" class="search-results" role="listbox"></div>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="custom_scope_query">Query</label>
-            <input
-              type="text"
-              name="custom_scope_query"
-              id="custom_scope_query"
-              data-target="custom-scopes.customScopesQueryField"
-              class="form-control"
-              autocomplete="off"
-              placeholder="(repo:mona/a OR repo:mona/b) AND lang:python"
-              required
-              maxlength="500">
-          </div>
-
-          <p class="text-small color-fg-muted">
-            To see all available qualifiers, see our <a class="Link--inTextBlock" href="https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax">documentation</a>.
-          </p>
-</form>        </div>
-
-        <div data-target="custom-scopes.manageCustomScopesForm">
-          <div data-target="custom-scopes.list"></div>
-        </div>
-
-</div>
-      </scrollable-region>
-      <div data-view-component="true" class="Overlay-footer Overlay-footer--alignEnd Overlay-footer--divided">          <button data-action="click:custom-scopes#customScopesCancel" type="button" data-view-component="true" class="btn">    Cancel
-</button>
-          <button form="custom-scopes-dialog-form" data-action="click:custom-scopes#customScopesSubmit" data-target="custom-scopes.customScopesSubmitButton" type="submit" data-view-component="true" class="btn-primary btn">    Create saved search
-</button>
-</div>
-</dialog></dialog-helper>
-    </custom-scopes>
-  </div>
-</qbsearch-input>  <input type="hidden" value="JQQWREnggd1BBUopccZrUlkUl5rEYJ-4XgQ2o9irl2xvTN6IeHt2uHtQvQX7YlVHPznOaVOTCZe9-arwUwDfmw" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
-
-
-      </div>
-
-
-      <div hidden="hidden" data-view-component="true" class="js-stale-session-flash stale-session-flash flash flash-warn flash-full">
-  
-        <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
-    <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
-</svg>
-        <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
-        <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
-        <span class="js-stale-session-flash-switched" hidden>You switched accounts on another tab or window. <a class="Link--inTextBlock" href="">Reload</a> to refresh your session.</span>
-
-    <button id="icon-button-48082d49-fdc6-423f-bc44-c9527aed0ea1" aria-labelledby="tooltip-c2128cc1-22e3-426b-939a-7146b31efa03" type="button" data-view-component="true" class="Button Button--iconOnly Button--invisible Button--medium flash-close js-flash-close">  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x Button-visual">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-</button><tool-tip id="tooltip-c2128cc1-22e3-426b-939a-7146b31efa03" for="icon-button-48082d49-fdc6-423f-bc44-c9527aed0ea1" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Dismiss alert</tool-tip>
-
-
-  
-</div>
-        
-          <include-fragment src="/in-product-messaging/copilot-budget-request-banner" data-nonce="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d" data-view-component="true">
-  
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment>
-
-          
-    </div>
-
-  <div id="start-of-content" class="show-on-focus"></div>
-
-
-
-
-
-
-
-
-    <div id="js-flash-container" class="flash-container" data-turbo-replace>
-
-
-
-
-  <template class="js-flash-template">
-    
-<div class="flash flash-full   {{ className }}">
-  <div >
-    <button autofocus class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
-      <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-    </button>
-    <div aria-atomic="true" role="alert" class="js-flash-alert">
-      
-      <div>{{ message }}</div>
-
-    </div>
-  </div>
-</div>
-  </template>
-</div>
-
-
-    
-  <notification-shelf-watcher data-base-url="https://github.com/notifications/beta/shelf" data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6MjEzODk2OTIwIiwidCI6MTc4MjE5NjA4N30=--99205321383fa0cd54b7d30201cfe8ae694ee73da29f4d0b451c62575ea5bef3" data-view-component="true" class="js-socket-channel"></notification-shelf-watcher>
-  <div hidden data-initial data-target="notification-shelf-watcher.placeholder"></div>
-
-
-
-
-
-
-  <div
-    class="application-main "
-    data-commit-hovercards-enabled
-    data-discussion-hovercards-enabled
-    data-issue-and-pr-hovercards-enabled
-    data-project-hovercards-enabled
-  >
-        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
-    <main id="js-repo-pjax-container" >
-      
-      
-
-
-
-
-
-
-
-    
-  <div id="repository-container-header" data-turbo-replace hidden ></div>
-
-
-
-<turbo-frame id="repo-content-turbo-frame" target="_top" data-turbo-action="advance" class="">
-    <div id="repo-content-pjax-container" class="repository-content " >
-      <a href="https://github.dev/" class="d-none js-github-dev-shortcut" data-hotkey=".,Mod+Alt+.">Open in github.dev</a>
-  <a href="https://github.dev/" class="d-none js-github-dev-new-tab-shortcut" data-hotkey="Shift+&gt;" target="_blank" rel="noopener noreferrer">Open in a new github.dev tab</a>
-    <a class="d-none" data-hotkey=",,Mod+Alt+," target="_blank" href="/codespaces/new/VishalManikandan1626/Task1?resume=1">Open in codespace</a>
-
-
-
-
-    
-      
-    
-
-
-
-
-
-
-
-
-<react-app
-  app-name="code-view"
-  initial-path="/VishalManikandan1626/Task1"
-  style="display: block; min-height: calc(100vh - 64px);"
-  data-attempted-ssr="true"
-  data-ssr="true"
-  data-lazy="false"
-  data-alternate="false"
-  data-data-router-enabled="true"
-  data-react-profiling="false"
->
-  
-  <script type="application/json" data-target="react-app.embeddedData">{"payload":{"codeViewRepoRoute":{"path":"/","refInfo":{"name":"main","listCacheKey":"v0:1782195981.0","canEdit":true,"refType":"branch","currentOid":"8299eccca4f9d44c19f4509f734029a8872770ea"},"tree":{"items":[{"name":"README.md","path":"README.md","contentType":"file"},{"name":"nexus-zone.html","path":"nexus-zone.html","contentType":"file"}],"totalCount":2,"templateDirectorySuggestionUrl":null,"readme":null,"showBranchInfobar":false},"userNameDisplayConfiguration":null,"treeExpanded":false,"symbolsExpanded":false,"copilotSWEAgentEnabled":false,"isOverview":true,"overview":{"banners":{"shouldRecommendReadme":true,"isPersonalRepo":false,"showUseActionBanner":false,"actionSlug":null,"actionId":null,"showProtectBranchBanner":false,"transactionalMessageBanner":null,"publishBannersInfo":{"dismissActionNoticePath":"/settings/dismiss-notice/publish_action_from_repo","releasePath":"/VishalManikandan1626/Task1/releases/new?marketplace=true","showPublishActionBanner":false},"interactionLimitBanner":null,"showInvitationBanner":false,"inviterName":null,"actionsMigrationBannerInfo":{"releaseTags":[],"showImmutableActionsMigrationBanner":false,"initialMigrationStatus":null},"copilotSurveyBanner":null,"showSpammyBanner":false,"blockedContributorsBanner":null},"codeButton":{"contactPath":"/contact","isEnterprise":false,"local":{"protocolInfo":{"httpAvailable":true,"sshAvailable":true,"httpUrl":"https://github.com/VishalManikandan1626/Task1.git","showCloneWarning":true,"sshUrl":"git@github.com:VishalManikandan1626/Task1.git","sshCertificatesRequired":false,"sshCertificatesAvailable":null,"ghCliUrl":"gh repo clone VishalManikandan1626/Task1","defaultProtocol":"http","newSshKeyUrl":"/settings/ssh/new","setProtocolPath":"/users/set_protocol?protocol_type=push"},"platformInfo":{"cloneUrl":"https://desktop.github.com","showVisualStudioCloneButton":false,"visualStudioCloneUrl":"https://windows.github.com","showXcodeCloneButton":false,"xcodeCloneUrl":"xcode://clone?repo=https%3A%2F%2Fgithub.com%2FVishalManikandan1626%2FTask1","zipballUrl":"/VishalManikandan1626/Task1/archive/refs/heads/main.zip"}},"repoPolicyInfo":{"allowed":true,"canBill":true,"changesWouldBeSafe":true,"disabledByBusiness":false,"disabledByOrganization":false,"hasIpAllowLists":false},"currentUserIsEnterpriseManaged":false,"enterpriseManagedBusinessName":null,"codespacesEnabled":true,"hasAccessToCodespaces":true},"popovers":{"rename":null,"renamedParentRepo":null},"commitCount":"2","overviewFiles":[{"displayName":"README.md","repoName":"Task1","refName":"main","path":"README.md","preferredFileType":"readme","tabName":"README","richText":"\u003carticle class=\"markdown-body entry-content container-lg\" itemprop=\"text\"\u003e\u003cdiv class=\"markdown-heading\" dir=\"auto\"\u003e\u003ch1 tabindex=\"-1\" class=\"heading-element\" dir=\"auto\"\u003eTask1\u003c/h1\u003e\u003ca id=\"user-content-task1\" class=\"anchor\" aria-label=\"Permalink: Task1\" href=\"#task1\"\u003e\u003csvg data-component=\"Octicon\" class=\"octicon octicon-link\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"\u003e\u003cpath d=\"m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z\"\u003e\u003c/path\u003e\u003c/svg\u003e\u003c/a\u003e\u003c/div\u003e\n\u003c/article\u003e","loaded":true,"timedOut":false,"errorMessage":null,"headerInfo":{"toc":[{"level":1,"text":"Task1","anchor":"task1","htmlText":"Task1"}],"siteNavLoginPath":"/login?return_to=https%3A%2F%2Fgithub.com%2FVishalManikandan1626%2FTask1"}}],"overviewFilesProcessingTime":0,"copilotSWEAgentEnabled":false,"createFromTemplatePath":"/new?template_name=Task1\u0026template_owner=VishalManikandan1626"}},"codeViewLayoutRoute":{"repo":{"id":1277730479,"defaultBranch":"main","name":"Task1","ownerLogin":"VishalManikandan1626","currentUserCanPush":true,"isFork":false,"isEmpty":false,"createdAt":"2026-06-23T11:56:20.000+05:30","ownerAvatar":"https://avatars.githubusercontent.com/u/213896920?v=4","public":true,"private":false,"isOrgOwned":false},"currentUser":{"id":213896920,"login":"VishalManikandan1626","userEmail":"vishalmanikandanpvmkrct@gmail.com"},"uploadToken":"2cNgFBIK-DIS6u_sgB35iGwQ-paehjHr5mrbV1icUZGlv2aY-mKlmXd9DwsVJjUx75ilm1OQ-jYSl-_G6iUt2Q","allShortcutsEnabled":true,"treeExpanded":true,"path":"/","symbolsExpanded":false,"refInfo":{"name":"main","listCacheKey":"v0:1782195981.0","canEdit":false,"currentOid":"8299eccca4f9d44c19f4509f734029a8872770ea"},"helpUrl":"https://docs.github.com","findFileWorkerPath":"/assets-cdn/worker/find-file-worker-fcacb4fa59227001.js","findInFileWorkerPath":"/assets-cdn/worker/find-in-file-worker-8ed176d2722ab594.js","githubDevUrl":"https://github.dev/"},"csrf_tokens":{"/VishalManikandan1626/Task1/branches":{"post":"Ec4kqbviMa7wNca_KjkJ-QQEB7HHPXDxSmV1obxa0_nGTVJT3cEEoLLSSzszLyUpXvcXf2B0iiFgUfAQEHhIqQ"}}},"title":"VishalManikandan1626/Task1","appPayload":{},"meta":{"title":"VishalManikandan1626/Task1"}}</script>
-  <div data-target="react-app.reactRoot"><meta name="github-code-view-meta-stats" id="github-code-view-meta-stats" data-hydrostats="publish"/> <!-- --> <a hidden="" id="code-view-repo-link" href="/VishalManikandan1626/Task1" data-discover="true"></a> <div class="d-none"></div><div><div style="--spacing:var(--spacing-none)" class="prc-PageLayout-PageLayoutRoot--KH-d" data-component="PageLayout"><div class="prc-PageLayout-PageLayoutWrapper-2BhU2" data-width="full"><div class="prc-PageLayout-PageLayoutContent-BneH9"><div data-component="PageLayout.Content" class="prc-PageLayout-ContentWrapper-gR9eG" data-is-hidden-narrow="false"><div class="prc-PageLayout-Content-xWL-A" data-width="full" style="--spacing:var(--spacing-none)"><div class="SharedPageLayout-module__content__IwGAp" data-selector="repos-split-pane-content" tabindex="0"><div style="--spacing:var(--spacing-none)" class="prc-PageLayout-PageLayoutRoot--KH-d container-xl" data-component="PageLayout"><div class="prc-PageLayout-PageLayoutWrapper-2BhU2" data-width="full"><header data-component="PageLayout.Header" data-hidden="false" class="prc-PageLayout-Header-0of-R tmp-px-3 tmp-px-lg-5" style="--spacing:var(--spacing-none)"><div class="prc-PageLayout-HeaderContent-gdFfN" style="--spacing:var(--spacing-none)"><rails-partial data-partial-name="codeViewRepoRoute.Header" class="RailsPartial-module__d-contents__G5m4w">
-
-  <div id="repository-container-header"  class="tmp-pt-3 hide-full-screen"  data-turbo-replace>
-
-      <div class="d-flex flex-nowrap flex-justify-end tmp-mb-3" style="gap: 1rem;">
-
-        <div class="flex-auto min-width-0 width-fit">
-              <div id="repo-title-component"  class=" d-flex flex-nowrap flex-items-center wb-break-word f3 text-normal">
-    <img class="avatar mr-2 d-none d-md-block avatar-user" alt="Owner avatar" src="https://avatars.githubusercontent.com/u/213896920?s=48&amp;v=4" width="24" height="24" />
-  
-
-  <strong itemprop="name" class="mr-2 flex-self-stretch d-none d-md-block no-wrap overflow-x-hidden">
-    <a data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" class="d-block overflow-x-hidden color-fg-default" style="text-overflow: ellipsis;" href="/VishalManikandan1626/Task1">Task1</a>
-  </strong>
-
-  <span></span><span class="Label Label--secondary v-align-middle mr-1 d-none d-md-block">Public</span>
-</div>
-
-<div class="d-none d-md-block">
-</div>
-
-
-        </div>
-
-        <div id="repository-details-container" class="flex-shrink-0" data-turbo-replace style="max-width: 70%;">
-            <ul class="pagehead-actions flex-shrink-0 d-none d-md-inline" style="padding: 2px 0;">
-    
-      <li>
-  <div class="float-left" >
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" action="/VishalManikandan1626/Task1/profile_pin" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="wdEkMAE0FHyc9m5LwYEXNxyJ23Ow0vSVAsG4Na_tFL9mT1dknjXLHWPd2WKl32ySb7vCyT2pDP714HMcnP93Cg" autocomplete="off" />
-        <button title="Pin this repository to your profile" type="submit" data-view-component="true" class="btn-sm btn">    <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pin mr-2 tmp-mr-2">
-    <path d="m11.294.984 3.722 3.722a1.75 1.75 0 0 1-.504 2.826l-1.327.613a3.089 3.089 0 0 0-1.707 2.084l-.584 2.454c-.317 1.332-1.972 1.8-2.94.832L5.75 11.311 1.78 15.28a.749.749 0 1 1-1.06-1.06l3.969-3.97-2.204-2.204c-.968-.968-.5-2.623.832-2.94l2.454-.584a3.08 3.08 0 0 0 2.084-1.707l.613-1.327a1.75 1.75 0 0 1 2.826-.504ZM6.283 9.723l2.732 2.731a.25.25 0 0 0 .42-.119l.584-2.454a4.586 4.586 0 0 1 2.537-3.098l1.328-.613a.25.25 0 0 0 .072-.404l-3.722-3.722a.25.25 0 0 0-.404.072l-.613 1.328a4.584 4.584 0 0 1-3.098 2.537l-2.454.584a.25.25 0 0 0-.119.42l2.731 2.732Z"></path>
-</svg>Pin
-</button></form>  </div>
-</li>
-
-
-  <li>
-        <include-fragment loading="lazy" src="/notifications/1277730479/watch_subscription?aria_id_prefix=repository-details&amp;button_block=false&amp;show_count=true" data-nonce="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d" data-view-component="true">
-  
-    <div data-hide-on-error>
-        
-          <button aria-label="Watching a repository" type="button" disabled="disabled" data-view-component="true" class="Button--secondary Button--small Button">  <span class="Button-content">
-      <span class="Button-visual Button-leadingVisual">
-        <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-eye">
-    <path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path>
-</svg>
-      </span>
-    <span class="Button-label">Watch</span>
-  </span>
-</button>
-
-    </div>
-    <p data-show-on-error hidden>
-        
-          <span class="d-flex pt-1">
-            <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert mr-1 tmp-mr-1">
-    <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
-</svg>
-            Couldn't load subscription status.&nbsp;
-            <button data-retry-button="" type="button" data-view-component="true" class="Button--link Button--medium Button">  <span class="Button-content">
-    <span class="Button-label">Retry</span>
-  </span>
-</button>
-
-          </span>
-
-    </p>
-
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment>
-  </li>
-
-  <li>
-        <div data-view-component="true" class="BtnGroup d-flex">
-        <button icon="repo-forked" id="fork-button" aria-disabled="true" type="button" data-view-component="true" class="btn-sm btn BtnGroup-item">    <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2 tmp-mr-2">
-    <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
-</svg>Fork
-        <span id="repo-network-counter" data-pjax-replace="true" data-turbo-replace="true" title="0" data-view-component="true" class="Counter">0</span>
-        <tool-tip id="tooltip-08ff4336-a5cd-4305-b7e2-e16339f1fa40" for="fork-button" popover="manual" data-direction="s" data-type="description" data-view-component="true" class="sr-only position-absolute">Cannot fork because you own this repository and are not a member of any organizations.</tool-tip>
-</button>
-      <details group_item="true" id="my-forks-menu-1277730479" data-view-component="true" class="details-reset details-overlay BtnGroup-parent d-inline-block position-relative">
-              <summary aria-label="See your forks of this repository" data-view-component="true" class="btn-sm btn BtnGroup-item px-2 tmp-px-2 float-none">    <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down">
-    <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
-</svg>
-</summary>
-  <details-menu class="SelectMenu right-0" src="/VishalManikandan1626/Task1/my_forks_menu_content?can_fork=false" role="menu">
-    <div class="SelectMenu-modal">
-        <button class="SelectMenu-closeButton position-absolute right-0 m-2" type="button" aria-label="Close menu" data-toggle-for="my-forks-menu-1277730479">
-          <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-        </button>
-      <div id="filter-menu-d72e8f" class="d-flex flex-column flex-1 overflow-hidden">
-        <div class="SelectMenu-list">
-
-            <include-fragment aria-label="Loading" data-nonce="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d" data-view-component="true" class="SelectMenu-loading">
-  
-                <p data-show-on-error hidden>
-                  Forks could not be loaded
-                </p>
-                <span data-hide-on-error>
-                                  <span data-view-component="true">
-  <svg role="menuitem" style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" aria-hidden="true" data-view-component="true" class="anim-rotate">
-    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" fill="none"></circle>
-    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
-</svg>    <span class="sr-only">Loading</span>
-</span>
-
-                </span>
-
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment></div>        
-</div>    </div>
-</details-menu></details></div>
-  </li>
-
-  <li>
-        <template class="js-unstar-confirmation-dialog-template" aria-live="polite">
-  <div class="Box-header">
-    <h2 class="Box-title">Unstar this repository?</h2>
-  </div>
-  <div class="Box-body">
-    <p class="tmp-mb-3">
-      This will remove {{ repoNameWithOwner }} from the {{ listsWithCount }} that it's been added to.
-    </p>
-    <div class="form-actions">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-social-confirmation-form" data-turbo="false" action="{{ confirmUrl }}" accept-charset="UTF-8" method="post">
-        <input type="hidden" name="authenticity_token" value="{{ confirmCsrfToken }}">
-        <input type="hidden" name="confirm" value="true">
-          <button data-close-dialog="true" type="submit" data-view-component="true" class="btn-danger btn width-full">    Unstar
-</button>
-</form>    </div>
-  </div>
-</template>
-
-  <div data-view-component="true" class="js-toggler-container js-social-container starring-container starring-container--with-list-menu d-flex">
-    <div data-view-component="true" class="starred BtnGroup flex-1 ml-0 tmp-ml-0">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-social-form BtnGroup-parent flex-auto js-deferred-toggler-target" data-turbo="false" action="/VishalManikandan1626/Task1/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="e5iW-FYy-2cavveRwlSkrbYxXfk9gDi7qAFVPRL54ng2PzFaHXNfVzeK3Qj75qtLbHCf-VKIE7D0glug-4VBRQ" autocomplete="off" />
-          <input type="hidden" value="E-y4HdYMUvHV4R-q6ROh3tuJ4l6bVB6f_c7SvyKNgz9eSx-_nU32wfjVNTPQoa44AcggXvRcNZShTdwiy_EgAg" data-csrf="true" class="js-confirm-csrf-token" />
-        <input type="hidden" name="context" value="repository">
-          <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:1277730479,&quot;originating_url&quot;:&quot;https://github.com/VishalManikandan1626/Task1&quot;,&quot;user_id&quot;:213896920}}" data-hydro-click-hmac="3ee218249f87fabda8e8aad600744e6d8e3b7f539720f9e9f7eb74c303891f56" data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar" data-aria-prefix="Starred, click to unstar this repository" aria-label="Starred, click to unstar this repository (0)" type="submit" data-view-component="true" class="rounded-left-2 btn-with-aria-count btn-sm btn BtnGroup-item">    <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill starred-button-icon d-inline-block mr-2 tmp-mr-2">
-    <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
-</svg><span data-view-component="true" class="d-inline">
-              Starred
-</span>              <span id="repo-stars-counter-unstar" aria-label="0 users starred this repository" data-singular-suffix="user starred this repository" data-plural-suffix="users starred this repository" data-turbo-replace="true" title="0" data-view-component="true" class="Counter js-social-count">0</span>
-</button></form>        <user-list-menu
-  data-controller="user-list-menu"
-  data-repository-id="1277730479"
-  data-update-url="/VishalManikandan1626/Task1/lists"
->
-  <select-panel data-target="user-list-menu.selectPanel" data-select-variant="multiple" data-fetch-strategy="eventually_local" data-open-on-load="false" id="details-user-list-1277730479-starred" anchor-align="end" anchor-side="outside-bottom" data-view-component="true" class="BtnGroup-parent js-user-list-menu">
-  <dialog-helper>
-    <button group_item="true" id="details-user-list-1277730479-starred-button" aria-controls="details-user-list-1277730479-starred-dialog" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="tooltip-5a2c4cdb-3369-43d8-b108-44086dd7cfaf" type="button" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small rounded-right-2 rounded-left-0 px-3 tmp-px-3">  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down Button-visual">
-    <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
-</svg>
-</button><tool-tip id="tooltip-5a2c4cdb-3369-43d8-b108-44086dd7cfaf" for="details-user-list-1277730479-starred-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Add this repository to a list</tool-tip>
-
-    <dialog id="details-user-list-1277730479-starred-dialog" aria-labelledby="details-user-list-1277730479-starred-dialog-title" data-target="select-panel.dialog" style="position: absolute;" data-view-component="true" class="Overlay Overlay-whenNarrow Overlay--size-small-portrait">
-      <div data-view-component="true" class="Overlay-header">
-  <div class="Overlay-headerContentWrap">
-    <div class="Overlay-titleWrap">
-      <h1 class="Overlay-title " id="details-user-list-1277730479-starred-dialog-title">
-        Lists
-      </h1>
-        
-    </div>
-    <div class="Overlay-actionWrap">
-      <button data-close-dialog-id="details-user-list-1277730479-starred-dialog" aria-label="Close" aria-label="Close" type="button" data-view-component="true" class="close-button Overlay-closeButton"><svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg></button>
-    </div>
-  </div>
-  
-</div>      <div data-view-component="true" class="Overlay-body p-0 tmp-p-0">
-        <focus-group direction="vertical" mnemonics retain>
-          <live-region data-target="select-panel.liveRegion"></live-region>
-          <div data-fetch-strategy="eventually_local" data-target="select-panel.list" data-view-component="true">
-            <div id="details-user-list-1277730479-starred-body">
-                <include-fragment data-target="select-panel.includeFragment" loading="lazy" src="/VishalManikandan1626/Task1/lists?experimental=1" accept="text/fragment+html" data-nonce="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d" data-view-component="true">
-  
-                  <div id="details-user-list-1277730479-starred-list" aria-disabled="true" aria-busy="true" data-view-component="true" class="SelectPanel-loadingPanel mt-2 tmp-mt-2 mb-2 tmp-mb-2 d-flex flex-items-start flex-justify-center text-center">
-                    <div data-hide-on-error class="pt-2">
-                      <span data-target="select-panel.bodySpinner" data-view-component="true">
-  <svg aria-label="Loading content..." style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" role="img" data-view-component="true" class="anim-rotate">
-    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" fill="none"></circle>
-    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
-</svg></span>
-                    </div>
-                    <div data-show-on-error hidden data-target="select-panel.fragmentErrorElement">
-                        <div class="pt-2 pb-2">
-                          <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert color-fg-danger">
-    <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
-</svg>
-                          <h2 class="f5 mt-2">Sorry, something went wrong.</h2>
-                        </div>
-                    </div>
-</div>
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment>            </div>
-            <div data-target="select-panel.noResults" class="SelectPanel-emptyPanel" hidden>
-              <h2 class="v-align-middle m-3 f5">You don&#39;t have any lists yet.</h2>
-            </div>
-</div>        </focus-group>
-</div>      <div data-view-component="true" class="Overlay-footer Overlay-footer--alignEnd">      <button data-repository-id="1277730479" type="button" data-view-component="true" class="js-user-lists-create-trigger Button--primary Button--medium Button Button--fullWidth">  <span class="Button-content">
-    <span class="Button-label"><svg data-component="Octicon" size="small" class="octicon octicon-plus" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
-        Create list</span>
-  </span>
-</button>
-</div>
-</dialog>  </dialog-helper>
-</select-panel></user-list-menu>
-<template class="js-user-list-create-dialog-template" data-label="Create list">
-  <div class="Box-header">
-    <h2 class="Box-title">Create list</h2>
-  </div>
-  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="Box-body d-flex flex-column tmp-p-3 js-user-list-form" data-turbo="false" action="/stars/VishalManikandan1626/lists" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="TwFzOL6FaYRH3T9bdunU5RHuxqFiQ8Ziwj3r1BdiBP4n2cMx38xvgV8TVC8ecCCatB036Uzs12Y74dnKG-Yl3w" autocomplete="off" />
-        <p class="color-fg-subtle f5 tmp-mb-3">Create a list to organize your starred repositories.</p>
-      <input type="hidden" name="repository_id" value="{{ repositoryId }}">
-
-  <div class="form-group mx-0 mt-0 mb-2 js-user-list-input-container js-characters-remaining-container position-relative">
-    <div class="form-group-header">
-      <label for="user_list_name">Name</label>
-    </div>
-    <auto-check src="/stars/VishalManikandan1626/list-check?attr=name" required>
-      <text-expander keys=":" data-emoji-url="/autocomplete/emoji">
-        <input
-          type="text"
-          id="user_list_name"
-          name="user_list[name]"
-          class="form-control js-user-list-input js-characters-remaining-field"
-          placeholder="⭐️ Name this list"
-          value="{{ placeholderName }}"
-          maxlength="32"
-          data-maxlength="32"
-          autofocus
-          required
-        >
-      </text-expander>
-      <input type="hidden" value="JviJVCOAGiagY7bQ5voktGPco7staiIUuNOD4JKChHWSv20k_yuYW0tLieIsBkbubCC95PTzdY6bX8KQhjUpSw" data-csrf="true" />
-    </auto-check>
-    <p
-      class="note error position-relative js-user-list-error"
-      hidden
-    >
-      Name .
-    </p>
-    <p class="mt-1 text-small float-right js-characters-remaining" data-suffix="remaining" hidden>
-      32 remaining
-    </p>
-  </div>
-  <div class="form-group mx-0 mt-2 mb-2 js-user-list-input-container js-characters-remaining-container position-relative">
-    <div class="form-group-header">
-      <label for="user_list_description">Description</label>
-    </div>
-    <text-expander keys=":" data-emoji-url="/autocomplete/emoji">
-      <textarea
-        id="user_list_description"
-        name="user_list[description]"
-        class="form-control js-user-list-input js-characters-remaining-field"
-        placeholder="Write a description"
-        maxlength="160"
-        data-maxlength="160"
-        style="height: 74px; min-height: 74px"
-      ></textarea>
-    </text-expander>
-    <p
-      class="note error position-relative js-user-list-error"
-      hidden
-    >
-      Description .
-    </p>
-    <p class="mt-1 text-small float-right js-characters-remaining" data-suffix="remaining" hidden>
-      160 remaining
-    </p>
-  </div>
-  <div hidden="hidden" data-generic-message="Unable to save your list at this time." data-view-component="true" class="js-user-list-base flash flash-error mx-0 tmp-mx-0 mt-0 tmp-mt-0 mb-2 tmp-mb-2">
-  
-    .
-
-
-  
-</div>      
-<div class="FormControl-checkbox-wrap">
-  <input name="user_list[private]" type="hidden" value="0" autocomplete="off" /><input hidden_input="true" aria-describedby="caption-543fcc35-496a-4397-9c0a-8ebc87cd48e2" id="user_list[private]" class="FormControl-checkbox" type="checkbox" value="1" name="user_list[private]" />
-  <span class="FormControl-checkbox-labelWrap">
-    <label for="user_list[private]" class="FormControl-label">
-      Private
-</label>        <span class="FormControl-caption" id="caption-543fcc35-496a-4397-9c0a-8ebc87cd48e2">
-      Enabling this makes the list visible only to you.
-  </span>
-
-  </span>
-</div>    <button data-disable-invalid="true" data-submitting-message="Creating..." type="submit" disabled="disabled" data-view-component="true" class="Button--primary Button--medium Button Button--fullWidth mt-2 tmp-mt-2">  <span class="Button-content">
-    <span class="Button-label">Create</span>
-  </span>
-</button>
-
-
-  <p class="note f6 mt-2 mb-0">
-    <strong>Tip:</strong> type <code>:</code> to add emoji to the name or description.
-  </p>
-</form>
-</template>
-
-
-
-</div>
-    <div data-view-component="true" class="unstarred BtnGroup ml-0 tmp-ml-0 flex-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-social-form BtnGroup-parent flex-auto" data-turbo="false" action="/VishalManikandan1626/Task1/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="B3QnZ-VojoEOzMAt5ZNQ7UVbwKsBuFiaytFh4oVkEQe3dhgrh00hZA8jiEYzvM5dKPxNpId-DHXv2uF_YExh8w" autocomplete="off" />
-        <input type="hidden" name="context" value="repository">
-          <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:1277730479,&quot;originating_url&quot;:&quot;https://github.com/VishalManikandan1626/Task1&quot;,&quot;user_id&quot;:213896920}}" data-hydro-click-hmac="bc693ecc6ecd6743832ccaadf311203a1473c8b51480835dc0f1d0ec2a5ef8d7" data-ga-click="Repository, click star button, action:files#disambiguate; text:Star" data-aria-prefix="Star this repository" aria-label="Star this repository (0)" type="submit" data-view-component="true" class="js-toggler-target rounded-left-2 btn-with-aria-count btn-sm btn BtnGroup-item">    <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star d-inline-block mr-2 tmp-mr-2">
-    <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-</svg><span data-view-component="true" class="d-inline">
-              Star
-</span>              <span id="repo-stars-counter-star" aria-label="0 users starred this repository" data-singular-suffix="user starred this repository" data-plural-suffix="users starred this repository" data-turbo-replace="true" title="0" data-view-component="true" class="Counter js-social-count">0</span>
-</button></form>        <user-list-menu
-  data-controller="user-list-menu"
-  data-repository-id="1277730479"
-  data-update-url="/VishalManikandan1626/Task1/lists"
->
-  <select-panel data-target="user-list-menu.selectPanel" data-select-variant="multiple" data-fetch-strategy="eventually_local" data-open-on-load="false" id="details-user-list-1277730479-unstarred" anchor-align="end" anchor-side="outside-bottom" data-view-component="true" class="BtnGroup-parent js-user-list-menu">
-  <dialog-helper>
-    <button group_item="true" id="details-user-list-1277730479-unstarred-button" aria-controls="details-user-list-1277730479-unstarred-dialog" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="tooltip-6cdb8d0c-6f0c-445a-8f0a-3e29707ac6e8" type="button" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small rounded-right-2 rounded-left-0 px-3 tmp-px-3">  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down Button-visual">
-    <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
-</svg>
-</button><tool-tip id="tooltip-6cdb8d0c-6f0c-445a-8f0a-3e29707ac6e8" for="details-user-list-1277730479-unstarred-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Add this repository to a list</tool-tip>
-
-    <dialog id="details-user-list-1277730479-unstarred-dialog" aria-labelledby="details-user-list-1277730479-unstarred-dialog-title" data-target="select-panel.dialog" style="position: absolute;" data-view-component="true" class="Overlay Overlay-whenNarrow Overlay--size-small-portrait">
-      <div data-view-component="true" class="Overlay-header">
-  <div class="Overlay-headerContentWrap">
-    <div class="Overlay-titleWrap">
-      <h1 class="Overlay-title " id="details-user-list-1277730479-unstarred-dialog-title">
-        Lists
-      </h1>
-        
-    </div>
-    <div class="Overlay-actionWrap">
-      <button data-close-dialog-id="details-user-list-1277730479-unstarred-dialog" aria-label="Close" aria-label="Close" type="button" data-view-component="true" class="close-button Overlay-closeButton"><svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg></button>
-    </div>
-  </div>
-  
-</div>      <div data-view-component="true" class="Overlay-body p-0 tmp-p-0">
-        <focus-group direction="vertical" mnemonics retain>
-          <live-region data-target="select-panel.liveRegion"></live-region>
-          <div data-fetch-strategy="eventually_local" data-target="select-panel.list" data-view-component="true">
-            <div id="details-user-list-1277730479-unstarred-body">
-                <include-fragment data-target="select-panel.includeFragment" loading="lazy" src="/VishalManikandan1626/Task1/lists?experimental=1" accept="text/fragment+html" data-nonce="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d" data-view-component="true">
-  
-                  <div id="details-user-list-1277730479-unstarred-list" aria-disabled="true" aria-busy="true" data-view-component="true" class="SelectPanel-loadingPanel mt-2 tmp-mt-2 mb-2 tmp-mb-2 d-flex flex-items-start flex-justify-center text-center">
-                    <div data-hide-on-error class="pt-2">
-                      <span data-target="select-panel.bodySpinner" data-view-component="true">
-  <svg aria-label="Loading content..." style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" role="img" data-view-component="true" class="anim-rotate">
-    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" fill="none"></circle>
-    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
-</svg></span>
-                    </div>
-                    <div data-show-on-error hidden data-target="select-panel.fragmentErrorElement">
-                        <div class="pt-2 pb-2">
-                          <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert color-fg-danger">
-    <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
-</svg>
-                          <h2 class="f5 mt-2">Sorry, something went wrong.</h2>
-                        </div>
-                    </div>
-</div>
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment>            </div>
-            <div data-target="select-panel.noResults" class="SelectPanel-emptyPanel" hidden>
-              <h2 class="v-align-middle m-3 f5">You don&#39;t have any lists yet.</h2>
-            </div>
-</div>        </focus-group>
-</div>      <div data-view-component="true" class="Overlay-footer Overlay-footer--alignEnd">      <button data-repository-id="1277730479" type="button" data-view-component="true" class="js-user-lists-create-trigger Button--primary Button--medium Button Button--fullWidth">  <span class="Button-content">
-    <span class="Button-label"><svg data-component="Octicon" size="small" class="octicon octicon-plus" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
-        Create list</span>
-  </span>
-</button>
-</div>
-</dialog>  </dialog-helper>
-</select-panel></user-list-menu>
-<template class="js-user-list-create-dialog-template" data-label="Create list">
-  <div class="Box-header">
-    <h2 class="Box-title">Create list</h2>
-  </div>
-  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="Box-body d-flex flex-column tmp-p-3 js-user-list-form" data-turbo="false" action="/stars/VishalManikandan1626/lists" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="2TbSx17rbY5wEVIcIdEDLg4N35Rpo1c9zBH2NiVPI1Gx7mLOP6Jri2jfOWhJSPdRq_4u3EcMRjk1zcQoKcsCcA" autocomplete="off" />
-        <p class="color-fg-subtle f5 tmp-mb-3">Create a list to organize your starred repositories.</p>
-      <input type="hidden" name="repository_id" value="{{ repositoryId }}">
-
-  <div class="form-group mx-0 mt-0 mb-2 js-user-list-input-container js-characters-remaining-container position-relative">
-    <div class="form-group-header">
-      <label for="user_list_name">Name</label>
-    </div>
-    <auto-check src="/stars/VishalManikandan1626/list-check?attr=name" required>
-      <text-expander keys=":" data-emoji-url="/autocomplete/emoji">
-        <input
-          type="text"
-          id="user_list_name"
-          name="user_list[name]"
-          class="form-control js-user-list-input js-characters-remaining-field"
-          placeholder="⭐️ Name this list"
-          value="{{ placeholderName }}"
-          maxlength="32"
-          data-maxlength="32"
-          autofocus
-          required
-        >
-      </text-expander>
-      <input type="hidden" value="1SFAWxwvUvApw-xpI_Ofp5Q7jSzbEyx1wPZ8nabr1MphZqQrwITQjcLr01vpD_39m8eTcwKKe-_jej3tslx59A" data-csrf="true" />
-    </auto-check>
-    <p
-      class="note error position-relative js-user-list-error"
-      hidden
-    >
-      Name .
-    </p>
-    <p class="mt-1 text-small float-right js-characters-remaining" data-suffix="remaining" hidden>
-      32 remaining
-    </p>
-  </div>
-  <div class="form-group mx-0 mt-2 mb-2 js-user-list-input-container js-characters-remaining-container position-relative">
-    <div class="form-group-header">
-      <label for="user_list_description">Description</label>
-    </div>
-    <text-expander keys=":" data-emoji-url="/autocomplete/emoji">
-      <textarea
-        id="user_list_description"
-        name="user_list[description]"
-        class="form-control js-user-list-input js-characters-remaining-field"
-        placeholder="Write a description"
-        maxlength="160"
-        data-maxlength="160"
-        style="height: 74px; min-height: 74px"
-      ></textarea>
-    </text-expander>
-    <p
-      class="note error position-relative js-user-list-error"
-      hidden
-    >
-      Description .
-    </p>
-    <p class="mt-1 text-small float-right js-characters-remaining" data-suffix="remaining" hidden>
-      160 remaining
-    </p>
-  </div>
-  <div hidden="hidden" data-generic-message="Unable to save your list at this time." data-view-component="true" class="js-user-list-base flash flash-error mx-0 tmp-mx-0 mt-0 tmp-mt-0 mb-2 tmp-mb-2">
-  
-    .
-
-
-  
-</div>      
-<div class="FormControl-checkbox-wrap">
-  <input name="user_list[private]" type="hidden" value="0" autocomplete="off" /><input hidden_input="true" aria-describedby="caption-acb9cba8-e31b-4a3e-8959-2dfcc73733cb" id="user_list[private]" class="FormControl-checkbox" type="checkbox" value="1" name="user_list[private]" />
-  <span class="FormControl-checkbox-labelWrap">
-    <label for="user_list[private]" class="FormControl-label">
-      Private
-</label>        <span class="FormControl-caption" id="caption-acb9cba8-e31b-4a3e-8959-2dfcc73733cb">
-      Enabling this makes the list visible only to you.
-  </span>
-
-  </span>
-</div>    <button data-disable-invalid="true" data-submitting-message="Creating..." type="submit" disabled="disabled" data-view-component="true" class="Button--primary Button--medium Button Button--fullWidth mt-2 tmp-mt-2">  <span class="Button-content">
-    <span class="Button-label">Create</span>
-  </span>
-</button>
-
-
-  <p class="note f6 mt-2 mb-0">
-    <strong>Tip:</strong> type <code>:</code> to add emoji to the name or description.
-  </p>
-</form>
-</template>
-
-
-
-</div></div>
-  </li>
-
-</ul>
-
-        </div>
-      </div>
-
-        <div>
-          <div id="responsive-meta-container" data-turbo-replace>
-      <div class="d-block d-md-none mb-2">
-        <div class="d-flex gap-2 tmp-mt-n3 tmp-mb-3 flex-wrap">
-          <div class="d-flex flex-row gap-2" >
-                <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.d18392e72f73b5a6.module.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/notifications-subscriptions-menu.ac23cb3a003c7d78.module.css" />
-
-<react-partial
-  partial-name="notifications-subscriptions-menu"
-  data-ssr="false"
-  data-attempted-ssr="false"
-  data-react-profiling="false"
->
-  
-  <script type="application/json" data-target="react-partial.embeddedData">{"props":{"subscriptionType":"none","repositoryId":1277730479,"repositoryName":"VishalManikandan1626/Task1","watchersCount":0,"subscribableThreadTypes":[{"name":"Issue","enabled":true,"subscribed":false},{"name":"PullRequest","enabled":true,"subscribed":false},{"name":"Release","enabled":true,"subscribed":false},{"name":"Discussion","enabled":false,"subscribed":false},{"name":"SecurityAlert","enabled":true,"subscribed":false}],"showLabelSubscriptions":false,"subscribedLabels":[]}}</script>
-  <div data-target="react-partial.reactRoot"></div>
-</react-partial>
-
-
-
-              <div data-view-component="true" class="BtnGroup d-flex">
-      <a id="fork-icon-button" variant="small" group_item="true" href="/VishalManikandan1626/Task1/fork" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:1277730479,&quot;originating_url&quot;:&quot;https://github.com/VishalManikandan1626/Task1&quot;,&quot;user_id&quot;:213896920}}" data-hydro-click-hmac="a4b1b81852e89aecf6ca6b99b44b797f5116545d26eb6e637412d006f3fba6f5" data-ga-click="Repository, show fork modal, action:files#disambiguate; text:Fork" aria-labelledby="tooltip-2626e65c-1011-4a47-9cc6-84a38a5e8483" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--medium">  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked Button-visual">
-    <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
-</svg>
-</a><tool-tip id="tooltip-2626e65c-1011-4a47-9cc6-84a38a5e8483" for="fork-icon-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Fork your own copy of VishalManikandan1626/Task1</tool-tip>
-
-</div>
-              <style>
-  /*
-    This is kind of gross but let me explain.
-    The triangle-down icon in the user lists menu component needs to be larger on small screens
-    but Primer doesn't accept a responsive value for size.
-    So instead we use CSS to override the size on small screens only, to match the ⭐ button beside it.
-    The selector is written this way to avoid affecting other buttons inside the lists dropdown.
-  */
-  @media (max-width: 767px) {
-    .icon-button-group .BtnGroup-parent > * > button:first-child {
-      height: var(--control-medium-size);
-      width: var(--control-medium-size);
-      min-width: var(--control-medium-size);
-    }
-  }
-
-  /* No idea what this is though. It was like this when I got here. */
-  @media (min-width: 544px) {
-    .icon-button-group .SelectMenu {
-      right: auto !important;
-      left: 0 !important;
-    }
-  }
-</style>
-  <div data-view-component="true" class="js-toggler-container starring-container">
-    <div data-view-component="true" class="starred BtnGroup icon-button-group flex-1 ml-0 tmp-ml-0">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-social-form BtnGroup-parent" data-turbo="false" action="/VishalManikandan1626/Task1/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="f1JASKcTpmXbE9evwP-v_AEu80BbKzQmLQgcMYPUrYgy9efq7FICVfYn_Tb5TaAa228xQDQjHy1xixKsaqgOtQ" autocomplete="off" />
-        <input type="hidden" name="context" value="repository">
-        <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:1277730479,&quot;originating_url&quot;:&quot;https://github.com/VishalManikandan1626/Task1&quot;,&quot;user_id&quot;:213896920}}" data-hydro-click-hmac="3ee218249f87fabda8e8aad600744e6d8e3b7f539720f9e9f7eb74c303891f56" data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar" id="icon-button-60bfb066-d6b8-4736-a6ba-e2d3f08d0236" aria-labelledby="tooltip-80b628fb-8fd7-4952-90fd-6f7224b035cc" type="submit" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--medium js-toggler-target starred-button-icon BtnGroup-item rounded-left-2">  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill Button-visual">
-    <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
-</svg>
-</button><tool-tip id="tooltip-80b628fb-8fd7-4952-90fd-6f7224b035cc" for="icon-button-60bfb066-d6b8-4736-a6ba-e2d3f08d0236" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Unstar this repository</tool-tip>
-
-</form>        <user-list-menu
-  data-controller="user-list-menu"
-  data-repository-id="1277730479"
-  data-update-url="/VishalManikandan1626/Task1/lists"
->
-  <select-panel data-target="user-list-menu.selectPanel" data-select-variant="multiple" data-fetch-strategy="eventually_local" data-open-on-load="false" id="details-user-list-1277730479" anchor-align="end" anchor-side="outside-bottom" data-view-component="true" class="BtnGroup-parent js-user-list-menu">
-  <dialog-helper>
-    <button group_item="true" id="details-user-list-1277730479-button" aria-controls="details-user-list-1277730479-dialog" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="tooltip-783153e7-6e6b-484f-ae7b-9b34bbe2f0b5" type="button" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small rounded-right-2 rounded-left-0 px-3 tmp-px-3">  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down Button-visual">
-    <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
-</svg>
-</button><tool-tip id="tooltip-783153e7-6e6b-484f-ae7b-9b34bbe2f0b5" for="details-user-list-1277730479-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Add this repository to a list</tool-tip>
-
-    <dialog id="details-user-list-1277730479-dialog" aria-labelledby="details-user-list-1277730479-dialog-title" data-target="select-panel.dialog" style="position: absolute;" data-view-component="true" class="Overlay Overlay-whenNarrow Overlay--size-small-portrait">
-      <div data-view-component="true" class="Overlay-header">
-  <div class="Overlay-headerContentWrap">
-    <div class="Overlay-titleWrap">
-      <h1 class="Overlay-title " id="details-user-list-1277730479-dialog-title">
-        Lists
-      </h1>
-        
-    </div>
-    <div class="Overlay-actionWrap">
-      <button data-close-dialog-id="details-user-list-1277730479-dialog" aria-label="Close" aria-label="Close" type="button" data-view-component="true" class="close-button Overlay-closeButton"><svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg></button>
-    </div>
-  </div>
-  
-</div>      <div data-view-component="true" class="Overlay-body p-0 tmp-p-0">
-        <focus-group direction="vertical" mnemonics retain>
-          <live-region data-target="select-panel.liveRegion"></live-region>
-          <div data-fetch-strategy="eventually_local" data-target="select-panel.list" data-view-component="true">
-            <div id="details-user-list-1277730479-body">
-                <include-fragment data-target="select-panel.includeFragment" loading="lazy" src="/VishalManikandan1626/Task1/lists?experimental=1" accept="text/fragment+html" data-nonce="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d" data-view-component="true">
-  
-                  <div id="details-user-list-1277730479-list" aria-disabled="true" aria-busy="true" data-view-component="true" class="SelectPanel-loadingPanel mt-2 tmp-mt-2 mb-2 tmp-mb-2 d-flex flex-items-start flex-justify-center text-center">
-                    <div data-hide-on-error class="pt-2">
-                      <span data-target="select-panel.bodySpinner" data-view-component="true">
-  <svg aria-label="Loading content..." style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" role="img" data-view-component="true" class="anim-rotate">
-    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" fill="none"></circle>
-    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
-</svg></span>
-                    </div>
-                    <div data-show-on-error hidden data-target="select-panel.fragmentErrorElement">
-                        <div class="pt-2 pb-2">
-                          <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert color-fg-danger">
-    <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
-</svg>
-                          <h2 class="f5 mt-2">Sorry, something went wrong.</h2>
-                        </div>
-                    </div>
-</div>
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment>            </div>
-            <div data-target="select-panel.noResults" class="SelectPanel-emptyPanel" hidden>
-              <h2 class="v-align-middle m-3 f5">You don&#39;t have any lists yet.</h2>
-            </div>
-</div>        </focus-group>
-</div>      <div data-view-component="true" class="Overlay-footer Overlay-footer--alignEnd">      <button data-repository-id="1277730479" type="button" data-view-component="true" class="js-user-lists-create-trigger Button--primary Button--medium Button Button--fullWidth">  <span class="Button-content">
-    <span class="Button-label"><svg data-component="Octicon" size="small" class="octicon octicon-plus" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
-        Create list</span>
-  </span>
-</button>
-</div>
-</dialog>  </dialog-helper>
-</select-panel></user-list-menu>
-<template class="js-user-list-create-dialog-template" data-label="Create list">
-  <div class="Box-header">
-    <h2 class="Box-title">Create list</h2>
-  </div>
-  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="Box-body d-flex flex-column tmp-p-3 js-user-list-form" data-turbo="false" action="/stars/VishalManikandan1626/lists" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="j7cf64o87EYrTHxrmNgCbDodCHNIxIzwp49HKh1u8bHnb6_i63XqQzOCFx_wQfYTn-75O2ZrnfReU3U0EerQkA" autocomplete="off" />
-        <p class="color-fg-subtle f5 tmp-mb-3">Create a list to organize your starred repositories.</p>
-      <input type="hidden" name="repository_id" value="{{ repositoryId }}">
-
-  <div class="form-group mx-0 mt-0 mb-2 js-user-list-input-container js-characters-remaining-container position-relative">
-    <div class="form-group-header">
-      <label for="user_list_name">Name</label>
-    </div>
-    <auto-check src="/stars/VishalManikandan1626/list-check?attr=name" required>
-      <text-expander keys=":" data-emoji-url="/autocomplete/emoji">
-        <input
-          type="text"
-          id="user_list_name"
-          name="user_list[name]"
-          class="form-control js-user-list-input js-characters-remaining-field"
-          placeholder="⭐️ Name this list"
-          value="{{ placeholderName }}"
-          maxlength="32"
-          data-maxlength="32"
-          autofocus
-          required
-        >
-      </text-expander>
-      <input type="hidden" value="FqPhEjLziQzXSs19SzXf-NDV8wi7G7EcsRa6xz8mIdOi5AVi7lgLcTxi8k-Byb2i3yntV2KC5oaSmvu3K5GM7Q" data-csrf="true" />
-    </auto-check>
-    <p
-      class="note error position-relative js-user-list-error"
-      hidden
-    >
-      Name .
-    </p>
-    <p class="mt-1 text-small float-right js-characters-remaining" data-suffix="remaining" hidden>
-      32 remaining
-    </p>
-  </div>
-  <div class="form-group mx-0 mt-2 mb-2 js-user-list-input-container js-characters-remaining-container position-relative">
-    <div class="form-group-header">
-      <label for="user_list_description">Description</label>
-    </div>
-    <text-expander keys=":" data-emoji-url="/autocomplete/emoji">
-      <textarea
-        id="user_list_description"
-        name="user_list[description]"
-        class="form-control js-user-list-input js-characters-remaining-field"
-        placeholder="Write a description"
-        maxlength="160"
-        data-maxlength="160"
-        style="height: 74px; min-height: 74px"
-      ></textarea>
-    </text-expander>
-    <p
-      class="note error position-relative js-user-list-error"
-      hidden
-    >
-      Description .
-    </p>
-    <p class="mt-1 text-small float-right js-characters-remaining" data-suffix="remaining" hidden>
-      160 remaining
-    </p>
-  </div>
-  <div hidden="hidden" data-generic-message="Unable to save your list at this time." data-view-component="true" class="js-user-list-base flash flash-error mx-0 tmp-mx-0 mt-0 tmp-mt-0 mb-2 tmp-mb-2">
-  
-    .
-
-
-  
-</div>      
-<div class="FormControl-checkbox-wrap">
-  <input name="user_list[private]" type="hidden" value="0" autocomplete="off" /><input hidden_input="true" aria-describedby="caption-9f2a0ce4-a18e-4092-9711-e389c1723e40" id="user_list[private]" class="FormControl-checkbox" type="checkbox" value="1" name="user_list[private]" />
-  <span class="FormControl-checkbox-labelWrap">
-    <label for="user_list[private]" class="FormControl-label">
-      Private
-</label>        <span class="FormControl-caption" id="caption-9f2a0ce4-a18e-4092-9711-e389c1723e40">
-      Enabling this makes the list visible only to you.
-  </span>
-
-  </span>
-</div>    <button data-disable-invalid="true" data-submitting-message="Creating..." type="submit" disabled="disabled" data-view-component="true" class="Button--primary Button--medium Button Button--fullWidth mt-2 tmp-mt-2">  <span class="Button-content">
-    <span class="Button-label">Create</span>
-  </span>
-</button>
-
-
-  <p class="note f6 mt-2 mb-0">
-    <strong>Tip:</strong> type <code>:</code> to add emoji to the name or description.
-  </p>
-</form>
-</template>
-
-
-
-</div>
-    <div data-view-component="true" class="unstarred BtnGroup icon-button-group flex-1 ml-0 tmp-ml-0">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-social-form BtnGroup-parent" data-turbo="false" action="/VishalManikandan1626/Task1/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="j9x46sbzFK3y55t7dubRhhwDJcAoyIYehdy4viMsj4k_3kempNa7SPMI0xCgyU82caSoz64O0vGg1zgjxgT_fQ" autocomplete="off" />
-        <input type="hidden" name="context" value="repository">
-        <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:1277730479,&quot;originating_url&quot;:&quot;https://github.com/VishalManikandan1626/Task1&quot;,&quot;user_id&quot;:213896920}}" data-hydro-click-hmac="bc693ecc6ecd6743832ccaadf311203a1473c8b51480835dc0f1d0ec2a5ef8d7" data-ga-click="Repository, click star button, action:files#disambiguate; text:Star" id="icon-button-880dcea3-c91a-403e-99dc-f5569bb6335e" aria-labelledby="tooltip-9cca4c53-39f0-470d-8a6d-aaf11ce691a5" type="submit" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--medium js-toggler-target BtnGroup-item rounded-left-2">  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star Button-visual">
-    <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-</svg>
-</button><tool-tip id="tooltip-9cca4c53-39f0-470d-8a6d-aaf11ce691a5" for="icon-button-880dcea3-c91a-403e-99dc-f5569bb6335e" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Star this repository</tool-tip>
-
-</form>        <user-list-menu
-  data-controller="user-list-menu"
-  data-repository-id="1277730479"
-  data-update-url="/VishalManikandan1626/Task1/lists"
->
-  <select-panel data-target="user-list-menu.selectPanel" data-select-variant="multiple" data-fetch-strategy="eventually_local" data-open-on-load="false" id="details-user-list-1277730479" anchor-align="end" anchor-side="outside-bottom" data-view-component="true" class="BtnGroup-parent js-user-list-menu">
-  <dialog-helper>
-    <button group_item="true" id="details-user-list-1277730479-button" aria-controls="details-user-list-1277730479-dialog" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="tooltip-43a90981-5acf-401a-94ab-74050e8d368b" type="button" data-view-component="true" class="Button Button--iconOnly Button--secondary Button--small rounded-right-2 rounded-left-0 px-3 tmp-px-3">  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down Button-visual">
-    <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
-</svg>
-</button><tool-tip id="tooltip-43a90981-5acf-401a-94ab-74050e8d368b" for="details-user-list-1277730479-button" popover="manual" data-direction="s" data-type="label" data-view-component="true" class="sr-only position-absolute">Add this repository to a list</tool-tip>
-
-    <dialog id="details-user-list-1277730479-dialog" aria-labelledby="details-user-list-1277730479-dialog-title" data-target="select-panel.dialog" style="position: absolute;" data-view-component="true" class="Overlay Overlay-whenNarrow Overlay--size-small-portrait">
-      <div data-view-component="true" class="Overlay-header">
-  <div class="Overlay-headerContentWrap">
-    <div class="Overlay-titleWrap">
-      <h1 class="Overlay-title " id="details-user-list-1277730479-dialog-title">
-        Lists
-      </h1>
-        
-    </div>
-    <div class="Overlay-actionWrap">
-      <button data-close-dialog-id="details-user-list-1277730479-dialog" aria-label="Close" aria-label="Close" type="button" data-view-component="true" class="close-button Overlay-closeButton"><svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg></button>
-    </div>
-  </div>
-  
-</div>      <div data-view-component="true" class="Overlay-body p-0 tmp-p-0">
-        <focus-group direction="vertical" mnemonics retain>
-          <live-region data-target="select-panel.liveRegion"></live-region>
-          <div data-fetch-strategy="eventually_local" data-target="select-panel.list" data-view-component="true">
-            <div id="details-user-list-1277730479-body">
-                <include-fragment data-target="select-panel.includeFragment" loading="lazy" src="/VishalManikandan1626/Task1/lists?experimental=1" accept="text/fragment+html" data-nonce="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d" data-view-component="true">
-  
-                  <div id="details-user-list-1277730479-list" aria-disabled="true" aria-busy="true" data-view-component="true" class="SelectPanel-loadingPanel mt-2 tmp-mt-2 mb-2 tmp-mb-2 d-flex flex-items-start flex-justify-center text-center">
-                    <div data-hide-on-error class="pt-2">
-                      <span data-target="select-panel.bodySpinner" data-view-component="true">
-  <svg aria-label="Loading content..." style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" role="img" data-view-component="true" class="anim-rotate">
-    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" fill="none"></circle>
-    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
-</svg></span>
-                    </div>
-                    <div data-show-on-error hidden data-target="select-panel.fragmentErrorElement">
-                        <div class="pt-2 pb-2">
-                          <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert color-fg-danger">
-    <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
-</svg>
-                          <h2 class="f5 mt-2">Sorry, something went wrong.</h2>
-                        </div>
-                    </div>
-</div>
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment>            </div>
-            <div data-target="select-panel.noResults" class="SelectPanel-emptyPanel" hidden>
-              <h2 class="v-align-middle m-3 f5">You don&#39;t have any lists yet.</h2>
-            </div>
-</div>        </focus-group>
-</div>      <div data-view-component="true" class="Overlay-footer Overlay-footer--alignEnd">      <button data-repository-id="1277730479" type="button" data-view-component="true" class="js-user-lists-create-trigger Button--primary Button--medium Button Button--fullWidth">  <span class="Button-content">
-    <span class="Button-label"><svg data-component="Octicon" size="small" class="octicon octicon-plus" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
-        Create list</span>
-  </span>
-</button>
-</div>
-</dialog>  </dialog-helper>
-</select-panel></user-list-menu>
-<template class="js-user-list-create-dialog-template" data-label="Create list">
-  <div class="Box-header">
-    <h2 class="Box-title">Create list</h2>
-  </div>
-  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="Box-body d-flex flex-column tmp-p-3 js-user-list-form" data-turbo="false" action="/stars/VishalManikandan1626/lists" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="5BeAujb6J4Fm9lJW11co0P3xwqublfLyT43xyinm-GqMzzCzV7MhhH44OSK_ztyvWAIz47U64_a2UcPUJWLZSw" autocomplete="off" />
-        <p class="color-fg-subtle f5 tmp-mb-3">Create a list to organize your starred repositories.</p>
-      <input type="hidden" name="repository_id" value="{{ repositoryId }}">
-
-  <div class="form-group mx-0 mt-0 mb-2 js-user-list-input-container js-characters-remaining-container position-relative">
-    <div class="form-group-header">
-      <label for="user_list_name">Name</label>
-    </div>
-    <auto-check src="/stars/VishalManikandan1626/list-check?attr=name" required>
-      <text-expander keys=":" data-emoji-url="/autocomplete/emoji">
-        <input
-          type="text"
-          id="user_list_name"
-          name="user_list[name]"
-          class="form-control js-user-list-input js-characters-remaining-field"
-          placeholder="⭐️ Name this list"
-          value="{{ placeholderName }}"
-          maxlength="32"
-          data-maxlength="32"
-          autofocus
-          required
-        >
-      </text-expander>
-      <input type="hidden" value="Yf_B7TPL9EiavCyj521kguwSdsIaKPFupLa8qyz-l-fVuCWd72B2NXGUE5EtkQbY4-5oncOxpvSHOv3bOEk62Q" data-csrf="true" />
-    </auto-check>
-    <p
-      class="note error position-relative js-user-list-error"
-      hidden
-    >
-      Name .
-    </p>
-    <p class="mt-1 text-small float-right js-characters-remaining" data-suffix="remaining" hidden>
-      32 remaining
-    </p>
-  </div>
-  <div class="form-group mx-0 mt-2 mb-2 js-user-list-input-container js-characters-remaining-container position-relative">
-    <div class="form-group-header">
-      <label for="user_list_description">Description</label>
-    </div>
-    <text-expander keys=":" data-emoji-url="/autocomplete/emoji">
-      <textarea
-        id="user_list_description"
-        name="user_list[description]"
-        class="form-control js-user-list-input js-characters-remaining-field"
-        placeholder="Write a description"
-        maxlength="160"
-        data-maxlength="160"
-        style="height: 74px; min-height: 74px"
-      ></textarea>
-    </text-expander>
-    <p
-      class="note error position-relative js-user-list-error"
-      hidden
-    >
-      Description .
-    </p>
-    <p class="mt-1 text-small float-right js-characters-remaining" data-suffix="remaining" hidden>
-      160 remaining
-    </p>
-  </div>
-  <div hidden="hidden" data-generic-message="Unable to save your list at this time." data-view-component="true" class="js-user-list-base flash flash-error mx-0 tmp-mx-0 mt-0 tmp-mt-0 mb-2 tmp-mb-2">
-  
-    .
-
-
-  
-</div>      
-<div class="FormControl-checkbox-wrap">
-  <input name="user_list[private]" type="hidden" value="0" autocomplete="off" /><input hidden_input="true" aria-describedby="caption-92bd682c-c4ec-47d3-979b-15dd71c90bab" id="user_list[private]" class="FormControl-checkbox" type="checkbox" value="1" name="user_list[private]" />
-  <span class="FormControl-checkbox-labelWrap">
-    <label for="user_list[private]" class="FormControl-label">
-      Private
-</label>        <span class="FormControl-caption" id="caption-92bd682c-c4ec-47d3-979b-15dd71c90bab">
-      Enabling this makes the list visible only to you.
-  </span>
-
-  </span>
-</div>    <button data-disable-invalid="true" data-submitting-message="Creating..." type="submit" disabled="disabled" data-view-component="true" class="Button--primary Button--medium Button Button--fullWidth mt-2 tmp-mt-2">  <span class="Button-content">
-    <span class="Button-label">Create</span>
-  </span>
-</button>
-
-
-  <p class="note f6 mt-2 mb-0">
-    <strong>Tip:</strong> type <code>:</code> to add emoji to the name or description.
-  </p>
-</form>
-</template>
-
-
-
-</div></div>
-          </div>
-          <div class="d-flex flex-row gap-2">
-            
-
-          </div>
-        </div>
-
-    
-
-    <div class="tmp-mb-3">
-        
-
-
-<ul
-  class="d-flex flex-wrap mb-2 gap-2"
-  
-  aria-label="Repository details"
->
-  <a class="Link--secondary no-underline d-block mr-2" role="listitem" href="/VishalManikandan1626/Task1/stargazers">
-    <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-1 tmp-mr-1">
-    <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-</svg>
-    <span class="text-bold color-fg-default">0</span>
-    stars
-</a>  <a class="Link--secondary no-underline d-block mr-2" role="listitem" href="/VishalManikandan1626/Task1/forks">
-    <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-1 tmp-mr-1">
-    <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
-</svg>
-    <span class="text-bold color-fg-default">0</span>
-    forks
-</a>  <a class="Link--secondary no-underline d-block mr-2" role="listitem" href="/VishalManikandan1626/Task1/watchers">
-    <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-eye mr-1 tmp-mr-1">
-    <path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path>
-</svg>
-    <span class="text-bold color-fg-default">0</span>
-    watching
-</a>  <include-fragment loading="lazy" src="/VishalManikandan1626/Task1/branch-and-tag-count" data-nonce="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d" data-view-component="true">
-  
-    <a class="Link--secondary no-underline d-block mr-2" role="listitem" href="/VishalManikandan1626/Task1/branches">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-branch mr-1 tmp-mr-1">
-    <path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path>
-</svg>
-    <span class="color-fg-muted">Branches</span>
-</a><a class="Link--secondary no-underline d-block mr-2" role="listitem" href="/VishalManikandan1626/Task1/tags">
-  <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-tag mr-1 tmp-mr-1">
-    <path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"></path>
-</svg>
-    <span class="color-fg-muted">Tags</span>
-</a>
-
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment>  <a class="Link--secondary no-underline d-block mr-2" role="listitem" href="/VishalManikandan1626/Task1/activity">
-    <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pulse mr-1 tmp-mr-1">
-    <path d="M6 2c.306 0 .582.187.696.471L10 10.731l1.304-3.26A.751.751 0 0 1 12 7h3.25a.75.75 0 0 1 0 1.5h-2.742l-1.812 4.528a.751.751 0 0 1-1.392 0L6 4.77 4.696 8.03A.75.75 0 0 1 4 8.5H.75a.75.75 0 0 1 0-1.5h2.742l1.812-4.529A.751.751 0 0 1 6 2Z"></path>
-</svg>
-    <span>Activity</span>
-</a>
-</ul>
-
-<div class="mb-2 d-flex color-fg-muted" >
-  <div class="d-flex flex-items-center" style="height: 21px">
-    <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-globe flex-shrink-0 mr-2 tmp-mr-2">
-    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM5.78 8.75a9.64 9.64 0 0 0 1.363 4.177c.255.426.542.832.857 1.215.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a9.927 9.927 0 0 0-.857 1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.507 6.507 0 0 0 4.666 5.5c-.123-.181-.24-.365-.352-.552-.715-1.192-1.437-2.874-1.581-4.948Zm-2.733-1.5h2.733c.144-2.074.866-3.756 1.58-4.948.12-.197.237-.381.353-.552a6.507 6.507 0 0 0-4.666 5.5Zm10.181 1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.507 6.507 0 0 0 4.666-5.5Zm2.733-1.5a6.507 6.507 0 0 0-4.666-5.5c.123.181.24.365.353.552.714 1.192 1.436 2.874 1.58 4.948Z"></path>
-</svg>
-  </div>
-  <span class="flex-auto min-width-0 width-fit">
-    Public repository
-  </span>
-</div>
-
-    </div>
-  </div>
-
-</div>
-
-          <div class="border-bottom"></div>
-        </div>
-
-  </div>
-
-<template class="js-user-list-create-dialog-template" data-label="Create list">
-  <div class="Box-header">
-    <h2 class="Box-title">Create list</h2>
-  </div>
-  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="Box-body d-flex flex-column tmp-p-3 js-user-list-form" data-turbo="false" action="/stars/VishalManikandan1626/lists" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="vZIzq8wRAZeRZ_GouIgRBhnRzUx6SO0LkFnHqX_UYKvVSoOirVgHkompmtzQEeV5vCI8BFTn_A9phfW3c1BBig" autocomplete="off" />
-        <p class="color-fg-subtle f5 tmp-mb-3">Create a list to organize your starred repositories.</p>
-      <input type="hidden" name="repository_id" value="{{ repositoryId }}">
-
-  <div class="form-group mx-0 mt-0 mb-2 js-user-list-input-container js-characters-remaining-container position-relative">
-    <div class="form-group-header">
-      <label for="user_list_name">Name</label>
-    </div>
-    <auto-check src="/stars/VishalManikandan1626/list-check?attr=name" required>
-      <text-expander keys=":" data-emoji-url="/autocomplete/emoji">
-        <input
-          type="text"
-          id="user_list_name"
-          name="user_list[name]"
-          class="form-control js-user-list-input js-characters-remaining-field"
-          placeholder="⭐️ Name this list"
-          value="{{ placeholderName }}"
-          maxlength="32"
-          data-maxlength="32"
-          autofocus
-          required
-        >
-      </text-expander>
-      <input type="hidden" value="fBEUErKLiGT6NERF0GmPIowW6CmqaHJR5lmnHYRPS-vIVvBibiAKGREce3cale14g-r2dnPxJcvF1eZtkPjm1Q" data-csrf="true" />
-    </auto-check>
-    <p
-      class="note error position-relative js-user-list-error"
-      hidden
-    >
-      Name .
-    </p>
-    <p class="mt-1 text-small float-right js-characters-remaining" data-suffix="remaining" hidden>
-      32 remaining
-    </p>
-  </div>
-  <div class="form-group mx-0 mt-2 mb-2 js-user-list-input-container js-characters-remaining-container position-relative">
-    <div class="form-group-header">
-      <label for="user_list_description">Description</label>
-    </div>
-    <text-expander keys=":" data-emoji-url="/autocomplete/emoji">
-      <textarea
-        id="user_list_description"
-        name="user_list[description]"
-        class="form-control js-user-list-input js-characters-remaining-field"
-        placeholder="Write a description"
-        maxlength="160"
-        data-maxlength="160"
-        style="height: 74px; min-height: 74px"
-      ></textarea>
-    </text-expander>
-    <p
-      class="note error position-relative js-user-list-error"
-      hidden
-    >
-      Description .
-    </p>
-    <p class="mt-1 text-small float-right js-characters-remaining" data-suffix="remaining" hidden>
-      160 remaining
-    </p>
-  </div>
-  <div hidden="hidden" data-generic-message="Unable to save your list at this time." data-view-component="true" class="js-user-list-base flash flash-error mx-0 tmp-mx-0 mt-0 tmp-mt-0 mb-2 tmp-mb-2">
-  
-    .
-
-
-  
-</div>      
-<div class="FormControl-checkbox-wrap">
-  <input name="user_list[private]" type="hidden" value="0" autocomplete="off" /><input hidden_input="true" aria-describedby="caption-45959b51-35f1-48d5-9bc8-53d40c27ada5" id="user_list[private]" class="FormControl-checkbox" type="checkbox" value="1" name="user_list[private]" />
-  <span class="FormControl-checkbox-labelWrap">
-    <label for="user_list[private]" class="FormControl-label">
-      Private
-</label>        <span class="FormControl-caption" id="caption-45959b51-35f1-48d5-9bc8-53d40c27ada5">
-      Enabling this makes the list visible only to you.
-  </span>
-
-  </span>
-</div>    <button data-disable-invalid="true" data-submitting-message="Creating..." type="submit" disabled="disabled" data-view-component="true" class="Button--primary Button--medium Button Button--fullWidth mt-2 tmp-mt-2">  <span class="Button-content">
-    <span class="Button-label">Create</span>
-  </span>
-</button>
-
-
-  <p class="note f6 mt-2 mb-0">
-    <strong>Tip:</strong> type <code>:</code> to add emoji to the name or description.
-  </p>
-</form>
-</template>
-
-
-<h1 class='sr-only'>VishalManikandan1626/Task1</h1>
-
-
-<input type="hidden" value="mhFEZeMQHqFSgPEt5JYwR0E4XJHGvcvZABbME55hlGBLtu6iWinPgBFrOInrCVcG4YpiA6q17kg2i7yYf8MFFQ" data-csrf="true" id="react-codespace-csrf" />
-</rails-partial></div><div class="prc-PageLayout-HorizontalDivider-JLVqp prc-PageLayout-HeaderHorizontalDivider-odAHl" data-component="PageLayout.HorizontalDivider" data-variant="none" style="--spacing-divider:var(--spacing-none);--spacing:var(--spacing-none)"></div></header><div class="prc-PageLayout-PageLayoutContent-BneH9"><div data-component="PageLayout.Content" class="prc-PageLayout-ContentWrapper-gR9eG" data-is-hidden="false"><div class="prc-PageLayout-Content-xWL-A" data-width="large" style="--spacing:var(--spacing-condensed)"><div class="OverviewContent-module__Box__PF75K tmp-pl-lg-3 mt-0"><div class="OverviewHeader-module__Box__cC1RH"></div><div class="OverviewContent-module__Box_1__MPS0U"><div class="OverviewContent-module__Box_2__Di8Pb"><div class="OverviewContent-module__Box_3__wzlJx"><button data-component="Button" type="button" aria-haspopup="true" aria-expanded="false" tabindex="0" style="min-width:0" aria-label="main branch" data-testid="anchor-button" data-icv-name="Switch branches/tags" class="prc-Button-ButtonBase-9n-Xk overview-ref-selector width-full RefSelectorAnchoredOverlay-module__RefSelectorOverlayBtn__a3WK3" data-loading="false" data-size="medium" data-variant="default" id="ref-picker-repos-header-ref-selector"><span data-component="buttonContent" data-align="center" class="prc-Button-ButtonContent-Iohp5"><span data-component="text" class="prc-Button-Label-FWkx3"><div class="RefSelectorAnchoredOverlay-module__RefSelectorOverlayContainer__yaf4p"><div class="RefSelectorAnchoredOverlay-module__RefSelectorOverlayHeader__XtXRG"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-git-branch" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path></svg></div><div class="ref-selector-button-text-container RefSelectorAnchoredOverlay-module__RefSelectorBtnTextContainer__Di3rk"><span class="RefSelectorAnchoredOverlay-module__RefSelectorText__w_fmP"> <!-- -->main</span></div></div></span><span data-component="trailingVisual" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-triangle-down" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></span></span></button><div class="d-none"></div></div><div class="OverviewContent-module__Box_4__qf73o"><a data-component="Button" type="button" href="/VishalManikandan1626/Task1/branches" class="prc-Button-ButtonBase-9n-Xk OverviewContent-module__Button___Uotu" data-loading="false" data-size="medium" data-variant="invisible"><span data-component="buttonContent" data-align="center" class="prc-Button-ButtonContent-Iohp5"><span data-component="leadingVisual" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-git-branch" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path></svg></span><span data-component="text" class="prc-Button-Label-FWkx3">Branches</span></span></a><a data-component="Button" type="button" href="/VishalManikandan1626/Task1/tags" class="prc-Button-ButtonBase-9n-Xk OverviewContent-module__Button___Uotu" data-loading="false" data-size="medium" data-variant="invisible"><span data-component="buttonContent" data-align="center" class="prc-Button-ButtonContent-Iohp5"><span data-component="leadingVisual" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"></path></svg></span><span data-component="text" class="prc-Button-Label-FWkx3">Tags</span></span></a></div><div class="OverviewContent-module__Box_5__Zc3i7"><a data-component="Button" type="button" aria-label="Go to Branches page" href="/VishalManikandan1626/Task1/branches" class="prc-Button-ButtonBase-9n-Xk OverviewContent-module__Button_1__vmS6D" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-git-branch" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path></svg></a><a data-component="Button" type="button" aria-label="Go to Tags page" href="/VishalManikandan1626/Task1/tags" class="prc-Button-ButtonBase-9n-Xk OverviewContent-module__Button_1__vmS6D" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-tag" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"></path></svg></a></div></div><div class="OverviewContent-module__Box_6__Y_Yb_"><div class="OverviewContent-module__Box_7__JuRXo"><div class="d-none"></div><div class="OverviewContent-module__Box_8__UZCZh"><!--$!--><template></template><!--/$--></div><div class="OverviewContent-module__Box_9__bqMPw"><button data-component="Button" type="button" class="prc-Button-ButtonBase-9n-Xk" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="default"><span data-component="buttonContent" data-align="center" class="prc-Button-ButtonContent-Iohp5"><span data-component="text" class="prc-Button-Label-FWkx3">Go to file</span></span></button></div><div><h2 class="sr-only ScreenReaderHeading-module__userSelectNone__rwWIk prc-Heading-Heading-MtWFE" data-component="Heading" data-testid="screen-reader-heading">Add file</h2><button data-component="Button" type="button" aria-label="Add file" aria-haspopup="true" aria-expanded="false" tabindex="0" class="prc-Button-ButtonBase-9n-Xk" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="default" id="_R_a34ql3al1d_"><span data-component="buttonContent" data-align="center" class="prc-Button-ButtonContent-Iohp5"><span data-component="text" class="prc-Button-Label-FWkx3"><span class="AddFileDropdownButton-module__addFileButton__yGbg0">Add file<svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-triangle-down" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></span><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-plus AddFileDropdownButton-module__addFileIcon__Wg5eJ" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg></span></span></button></div></div><button data-component="Button" type="button" aria-haspopup="true" aria-expanded="false" tabindex="0" class="prc-Button-ButtonBase-9n-Xk" data-loading="false" data-size="medium" data-variant="primary" id="_R_94ql3al1d_"><span data-component="buttonContent" data-align="center" class="prc-Button-ButtonContent-Iohp5"><span data-component="leadingVisual" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-code hide-sm" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path></svg></span><span data-component="text" class="prc-Button-Label-FWkx3">Code</span><span data-component="trailingVisual" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-triangle-down" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path></svg></span></span></button><div class="OverviewContent-module__Box_10__mGSb4"><button data-component="IconButton" type="button" aria-haspopup="true" aria-expanded="false" tabindex="0" class="prc-Button-ButtonBase-9n-Xk prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="default" aria-labelledby="_R_7r4ql3al1d_" id="_R_b4ql3al1d_"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path></svg></button><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="n" data-component="Tooltip" aria-hidden="true" id="_R_7r4ql3al1d_">Open more actions menu</span></div></div></div><div class="OverviewContent-module__Box_11__F19kY"><div data-hpc="true" containertiming="hpc"><div class="d-none"></div><h2 class="sr-only ScreenReaderHeading-module__userSelectNone__rwWIk prc-Heading-Heading-MtWFE" data-component="Heading" data-testid="screen-reader-heading" id="folders-and-files">Folders and files</h2><table class="Table-module__Box__HZKiQ" aria-labelledby="folders-and-files"><thead class="DirectoryContent-module__OverviewHeaderRow__hOrKy Table-module__Box_1__VacXC"><tr class="Table-module__Box_2__PBp9s"><th colSpan="2" class="DirectoryContent-module__Box__iC_5e"><span class="text-bold">Name</span></th><th colSpan="1" class="DirectoryContent-module__Box_1__fuSBO"><span class="text-bold">Name</span></th><th class="hide-sm"><div class="width-fit prc-Truncate-Truncate-2G1eo" data-inline="true" title="Last commit message" style="--truncate-max-width:125px"><span class="text-bold">Last commit message</span></div></th><th colSpan="1" class="DirectoryContent-module__Box_2__Ccrx7"><div class="width-fit prc-Truncate-Truncate-2G1eo" data-inline="true" title="Last commit date" style="--truncate-max-width:125px"><span class="text-bold">Last commit date</span></div></th></tr></thead><tbody><tr class="DirectoryContent-module__Box_3__gl6dE"><td colSpan="3" class="bgColor-muted p-1 rounded-top-2"><div class="LatestCommit-module__Box__B25ZT"><h2 class="sr-only ScreenReaderHeading-module__userSelectNone__rwWIk prc-Heading-Heading-MtWFE" data-component="Heading" data-testid="screen-reader-heading">Latest commit</h2><div style="width:120px" class="Skeleton Skeleton--text" data-testid="loading"> </div><div class="d-flex flex-shrink-0 gap-2"><div data-testid="latest-commit-details" class="d-none d-sm-flex flex-items-center"></div><div class="d-flex gap-2"><h2 class="sr-only ScreenReaderHeading-module__userSelectNone__rwWIk prc-Heading-Heading-MtWFE" data-component="Heading" data-testid="screen-reader-heading">History</h2><a data-component="LinkButton" href="/VishalManikandan1626/Task1/commits/main/" class="prc-Button-ButtonBase-9n-Xk d-none d-lg-flex LinkButton-module__linkButton__nFnov flex-items-center fgColor-default" data-loading="false" data-size="small" data-variant="invisible"><span data-component="buttonContent" data-align="center" class="prc-Button-ButtonContent-Iohp5"><span data-component="leadingVisual" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-history" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z"></path></svg></span><span data-component="text" class="prc-Button-Label-FWkx3"><span class="fgColor-default">2 Commits</span></span></span></a><div class="d-sm-none"></div><div class="d-flex d-lg-none"><a data-component="LinkButton" aria-label="View commit history for this file." href="/VishalManikandan1626/Task1/commits/main/" class="prc-Button-ButtonBase-9n-Xk LinkButton-module__linkButton__nFnov flex-items-center fgColor-default" data-loading="false" data-size="small" data-variant="invisible" aria-describedby="_R_iqj6oql3al1d_"><span data-component="buttonContent" data-align="center" class="prc-Button-ButtonContent-Iohp5"><span data-component="leadingVisual" class="prc-Button-Visual-YNt2F prc-Button-VisualWrap-E4cnq"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-history" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z"></path></svg></span></span></a><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" role="tooltip" aria-hidden="true" id="_R_iqj6oql3al1d_">2 Commits</span></div></div></div></div></td></tr><tr class="react-directory-row undefined" id="folder-row-0"><td class="react-directory-row-name-cell-small-screen" colSpan="2"><div class="react-directory-filename-column"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"></path></svg><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="README.md" aria-label="README.md, (File)" class="Link--primary" href="/VishalManikandan1626/Task1/blob/main/README.md" data-discover="true">README.md</a></div></div></div></div></td><td class="react-directory-row-name-cell-large-screen" colSpan="1"><div class="react-directory-filename-column"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"></path></svg><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="README.md" aria-label="README.md, (File)" class="Link--primary" href="/VishalManikandan1626/Task1/blob/main/README.md" data-discover="true">README.md</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div class="Skeleton Skeleton--text"> </div></td><td><div class="react-directory-commit-age"><div class="Skeleton Skeleton--text"> </div></div></td></tr><tr class="react-directory-row undefined" id="folder-row-1"><td class="react-directory-row-name-cell-small-screen" colSpan="2"><div class="react-directory-filename-column"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"></path></svg><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="nexus-zone.html" aria-label="nexus-zone.html, (File)" class="Link--primary" href="/VishalManikandan1626/Task1/blob/main/nexus-zone.html" data-discover="true">nexus-zone.html</a></div></div></div></div></td><td class="react-directory-row-name-cell-large-screen" colSpan="1"><div class="react-directory-filename-column"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"></path></svg><div class="overflow-hidden"><div class="react-directory-filename-cell"><div class="react-directory-truncate"><a title="nexus-zone.html" aria-label="nexus-zone.html, (File)" class="Link--primary" href="/VishalManikandan1626/Task1/blob/main/nexus-zone.html" data-discover="true">nexus-zone.html</a></div></div></div></div></td><td class="react-directory-row-commit-cell"><div class="Skeleton Skeleton--text"> </div></td><td><div class="react-directory-commit-age"><div class="Skeleton Skeleton--text"> </div></div></td></tr><tr class="d-none DirectoryContent-module__Box_4__RhIsE" data-testid="view-all-files-row"><td colSpan="3" class="DirectoryContent-module__Box_5__GaE8N"><div><button class="prc-Link-Link-9ZwDx" data-component="Link">View all files</button></div></td></tr></tbody></table><document-dropzone><div class="repo-file-upload-tree-target js-upload-manifest-tree-view" data-testid="dragzone" data-drop-url="/VishalManikandan1626/Task1/upload/main" data-target="document-dropzone.dropContainer"><div class="repo-file-upload-outline"><div class="repo-file-upload-slate"><div class="fgColor-muted"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-file" viewBox="0 0 24 24" width="32" height="32" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M3 3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm2-.5a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 .5.5h14a.5.5 0 0 0 .5-.5V8.5h-4a2 2 0 0 1-2-2v-4Zm10 0v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 0-.146-.336l-4.018-4.018A.5.5 0 0 0 15 2.5Z"></path></svg></div><h2 aria-hidden="true">Drop to upload your files</h2></div></div></div></document-dropzone></div><div class="OverviewRepoFiles-module__Box_1__OXeac"><div class="OverviewRepoFiles-module__Box_2__zsLGk"><div itemScope="" itemType="https://schema.org/abstract" class="OverviewRepoFiles-module__Box_3__bBU1C"><h2 class="prc-src-InternalVisuallyHidden-2YaI6">Repository files navigation</h2><nav class="prc-components-UnderlineWrapper-eT-Yj OverviewRepoFiles-module__UnderlineNav__QbWWv" aria-label="Repository files" data-variant="inset" data-overflow-measured="false"><ul class="prc-components-UnderlineItemList-xKlKC" role="list"><li class="prc-UnderlineNav-UnderlineNavItem-syRjR"><a href="#" aria-current="page" class="prc-components-UnderlineItem-7fP-n"><span data-component="icon"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-book" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path></svg></span><span data-component="text" data-content="README">README</span></a></li></ul></nav><div class="d-none"></div><button data-component="IconButton" type="button" class="prc-Button-ButtonBase-9n-Xk OverviewRepoFiles-module__editButton__NMrlF prc-Button-IconButton-fyge7" data-loading="false" data-no-visuals="true" data-size="small" data-variant="invisible" aria-labelledby="_R_2j8ql3al1d_"><svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-pencil" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path></svg></button><span class="prc-TooltipV2-Tooltip-tLeuB" data-direction="s" data-component="Tooltip" aria-hidden="true" id="_R_2j8ql3al1d_">Edit file</span></div><div class="js-snippet-clipboard-copy-unpositioned DirectoryRichtextContent-module__SharedMarkdownContent__hHXUL" data-hpc="true" containertiming="hpc"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto">Task1</h1><a id="user-content-task1" class="anchor" aria-label="Permalink: Task1" href="#task1"><svg data-component="Octicon" class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
-</article></div></div></div></div></div></div></div><div class="prc-PageLayout-PaneWrapper-pHPop pr-2" style="--offset-header:0px;--spacing-row:var(--spacing-none);--spacing-column:var(--spacing-none)" data-is-hidden="false" data-position="end"><div class="prc-PageLayout-HorizontalDivider-JLVqp prc-PageLayout-PaneHorizontalDivider-9tbnE" data-component="PageLayout.HorizontalDivider" data-variant-narrow="none" data-variant-regular="none" data-position="end" style="--spacing-divider:var(--spacing-none);--spacing:var(--spacing-none)"></div><div class="prc-PageLayout-Pane-AyzHK" data-component="PageLayout.Pane" style="--spacing:var(--spacing-normal);--pane-min-width:256px;--pane-max-width:calc(100vw - var(--pane-max-width-diff));--pane-width-size:var(--pane-width-large);--pane-width:320px"><rails-partial data-partial-name="codeViewRepoRoute.Sidebar" class="RailsPartial-module__d-contents__G5m4w">
-
-<div class="BorderGrid ">
-  <div class="BorderGrid-row">
-    <div class="BorderGrid-cell">
-        <details class="details-reset details-overlay details-overlay-dark " >
-          <summary class="float-right">
-        <div class="Link--secondary pt-1 pl-2">
-          <svg aria-label="Edit repository metadata" role="img" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-gear float-right">
-    <path d="M8 0a8.2 8.2 0 0 1 .701.031C9.444.095 9.99.645 10.16 1.29l.288 1.107c.018.066.079.158.212.224.231.114.454.243.668.386.123.082.233.09.299.071l1.103-.303c.644-.176 1.392.021 1.82.63.27.385.506.792.704 1.218.315.675.111 1.422-.364 1.891l-.814.806c-.049.048-.098.147-.088.294.016.257.016.515 0 .772-.01.147.038.246.088.294l.814.806c.475.469.679 1.216.364 1.891a7.977 7.977 0 0 1-.704 1.217c-.428.61-1.176.807-1.82.63l-1.102-.302c-.067-.019-.177-.011-.3.071a5.909 5.909 0 0 1-.668.386c-.133.066-.194.158-.211.224l-.29 1.106c-.168.646-.715 1.196-1.458 1.26a8.006 8.006 0 0 1-1.402 0c-.743-.064-1.289-.614-1.458-1.26l-.289-1.106c-.018-.066-.079-.158-.212-.224a5.738 5.738 0 0 1-.668-.386c-.123-.082-.233-.09-.299-.071l-1.103.303c-.644.176-1.392-.021-1.82-.63a8.12 8.12 0 0 1-.704-1.218c-.315-.675-.111-1.422.363-1.891l.815-.806c.05-.048.098-.147.088-.294a6.214 6.214 0 0 1 0-.772c.01-.147-.038-.246-.088-.294l-.815-.806C.635 6.045.431 5.298.746 4.623a7.92 7.92 0 0 1 .704-1.217c.428-.61 1.176-.807 1.82-.63l1.102.302c.067.019.177.011.3-.071.214-.143.437-.272.668-.386.133-.066.194-.158.211-.224l.29-1.106C6.009.645 6.556.095 7.299.03 7.53.01 7.764 0 8 0Zm-.571 1.525c-.036.003-.108.036-.137.146l-.289 1.105c-.147.561-.549.967-.998 1.189-.173.086-.34.183-.5.29-.417.278-.97.423-1.529.27l-1.103-.303c-.109-.03-.175.016-.195.045-.22.312-.412.644-.573.99-.014.031-.021.11.059.19l.815.806c.411.406.562.957.53 1.456a4.709 4.709 0 0 0 0 .582c.032.499-.119 1.05-.53 1.456l-.815.806c-.081.08-.073.159-.059.19.162.346.353.677.573.989.02.03.085.076.195.046l1.102-.303c.56-.153 1.113-.008 1.53.27.161.107.328.204.501.29.447.222.85.629.997 1.189l.289 1.105c.029.109.101.143.137.146a6.6 6.6 0 0 0 1.142 0c.036-.003.108-.036.137-.146l.289-1.105c.147-.561.549-.967.998-1.189.173-.086.34-.183.5-.29.417-.278.97-.423 1.529-.27l1.103.303c.109.029.175-.016.195-.045.22-.313.411-.644.573-.99.014-.031.021-.11-.059-.19l-.815-.806c-.411-.406-.562-.957-.53-1.456a4.709 4.709 0 0 0 0-.582c-.032-.499.119-1.05.53-1.456l.815-.806c.081-.08.073-.159.059-.19a6.464 6.464 0 0 0-.573-.989c-.02-.03-.085-.076-.195-.046l-1.102.303c-.56.153-1.113.008-1.53-.27a4.44 4.44 0 0 0-.501-.29c-.447-.222-.85-.629-.997-1.189l-.289-1.105c-.029-.11-.101-.143-.137-.146a6.6 6.6 0 0 0-1.142 0ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM9.5 8a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 8Z"></path>
-</svg>
-        </div>
-      </summary>
-
-  <details-dialog
-    class="Box d-flex flex-column anim-fade-in fast Box-overlay--wide overflow-x-hidden"
-      aria-label="Edit repository details"
-    >
-    <div class="Box-header">
-      <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
-        <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-      </button>
-        <h1 class="Box-title" >Edit repository details</h1>
-    </div>
-      <div class="Box-body overflow-auto">
-              <div class="js-topic-form-area">
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form id="repo_metadata_form" data-turbo="false" action="/VishalManikandan1626/Task1/settings/update_meta" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" autocomplete="off" /><input type="hidden" name="authenticity_token" value="LhhhRnyva9nJTbgJTiWF9To2HEoZUB-08ZV6Cjm9nOvJP34iN0vFqHzpyRVUZ7VgRYgaCFgCKA0botCAab7TwA" />
-          <div class="form-group mt-0 tmp-mb-3 js-length-limited-input-container">
-            <div class="mb-2">
-              <label for="repo_description">Description</label>
-            </div>
-            <input type="text"
-              id="repo_description"
-              class="form-control input-contrast width-full js-length-limited-input"
-              name="repo_description"
-              placeholder="Short description of this repository"
-              autofocus
-              value=""
-              data-input-max-length=350
-              data-warning-length=50
-              data-warning-text="{{remaining}} characters remaining"
-            >
-            <div class="d-none mt-1 js-length-limited-input-warning text-right color-fg-danger"></div>
-          </div>
-          <div class="form-group tmp-my-3">
-            <div class="mb-2">
-              <label for="repo_homepage">Website</label>
-            </div>
-             <input type="url" id="repo_homepage" class="color-bg-default form-control input-contrast width-full" name="repo_homepage" value="" placeholder="Enter a valid URL">
-          </div>
-          <div class="width-full tag-input-container topic-input-container d-inline-block js-tag-input-container">
-            <div class="js-tag-input-wrapper">
-              <div class="form-group my-0">
-                <div class="mb-2">
-                  <label for="repo_topics" class="d-block">Topics <span class="text-normal color-fg-muted">(separate with spaces)</span></label>
+          <div class="topbar-right">
+            <button id="darkToggle" class="icon-btn" type="button" title="Toggle Dark/Light Mode">
+              <span id="darkToggleIcon" aria-hidden="true">🌙</span>
+              <span class="sr-only">Toggle theme</span>
+            </button>
+
+            <div class="notif-wrap">
+              <button id="notifBtn" class="icon-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                <span aria-hidden="true">🔔</span>
+                <span class="sr-only">Notifications</span>
+              </button>
+              <div id="notifPanel" class="notif-panel" role="menu" aria-label="Notification panel">
+                <div class="head">
+                  <div class="h">Alerts</div>
+                  <div style="color:var(--muted2);font-size:12px;">3</div>
                 </div>
-                <div class="tag-input form-control d-inline-block color-bg-default py-0 position-relative">
-                  <ul class="js-tag-input-selected-tags d-inline">
-                    <li class="d-none topic-tag-action my-1 mr-1 f6 float-left js-tag-input-tag js-template">
-                      <span class="js-placeholder-tag-name"></span>
-                      <button type="button" class="delete-topic-button f5 no-underline ml-1 js-remove" tabindex="-1">
-                        <svg aria-label="Remove topic" role="img" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-                      </button>
-                      <input type="hidden" name="repo_topics[]" class="js-topic-input" value="">
-                    </li>
+                <div id="notifList" class="list"></div>
+              </div>
+            </div>
 
-                  </ul>
+            <div class="avatar" title="Administrator" aria-hidden="true">NZ</div>
+          </div>
+        </header>
 
-                    <auto-complete src="/VishalManikandan1626/Task1/topic_autocomplete" for="repo-topic-popup">
-                      <input type="text" id="repo_topics" class="tag-input-inner form-control color-bg-default short d-inline-block p-0 my-1 border-0" autocomplete="off" autofocus>
-                      <ul class="suggester border width-full color-bg-default left-0" id="repo-topic-popup" style="top: 100%;"></ul>
-                    </auto-complete>
+        <!-- Floating God Mode Badge -->
+        <div id="godFloat" class="god-float" role="button" tabindex="0" aria-label="Open God Mode Console">
+          <span class="bolt" aria-hidden="true">⚡</span>
+          <span>GOD MODE ACTIVE</span>
+        </div>
+
+        <!-- Views -->
+
+        <!-- VIEW 1: DASHBOARD -->
+        <section id="view-dashboard" class="view active" data-view="dashboard">
+          <div class="section-title fade-stagger">Dashboard</div>
+          <div class="subtext fade-stagger visible" style="transition-delay:40ms;">
+            Operational pulse across the SEZ registry, approvals, and controls.
+          </div>
+
+          <div class="kpi-row" aria-label="Key Performance Indicators">
+            <div class="card kpi-card fade-stagger" style="transition-delay:0ms;">
+              <div class="label">Total Registered Businesses</div>
+              <div class="value" data-count="4821">4,821</div>
+              <div class="trend">↗ <span style="color:var(--muted2)">Rolling 30d</span></div>
+            </div>
+            <div class="card kpi-card fade-stagger" style="transition-delay:60ms;">
+              <div class="label">Active Licenses</div>
+              <div class="value" data-count="3205">3,205</div>
+              <div class="trend">↗ <span style="color:var(--muted2)">Stable throughput</span></div>
+            </div>
+            <div class="card kpi-card fade-stagger" style="transition-delay:120ms;">
+              <div class="label">Pending Approvals</div>
+              <div class="value" data-count="47">47</div>
+              <div class="trend">⏳ <span style="color:var(--muted2)">Triage required</span></div>
+            </div>
+            <div class="card kpi-card fade-stagger" style="transition-delay:180ms;">
+              <div class="label">Revenue This Month</div>
+              <div class="value" data-count="2400000">$2.4M</div>
+              <div class="trend">↗ <span style="color:var(--muted2)">Collected & flagged</span></div>
+            </div>
+            <div class="card kpi-card fade-stagger" style="transition-delay:240ms;">
+              <div class="label">New Applications (7d)</div>
+              <div class="value" data-count="128">128</div>
+              <div class="trend">⚡ <span style="color:var(--muted2)">Inbound surge</span></div>
+            </div>
+            <div class="card kpi-card fade-stagger" style="transition-delay:300ms;">
+              <div class="label">Suspended Entities</div>
+              <div class="value" data-count="12">12</div>
+              <div class="trend">⛔ <span style="color:var(--muted2)">Control enforced</span></div>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="card list-card fade-stagger" style="transition-delay:80ms;">
+              <div class="card-head">
+                <div class="h">Recent Activity Feed</div>
+                <div class="meta">Live-style mock stream</div>
+              </div>
+              <div id="activityFeed" class="feed" role="list"></div>
+            </div>
+
+            <div class="card list-card fade-stagger" style="transition-delay:120ms;">
+              <div class="card-head">
+                <div class="h">Approval Queue</div>
+                <div class="meta">Top 5 pending</div>
+              </div>
+              <div class="table-wrap" style="max-height:360px;">
+                <table aria-label="Approval queue">
+                  <thead>
+                    <tr>
+                      <th>Company</th>
+                      <th>Type</th>
+                      <th>Submitted</th>
+                      <th>Priority</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="approvalQueue"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="card map-card fade-stagger" style="transition-delay:140ms;">
+            <div class="map-wrap">
+              <div class="map-meta">
+                <div>
+                  <div class="section-title" style="margin:0;font-size:22px;">Zone Activity Map</div>
+                  <div class="subtext" style="margin:6px 0 0 0;">SVG floor sectors colored by occupancy</div>
+                </div>
+                <div class="legend" aria-label="Occupancy legend">
+                  <div class="leg">
+                    <span class="swatch green"></span> &lt; 50%
+                  </div>
+                  <div class="leg">
+                    <span class="swatch amber"></span> 50-80%
+                  </div>
+                  <div class="leg">
+                    <span class="swatch red"></span> &gt; 80%
+                  </div>
+                </div>
+              </div>
+
+              <svg class="map-svg" viewBox="0 0 860 260" xmlns="http://www.w3.org/2000/svg" aria-label="Zone map">
+                <g id="zoneSectors">
+                  <path id="zone-A" class="zone-sector" data-zone="Zone A" data-occupancy="0.87"
+                    d="M80 40 H340 V120 H80 Z"
+                    fill="rgba(47,227,139,0.24)" stroke="rgba(201,168,76,0.55)" stroke-width="2" />
+
+                  <path id="zone-B" class="zone-sector" data-zone="Zone B" data-occupancy="0.62"
+                    d="M350 40 H560 V120 H350 Z"
+                    fill="rgba(242,184,75,0.22)" stroke="rgba(201,168,76,0.45)" stroke-width="2" />
+
+                  <path id="zone-C" class="zone-sector" data-zone="Zone C" data-occupancy="0.45"
+                    d="M80 130 H270 V210 H80 Z"
+                    fill="rgba(47,227,139,0.20)" stroke="rgba(201,168,76,0.35)" stroke-width="2" />
+
+                  <path id="zone-D" class="zone-sector" data-zone="Tech Cluster" data-occupancy="0.91"
+                    d="M290 130 H560 V210 H290 Z"
+                    fill="rgba(227,93,106,0.22)" stroke="rgba(201,168,76,0.55)" stroke-width="2" />
+
+                  <path id="zone-E" class="zone-sector" data-zone="Logistics Hub" data-occupancy="0.78"
+                    d="M570 40 H780 V120 H570 Z"
+                    fill="rgba(242,184,75,0.22)" stroke="rgba(201,168,76,0.45)" stroke-width="2" />
+
+                  <path id="zone-F" class="zone-sector" data-zone="Industrial Area" data-occupancy="0.53"
+                    d="M620 130 H820 V210 H620 Z"
+                    fill="rgba(242,184,75,0.18)" stroke="rgba(201,168,76,0.35)" stroke-width="2" />
+
+                  <text x="210" y="85" font-family="JetBrains Mono, monospace" font-size="14" fill="rgba(234,240,255,0.9)" text-anchor="middle">
+                    Trading Zone
+                  </text>
+                  <text x="455" y="85" font-family="JetBrains Mono, monospace" font-size="14" fill="rgba(234,240,255,0.9)" text-anchor="middle">
+                    Financial Services
+                  </text>
+                  <text x="175" y="175" font-family="JetBrains Mono, monospace" font-size="14" fill="rgba(234,240,255,0.9)" text-anchor="middle">
+                    Tech Cluster
+                  </text>
+                  <text x="425" y="175" font-family="JetBrains Mono, monospace" font-size="14" fill="rgba(234,240,255,0.9)" text-anchor="middle">
+                    Logistics Hub
+                  </text>
+                  <text x="675" y="85" font-family="JetBrains Mono, monospace" font-size="14" fill="rgba(234,240,255,0.9)" text-anchor="middle">
+                    Tech Cluster
+                  </text>
+                  <text x="720" y="175" font-family="JetBrains Mono, monospace" font-size="14" fill="rgba(234,240,255,0.9)" text-anchor="middle">
+                    Industrial Area
+                  </text>
+                </g>
+              </svg>
+
+              <div class="zone-details" id="zoneDetails">
+                <div class="occupancy-bar">
+                  <div class="row">
+                    <div class="name">Select a sector</div>
+                    <div class="pct">Occupancy & breakdown</div>
+                  </div>
+                  <div class="bar-track">
+                    <div id="zoneBarFill" class="bar-fill" style="width:0%"></div>
+                  </div>
+                  <div style="margin-top:10px;color:var(--muted2);font-size:12px;" id="zoneBreakdown">—</div>
+                </div>
+                <div class="util-grid">
+                  <div class="uhead">
+                    <div class="name">Utilities</div>
+                    <div class="pct" id="zoneTenantCount">—</div>
+                  </div>
+                  <div class="items" id="zoneUtilities"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW 2: BUSINESS REGISTRY -->
+        <section id="view-registry" class="view" data-view="registry">
+          <div class="section-title fade-stagger">Business Registry</div>
+          <div class="subtext fade-stagger" style="transition-delay:50ms;">Search, filter, sort, and open profiles via the right-side drawer.</div>
+
+          <div class="toolbar fade-stagger" style="transition-delay:80ms;">
+            <div class="filters">
+              <div class="field" style="min-width:240px;">
+                <div class="lab">Search</div>
+                <input id="registrySearch" type="text" placeholder="Name, Reg#, Trade Name..." />
+              </div>
+              <div class="field">
+                <div class="lab">Zone</div>
+                <select id="registryZone">
+                  <option value="all">All Zones</option>
+                </select>
+              </div>
+              <div class="field">
+                <div class="lab">Entity Type</div>
+                <select id="registryEntityType">
+                  <option value="all">All Types</option>
+                </select>
+              </div>
+              <div class="field">
+                <div class="lab">Status</div>
+                <select id="registryStatus">
+                  <option value="all">All Status</option>
+                </select>
+              </div>
+              <div class="field">
+                <div class="lab">Industry</div>
+                <select id="registryIndustry">
+                  <option value="all">All Industries</option>
+                </select>
+              </div>
+              <div class="field">
+                <div class="lab">Year</div>
+                <select id="registryYear">
+                  <option value="all">All Years</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="filters" style="justify-content:flex-end;">
+              <button id="registerNewBtn" class="btn primary" type="button">+ Register New Business</button>
+              <button id="exportCsvBtn" class="btn" type="button">Export CSV</button>
+              <div class="field" style="min-width:170px;">
+                <div class="lab">Bulk Action</div>
+                <select id="bulkAction">
+                  <option value="none">Bulk Action ▾</option>
+                  <option value="suspend">Suspend Selected</option>
+                  <option value="renew">Renew Licenses (Selected)</option>
+                  <option value="export">Export Selected</option>
+                </select>
+              </div>
+              <button id="applyBulkBtn" class="btn blue" type="button" style="align-self:end;">Apply</button>
+            </div>
+          </div>
+
+          <div class="table-wrap fade-stagger" style="transition-delay:110ms; max-height:560px;">
+            <table aria-label="Business registry table">
+              <thead>
+                <tr>
+                  <th style="width:46px;">
+                    <input id="selectAllRegistry" type="checkbox" aria-label="Select all rows" />
+                  </th>
+                  <th class="sortable" data-sort="regNo">Reg#</th>
+                  <th class="sortable" data-sort="companyName">Company Name</th>
+                  <th class="sortable" data-sort="entityType">Entity Type</th>
+                  <th class="sortable" data-sort="industry">Industry</th>
+                  <th class="sortable" data-sort="zone">Zone</th>
+                  <th class="sortable" data-sort="licenseExp">License Exp</th>
+                  <th class="sortable" data-sort="status">Status</th>
+                  <th>Shareholders</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="registryTbody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- VIEW 3: APPLICATIONS & APPROVALS -->
+        <section id="view-applications" class="view" data-view="applications">
+          <div class="section-title fade-stagger">Applications & Approvals</div>
+          <div class="subtext fade-stagger" style="transition-delay:50ms;">Kanban overview with detailed table below.</div>
+
+          <div class="kanban fade-stagger" style="transition-delay:80ms; margin-top:10px;">
+            <div class="kan-col">
+              <div class="hc"><div class="t">SUBMITTED</div><div class="count" id="kanCount-submitted">—</div></div>
+              <div id="kanSubmitted"></div>
+            </div>
+            <div class="kan-col">
+              <div class="hc"><div class="t">UNDER REVIEW</div><div class="count" id="kanCount-review">—</div></div>
+              <div id="kanReview"></div>
+            </div>
+            <div class="kan-col">
+              <div class="hc"><div class="t">DOCS PENDING</div><div class="count" id="kanCount-docspending">—</div></div>
+              <div id="kanDocsPending"></div>
+            </div>
+            <div class="kan-col">
+              <div class="hc"><div class="t">APPROVED</div><div class="count" id="kanCount-approved">—</div></div>
+              <div id="kanApproved"></div>
+            </div>
+            <div class="kan-col">
+              <div class="hc"><div class="t">REJECTED</div><div class="count" id="kanCount-rejected">—</div></div>
+              <div id="kanRejected"></div>
+            </div>
+          </div>
+
+          <div class="subtext" style="margin-top:18px;">All applications with SLA countdown progress.</div>
+          <div class="table-wrap fade-stagger" style="transition-delay:120ms; max-height:560px;">
+            <table aria-label="Applications table">
+              <thead>
+                <tr>
+                  <th>App ID</th>
+                  <th>Applicant</th>
+                  <th>Type</th>
+                  <th>Submitted</th>
+                  <th>Reviewer</th>
+                  <th>SLA</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="appsTbody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- VIEW 4: LICENSE MANAGEMENT -->
+        <section id="view-licenses" class="view" data-view="licenses">
+          <div class="section-title fade-stagger">License Management</div>
+          <div class="subtext fade-stagger" style="transition-delay:50ms;">Renew, override, and control license lifecycle (mock data).</div>
+
+          <div class="kpi-row fade-stagger" style="transition-delay:80ms;">
+            <div class="card kpi-card">
+              <div class="label">Total Licenses</div>
+              <div class="value">3,205</div>
+              <div class="trend">— <span style="color:var(--muted2)">Registry-wide</span></div>
+            </div>
+            <div class="card kpi-card">
+              <div class="label">Expiring in 30 days</div>
+              <div class="value">89</div>
+              <div class="trend">⏳ <span style="color:var(--muted2)">Renewal window</span></div>
+            </div>
+            <div class="card kpi-card">
+              <div class="label">Expired</div>
+              <div class="value">34</div>
+              <div class="trend">⛔ <span style="color:var(--muted2)">Enforcement</span></div>
+            </div>
+            <div class="card kpi-card">
+              <div class="label">Suspended</div>
+              <div class="value">12</div>
+              <div class="trend">⛔ <span style="color:var(--muted2)">Control active</span></div>
+            </div>
+            <div class="card kpi-card">
+              <div class="label">Processing Renewals</div>
+              <div class="value">47</div>
+              <div class="trend">🔵 <span style="color:var(--muted2)">In flight</span></div>
+            </div>
+            <div class="card kpi-card">
+              <div class="label">Compliance Holds</div>
+              <div class="value">18</div>
+              <div class="trend">🧾 <span style="color:var(--muted2)">Docs required</span></div>
+            </div>
+          </div>
+
+          <div class="filter-cards fade-stagger" style="transition-delay:90ms;">
+            <div class="fcard active" data-license-type="all" role="button" tabindex="0">All</div>
+            <div class="fcard" data-license-type="Trading" role="button" tabindex="0">Trading</div>
+            <div class="fcard" data-license-type="Services" role="button" tabindex="0">Services</div>
+            <div class="fcard" data-license-type="Industrial" role="button" tabindex="0">Industrial</div>
+            <div class="fcard" data-license-type="Financial" role="button" tabindex="0">Financial</div>
+            <div class="fcard" data-license-type="Media" role="button" tabindex="0">Media</div>
+            <div class="fcard" data-license-type="Healthcare" role="button" tabindex="0">Healthcare</div>
+            <div class="fcard" data-license-type="Technology" role="button" tabindex="0">Technology</div>
+            <div class="fcard" data-license-type="Logistics" role="button" tabindex="0">Logistics</div>
+            <div class="fcard" data-license-type="Consulting" role="button" tabindex="0">Consulting</div>
+            <div class="fcard" data-license-type="Food & Beverage" role="button" tabindex="0">Food &amp; Beverage</div>
+          </div>
+
+          <div class="god-panel fade-stagger" style="transition-delay:100ms; margin-bottom:14px;">
+            <div class="ghead">
+              <div class="t">⚡ Authority Override</div>
+              <div class="note">Override actions require PIN confirmation.</div>
+            </div>
+            <div class="controls">
+              <button class="btn primary" type="button" data-requires-pin="true" data-pin-action="Bulk Renew Selected">Bulk Renew Selected</button>
+              <div class="field" style="min-width:220px;">
+                <div class="lab">Override Expiry Date</div>
+                <input id="overrideExpiry" type="date" />
+              </div>
+              <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Force Suspend">Force Suspend</button>
+              <button class="btn blue" type="button" data-requires-pin="true" data-pin-action="Reinstate License">Reinstate License</button>
+              <button class="btn" type="button" data-requires-pin="true" data-pin-action="Generate Batch Certificates">Generate Batch Certificates</button>
+              <button class="btn" type="button" data-requires-pin="true" data-pin-action="Mass Email Renewal Notices">Mass Email Renewal Notices</button>
+            </div>
+          </div>
+
+          <div class="table-wrap fade-stagger" style="transition-delay:120ms; max-height:560px;">
+            <table aria-label="License management table">
+              <thead>
+                <tr>
+                  <th style="width:46px;">
+                    <input id="selectAllLicenses" type="checkbox" aria-label="Select all licenses" />
+                  </th>
+                  <th>License #</th>
+                  <th>Company</th>
+                  <th>Type</th>
+                  <th>Activities</th>
+                  <th>Issue Date</th>
+                  <th>Expiry</th>
+                  <th>Renewal Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="licensesTbody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- VIEW 5: INVESTOR PROFILES -->
+        <section id="view-investors" class="view" data-view="investors">
+          <div class="section-title fade-stagger">Investor Profiles</div>
+          <div class="subtext fade-stagger" style="transition-delay:50ms;">Investor/Director KYC registry (mock data).</div>
+
+          <div class="investor-grid" id="investorGrid"></div>
+        </section>
+
+        <!-- VIEW 6: ZONE INFRASTRUCTURE -->
+        <section id="view-infrastructure" class="view" data-view="infrastructure">
+          <div class="section-title fade-stagger">Zone Infrastructure</div>
+          <div class="subtext fade-stagger" style="transition-delay:50ms;">SVG zone map + facilities registry (mock data).</div>
+
+          <div class="card map-card fade-stagger" style="transition-delay:80ms;">
+            <div class="map-wrap">
+              <div class="map-meta">
+                <div>
+                  <div class="section-title" style="margin:0;font-size:22px;">Interactive Zone Map</div>
+                  <div class="subtext" style="margin:6px 0 0 0;">Click a zone to view occupancy + tenants + utilities</div>
+                </div>
+              </div>
+
+              <div style="display:grid;grid-template-columns:1fr;gap:14px;">
+                <svg class="map-svg" viewBox="0 0 860 260" xmlns="http://www.w3.org/2000/svg" aria-label="Infrastructure map">
+                  <g id="infraZoneSectors"></g>
+                </svg>
+              </div>
+
+              <div class="zone-details" style="margin-top:14px;">
+                <div class="occupancy-bar">
+                  <div class="row">
+                    <div class="name" id="infraZoneName">Zone A</div>
+                    <div class="pct" id="infraZonePct">87% occupied</div>
+                  </div>
+                  <div class="bar-track">
+                    <div id="infraZoneBarFill" class="bar-fill" style="width:87%"></div>
+                  </div>
+                  <div style="margin-top:10px;color:var(--muted2);font-size:12px;" id="infraUnitBreakdown">
+                    office/warehouse/land breakdown
+                  </div>
+                </div>
+                <div class="util-grid">
+                  <div class="uhead">
+                    <div class="name">Tenant & Utilities</div>
+                    <div class="pct" id="infraTenantCount">—</div>
+                  </div>
+                  <div class="items" id="infraUtilities"></div>
+                <div style="margin-top:12px;color:var(--muted2);font-size:12px;" id="infraTenantDetails">
+                  Tenants: — • Available units: —
+                </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="form-group tmp-mt-3 mb-0" role="group" aria-labelledby="hidden_sidebar_options">
-            <div class="text-bold mb-2" id="hidden_sidebar_options">Include in the home page</div>
-            <label class="d-block mb-2 text-normal">
-              <input name="repo_sections[releases]" type="hidden" value="0" autocomplete="off" /><input class="mr-1" type="checkbox" value="1" checked="checked" name="repo_sections[releases]" id="repo_sections_releases" /> Releases
-            </label>
-
-            <label class="d-block mb-2 text-normal">
-              <input name="repo_sections[deployments]" type="hidden" value="0" autocomplete="off" /><input class="mr-1" type="checkbox" value="1" checked="checked" name="repo_sections[deployments]" id="repo_sections_deployments" /> Deployments
-            </label>
-
-            <label class="d-block text-normal">
-              <input name="repo_sections[packages]" type="hidden" value="0" autocomplete="off" /><input class="mr-1" type="checkbox" value="1" checked="checked" name="repo_sections[packages]" id="repo_sections_packages" /> Packages
-            </label>
+          <div class="god-panel fade-stagger" style="transition-delay:100ms; margin:14px 0 14px 0;">
+            <div class="ghead">
+              <div class="t">⚡ Authority Override (Zone Controls)</div>
+              <div class="note">Freeze, override, reassign, and emergency flags require PIN.</div>
+            </div>
+            <div class="controls">
+              <button class="btn" type="button" data-requires-pin="true" data-pin-action="Freeze New Allocations">Freeze New Allocations</button>
+              <button class="btn primary" type="button" data-requires-pin="true" data-pin-action="Override Lease Terms">Override Lease Terms</button>
+              <button class="btn blue" type="button" data-requires-pin="true" data-pin-action="Bulk Reassign Units">Bulk Reassign Units</button>
+              <div class="field" style="min-width:200px;">
+                <div class="lab">Zone Capacity Override</div>
+                <input id="capacityOverride" type="number" placeholder="e.g., 9500" />
+              </div>
+              <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Emergency Evacuation Flag">Emergency Evacuation Flag</button>
+            </div>
           </div>
-</form>      </div>
 
-      </div>
-        <div class="Box-footer">
-                <div class="form-actions">
-        <button type="submit" class="btn btn-primary" form="repo_metadata_form">Save changes</button>
-        <button type="reset" class="btn" data-close-dialog="" form="repo_metadata_form">Cancel</button>
-      </div>
+          <div class="table-wrap fade-stagger" style="transition-delay:120ms; max-height:520px;">
+            <table aria-label="Unit and facility registry">
+              <thead>
+                <tr>
+                  <th>Unit ID</th>
+                  <th>Type</th>
+                  <th>Area (sqft)</th>
+                  <th>Tenant</th>
+                  <th>Lease Start</th>
+                  <th>Lease End</th>
+                  <th>Rent/Year</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="unitsTbody"></tbody>
+            </table>
+          </div>
+        </section>
 
+        <!-- VIEW 7: FEES & INVOICING -->
+        <section id="view-fees" class="view" data-view="fees">
+          <div class="section-title fade-stagger">Fees & Invoicing</div>
+          <div class="subtext fade-stagger" style="transition-delay:50ms;">Revenue breakdown, receivables, and invoice lifecycle (mock).</div>
+
+          <div class="grid-2">
+            <div class="card fade-stagger" style="transition-delay:80ms;">
+              <div class="card-head">
+                <div class="h">Monthly Revenue</div>
+                <div class="meta">Last 12 months (CSS bars)</div>
+              </div>
+              <div class="bars" id="revenueBars" aria-label="Revenue bars chart"></div>
+              <div style="margin-top:8px;color:var(--muted2);font-size:12px;">
+                Tip: This is CSS-only bars; values are hardcoded in JS for sizing.
+              </div>
+            </div>
+            <div class="card fade-stagger" style="transition-delay:120ms;">
+              <div class="card-head">
+                <div class="h">Fee Collection Mix</div>
+                <div class="meta">Donut chart distribution</div>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+                <div class="donut" aria-label="Fee mix donut">
+                  <div class="center">
+                    <div class="a">100%</div>
+                    <div class="b">Mix</div>
+                  </div>
+                </div>
+                <div style="flex:1;min-width:220px;">
+                  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px;">
+                    <div class="pill" style="border-color:rgba(201,168,76,0.35);background:rgba(201,168,76,0.08);color:var(--gold);">
+                      License Fees 40%
+                    </div>
+                    <div class="pill" style="border-color:rgba(77,163,255,0.35);background:rgba(77,163,255,0.08);color:rgba(77,163,255,1);">
+                      Visa Fees 20%
+                    </div>
+                    <div class="pill" style="border-color:rgba(242,184,75,0.35);background:rgba(242,184,75,0.08);color:rgba(242,184,75,1);">
+                      Registration 15%
+                    </div>
+                    <div class="pill" style="border-color:rgba(227,93,106,0.35);background:rgba(227,93,106,0.08);color:rgba(227,93,106,1);">
+                      Penalties 8%
+                    </div>
+                    <div class="pill" style="border-color:rgba(120,150,255,0.28);background:rgba(120,150,255,0.08);color:rgba(120,150,255,1);">
+                      Other 17%
+                    </div>
+                  </div>
+                  <div class="kv-grid" style="grid-template-columns:1fr;gap:10px;">
+                    <div class="kv">
+                      <div class="k">Outstanding receivables</div>
+                      <div class="v">$847,000</div>
+                    </div>
+                    <div class="kv">
+                      <div class="k">Overdue (>90 days)</div>
+                      <div class="v">$123,000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="god-panel fade-stagger" style="transition-delay:100ms; margin-top:14px; margin-bottom:14px;">
+            <div class="ghead">
+              <div class="t">⚡ Authority Override (Fee Controls)</div>
+              <div class="note">Discounts, fee overrides, and bulk invoice actions require PIN.</div>
+            </div>
+            <div class="controls">
+              <button class="btn primary" type="button" data-requires-pin="true" data-pin-action="Apply Discount/Waiver">Apply Discount/Waiver</button>
+              <button class="btn" type="button" data-requires-pin="true" data-pin-action="Override Fee Schedule">Override Fee Schedule</button>
+              <button class="btn blue" type="button" data-requires-pin="true" data-pin-action="Force Mark Paid">Force Mark Paid</button>
+              <button class="btn" type="button" data-requires-pin="true" data-pin-action="Bulk Generate Invoices">Bulk Generate Invoices</button>
+              <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Apply Penalty Override">Apply Penalty Override</button>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="table-wrap fade-stagger" style="transition-delay:120ms; max-height:520px;">
+              <table aria-label="Fee schedule">
+                <thead>
+                  <tr>
+                    <th>Service</th>
+                    <th>Entity Type</th>
+                    <th>Fee (USD)</th>
+                    <th>VAT</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="feeScheduleTbody"></tbody>
+              </table>
+            </div>
+
+            <div class="table-wrap fade-stagger" style="transition-delay:140ms; max-height:520px;">
+              <table aria-label="Invoice management">
+                <thead>
+                  <tr>
+                    <th>Invoice #</th>
+                    <th>Company</th>
+                    <th>Service</th>
+                    <th>Amount</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="invoicesTbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW 8: COMPLIANCE & AUDITS -->
+        <section id="view-compliance" class="view" data-view="compliance">
+          <div class="section-title fade-stagger">Compliance & Audits</div>
+          <div class="subtext fade-stagger" style="transition-delay:50ms;">Risk matrix + health score gauge + audit trail (mock).</div>
+
+          <div class="grid-2">
+            <div class="card fade-stagger" style="transition-delay:80ms;">
+              <div class="card-head">
+                <div class="h">Compliance Risk Dashboard</div>
+                <div class="meta">Likelihood vs Impact (3x3)</div>
+              </div>
+              <div class="risk-matrix" id="riskMatrix"></div>
+            </div>
+            <div class="card fade-stagger" style="transition-delay:110ms;">
+              <div class="card-head">
+                <div class="h">Zone Overall</div>
+                <div class="meta">Compliance health</div>
+              </div>
+              <div style="display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+                <div class="gauge" style="--deg:310deg;">
+                  <div class="ring" style="--deg:310deg;">
+                    <div class="txt">
+                      87
+                      <div class="sub">/100</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="flex:1;min-width:220px;">
+                  <div class="kv-grid" style="grid-template-columns:1fr;gap:10px;">
+                    <div class="kv">
+                      <div class="k">Flags requiring review</div>
+                      <div class="v" style="color:var(--amber);">22</div>
+                    </div>
+                    <div class="kv">
+                      <div class="k">Active compliance freezes</div>
+                      <div class="v" style="color:var(--red);">4</div>
+                    </div>
+                    <div class="kv">
+                      <div class="k">Pending SAR drafts</div>
+                      <div class="v" style="color:var(--blue);">6</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="god-panel fade-stagger" style="transition-delay:130ms; margin-top:14px; margin-bottom:14px;">
+            <div class="ghead">
+              <div class="t">⚡ Authority Override (Compliance Controls)</div>
+              <div class="note">Audit, escalation, freezes, SAR and overrides require PIN.</div>
+            </div>
+            <div class="controls">
+              <button class="btn primary" type="button" data-requires-pin="true" data-pin-action="Trigger Full Audit">Trigger Full Audit</button>
+              <button class="btn" type="button" data-requires-pin="true" data-pin-action="Escalate to Regulator">Escalate to Regulator</button>
+              <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Freeze Entity Operations">Freeze Entity Operations</button>
+              <button class="btn blue" type="button" data-requires-pin="true" data-pin-action="Generate SAR">Generate Suspicious Activity Report (SAR)</button>
+              <button class="btn" type="button" data-requires-pin="true" data-pin-action="Override Compliance Status">Override Compliance Status</button>
+              <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Initiate Deregistration Proceedings">Initiate Deregistration Proceedings</button>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="table-wrap fade-stagger" style="transition-delay:150ms; max-height:520px;">
+              <table aria-label="Flagged companies list">
+                <thead>
+                  <tr>
+                    <th>Company</th>
+                    <th>Flag Reason</th>
+                    <th>Severity</th>
+                    <th>Since</th>
+                    <th>Assigned To</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="flaggedTbody"></tbody>
+              </table>
+            </div>
+
+            <div class="table-wrap fade-stagger" style="transition-delay:170ms; max-height:520px;">
+              <table aria-label="Audit log">
+                <thead>
+                  <tr>
+                    <th>Timestamp</th>
+                    <th>Action</th>
+                    <th>Entity</th>
+                    <th>Changed By</th>
+                    <th>Before</th>
+                    <th>After</th>
+                    <th>IP Address</th>
+                  </tr>
+                </thead>
+                <tbody id="auditTbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW 9: ANALYTICS & REPORTS -->
+        <section id="view-analytics" class="view" data-view="analytics">
+          <div class="section-title fade-stagger">Analytics & Reports</div>
+          <div class="subtext fade-stagger" style="transition-delay:50ms;">Report builder, pre-built cards, and CSS visualizations (mock).</div>
+
+          <div class="card fade-stagger" style="transition-delay:80px; margin-bottom:14px;">
+            <div class="card-head">
+              <div class="h">Report Builder Panel</div>
+              <div class="meta">Generate scheduled outputs</div>
+            </div>
+            <div class="toolbar" style="margin-bottom:0;">
+              <div class="filters">
+                <div class="field" style="min-width:200px;">
+                  <div class="lab">Date range</div>
+                  <input id="reportStart" type="date" />
+                </div>
+                <div class="field" style="min-width:200px;">
+                  <div class="lab">To</div>
+                  <input id="reportEnd" type="date" />
+                </div>
+                <div class="field">
+                  <div class="lab">Entity type</div>
+                  <select id="reportEntityType">
+                    <option value="all">All</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <div class="lab">Zone</div>
+                  <select id="reportZone">
+                    <option value="all">All</option>
+                  </select>
+                </div>
+              </div>
+              <div class="filters" style="justify-content:flex-end;">
+                <div class="field" style="min-width:250px;">
+                  <div class="lab">Report type</div>
+                  <select id="reportType">
+                    <option value="Business Growth">Business Growth</option>
+                    <option value="Revenue">Revenue</option>
+                    <option value="License Expiry">License Expiry</option>
+                    <option value="Visa Utilization">Visa Utilization</option>
+                    <option value="Compliance Summary">Compliance Summary</option>
+                    <option value="Investor Nationality">Investor Nationality</option>
+                  </select>
+                </div>
+                <button class="btn primary" type="button" id="generateReportBtn">Generate</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="investor-grid" style="grid-template-columns: repeat(3, minmax(260px, 1fr));">
+            <div id="reportCards"></div>
+          </div>
+
+          <div class="grid-2" style="margin-top:14px;">
+            <div class="card fade-stagger" style="transition-delay:120ms;">
+              <div class="card-head">
+                <div class="h">Registration Trend</div>
+                <div class="meta">12 months (CSS-only line-ish bars)</div>
+              </div>
+              <div class="bars" id="trendChart"></div>
+            </div>
+            <div class="card fade-stagger" style="transition-delay:150ms;">
+              <div class="card-head">
+                <div class="h">Industry Breakdown</div>
+                <div class="meta">Horizontal bars</div>
+              </div>
+              <div id="industryBars" style="padding:0 10px 6px 10px;"></div>
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-top:14px;">
+            <div class="card fade-stagger" style="transition-delay:170ms;">
+              <div class="card-head">
+                <div class="h">Nationality Heatmap</div>
+                <div class="meta">Top 10 investor nationalities</div>
+              </div>
+              <div id="nationalityHeatmap" style="padding:0 12px 6px 12px;"></div>
+            </div>
+            <div class="card fade-stagger" style="transition-delay:190ms;">
+              <div class="card-head">
+                <div class="h">Revenue vs Target</div>
+                <div class="meta">Comparison bars</div>
+              </div>
+              <div id="revenueVsTarget" style="padding:0 12px 6px 12px;"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW 10: SYSTEM SETTINGS -->
+        <section id="view-settings" class="view" data-view="settings">
+          <div class="section-title fade-stagger">System Settings</div>
+          <div class="subtext fade-stagger" style="transition-delay:50ms;">Organized configuration sections (mock).</div>
+
+          <div class="grid-2">
+            <div class="card fade-stagger" style="transition-delay:80ms;">
+              <div class="card-head"><div class="h">Zone Configuration</div><div class="meta">Branding & jurisdiction</div></div>
+              <div class="kv-grid">
+                <div class="kv"><div class="k">Zone name</div><div class="v">NEXUS ZONE</div></div>
+                <div class="kv"><div class="k">Abbreviation</div><div class="v">NZ</div></div>
+                <div class="kv"><div class="k">Jurisdiction</div><div class="v">SEZ Authority — DMCC-inspired</div></div>
+                <div class="kv"><div class="k">Free zone type</div><div class="v">DMCC-style multi-commodity</div></div>
+              </div>
+              <div class="quick-actions">
+                <div class="qahead">
+                  <div class="t">Authority branding</div>
+                  <div class="meta" style="color:var(--muted2);font-size:12px;">Logo & templates (mock)</div>
+                </div>
+                <div class="list">
+                  <button class="btn" type="button" data-requires-pin="true" data-pin-action="Save Branding Templates">Save templates</button>
+                  <button class="btn" type="button" data-requires-pin="true" data-pin-action="Regenerate Letterhead">Regenerate letterhead</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card fade-stagger" style="transition-delay:110ms;">
+              <div class="card-head"><div class="h">Workflow Settings</div><div class="meta">Approvals & document gates</div></div>
+              <div class="kv-grid">
+                <div class="kv"><div class="k">Approval SLA timers</div><div class="v">Per application type</div></div>
+                <div class="kv"><div class="k">Auto-reminder triggers</div><div class="v">X days before expiry</div></div>
+                <div class="kv"><div class="k">Required docs checklist</div><div class="v">Per entity type</div></div>
+                <div class="kv"><div class="k">Mandatory KYC fields</div><div class="v">
+                  <label class="switch" title="Toggle mandatory KYC fields (mock)">
+                    <input type="checkbox" data-switch-key="mandatoryKyc" checked />
+                    <span class="track" aria-hidden="true"></span>
+                  </label>
+                </div></div>
+                <div class="kv"><div class="k">API Base URL</div><div class="v">https://api.nexuzzone.ae/v1</div></div>
+                <div class="kv"><div class="k">Enable API access keys</div><div class="v">
+                  <label class="switch" title="Toggle API keys access (mock)">
+                    <input type="checkbox" data-switch-key="apiKeysEnabled" checked />
+                    <span class="track" aria-hidden="true"></span>
+                  </label>
+                  <span style="margin-left:10px;color:var(--muted2);font-size:12px;">•••••••• (masked)</span>
+                </div></div>
+              </div>
+              <div class="quick-actions">
+                <div class="qahead">
+                  <div class="t">Workflow controls</div>
+                  <div class="meta" style="color:var(--muted2);font-size:12px;">Simulated</div>
+                </div>
+                <div class="list">
+                  <button class="btn primary" type="button" data-requires-pin="true" data-pin-action="Save Workflow SLA">Save SLA</button>
+                  <button class="btn" type="button">Preview checklist</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-top:14px;">
+            <div class="card fade-stagger" style="transition-delay:130ms;">
+              <div class="card-head"><div class="h">User Roles & Permissions</div><div class="meta">Role matrix (mock)</div></div>
+              <div class="kv-grid">
+                <div class="kv"><div class="k">Roles</div><div class="v">Super Admin, Zone Admin, Reviewer, Finance Officer, Compliance Officer, Read Only</div></div>
+                <div class="kv"><div class="k">Permission matrix</div><div class="v">Checkboxes per module</div></div>
+              </div>
+            </div>
+            <div class="card fade-stagger" style="transition-delay:150ms;">
+              <div class="card-head"><div class="h">System Logs</div><div class="meta">Audit history (mock)</div></div>
+              <div class="kv-grid">
+                <div class="kv"><div class="k">API request log</div><div class="v">Enabled</div></div>
+                <div class="kv"><div class="k">Login history</div><div class="v">Enabled</div></div>
+                <div class="kv"><div class="k">Data export history</div><div class="v">Enabled</div></div>
+                <div class="kv"><div class="k">Retention</div><div class="v">180 days</div></div>
+              </div>
+              <div class="quick-actions">
+                <div class="qahead"><div class="t">Export</div><div class="meta" style="color:var(--muted2);font-size:12px;">Download simulated logs</div></div>
+                <div class="list">
+                  <button class="btn" type="button" data-requires-pin="true" data-pin-action="Export API Request Log">Download API logs</button>
+                  <button class="btn" type="button" data-requires-pin="true" data-pin-action="Export Login History">Download login history</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW 11: PORTAL CONFIGURATION -->
+        <section id="view-portal" class="view" data-view="portal">
+          <div class="section-title fade-stagger">Portal Configuration</div>
+          <div class="subtext fade-stagger" style="transition-delay:50ms;">Public portal toggles, payment and integrations (mock).</div>
+
+          <div class="grid-2">
+            <div class="card fade-stagger" style="transition-delay:80ms;">
+              <div class="card-head"><div class="h">Public Investor Portal</div><div class="meta">ON/OFF toggle</div></div>
+              <div class="kv-grid">
+                <div class="kv"><div class="k">Status</div><div class="v">
+                  <label class="switch" title="Toggle public investor portal (mock)">
+                    <input type="checkbox" data-switch-key="publicPortal" checked />
+                    <span class="track" aria-hidden="true"></span>
+                  </label>
+                </div></div>
+                <div class="kv"><div class="k">Access scope</div><div class="v">KYC & invoice status</div></div>
+              </div>
+              <div class="quick-actions">
+                <div class="qahead"><div class="t">Portal controls</div><div class="meta" style="color:var(--muted2);font-size:12px;">Requires PIN</div></div>
+                <div class="list">
+                  <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Disable Public Portals">Disable public portals</button>
+                  <button class="btn primary" type="button" data-requires-pin="true" data-pin-action="Enable Public Portals">Enable public portals</button>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-stagger" style="transition-delay:110ms;">
+              <div class="card-head"><div class="h">Integrations</div><div class="meta">Payments & e-Sign</div></div>
+              <div class="kv-grid">
+                <div class="kv"><div class="k">Online payment gateway</div><div class="v">
+                  <label class="switch" title="Toggle online payments (mock)">
+                    <input type="checkbox" data-switch-key="onlinePayments" checked />
+                    <span class="track" aria-hidden="true"></span>
+                  </label>
+                </div></div>
+                <div class="kv"><div class="k">e-Signature integration</div><div class="v">
+                  <label class="switch" title="Toggle e-Signature (mock)">
+                    <input type="checkbox" data-switch-key="eSign" checked />
+                    <span class="track" aria-hidden="true"></span>
+                  </label>
+                </div></div>
+                <div class="kv"><div class="k">Document auto-generation</div><div class="v">
+                  <label class="switch" title="Toggle document auto-generation (mock)">
+                    <input type="checkbox" data-switch-key="docAutoGen" checked />
+                    <span class="track" aria-hidden="true"></span>
+                  </label>
+                </div></div>
+                <div class="kv"><div class="k">API access keys</div><div class="v">
+                  <label class="switch" title="Toggle API keys access (mock)">
+                    <input type="checkbox" data-switch-key="apiKeysEnabled" checked />
+                    <span class="track" aria-hidden="true"></span>
+                  </label>
+                  <span style="margin-left:10px;color:var(--muted2);font-size:12px;">•••••••• (masked)</span>
+                </div></div>
+              </div>
+              <div class="quick-actions">
+                <div class="qahead"><div class="t">Integration actions</div><div class="meta" style="color:var(--muted2);font-size:12px;">Simulated</div></div>
+                <div class="list">
+                  <button class="btn" type="button" data-requires-pin="true" data-pin-action="Rotate API Keys">Rotate API keys</button>
+                  <button class="btn" type="button" data-requires-pin="true" data-pin-action="Sync Document Templates">Sync templates</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW 12: ACCESS & PERMISSIONS (GOD MODE) -->
+        <section id="view-permissions" class="view" data-view="permissions">
+          <div class="section-title fade-stagger">Access & Permissions</div>
+          <div class="subtext fade-stagger" style="transition-delay:50ms;">User management table + authority override console (mock).</div>
+
+          <div class="grid-2">
+            <div class="table-wrap fade-stagger" style="transition-delay:80ms; max-height:560px;">
+              <table aria-label="User management table">
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Role</th>
+                    <th>Last Login</th>
+                    <th>2FA</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="usersTbody"></tbody>
+              </table>
+            </div>
+
+            <div class="table-wrap fade-stagger" style="transition-delay:100ms; max-height:520px; margin-top:14px;">
+              <table aria-label="Permission matrix table">
+                <thead>
+                  <tr>
+                    <th>Module</th>
+                    <th>Super Admin</th>
+                    <th>Zone Admin</th>
+                    <th>Reviewer</th>
+                    <th>Finance Officer</th>
+                    <th>Compliance Officer</th>
+                    <th>Read Only</th>
+                  </tr>
+                </thead>
+                <tbody id="permTbody"></tbody>
+              </table>
+            </div>
+
+            <div class="god-panel fade-stagger" style="transition-delay:100ms;">
+              <div class="ghead">
+                <div class="t">⚡ AUTHORITY OVERRIDE CONSOLE</div>
+                <div class="note">
+                  <span class="warning-badge">⚠️ Irreversible Actions</span>
+                </div>
+              </div>
+              <div style="color:var(--muted2);font-size:12px;margin-bottom:10px;">
+                Buttons below will prompt for a simulated confirmation + a PIN (4 digits: <b>1234</b>).
+              </div>
+              <div class="controls">
+                <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Force Logout All Sessions">Force Logout All Sessions</button>
+                <button class="btn primary" type="button" data-requires-pin="true" data-pin-action="Lock / Unlock User Account">Lock / Unlock User Account</button>
+                <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Reset All Permissions to Default">Reset All Permissions to Default</button>
+                <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Enable Maintenance Mode">Enable Maintenance Mode</button>
+                <button class="btn primary" type="button" data-requires-pin="true" data-pin-action="Database Backup — Trigger Now">Database Backup — Trigger Now</button>
+                <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Emergency Freeze — All Pending Approvals">Emergency Freeze — All Pending Approvals</button>
+                <button class="btn" type="button" data-requires-pin="true" data-pin-action="Audit Trail — Download Full Log">Audit Trail — Download Full Log</button>
+                <button class="btn" type="button" data-requires-pin="true" data-pin-action="System Announcement Broadcast">System Announcement Broadcast</button>
+                <button class="btn primary" type="button" data-requires-pin="true" data-pin-action="Two-Factor Authentication: Force Enable All">Two-Factor Authentication: Force Enable All</button>
+                <button class="btn" type="button" data-requires-pin="true" data-pin-action="API Rate Limit Override">API Rate Limit Override</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Drawer: Business Profile -->
+        <div id="drawerBackdrop" class="drawer-backdrop" aria-hidden="true"></div>
+        <aside id="businessDrawer" class="drawer" aria-label="Business profile drawer">
+          <div class="dhead">
+            <div class="left">
+              <div id="drawerCompanyName" class="name">—</div>
+              <div class="meta">
+                <div id="drawerRegBadge" class="reg-badge">Reg# —</div>
+                <div id="drawerStatusPill" class="pill active">Active</div>
+              </div>
+            </div>
+            <button id="drawerCloseBtn" class="close-btn" type="button" aria-label="Close drawer">✕</button>
+          </div>
+
+          <div class="dbody">
+            <div class="tabs" role="tablist" aria-label="Drawer tabs">
+              <button class="tab active" data-tab="overview" type="button">Overview</button>
+              <button class="tab" data-tab="documents" type="button">Documents</button>
+              <button class="tab" data-tab="directors" type="button">Directors</button>
+              <button class="tab" data-tab="licenses" type="button">Licenses</button>
+              <button class="tab" data-tab="invoices" type="button">Invoices</button>
+              <button class="tab" data-tab="compliance" type="button">Compliance</button>
+              <button class="tab" data-tab="audit" type="button">Audit Log</button>
+            </div>
+
+            <!-- Overview -->
+            <div id="drawerOverview" class="drawer-section active">
+              <div class="kv-grid">
+                <div class="kv"><div class="k">Reg date</div><div class="v" id="drawerRegDate">—</div></div>
+                <div class="kv"><div class="k">Activities</div><div class="v" id="drawerActivities">—</div></div>
+                <div class="kv"><div class="k">Address</div><div class="v" id="drawerAddress">—</div></div>
+                <div class="kv"><div class="k">Capital</div><div class="v" id="drawerCapital">—</div></div>
+                <div class="kv"><div class="k">Visa quota</div><div class="v" id="drawerVisaQuota">—</div></div>
+                <div class="kv"><div class="k">Bank details</div><div class="v" id="drawerBank">—</div></div>
+                <div class="kv"><div class="k">Contact</div><div class="v" id="drawerContact">—</div></div>
+                <div class="kv"><div class="k">Trade name</div><div class="v" id="drawerTradeName">—</div></div>
+              </div>
+            </div>
+
+            <!-- Documents -->
+            <div id="drawerDocuments" class="drawer-section">
+              <div class="doc-list" id="drawerDocsList"></div>
+            </div>
+
+            <!-- Directors -->
+            <div id="drawerDirectors" class="drawer-section">
+              <div class="doc-list" id="drawerDirectorsList"></div>
+            </div>
+
+            <!-- Licenses -->
+            <div id="drawerLicenses" class="drawer-section">
+              <div class="doc-list" id="drawerLicensesList"></div>
+            </div>
+
+            <!-- Invoices -->
+            <div id="drawerInvoices" class="drawer-section">
+              <div class="doc-list" id="drawerInvoicesList"></div>
+            </div>
+
+            <!-- Compliance -->
+            <div id="drawerCompliance" class="drawer-section">
+              <div class="kv-grid">
+                <div class="kv"><div class="k">Compliance status</div><div class="v" id="drawerComplianceStatus">—</div></div>
+                <div class="kv"><div class="k">KYC verification</div><div class="v" id="drawerKyc">—</div></div>
+                <div class="kv"><div class="k">UBO declaration</div><div class="v" id="drawerUbo">—</div></div>
+                <div class="kv"><div class="k">Last audit</div><div class="v" id="drawerLastAudit">—</div></div>
+              </div>
+              <div class="quick-actions">
+                <div class="qahead"><div class="t">Flagged items</div><div class="meta" style="color:var(--muted2);font-size:12px;">Mock list</div></div>
+                <div class="doc-list" id="drawerComplianceFlags"></div>
+              </div>
+            </div>
+
+            <!-- Audit Log -->
+            <div id="drawerAudit" class="drawer-section">
+              <div class="table-wrap" style="max-height:320px;">
+                <table aria-label="Company audit log">
+                  <thead>
+                    <tr>
+                      <th>Timestamp</th>
+                      <th>Action</th>
+                      <th>Before</th>
+                      <th>After</th>
+                      <th>IP</th>
+                    </tr>
+                  </thead>
+                  <tbody id="drawerAuditTbody"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="quick-actions">
+              <div class="qahead">
+                <div class="t">Quick actions</div>
+                <div class="meta" style="color:var(--muted2);font-size:12px;">Overrides require PIN</div>
+              </div>
+              <div class="list">
+                <button class="btn primary small" type="button" data-action="Approve" data-requires-pin="false">Approve</button>
+                <button class="btn danger small" type="button" data-action="Suspend" data-requires-pin="true">Suspend</button>
+                <button class="btn blue small" type="button" data-action="Renew License" data-requires-pin="false">Renew License</button>
+                <button class="btn small" type="button" data-action="Send Notice" data-requires-pin="false">Send Notice</button>
+                <button class="btn small" type="button" data-action="Export Profile" data-requires-pin="false">Export Profile</button>
+                <button class="btn small" type="button" data-action="Flag for Audit" data-requires-pin="false">Flag for Audit</button>
+                <button class="btn danger small" type="button" data-action="Delete" data-requires-pin="true">Delete</button>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Investor modal -->
+        <div id="investorModalBackdrop" class="modal-backdrop" aria-hidden="true">
+          <div id="investorModal" class="modal" role="dialog" aria-label="Investor profile modal">
+            <div class="mhead">
+              <div>
+                <div class="h" id="investorModalName">—</div>
+                <div class="pin-hint" id="investorModalKycSummary">—</div>
+              </div>
+              <button id="investorModalClose" class="x" type="button" aria-label="Close">✕</button>
+            </div>
+            <div class="mbody">
+              <div class="tabs" role="tablist" aria-label="Investor modal tabs">
+                <button class="tab active" data-itab="personal" type="button">Personal info</button>
+                <button class="tab" data-itab="entities" type="button">Associated Entities</button>
+                <button class="tab" data-itab="documents" type="button">Documents</button>
+                <button class="tab" data-itab="ubo" type="button">Beneficial Ownership</button>
+              </div>
+
+              <div id="investorTabPersonal" class="drawer-section active">
+                <div class="kv-grid">
+                  <div class="kv"><div class="k">DOB</div><div class="v" id="investorDOB">—</div></div>
+                  <div class="kv"><div class="k">Nationality</div><div class="v" id="investorNationality">—</div></div>
+                  <div class="kv"><div class="k">Passport #</div><div class="v" id="investorPassport">—</div></div>
+                  <div class="kv"><div class="k">Visa status</div><div class="v" id="investorVisaStatus">—</div></div>
+                </div>
+              </div>
+
+              <div id="investorTabEntities" class="drawer-section">
+                <div class="table-wrap" style="max-height:320px;">
+                  <table aria-label="Associated entities">
+                    <thead>
+                      <tr>
+                        <th>Company</th>
+                        <th>Role</th>
+                      </tr>
+                    </thead>
+                    <tbody id="investorEntitiesTbody"></tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div id="investorTabDocuments" class="drawer-section">
+                <div class="doc-list" id="investorDocsList"></div>
+              </div>
+
+              <div id="investorTabUbo" class="drawer-section">
+                <div class="kv-grid">
+                  <div class="kv"><div class="k">UBO declaration</div><div class="v" id="investorUboStatus">—</div></div>
+                  <div class="kv"><div class="k">Submission</div><div class="v" id="investorUboDate">—</div></div>
+                </div>
+                <div class="quick-actions" style="margin-top:14px;">
+                  <div class="qahead">
+                    <div class="t">GOD MODE</div>
+                    <div class="meta" style="color:var(--muted2);font-size:12px;">PIN required</div>
+                  </div>
+                  <div class="list">
+                    <button class="btn primary small" type="button" data-requires-pin="true" data-pin-action="Override KYC Status">Override KYC Status</button>
+                    <button class="btn danger small" type="button" data-requires-pin="true" data-pin-action="Blacklist Individual">Blacklist Individual</button>
+                    <button class="btn small" type="button" data-requires-pin="false" data-action="Generate KYC Report">Generate KYC Report</button>
+                    <button class="btn small" type="button" data-requires-pin="false" data-action="Link to External Database">Link to External Database</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-  </details-dialog>
-</details>
-<div class="hide-sm hide-md">
-  <h2 class="tmp-mb-3 h4">About</h2>
 
-      <div class="f4 tmp-my-3 color-fg-muted text-italic">
-        No description, website, or topics provided.
+        <!-- God Mode overlay console -->
+        <div id="godOverlayBackdrop" class="modal-backdrop" aria-hidden="true">
+          <div class="modal" role="dialog" aria-label="God Mode overlay">
+            <div class="mhead">
+              <div>
+                <div class="h">⚡ GOD MODE ACTIVE — Authority Console</div>
+                <div class="pin-hint">Press `G` to open/close. Overrides require PIN confirmation.</div>
+              </div>
+              <button id="godOverlayClose" class="x" type="button" aria-label="Close God Mode">✕</button>
+            </div>
+            <div class="mbody">
+              <div class="god-panel" style="background:transparent;box-shadow:none;margin:0;border:none;padding:0;">
+                <div class="controls">
+                  <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Force Logout All Sessions">Force Logout All Sessions</button>
+                  <button class="btn primary" type="button" data-requires-pin="true" data-pin-action="Lock / Unlock User Account">Lock / Unlock User Account</button>
+                  <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Emergency Freeze — All Pending Approvals">Emergency Freeze — All Pending Approvals</button>
+                  <button class="btn" type="button" data-requires-pin="true" data-pin-action="Audit Trail — Download Full Log">Audit Trail — Download Full Log</button>
+                  <button class="btn" type="button" data-requires-pin="true" data-pin-action="System Announcement Broadcast">System Announcement Broadcast</button>
+                  <button class="btn primary" type="button" data-requires-pin="true" data-pin-action="Two-Factor Authentication: Force Enable All">Two-Factor Authentication: Force Enable All</button>
+                  <button class="btn" type="button" data-requires-pin="true" data-pin-action="API Rate Limit Override">API Rate Limit Override</button>
+                  <button class="btn danger" type="button" data-requires-pin="true" data-pin-action="Maintenance Mode">Enable Maintenance Mode</button>
+                </div>
+              </div>
+              <div class="pin-hint" style="margin-top:14px;">
+                Notes: This is a static mock UI. Actions show simulated toasts and do not persist changes.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PIN modal -->
+        <div id="pinBackdrop" class="modal-backdrop" aria-hidden="true">
+          <div class="modal" role="dialog" aria-label="PIN confirmation modal">
+            <div class="mhead">
+              <div>
+                <div class="h">PIN Confirmation Required</div>
+                <div class="pin-hint" id="pinPrompt">Confirm with PIN to proceed.</div>
+              </div>
+              <button id="pinCloseBtn" class="x" type="button" aria-label="Close">✕</button>
+            </div>
+            <div class="mbody">
+              <div class="pin-hint">Enter 4 digits. Demo PIN: <b>1234</b></div>
+              <input id="pinHidden" class="pin-input-hidden" inputmode="numeric" autocomplete="one-time-code" />
+              <div class="pin-row" aria-label="PIN digits">
+                <div id="pinD1" class="pin-digit active"> </div>
+                <div id="pinD2" class="pin-digit"> </div>
+                <div id="pinD3" class="pin-digit"> </div>
+                <div id="pinD4" class="pin-digit"> </div>
+              </div>
+              <div class="pin-actions">
+                <button id="pinCancelBtn" class="btn" type="button">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Context menu -->
+        <div id="contextMenu" class="context-menu" role="menu" aria-label="Row context menu">
+          <div class="item" data-ctx="view">👁️ View</div>
+          <div class="item" data-ctx="edit">✏️ Edit</div>
+          <div class="item" data-ctx="suspend">⛔ Suspend</div>
+          <div class="item" data-ctx="export">⬇️ Export</div>
+          <div class="item" data-ctx="audit">🧾 Audit Trail</div>
+          <div class="item" data-ctx="delete">🗑️ Delete</div>
+        </div>
+
+        <div id="toastContainer" class="toasts" aria-live="polite"></div>
       </div>
-
-
-    <h3 class="sr-only">Resources</h3>
-    <div class="mt-2">
-      <a class="Link--muted" data-analytics-event="{&quot;category&quot;:&quot;Repository Overview&quot;,&quot;action&quot;:&quot;click&quot;,&quot;label&quot;:&quot;location:sidebar;file:readme&quot;}" href="#readme-ov-file">
-        <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-book mr-2 tmp-mr-2">
-    <path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path>
-</svg>
-        Readme
-</a>    </div>
-
-  
-
-
-
-
-
-  <include-fragment src="/VishalManikandan1626/Task1/hovercards/citation/sidebar_partial?tree_name=main" data-nonce="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d" data-view-component="true">
-  
-
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment>
-    <div class="mt-2">
-      <a href="/VishalManikandan1626/Task1/activity" data-view-component="true" class="Link Link--muted"><svg text="gray" aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pulse mr-2 tmp-mr-2">
-    <path d="M6 2c.306 0 .582.187.696.471L10 10.731l1.304-3.26A.751.751 0 0 1 12 7h3.25a.75.75 0 0 1 0 1.5h-2.742l-1.812 4.528a.751.751 0 0 1-1.392 0L6 4.77 4.696 8.03A.75.75 0 0 1 4 8.5H.75a.75.75 0 0 1 0-1.5h2.742l1.812-4.529A.751.751 0 0 1 6 2Z"></path>
-</svg>
-        <span class="color-fg-muted">Activity</span></a>    </div>
-
-
-    <h3 class="sr-only">Stars</h3>
-    <div class="mt-2">
-        <a href="/VishalManikandan1626/Task1/stargazers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-2 tmp-mr-2">
-    <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
-</svg>
-          <strong>0</strong>
-          stars</a>    </div>
-
-    <h3 class="sr-only">Watchers</h3>
-    <div class="mt-2">
-        <a href="/VishalManikandan1626/Task1/watchers" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-eye mr-2 tmp-mr-2">
-    <path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path>
-</svg>
-          <strong>0</strong>
-          watching</a>    </div>
-
-    <h3 class="sr-only">Forks</h3>
-    <div class="mt-2">
-      <a href="/VishalManikandan1626/Task1/forks" data-view-component="true" class="Link Link--muted"><svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2 tmp-mr-2">
-    <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
-</svg>
-        <strong>0</strong>
-        forks</a>    </div>
-
-
-</div>
-
     </div>
-  </div>
 
-  
-      <div class="BorderGrid-row">
-        <div class="BorderGrid-cell">
-          <h2 class="h4 tmp-mb-3" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame">
-  <a href="/VishalManikandan1626/Task1/releases" data-view-component="true" class="Link--primary no-underline Link">Releases</a></h2>
+    <script>
+      // ---------------------------
+      // Mock Data (static)
+      // ---------------------------
+      const statusToPillClass = {
+        Active: "active",
+        Pending: "pending",
+        Suspended: "suspended",
+        Processing: "processing",
+        Deregistered: "deregistered",
+      };
 
-    <div class="text-small color-fg-muted">No releases published</div>
-    <div class=" text-small"><a class="Link--inTextBlock" href="/VishalManikandan1626/Task1/releases/new">Create a new release</a></div>
+      const mock = {
+        activityFeed: [
+          { company: "Al Masdar Trading LLC", action: "License Renewed", time: "2 min ago", avatarText: "AM" },
+          { company: "GreenTech FZE", action: "Application Submitted", time: "8 min ago", avatarText: "GT" },
+          { company: "Horizon Capital", action: "Compliance Flag Raised", time: "15 min ago", avatarText: "HC" },
+          { company: "BlueSky Logistics", action: "Fee Invoice Sent", time: "22 min ago", avatarText: "BL" },
+          { company: "Vertex Holdings", action: "Director KYC Approved", time: "1 hr ago", avatarText: "VH" },
+        ],
+        approvalQueue: [
+          { company: "Quantum Freight FZE", type: "New License", submitted: "2 days ago", priority: "HIGH", id: "APP-90012" },
+          { company: "Meridian Foods LLC", type: "Amendment", submitted: "1 day ago", priority: "MEDIUM", id: "APP-90033" },
+          { company: "Delta Pharma Corp", type: "Renewal", submitted: "3 days ago", priority: "HIGH", id: "APP-90041" },
+          { company: "Sunrise Media FZ-LLC", type: "Activity Change", submitted: "5 hrs ago", priority: "LOW", id: "APP-90052" },
+          { company: "Atlas Energy Partners", type: "Director Change", submitted: "1 day ago", priority: "MEDIUM", id: "APP-90066" },
+        ],
+        zones: [
+          { name: "Zone A", occupancy: 0.87, breakdown: { office: 48, warehouse: 34, land: 18 }, tenants: 62, utilities: { power: "green", water: "amber", internet: "green" } },
+          { name: "Zone B", occupancy: 0.62, breakdown: { office: 44, warehouse: 22, land: 34 }, tenants: 39, utilities: { power: "green", water: "green", internet: "amber" } },
+          { name: "Zone C", occupancy: 0.45, breakdown: { office: 28, warehouse: 26, land: 46 }, tenants: 21, utilities: { power: "amber", water: "amber", internet: "green" } },
+          { name: "Tech Cluster", occupancy: 0.91, breakdown: { office: 60, warehouse: 12, land: 28 }, tenants: 74, utilities: { power: "amber", water: "green", internet: "green" } },
+          { name: "Logistics Hub", occupancy: 0.78, breakdown: { office: 18, warehouse: 62, land: 20 }, tenants: 58, utilities: { power: "green", water: "amber", internet: "amber" } },
+          { name: "Industrial Area", occupancy: 0.53, breakdown: { office: 22, warehouse: 34, land: 44 }, tenants: 33, utilities: { power: "amber", water: "green", internet: "red" } },
+        ],
+        businesses: [
+          {
+            id: "biz-1",
+            regNo: "NZ-001204",
+            companyName: "Al Masdar Trading LLC",
+            tradeName: "Al Masdar Commodities",
+            entityType: "FZ-LLC",
+            industry: "Commodities",
+            zone: "Zone A",
+            licenseExp: "Dec 2025",
+            status: "Active",
+            shareholders: 6,
+            regDate: "2022-06-19",
+            activities: "Trading, Storage & Distribution",
+            address: "Industrial District, Dockline Road",
+            capital: "$3,500,000",
+            visaUsed: 56,
+            visaTotal: 80,
+            bankMasked: "•••• 4491",
+            contact: "licensing@nexuzzone.ae",
+            documents: [
+              { name: "Certificate of Incorporation", meta: "Uploaded 2022-06-22", badge: "Verified" },
+              { name: "Trade License Renewal Proof", meta: "Uploaded 2025-12-03", badge: "Verified" },
+            ],
+            directors: ["A. Rahman", "S. Al Noor"],
+            licenses: [
+              { name: "NZ-L-441020", type: "Trading License", exp: "Dec 2025", status: "Active" },
+              { name: "NZ-L-441887", type: "Warehouse Permit", exp: "Jun 2026", status: "Active" },
+            ],
+            invoices: [{ name: "INV-77112", service: "Annual Renewal", amount: "$3,000", status: "Paid" }],
+            compliance: { status: "Compliant", kyc: "Verified", ubo: "Declared", lastAudit: "2026-02-18" },
+            complianceFlags: [
+              { reason: "License Activity Match", severity: "LOW", since: "—", assignedTo: "Compliance Desk", status: "Cleared" },
+            ],
+            audit: [
+              { ts: "2026-02-18 11:14", action: "Renewed License", before: "Expiring", after: "Active", ip: "10.24.8.11" },
+              { ts: "2025-12-03 09:42", action: "Document Verified", before: "Pending Verification", after: "Verified", ip: "10.24.8.11" },
+            ],
+          },
+          {
+            id: "biz-2",
+            regNo: "NZ-001587",
+            companyName: "GreenTech Innovations FZE",
+            tradeName: "GreenTech Innovations",
+            entityType: "FZE",
+            industry: "Technology",
+            zone: "Tech Cluster",
+            licenseExp: "Mar 2026",
+            status: "Active",
+            shareholders: 9,
+            regDate: "2023-03-02",
+            activities: "SaaS & Green Infrastructure",
+            address: "Tech Cluster, Building 7",
+            capital: "$1,250,000",
+            visaUsed: 44,
+            visaTotal: 60,
+            bankMasked: "•••• 1102",
+            contact: "compliance@greentech.fz",
+            documents: [
+              { name: "Director KYC Pack", meta: "Uploaded 2024-12-21", badge: "Verified" },
+              { name: "Visa Allocation Request", meta: "Uploaded 2026-01-09", badge: "Verified" },
+            ],
+            directors: ["M. Chen", "N. Noor"],
+            licenses: [{ name: "NZ-L-551203", type: "Technology License", exp: "Mar 2026", status: "Active" }],
+            invoices: [{ name: "INV-77401", service: "Visa Application", amount: "$4,250", status: "Paid" }],
+            compliance: { status: "Compliant", kyc: "Verified", ubo: "Declared", lastAudit: "2026-01-28" },
+            complianceFlags: [
+              { reason: "Overdue Fees", severity: "AMBER", since: "2026-01-01", assignedTo: "Finance Officer", status: "Resolved" },
+            ],
+            audit: [
+              { ts: "2026-01-28 15:03", action: "KYC Verified", before: "Pending", after: "Verified", ip: "10.24.8.44" },
+            ],
+          },
+          {
+            id: "biz-3",
+            regNo: "NZ-001891",
+            companyName: "Horizon Capital Offshore",
+            tradeName: "Horizon Capital Offshore",
+            entityType: "Offshore",
+            industry: "Finance",
+            zone: "Financial Services",
+            licenseExp: "Jun 2025",
+            status: "Suspended",
+            shareholders: 3,
+            regDate: "2020-10-09",
+            activities: "Advisory & Wealth Management",
+            address: "Harborfront Tower, Level 18",
+            capital: "$5,900,000",
+            visaUsed: 18,
+            visaTotal: 40,
+            bankMasked: "•••• 7780",
+            contact: "aml@horizon-offshore.com",
+            documents: [
+              { name: "AML Declaration", meta: "Uploaded 2025-09-14", badge: "Verified" },
+              { name: "Missing Board Minutes", meta: "Uploaded 2025-11-02", badge: "Pending" },
+            ],
+            directors: ["T. Berg", "R. Saeed"],
+            licenses: [{ name: "NZ-L-331002", type: "Offshore License", exp: "Jun 2025", status: "Suspended" }],
+            invoices: [{ name: "INV-76980", service: "Annual Renewal", amount: "$3,000", status: "Overdue" }],
+            compliance: { status: "Restricted", kyc: "Expired", ubo: "Declared", lastAudit: "2025-12-07" },
+            complianceFlags: [
+              { reason: "AML Concern", severity: "HIGH", since: "2025-11-15", assignedTo: "Compliance Officer", status: "Open" },
+              { reason: "Overdue Fees", severity: "AMBER", since: "2025-07-01", assignedTo: "Finance Desk", status: "Open" },
+            ],
+            audit: [{ ts: "2025-12-07 10:22", action: "Entity Suspended", before: "Active", after: "Suspended", ip: "10.24.9.5" }],
+          },
+          {
+            id: "biz-4",
+            regNo: "NZ-002043",
+            companyName: "BlueSky Logistics Corp",
+            tradeName: "BlueSky Logistics",
+            entityType: "FZ-LLC",
+            industry: "Logistics",
+            zone: "Logistics Hub",
+            licenseExp: "Aug 2026",
+            status: "Active",
+            shareholders: 7,
+            regDate: "2021-01-24",
+            activities: "Warehousing, Freight & Cross-dock",
+            address: "Logistics Hub, Zone 3",
+            capital: "$2,600,000",
+            visaUsed: 62,
+            visaTotal: 90,
+            bankMasked: "•••• 5023",
+            contact: "ops@bluesky-logistics.co",
+            documents: [{ name: "Lease Agreement", meta: "Uploaded 2021-02-02", badge: "Verified" }],
+            directors: ["K. Ibrahim", "L. Duarte"],
+            licenses: [{ name: "NZ-L-882104", type: "Logistics License", exp: "Aug 2026", status: "Active" }],
+            invoices: [{ name: "INV-78022", service: "Annual Renewal", amount: "$3,000", status: "Paid" }],
+            compliance: { status: "Compliant", kyc: "Verified", ubo: "Declared", lastAudit: "2026-03-01" },
+            complianceFlags: [],
+            audit: [{ ts: "2026-03-01 08:55", action: "Lease Updated", before: "Old Term", after: "Current Term", ip: "10.24.8.11" }],
+          },
+          {
+            id: "biz-5",
+            regNo: "NZ-002187",
+            companyName: "Vertex Holdings Ltd",
+            tradeName: "Vertex Holdings",
+            entityType: "FZE",
+            industry: "Investment",
+            zone: "Zone B",
+            licenseExp: "Pending",
+            status: "Pending",
+            shareholders: 2,
+            regDate: "2024-04-18",
+            activities: "Investment Management & Advisory",
+            address: "Financial Services Avenue",
+            capital: "$900,000",
+            visaUsed: 10,
+            visaTotal: 25,
+            bankMasked: "•••• 9012",
+            contact: "growth@vertex-holdings.ai",
+            documents: [{ name: "Initial License Pack", meta: "Uploaded 2026-03-05", badge: "Pending" }],
+            directors: ["S. Rahman"],
+            licenses: [],
+            invoices: [{ name: "INV-78410", service: "Registration", amount: "$5,000", status: "Pending" }],
+            compliance: { status: "Under Review", kyc: "Pending", ubo: "Pending", lastAudit: "—" },
+            complianceFlags: [
+              { reason: "Missing Documents", severity: "HIGH", since: "2026-03-05", assignedTo: "Compliance Desk", status: "Open" },
+            ],
+            audit: [{ ts: "2026-03-05 12:10", action: "Application Submitted", before: "—", after: "Pending", ip: "10.24.7.31" }],
+          },
+          {
+            id: "biz-6",
+            regNo: "NZ-002304",
+            companyName: "Quantum Freight Partners",
+            tradeName: "Quantum Freight Partners",
+            entityType: "Branch",
+            industry: "Logistics",
+            zone: "Logistics Hub",
+            licenseExp: "Oct 2025",
+            status: "Processing",
+            shareholders: 1,
+            regDate: "2023-09-14",
+            activities: "Freight & Logistics Services",
+            address: "Logistics Hub, Warehouse Row B",
+            capital: "$320,000",
+            visaUsed: 8,
+            visaTotal: 18,
+            bankMasked: "•••• 6601",
+            contact: "branch@qfp.example",
+            documents: [
+              { name: "Branch Registration Proof", meta: "Uploaded 2025-08-17", badge: "Verified" },
+              { name: "Director Amendment", meta: "Uploaded 2025-10-05", badge: "Pending" },
+            ],
+            directors: ["H. Okafor"],
+            licenses: [{ name: "NZ-L-99102", type: "Branch License", exp: "Oct 2025", status: "Processing" }],
+            invoices: [{ name: "INV-77002", service: "Amendment Fee", amount: "$500", status: "Pending" }],
+            compliance: { status: "In Review", kyc: "Verified", ubo: "Pending", lastAudit: "2025-10-14" },
+            complianceFlags: [{ reason: "UBO Not Declared", severity: "AMBER", since: "2025-10-05", assignedTo: "Compliance Officer", status: "Open" }],
+            audit: [{ ts: "2025-10-14 13:19", action: "Docs Pending", before: "Verified", after: "Pending", ip: "10.24.8.90" }],
+          },
+          {
+            id: "biz-7",
+            regNo: "NZ-002456",
+            companyName: "Meridian Foods & Beverages",
+            tradeName: "Meridian Foods",
+            entityType: "FZ-LLC",
+            industry: "F&B",
+            zone: "Zone A",
+            licenseExp: "Jan 2026",
+            status: "Active",
+            shareholders: 5,
+            regDate: "2019-07-01",
+            activities: "Food distribution & Import handling",
+            address: "Zone A, Food Park 2",
+            capital: "$1,800,000",
+            visaUsed: 26,
+            visaTotal: 55,
+            bankMasked: "•••• 2440",
+            contact: "licenses@meridian-fb.ae",
+            documents: [{ name: "Health Compliance Certificate", meta: "Uploaded 2025-11-28", badge: "Verified" }],
+            directors: ["Y. Ibrahim", "C. Mensah"],
+            licenses: [{ name: "NZ-L-402110", type: "Food & Beverage License", exp: "Jan 2026", status: "Active" }],
+            invoices: [{ name: "INV-77322", service: "Annual Renewal", amount: "$3,000", status: "Paid" }],
+            compliance: { status: "Compliant", kyc: "Verified", ubo: "Declared", lastAudit: "2025-12-11" },
+            complianceFlags: [],
+            audit: [{ ts: "2025-12-11 09:10", action: "Annual Renewal Completed", before: "Due", after: "Active", ip: "10.24.8.11" }],
+          },
+          {
+            id: "biz-8",
+            regNo: "NZ-002598",
+            companyName: "Delta Pharma International",
+            tradeName: "Delta Pharma",
+            entityType: "FZE",
+            industry: "Healthcare",
+            zone: "Zone C",
+            licenseExp: "Nov 2025",
+            status: "Active",
+            shareholders: 4,
+            regDate: "2022-11-30",
+            activities: "Pharmaceutical import & distribution",
+            address: "Healthcare Cluster, Lab Wing",
+            capital: "$2,200,000",
+            visaUsed: 33,
+            visaTotal: 70,
+            bankMasked: "•••• 8105",
+            contact: "qa@delta-pharma.com",
+            documents: [{ name: "Regulatory Approval Letter", meta: "Uploaded 2025-01-19", badge: "Verified" }],
+            directors: ["S. Watanabe", "A. Al-Karim"],
+            licenses: [{ name: "NZ-L-612900", type: "Healthcare License", exp: "Nov 2025", status: "Active" }],
+            invoices: [{ name: "INV-77201", service: "Visa Application", amount: "$850", status: "Paid" }],
+            compliance: { status: "Compliant", kyc: "Verified", ubo: "Declared", lastAudit: "2025-09-02" },
+            complianceFlags: [{ reason: "Overdue Fees", severity: "LOW", since: "—", assignedTo: "Finance Officer", status: "Cleared" }],
+            audit: [{ ts: "2025-09-02 16:04", action: "KYC Reviewed", before: "Valid", after: "Refreshed", ip: "10.24.9.10" }],
+          },
+          {
+            id: "biz-9",
+            regNo: "NZ-002701",
+            companyName: "Sunrise Media FZ-LLC",
+            tradeName: "Sunrise Media",
+            entityType: "FZ-LLC",
+            industry: "Media",
+            zone: "Tech Cluster",
+            licenseExp: "Apr 2026",
+            status: "Active",
+            shareholders: 3,
+            regDate: "2021-08-09",
+            activities: "Content studio & digital media production",
+            address: "Tech Cluster, Studio 12",
+            capital: "$480,000",
+            visaUsed: 21,
+            visaTotal: 40,
+            bankMasked: "•••• 3311",
+            contact: "ops@sunrise-media.fz",
+            documents: [{ name: "Media Activity Declaration", meta: "Uploaded 2024-06-02", badge: "Verified" }],
+            directors: ["P. Singh"],
+            licenses: [{ name: "NZ-L-201991", type: "Media License", exp: "Apr 2026", status: "Active" }],
+            invoices: [{ name: "INV-78600", service: "Visa Application", amount: "$2,550", status: "Paid" }],
+            compliance: { status: "Compliant", kyc: "Verified", ubo: "Declared", lastAudit: "2026-02-20" },
+            complianceFlags: [],
+            audit: [{ ts: "2026-02-20 10:18", action: "Director KYC Approved", before: "Pending", after: "Verified", ip: "10.24.8.44" }],
+          },
+          {
+            id: "biz-10",
+            regNo: "NZ-002834",
+            companyName: "Atlas Energy Partners",
+            tradeName: "Atlas Energy Partners",
+            entityType: "Offshore",
+            industry: "Energy",
+            zone: "Zone B",
+            licenseExp: "Pending",
+            status: "Processing",
+            shareholders: 2,
+            regDate: "2020-02-14",
+            activities: "Energy trading & advisory",
+            address: "Financial Services Avenue, Suite 44",
+            capital: "$8,100,000",
+            visaUsed: 28,
+            visaTotal: 55,
+            bankMasked: "•••• 7721",
+            contact: "finance@atlas-energy.co",
+            documents: [{ name: "Director Amendment Pack", meta: "Uploaded 2026-03-12", badge: "Pending" }],
+            directors: ["D. Kovacs", "E. Noor"],
+            licenses: [{ name: "NZ-L-888811", type: "Energy Offshore License", exp: "Pending", status: "Processing" }],
+            invoices: [{ name: "INV-78777", service: "Activity Change", amount: "$500", status: "Pending" }],
+            compliance: { status: "In Review", kyc: "Pending", ubo: "Declared", lastAudit: "—" },
+            complianceFlags: [{ reason: "License Activity Mismatch", severity: "HIGH", since: "2026-03-12", assignedTo: "Compliance Officer", status: "Open" }],
+            audit: [{ ts: "2026-03-12 09:05", action: "Docs Submitted", before: "—", after: "Processing", ip: "10.24.7.31" }],
+          },
+          {
+            id: "biz-11",
+            regNo: "NZ-002967",
+            companyName: "NovaTech Solutions FZE",
+            tradeName: "NovaTech Solutions",
+            entityType: "FZE",
+            industry: "IT Services",
+            zone: "Tech Cluster",
+            licenseExp: "Jul 2026",
+            status: "Active",
+            shareholders: 8,
+            regDate: "2018-12-05",
+            activities: "IT services & consultancy",
+            address: "Tech Cluster, Office 4A",
+            capital: "$1,100,000",
+            visaUsed: 40,
+            visaTotal: 80,
+            bankMasked: "•••• 4401",
+            contact: "legal@novatech.fz",
+            documents: [{ name: "Annual Compliance Attestation", meta: "Uploaded 2026-01-18", badge: "Verified" }],
+            directors: ["Z. Al-Hassan"],
+            licenses: [{ name: "NZ-L-773101", type: "Technology License", exp: "Jul 2026", status: "Active" }],
+            invoices: [{ name: "INV-77901", service: "Annual Renewal", amount: "$3,000", status: "Paid" }],
+            compliance: { status: "Compliant", kyc: "Verified", ubo: "Declared", lastAudit: "2026-01-18" },
+            complianceFlags: [],
+            audit: [{ ts: "2026-01-18 12:41", action: "Renewal Confirmed", before: "Pending", after: "Active", ip: "10.24.8.11" }],
+          },
+          {
+            id: "biz-12",
+            regNo: "NZ-003012",
+            companyName: "Pacific Rim Exports Ltd",
+            tradeName: "Pacific Rim Exports",
+            entityType: "Branch",
+            industry: "Trading",
+            zone: "Zone A",
+            licenseExp: "Sep 2025",
+            status: "Suspended",
+            shareholders: 2,
+            regDate: "2022-01-11",
+            activities: "Export trading and customs interface",
+            address: "Zone A, Trade Gate 1",
+            capital: "$630,000",
+            visaUsed: 12,
+            visaTotal: 30,
+            bankMasked: "•••• 3009",
+            contact: "export@pacificrim.io",
+            documents: [{ name: "License Violation Notice", meta: "Uploaded 2025-10-02", badge: "Verified" }],
+            directors: ["G. Rivera"],
+            licenses: [{ name: "NZ-L-123901", type: "Trading License", exp: "Sep 2025", status: "Suspended" }],
+            invoices: [{ name: "INV-76111", service: "Late Renewal Penalty", amount: "$450", status: "Overdue" }],
+            compliance: { status: "Restricted", kyc: "Expired", ubo: "Declared", lastAudit: "2025-10-12" },
+            complianceFlags: [
+              { reason: "Inactive Entity", severity: "AMBER", since: "2025-09-02", assignedTo: "Compliance Officer", status: "Open" },
+            ],
+            audit: [{ ts: "2025-10-12 13:00", action: "Entity Suspended", before: "Active", after: "Suspended", ip: "10.24.9.5" }],
+          },
+        ],
+        applications: [
+          { appId: "APP-90012", applicant: "Quantum Freight FZE", type: "New License", submitted: "2026-03-05", reviewer: "CK", slaDaysTotal: 10, slaDaysLeft: 8, status: "SUBMITTED", priority: "HIGH", companyId: "biz-6" },
+          { appId: "APP-90033", applicant: "Meridian Foods LLC", type: "Amendment", submitted: "2026-03-04", reviewer: "VN", slaDaysTotal: 14, slaDaysLeft: 9, status: "UNDER REVIEW", priority: "MEDIUM", companyId: "biz-7" },
+          { appId: "APP-90041", applicant: "Delta Pharma Corp", type: "Renewal", submitted: "2026-03-01", reviewer: "AR", slaDaysTotal: 12, slaDaysLeft: 6, status: "DOCS PENDING", priority: "HIGH", companyId: "biz-8" },
+          { appId: "APP-90052", applicant: "Sunrise Media FZ-LLC", type: "Activity Change", submitted: "2026-02-28", reviewer: "SK", slaDaysTotal: 16, slaDaysLeft: 12, status: "UNDER REVIEW", priority: "LOW", companyId: "biz-9" },
+          { appId: "APP-90066", applicant: "Atlas Energy Partners", type: "Director Change", submitted: "2026-03-02", reviewer: "RA", slaDaysTotal: 10, slaDaysLeft: 4, status: "DOCS PENDING", priority: "MEDIUM", companyId: "biz-10" },
+          { appId: "APP-90077", applicant: "GreenTech FZE", type: "Visa Application", submitted: "2026-02-25", reviewer: "GT", slaDaysTotal: 8, slaDaysLeft: 5, status: "APPROVED", priority: "LOW", companyId: "biz-2" },
+          { appId: "APP-90101", applicant: "Horizon Capital Offshore", type: "Renewal", submitted: "2026-02-20", reviewer: "HC", slaDaysTotal: 10, slaDaysLeft: 2, status: "REJECTED", priority: "HIGH", companyId: "biz-3" },
+          { appId: "APP-90118", applicant: "Vertex Holdings", type: "Freezone Transfer", submitted: "2026-03-09", reviewer: "VH", slaDaysTotal: 20, slaDaysLeft: 16, status: "SUBMITTED", priority: "MEDIUM", companyId: "biz-5" },
+          { appId: "APP-90133", applicant: "Pacific Rim Exports", type: "Deregistration", submitted: "2026-02-14", reviewer: "PR", slaDaysTotal: 18, slaDaysLeft: 3, status: "DOCS PENDING", priority: "HIGH", companyId: "biz-12" },
+          { appId: "APP-90141", applicant: "BlueSky Logistics Corp", type: "Amendment", submitted: "2026-02-27", reviewer: "BL", slaDaysTotal: 14, slaDaysLeft: 11, status: "APPROVED", priority: "MEDIUM", companyId: "biz-4" },
+          { appId: "APP-90156", applicant: "NovaTech Solutions FZE", type: "Activity Change", submitted: "2026-03-03", reviewer: "NS", slaDaysTotal: 16, slaDaysLeft: 7, status: "UNDER REVIEW", priority: "LOW", companyId: "biz-11" },
+          { appId: "APP-90170", applicant: "BlueSky Logistics Corp", type: "Visa Application", submitted: "2026-03-10", reviewer: "BL", slaDaysTotal: 12, slaDaysLeft: 9, status: "SUBMITTED", priority: "MEDIUM", companyId: "biz-4" },
+          { appId: "APP-90188", applicant: "Al Masdar Trading LLC", type: "Renewal", submitted: "2026-03-08", reviewer: "AR", slaDaysTotal: 10, slaDaysLeft: 6, status: "APPROVED", priority: "LOW", companyId: "biz-1" },
+          { appId: "APP-90227", applicant: "GreenTech FZE", type: "Amendment", submitted: "2026-03-07", reviewer: "VN", slaDaysTotal: 14, slaDaysLeft: 1, status: "REJECTED", priority: "HIGH", companyId: "biz-2" },
+          { appId: "APP-90239", applicant: "Quantum Freight Partners", type: "Director Change", submitted: "2026-03-06", reviewer: "CK", slaDaysTotal: 16, slaDaysLeft: 2, status: "REJECTED", priority: "MEDIUM", companyId: "biz-6" },
+        ],
+        licenses: [
+          { id: "NZ-L-441020", companyId: "biz-1", company: "Al Masdar Trading LLC", type: "Trading License", activities: "Commodities Trading", issue: "Jan 2025", expiry: "Dec 2025", renewalStatus: "Renewal Due", status: "Active" },
+          { id: "NZ-L-551203", companyId: "biz-2", company: "GreenTech Innovations FZE", type: "Technology License", activities: "SaaS Platform", issue: "Apr 2025", expiry: "Mar 2026", renewalStatus: "Renewed - Pending Settlement", status: "Active" },
+          { id: "NZ-L-331002", companyId: "biz-3", company: "Horizon Capital Offshore", type: "Offshore License", activities: "Advisory", issue: "Feb 2024", expiry: "Jun 2025", renewalStatus: "Expired", status: "Suspended" },
+          { id: "NZ-L-882104", companyId: "biz-4", company: "BlueSky Logistics Corp", type: "Logistics License", activities: "Warehousing & Freight", issue: "Sep 2024", expiry: "Aug 2026", renewalStatus: "Current", status: "Active" },
+          { id: "NZ-L-201991", companyId: "biz-9", company: "Sunrise Media FZ-LLC", type: "Media License", activities: "Production", issue: "May 2025", expiry: "Apr 2026", renewalStatus: "Current", status: "Active" },
+          { id: "NZ-L-612900", companyId: "biz-8", company: "Delta Pharma International", type: "Healthcare License", activities: "Pharmaceutical Distribution", issue: "Jan 2025", expiry: "Nov 2025", renewalStatus: "Expiring Soon", status: "Active" },
+          { id: "NZ-L-402110", companyId: "biz-7", company: "Meridian Foods & Beverages", type: "Food & Beverage License", activities: "Food Distribution", issue: "Jan 2025", expiry: "Jan 2026", renewalStatus: "Current", status: "Active" },
+          { id: "NZ-L-888811", companyId: "biz-10", company: "Atlas Energy Partners", type: "Energy Offshore License", activities: "Energy Trading", issue: "Nov 2025", expiry: "Pending", renewalStatus: "In Review", status: "Processing" },
+          { id: "NZ-L-773101", companyId: "biz-11", company: "NovaTech Solutions FZE", type: "Technology License", activities: "IT Services", issue: "Oct 2024", expiry: "Jul 2026", renewalStatus: "Current", status: "Active" },
+          { id: "NZ-L-99102", companyId: "biz-6", company: "Quantum Freight Partners", type: "Branch License", activities: "Freight & Logistics", issue: "Mar 2025", expiry: "Oct 2025", renewalStatus: "Processing", status: "Processing" },
+          { id: "NZ-L-123901", companyId: "biz-12", company: "Pacific Rim Exports Ltd", type: "Trading License", activities: "Export Trading", issue: "Aug 2024", expiry: "Sep 2025", renewalStatus: "Expired", status: "Suspended" },
+          { id: "NZ-L-551888", companyId: "biz-5", company: "Vertex Holdings Ltd", type: "Investment License", activities: "Advisory", issue: "Mar 2026", expiry: "Pending", renewalStatus: "Pending", status: "Pending" },
+        ],
+        investors: [
+          {
+            id: "inv-1",
+            name: "Aisha Rahman",
+            nationality: "🇦🇪",
+            passportMasked: "••••4521",
+            dob: "1989-07-14",
+            visaStatus: "Active Visa",
+            kycStatus: "Verified",
+            kycBadge: "Verified ✅",
+            associated: [{ companyId: "biz-1", company: "Al Masdar Trading LLC", role: "Director" }],
+            documents: [
+              { name: "Passport Copy", meta: "Uploaded 2025-11-02", verified: true },
+              { name: "Emirates ID", meta: "Uploaded 2025-11-22", verified: true },
+              { name: "Proof of Address", meta: "Uploaded 2025-12-10", verified: true },
+            ],
+            ubo: { status: "Declared", date: "2025-12-10" },
+          },
+          {
+            id: "inv-2",
+            name: "Mei Chen",
+            nationality: "🇸🇬",
+            passportMasked: "••••3307",
+            dob: "1982-02-03",
+            visaStatus: "Sponsored Visa",
+            kycStatus: "Pending",
+            kycBadge: "Pending 🟡",
+            associated: [{ companyId: "biz-2", company: "GreenTech Innovations FZE", role: "Shareholder" }],
+            documents: [
+              { name: "Passport Copy", meta: "Uploaded 2026-01-09", verified: false },
+              { name: "Emirates ID", meta: "Uploaded 2026-01-09", verified: false },
+            ],
+            ubo: { status: "Pending", date: "—" },
+          },
+          {
+            id: "inv-3",
+            name: "Tobias Berg",
+            nationality: "🇩🇪",
+            passportMasked: "••••1184",
+            dob: "1976-09-28",
+            visaStatus: "Expired Visa",
+            kycStatus: "Expired",
+            kycBadge: "Expired 🔴",
+            associated: [{ companyId: "biz-3", company: "Horizon Capital Offshore", role: "Director" }],
+            documents: [{ name: "Passport Copy", meta: "Uploaded 2024-09-12", verified: true }],
+            ubo: { status: "Declared", date: "2025-09-14" },
+          },
+          {
+            id: "inv-4",
+            name: "Khadija Ibrahim",
+            nationality: "🇦🇪",
+            passportMasked: "••••9001",
+            dob: "1991-04-19",
+            visaStatus: "Active Visa",
+            kycStatus: "Verified",
+            kycBadge: "Verified ✅",
+            associated: [{ companyId: "biz-4", company: "BlueSky Logistics Corp", role: "Manager" }],
+            documents: [
+              { name: "Passport Copy", meta: "Uploaded 2025-07-07", verified: true },
+              { name: "Proof of Address", meta: "Uploaded 2025-08-18", verified: true },
+            ],
+            ubo: { status: "Declared", date: "2025-08-18" },
+          },
+          {
+            id: "inv-5",
+            name: "Sunil P. Singh",
+            nationality: "🇮🇳",
+            passportMasked: "••••4579",
+            dob: "1986-12-02",
+            visaStatus: "Active Visa",
+            kycStatus: "Verified",
+            kycBadge: "Verified ✅",
+            associated: [{ companyId: "biz-9", company: "Sunrise Media FZ-LLC", role: "Director" }],
+            documents: [{ name: "Emirates ID", meta: "Uploaded 2024-05-14", verified: true }],
+            ubo: { status: "Declared", date: "2024-05-14" },
+          },
+          {
+            id: "inv-6",
+            name: "Aiko Al-Karim",
+            nationality: "🇯🇵",
+            passportMasked: "••••7710",
+            dob: "1979-01-26",
+            visaStatus: "Active Visa",
+            kycStatus: "Pending",
+            kycBadge: "Pending 🟡",
+            associated: [{ companyId: "biz-8", company: "Delta Pharma International", role: "Shareholder" }],
+            documents: [{ name: "Passport Copy", meta: "Uploaded 2026-02-18", verified: false }],
+            ubo: { status: "Pending", date: "—" },
+          },
+          {
+            id: "inv-7",
+            name: "Zaid Al-Hassan",
+            nationality: "🇸🇦",
+            passportMasked: "••••2048",
+            dob: "1984-06-09",
+            visaStatus: "Active Visa",
+            kycStatus: "Verified",
+            kycBadge: "Verified ✅",
+            associated: [{ companyId: "biz-11", company: "NovaTech Solutions FZE", role: "Director" }],
+            documents: [{ name: "Proof of Address", meta: "Uploaded 2026-01-18", verified: true }],
+            ubo: { status: "Declared", date: "2026-01-18" },
+          },
+          {
+            id: "inv-8",
+            name: "Rafael Saeed",
+            nationality: "🇪🇬",
+            passportMasked: "••••8803",
+            dob: "1973-10-11",
+            visaStatus: "Expired Visa",
+            kycStatus: "Expired",
+            kycBadge: "Expired 🔴",
+            associated: [{ companyId: "biz-12", company: "Pacific Rim Exports Ltd", role: "Director" }],
+            documents: [{ name: "Passport Copy", meta: "Uploaded 2024-03-28", verified: true }],
+            ubo: { status: "Declared", date: "2024-03-28" },
+          },
+          {
+            id: "inv-9",
+            name: "Nora Noor",
+            nationality: "🇨🇦",
+            passportMasked: "••••9017",
+            dob: "1993-08-30",
+            visaStatus: "Sponsored Visa",
+            kycStatus: "Verified",
+            kycBadge: "Verified ✅",
+            associated: [{ companyId: "biz-10", company: "Atlas Energy Partners", role: "Shareholder" }],
+            documents: [{ name: "Emirates ID", meta: "Uploaded 2026-03-05", verified: true }],
+            ubo: { status: "Declared", date: "2026-03-05" },
+          },
+        ],
+        feeSchedule: [
+          { service: "New License - FZE", entityType: "FZE", fee: 5000, vat: 0.05, total: 5250 },
+          { service: "New License - FZ-LLC", entityType: "FZ-LLC", fee: 3500, vat: 0.05, total: 3675 },
+          { service: "Annual Renewal - FZE", entityType: "FZE", fee: 3000, vat: 0.05, total: 3150 },
+          { service: "Visa Application (per visa)", entityType: "—", fee: 850, vat: 0.05, total: 893.5 },
+          { service: "Amendment Fee", entityType: "—", fee: 500, vat: 0.05, total: 525 },
+          { service: "Late Renewal Penalty (per month)", entityType: "—", fee: 150, vat: 0.05, total: 157.5 },
+        ],
+        invoices: [
+          { id: "INV-77112", company: "Al Masdar Trading LLC", service: "Annual Renewal", amount: "$3,000", due: "2026-03-10", status: "Paid ✅" },
+          { id: "INV-78022", company: "BlueSky Logistics Corp", service: "Annual Renewal", amount: "$3,000", due: "2026-04-04", status: "Pending ⏳" },
+          { id: "INV-76980", company: "Horizon Capital Offshore", service: "Annual Renewal", amount: "$3,000", due: "2026-01-15", status: "Overdue 🔴" },
+          { id: "INV-77322", company: "Meridian Foods & Beverages", service: "Annual Renewal", amount: "$3,000", due: "2026-02-02", status: "Paid ✅" },
+          { id: "INV-78777", company: "Atlas Energy Partners", service: "Activity Change", amount: "$500", due: "2026-03-21", status: "Pending ⏳" },
+          { id: "INV-76111", company: "Pacific Rim Exports Ltd", service: "Late Renewal Penalty", amount: "$450", due: "2025-12-02", status: "Overdue 🔴" },
+          { id: "INV-77401", company: "GreenTech Innovations FZE", service: "Visa Application", amount: "$4,250", due: "2026-03-18", status: "Disputed ⚠️" },
+          { id: "INV-78600", company: "Sunrise Media FZ-LLC", service: "Visa Application", amount: "$2,550", due: "2026-03-30", status: "Pending ⏳" },
+        ],
+        flaggedCompanies: [
+          { company: "Horizon Capital Offshore", reason: "AML Concern", severity: "HIGH", since: "2025-11-15", assigned: "Compliance Officer", status: "Open" },
+          { company: "Vertex Holdings Ltd", reason: "Missing Documents", severity: "HIGH", since: "2026-03-05", assigned: "Compliance Desk", status: "Open" },
+          { company: "Pacific Rim Exports Ltd", reason: "Inactive Entity", severity: "AMBER", since: "2025-09-02", assigned: "Compliance Officer", status: "Open" },
+          { company: "Atlas Energy Partners", reason: "License Activity Mismatch", severity: "HIGH", since: "2026-03-12", assigned: "Compliance Officer", status: "Open" },
+          { company: "BlueSky Logistics Corp", reason: "Overdue Fees", severity: "LOW", since: "2026-02-08", assigned: "Finance Desk", status: "Monitoring" },
+          { company: "NovaTech Solutions FZE", reason: "UBO Not Declared", severity: "AMBER", since: "2026-02-14", assigned: "Compliance Officer", status: "Draft" },
+        ],
+        auditLog: [
+          { ts: "2026-03-12 09:05", action: "Docs Submitted", entity: "Atlas Energy Partners", by: "NEX Admin", before: "—", after: "Processing", ip: "10.24.7.31" },
+          { ts: "2026-03-07 13:48", action: "Fee Waiver Applied", entity: "Meridian Foods & Beverages", by: "Finance Officer", before: "$3,000", after: "$2,500", ip: "10.24.8.44" },
+          { ts: "2026-03-03 16:22", action: "License Renewed", entity: "Al Masdar Trading LLC", by: "NEX Admin", before: "Expiring", after: "Active", ip: "10.24.8.11" },
+          { ts: "2026-02-28 10:18", action: "Compliance Freeze Lifted", entity: "GreenTech Innovations FZE", by: "Compliance Officer", before: "Frozen", after: "Active", ip: "10.24.9.10" },
+          { ts: "2026-02-20 07:33", action: "SAR Draft Generated", entity: "Horizon Capital Offshore", by: "Compliance Officer", before: "—", after: "SAR Drafted", ip: "10.24.9.5" },
+          { ts: "2026-02-14 14:55", action: "KYC Status Updated", entity: "NovaTech Solutions FZE", by: "Reviewer", before: "Pending", after: "Verified", ip: "10.24.8.90" },
+        ],
+        users: [
+          { user: "Admin (NEX)", role: "Super Admin", lastLogin: "2 min ago", twoFA: "Enabled", status: "Active", action: "Manage" },
+          { user: "Zonal Ops", role: "Zone Admin", lastLogin: "18 min ago", twoFA: "Enabled", status: "Active", action: "Manage" },
+          { user: "Reviewer Desk", role: "Reviewer", lastLogin: "5 hrs ago", twoFA: "Enabled", status: "Active", action: "Manage" },
+          { user: "Finance Officer", role: "Finance Officer", lastLogin: "1 day ago", twoFA: "Enabled", status: "Active", action: "Manage" },
+          { user: "Compliance Officer", role: "Compliance Officer", lastLogin: "3 days ago", twoFA: "Disabled", status: "Suspended", action: "Manage" },
+          { user: "Read Only QA", role: "Read Only", lastLogin: "6 days ago", twoFA: "Enabled", status: "Active", action: "Manage" },
+        ],
+      };
 
-        </div>
-      </div>
+      // ---------------------------
+      // Helpers
+      // ---------------------------
+      const $ = (sel, root = document) => root.querySelector(sel);
+      const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
-  
-  
-  
-      <div class="BorderGrid-row">
-        <div class="BorderGrid-cell">
-          
-<include-fragment aria-busy="true" aria-label="Loading latest packages" src="/VishalManikandan1626/Task1/packages_list?current_repository=Task1" data-nonce="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d" data-view-component="true">
-  
-  <h2 class="h4 tmp-mb-3">
-  <a href="/users/VishalManikandan1626/packages?repo_name=Task1" data-view-component="true" class="Link--primary no-underline Link d-flex flex-items-center">Packages
-      <span title="0" hidden="hidden" data-view-component="true" class="Counter ml-1 tmp-ml-1">0</span></a></h2>
-
-
-      <div class="mb-2 d-flex flex-items-center">
-        <div class="Skeleton mr-2" style="width:20px;height:20px;"></div>
-        <div class="Skeleton Skeleton--text flex-auto">&nbsp;</div>
-      </div>
-      <div class="mb-2 d-flex flex-items-center">
-        <div class="Skeleton mr-2" style="width:20px;height:20px;"></div>
-        <div class="Skeleton Skeleton--text flex-auto">&nbsp;</div>
-      </div>
-      <div class="mb-2 d-flex flex-items-center">
-        <div class="Skeleton mr-2" style="width:20px;height:20px;"></div>
-        <div class="Skeleton Skeleton--text flex-auto">&nbsp;</div>
-      </div>
-
-
-
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment>
-        </div>
-      </div>
-
-  
-  
-    <div class="BorderGrid-row">
-      <div class="BorderGrid-cell">
-        <include-fragment aria-busy="true" aria-label="Loading contributors" src="/VishalManikandan1626/Task1/contributors_list?current_repository=Task1&amp;deferred=true" data-nonce="v2:1b1c639b-dce5-d72c-2b82-6b16207e335d" data-view-component="true">
-  
-  <h2 class="h4 tmp-mb-3">
-    <a href="/VishalManikandan1626/Task1/graphs/contributors" data-view-component="true" class="Link--primary no-underline Link d-flex flex-items-center">Contributors</a>  </h2>
-
-  <ul class="list-style-none d-flex flex-wrap mb-n2">
-      <li class="mb-2">
-        <div class="Skeleton avatar avatar-user mr-2" style="width:32px;height:32px;"></div>
-      </li>
-      <li class="mb-2">
-        <div class="Skeleton avatar avatar-user mr-2" style="width:32px;height:32px;"></div>
-      </li>
-      <li class="mb-2">
-        <div class="Skeleton avatar avatar-user mr-2" style="width:32px;height:32px;"></div>
-      </li>
-  </ul>
-
-  <div data-show-on-forbidden-error hidden>
-    <div class="Box">
-  <div class="blankslate-container">
-    <div data-view-component="true" class="blankslate blankslate-spacious color-bg-default rounded-2">
-      
-
-      <h3 data-view-component="true" class="blankslate-heading">        Uh oh!
-</h3>
-      <p data-view-component="true" class="blankslate-description">        <p class="color-fg-muted my-2 mb-2 ws-normal">There was an error while loading. <a class="Link--inTextBlock" data-turbo="false" href="" aria-label="Please reload this page">Please reload this page</a>.</p>
-</p>
-
-</div>  </div>
-</div>  </div>
-</include-fragment>
-      </div>
-    </div>
-
-  
-      <div class="BorderGrid-row">
-        <div class="BorderGrid-cell">
-          <h2 class="h4 tmp-mb-3">Languages</h2>
-<div class="mb-2">
-  <span data-view-component="true" class="Progress">
-    <span style="background-color:#e34c26 !important;;width: 100.0%;" itemprop="keywords" data-view-component="true" class="Progress-item color-bg-success-emphasis"></span>
-</span></div>
-<ul class="list-style-none">
-    <li class="d-inline">
-        <a class="d-inline-flex flex-items-center flex-nowrap Link--secondary no-underline text-small tmp-mr-3" href="/VishalManikandan1626/Task1/search?l=html"  data-ga-click="Repository, language stats search click, location:repo overview">
-          <svg style="color:#e34c26;" aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill mr-2 tmp-mr-2">
-    <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
-</svg>
-          <span class="color-fg-default text-bold mr-1">HTML</span>
-          <span>100.0%</span>
-        </a>
-    </li>
-</ul>
-
-        </div>
-      </div>
-
-  
-  
-        <div class="BorderGrid-row js-notice" >
-  <div class="BorderGrid-cell">
-    <div data-view-component="true" class="Subhead border-bottom-0 mb-2 tmp-mb-2">
-  <h2 data-view-component="true" class="h4 Subhead-heading Subhead-heading--large">        Suggested workflows
-</h2>
-  <div data-view-component="true" class="Subhead-description">         Based on your tech stack
-</div>
-  
-</div>    <ol class="list-style-none">
-        <li class="list-style-none">
-          <div data-view-component="true" class="mb-2 tmp-mb-2 p-3 tmp-p-3 border rounded-2">
-  <div data-view-component="true" class="d-flex flex-items-stretch">
-    <div aria-hidden="true" style="color: #e34c26 !important; background-color: var(--bgColor-white, var(--color-scale-white)) !important; width: 32px !important; height: 32px !important; min-width: 32px !important;" data-view-component="true" class="CircleBadge">
-      <img class="CircleBadge-icon" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDQuODM3MjcgMS44OTkgLTEuMDMxNjMgOC45MDQzNCAzLjEwMiA0LjY5NSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOTE5MTkxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMi45MjYxNCAxLjE0ODcyIC0uNjg0NzIgNC45MDkwNCAyLjI0MiAyLjY1NykiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjOTAwIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZTgwMDAwIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImMiIGdyYWRpZW50VHJhbnNmb3JtPSJzY2FsZSg0MC44NjUzIDE1LjY2ODYpIHJvdGF0ZSgtOTAgLjUgLjUpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFhMWExYSIvPjxzdG9wIG9mZnNldD0iLjQwMyIgc3RvcC1jb2xvcj0iIzRhNGE0YyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzMzMyIvPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZD0iTTQzLjEzOCAxNC40MDdhLjIzNy4yMzcgMCAwMDAgLjExNXMuMTIyLjgxNC0uMDE5IDEuMTc3bC01Ljc3NSAxNS4zNDJjLS40MTIgMS4xMjkuMTQgMi4zODMgMS4yNDcgMi44MTMgMS4xMDYuNDMgMi4zMzQtLjEyNCAyLjc3NS0xLjI0NGw1Ljc3NS0xNS4zNDFjLjExMi0uMjk3Ljc2LS44OC43Ni0uODhhLjYxMi42MTIgMCAwMC4wNzQtLjA4N3YtLjAxYzAtLjAwOS4wMS0uMDA5LjAxLS4wMTkuMTUtLjM5Mi0uODE2LTEuMTM4LTIuMTQ3LTEuNjY1LTEuMzMxLS41MjYtMi41NC0uNjMxLTIuNjktLjIzIDAgMC0uMDEuMDEtLjAxLjAzeiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEiLz48cGF0aCBkPSJNNS45My4yNzNhLjIzOC4yMzggMCAwMDAgLjExNXMuMTIyLjgxNC0uMDE5IDEuMTc3TC4xMzYgMTYuOTA2Yy0uNDEyIDEuMTMuMTQxIDIuMzg0IDEuMjQ3IDIuODE0IDEuMTA3LjQzIDIuMzM1LS4xMjQgMi43NzUtMS4yNDRMOS45MzMgMy4xMzVjLjExMy0uMjk3Ljc2LS44OC43Ni0uODhhLjYxMy42MTMgMCAwMC4wNzQtLjA4N3YtLjAxYzAtLjAwOS4wMS0uMDA5LjAxLS4wMTkuMTUtLjM5Mi0uODE2LTEuMTM4LTIuMTQ3LTEuNjY1LTEuMzMxLS41MjYtMi41NC0uNjMxLTIuNjktLjIzIDAgLjAxIDAgLjAyLS4wMS4wM3oiIGZpbGw9InVybCgjYSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM3LjA0IDE0KSIvPjxwYXRoIGQ9Ik03LjE4OSAwTDMuMDE3IDExLjA2M2MtLjMxLjc5NS0xLjIgMS4yMDYtMS45OTcuODktLjc5Ny0uMzE1LTEuMjE5LTEuMjQ0LS45MjgtMi4wMzhsMi42NjItNy4wNzNzLjMyOS0uNTQ1Ljk4NS0uOTM3Yy42NTYtLjM5MyAxLjE5LS4zMDcgMS45MTItLjYzMkM2LjM4Mi45NDcgNy4xOSAwIDcuMTkgMHoiIGZpbGw9InVybCgjYikiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM3LjYgMjEuMjEyKSIvPjxwYXRoIGQ9Ik00Ni44MSAxNS44MmMuMDg0LS4yMjItLjUxNC0uNjY0LTEuMzM1LS45ODctLjgyLS4zMjQtMS41NTQtLjQwNy0xLjYzNy0uMTg1LS4wODMuMjIxLjUxNS42NjMgMS4zMzYuOTg2LjgyMS4zMjQgMS41NTQuNDA3IDEuNjM3LjE4NXoiIGZpbGw9IiMzMzMiLz48cGF0aCBkPSJNNDIuOTMgMTQuMzg3cy4xMjEuODExLS4wMTggMS4xNzRsLTUuNzM3IDE1LjI5OGMtLjQxIDEuMTI2LjE0IDIuMzc2IDEuMjM4IDIuODA2LjE4Ny4wNzYuMzgyLjEyNC41NzguMTMzLS4zNjgtLjI4Ni0uNjM2LS42ODYtLjc2NS0xLjE0cy0uMTEyLS45MzYuMDQ4LTEuMzhsNS42MjUtMTQuOTkycy0uNzczLS43MzUtLjk2OS0xLjl6IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMyIvPjxnIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii41Ij48cGF0aCBkPSJNNDEuMDg2IDI0LjQyN2EuMTcuMTcgMCAwMC4xNjgtLjE3Mi4xNy4xNyAwIDAwLS4xNjgtLjE3Mi4xNy4xNyAwIDAwLS4xNjcuMTcyLjE3LjE3IDAgMDAuMTY3LjE3MnpNNDIuMTc2IDI1Ljc0NGMuMTM5IDAgLjI1Mi0uMTE2LjI1Mi0uMjU4cy0uMTEzLS4yNTgtLjI1Mi0uMjU4LS4yNTEuMTE2LS4yNTEuMjU4LjExMi4yNTguMjUxLjI1OHpNNDAuNTA5IDI3LjQ0MmMuMjYyIDAgLjQ3NS0uMjE4LjQ3NS0uNDg2cy0uMjEzLS40ODctLjQ3NS0uNDg3Yy0uMjYzIDAtLjQ3NS4yMTgtLjQ3NS40ODdzLjIxMi40ODYuNDc1LjQ4NnpNMzkuNzQ1IDI4LjExYy4xMzkgMCAuMjUyLS4xMTUuMjUyLS4yNTdzLS4xMTMtLjI1OC0uMjUyLS4yNTgtLjI1MS4xMTUtLjI1MS4yNTguMTEyLjI1Ny4yNTEuMjU3ek00MC43NDIgMjkuOTMzYS4xNy4xNyAwIDAwLjE2Ny0uMTcyLjE3LjE3IDAgMDAtLjE2Ny0uMTcxLjE3LjE3IDAgMDAtLjE2OC4xNzEuMTcuMTcgMCAwMC4xNjguMTcyeiIgb3BhY2l0eT0iLjUiLz48L2c+PHBhdGggZD0iTTExLjMxIDIzLjMxYy4yNTQuMjEuNzEzLjA4NiAxLjAyMy0uMjU4LjMyOC0uMzYyLjM3NS0uODMuMTIyLTEuMDQtLjI1NC0uMjEtLjcxMy0uMDg2LTEuMDIyLjI3Ny0uMzI4LjM2Mi0uMzg1LjgyLS4xMjIgMS4wMjF6bS0uNzU4LjY3OGMtLjA2NiAwLS4xODguMTI0LS4wODUuMTcxLjE0LjA0OC4yMDYuMTcyLjIwNi4zNDQtLjEyMS43MTYtLjk5MyAxLjUyNy0xLjMzIDEuODA0LS4wODUuMDg1LjAzNy4yNzYuMTIxLjIxLjE4Ny0uMTUzLjU4MS0uNDY4LjktLjg4OC0uNTI1IDEuMTkzLTEuNTU2IDIuNzM5LTEuOTUgMy4yODMtMS41MzcgMi4xNjYtMy44NzIgNC4xNi01LjQ3NSA0LjE2YTIuNjIzIDIuNjIzIDAgMDEtMi42MDYtMi4xODVjLS4wMTktLjE0My0uMjA2LS4xNzEtLjE2OS4wMi4yOSAxLjc4NCAxLjY0IDIuNDggMy4yNzIgMi40OCAxLjc5IDAgMy44OS0xLjMxNiA1LjA1My0yLjY3MSAxLjg3NS0yLjE4NiAzLjA4NC00LjcwNSAyLjc2Ni02LjEyNy0uMTMyLS41MjUtLjQ5Ny0uNjExLS43MDMtLjYwMXptMTEuNTIxIDQuNzYyYy40OTctLjEyNC45LS40MDEuOS0uODQgMC0uMDQ4LS4wODQtLjA0OC0uMDg0IDAgMCAuMjU4LS4yOTEuNDc3LS42Mi41MjUtLjc2OC4xMjQtMi4yODctLjc5Mi0zLTEuNzM3Ljc3LjI5NiAyLjMzNS0uMTM0IDMuMDc2LS42NzguNjg0LS41MDYuOTU2LTEuMDU5IDEuMDAzLTEuNTA4LjA4NC0uNzQ0LS43MTMtMS4xODMtMS44MjgtLjc0NC0uNzEzLjI5Ni0xLjU2Ni45MzUtMi40NTYgMi4xMzguOTM3LTEuNTc1IDIuNzg0LTQuMTUyIDQuNTkzLTUuNzkzIDIuMjAzLTEuOTk1IDMuNDc4LTEuNjEzIDEuNS41MDYtLjgxNS44NjgtMi4zNTMgMS45OTQtMy40MTIgMi40ODEtLjMyOC4xNDMtLjE2OS4zMzQuMDY2LjIzIDEuMTI0LS41MDcgMi42MjQtMS41NDcgMy41MzQtMi40MTUgMi42OC0yLjYyNS40NC00LjYtMi41MjItMS44MjMtMi4wMTYgMS44OS0zLjMyOCAzLjg2NS00LjQ3MiA2LjQzMi0uMzkzLjQ4Ny0uNjg0Ljg4OC0xLjA0IDEuMTkzLS4wNDcuMDM4LS4wNzUuMDc2LS4xMDMuMTE1LS45ODUuODU4LTIuNTMyIDIuMDIzLTMuNDk3IDIuMDMyLS42ODUuMDItLjk3NS0uNTA2LS44NTMtMS4xODMuMTg3LTEuMDYgMS4yNjUtMi4zMSAyLjE4NC0yLjc0IDEuMTktLjU1MyAxLjg5NC41MjYuMzI4IDEuMzg1LS42LjMxNS0xLjMxMi40ODYtMS42MDMuNDg2LS4zMzcgMC0uMzEuMTQ0LS4wMTkuMTUzLjQ3OC4wMiAxLjI0Ny0uMTkgMS43NTMtLjQzIDEuNjAzLS43ODIgMS43MDctMi4yNDItLjAzNy0yLjI5LTEuODk0LS4wNjctNC4xNjMgMS41NzUtNC4xNDQgMy42NDYuMDE5LjkzNS43NSAxLjQ0IDEuNzUzIDEuNDQgMS42NzgtLjAxOCAzLjE2OS0xLjMxNiA0LjM5Ny0yLjQ2MS4xNzgtLjE1My4zNDctLjMxNS41MTYtLjQ4Ny0uNDMyIDEuMTA3LS42NDcgMi4xMzgtLjU0NCAyLjkwMS4wNjYuNTU0LjM3NS44MTEuNjE5IDEuMDIxLjA0Ny4wMzguMTUgMCAuMDg0LS4xMDUtLjM1Ni0uNDMtLjI1My0xLjcxOC4yMzQtMi45NjguNDEzLjg0IDIuMDE2IDEuOSAzLjY5NCAxLjUxOHptLTIuMDE2LTMuNjE3YzEuOTYtMS43ODUgMi43MjgtLjE5MSAxLjQ4Mi43ODItLjY0Ny41MDYtMS45MzIuODg4LTIuMzM1LjY0bC0uMDg0LS4wNDhjLS4wNDctLjA4Ni0uMTAzLS4xNzItLjE0LS4yNTguMzI3LS40MS43MDItLjc3MyAxLjA3Ny0xLjExNnpNMzAuOTUxIDIzLjFjLjc4Ny4wODYuNDYtLjg4Ny0uMzM4LS42NC0uMzU2LjEwNi0uNzAzLjgwMi0uOTU2IDEuNDA0LS43ODcgMS4xOTItMi4xIDIuODI0LTMuMDE5IDMuNjgzLS44MTUuNzE2LTEuNTY1LjkwNy0uNjQ2LS40My4zNzUtLjUzNC44NTMtMS4xMDYgMS4xMjUtMS42NzkuNjQ2LTEuNDQtLjczMi0yLjA4LTEuODQ3LTEuMjEyLS42NDcuNTA2LTEuNTE5IDEuNTQ2LTIuMjAzIDIuMTE5LS4xODguMTUyLS4xNDEuMzgxLjA0Ny4yMjkuNTQzLS40NDkgMS41LTEuNDggMi4zMjUtMi4wOC42ODQtLjUzNS45NTYtLjE5MS41NjIuMjU3LS41NDQuNjQtMS41IDEuNzU2LTEuNzQ0IDIuNDYyLS4zMzcgMS4wNi4wNjYgMS41MjcuNzUgMS41MjcuOTM4IDAgMi4zMzUtMS40ODkgMy4yNzItMi42NzIuMzEtLjQuNjQ3LS44NjguOTM4LTEuMzE3LS44MTYgMS42MTMtMS42NyAzLjI0NS0yLjcyOSA0LjcyNC0xLjUgMi4wOC0zLjM3NCAzLjY0Ni01LjE1NiAzLjY0NmEyLjY0MiAyLjY0MiAwIDAxLTIuNjI0LTIuMTg2Yy0uMDItLjE0My0uMTg4LS4xNzItLjE3LjAyLjI5MSAxLjc4NCAxLjY0MSAyLjQ4IDMuMjcyIDIuNDggMS43OTEgMCAzLjUxNi0xLjA1OSA0LjcyNS0yLjM1NyAyLjQzOC0yLjYyNCAyLjcyOC01LjU3MyAzLjQ3OC03LjIyNC4zNTctLjc1NC42NzUtLjc4Mi45MzgtLjc1NHptOS45MTgtMi41MmMuMzU3LS42Mi4zMzgtMS4xMDYtLjQ5Ny0xLjEwNi0uNjI4LjAxOS0xLjc3MS40NjctMi4zMDYuODg3LS4xMjIuMTI0LS4wNjUuMTkuMDg1LjEyNC4xMDMtLjAzOC4yMjUtLjEwNS4zMzctLjE1My42LS4zMzQuMzU2LjM2My4yMjUuNjItLjcxMiAxLjI3LTEuOTc4IDMuMDU1LTIuNjQ0IDMuOTQyYTEzLjQzIDEzLjQzIDAgMDEtMS4wMjEgMS4yNGMtLjYzOC42MjEtMS45MDMgMS43MTktMi44NyAyLjA4MS0zLjEwMiAxLjE4My44NTQtNC4xOTkgMS4xODItNC42MzguNzMxLS45MzUgMi4zNzItMi41NjcgMi44NjktMy4zODguMzU2LS42Mi4zMzctMS4xMDctLjQ5Ny0xLjEwNy0uNjI4LjAyLTEuNzcyLjQ2OC0yLjMwNi44ODgtLjEyMi4xMjQtLjA2Ni4xOS4wODQuMTI0LjEwMy0uMDM4LjIyNS0uMTA1LjMzOC0uMTUzLjYtLjMzNC4zNTYuMzYzLjIyNS42Mi0uNzEzIDEuMjctMS45NzggMy4wNTQtMi42NDQgMy45NDItLjU0NC43NDQtMS4yMSAxLjQ4OS0xLjcyNSAxLjkwOC0uMjA2LjE3Mi0uMDg0LjMzNS4xMjIuMTkxLjE4Ny0uMTI0LjQ2LS40Ljc2OS0uNzI1LS41NjMgMS4xNDUtMS4wMjIgMi43NTguNDU5IDIuOTQ5IDEuMjY2LjE3MiAyLjc2Ni0xLjEzNiAzLjc0LTIuMTFsLjM0Ny0uMzUyLjA4NS0uMDg2Yy0uNTYzIDEuMTQ1LTEuMDIyIDIuNzU4LjQ1OSAyLjk0OSAxLjYyMi4yMjkgMy42MzctMS45OTUgNC40MTYtMi44MTYuMTUtLjE1Mi4xMDMtLjQyLS4xNS0uMTUyLS40Ni40ODctMi4wMTYgMS45MjgtMy4xNDEgMi4zNTctMy4xMDMgMS4xODMuODUzLTQuMiAxLjE4MS00LjYzOC43NC0uOTU0IDIuMzgxLTIuNTg2IDIuODc4LTMuMzk3eiIgZmlsbD0iIzAwMCIgb3BhY2l0eT0iLjEiLz48cGF0aCBkPSJNMTEuMTQyIDUuNTY0Yy4yNTMuMjEuNzEzLjA4NiAxLjAyMi0uMjU4LjMyOC0uMzYyLjM3NS0uODMuMTIyLTEuMDQtLjI1My0uMjEtLjcxMy0uMDg2LTEuMDIyLjI3Ny0uMzI4LjM2My0uMzc1LjgxMS0uMTIyIDEuMDIxem0tLjc1LjY3OGMtLjA2NiAwLS4xODcuMTI0LS4wODQuMTcxLjE0LjA0OC4yMDYuMTcyLjIwNi4zNDQtLjEyMi43MTYtLjk5NCAxLjUyNy0xLjMzMSAxLjgwNC0uMDg1LjA4Ni4wMzcuMjc2LjEyMi4yMS4xODctLjE1My41OC0uNDY4LjktLjg4OC0uNTI1IDEuMTkzLTEuNTU3IDIuNzM5LTEuOTUgMy4yODMtMS41MzggMi4xNjYtMy44NzIgNC4xNi01LjQ3NSA0LjE2YTIuNjIzIDIuNjIzIDAgMDEtMi42MDYtMi4xODRjLS4wMi0uMTQ0LS4yMDctLjE3Mi0uMTcuMDE5LjI5MiAxLjc4NCAxLjY0MiAyLjQ4IDMuMjczIDIuNDggMS43OSAwIDMuODktMS4zMTYgNS4wNTMtMi42NzEgMS44NzQtMi4xODYgMy4wODQtNC43MDUgMi43NjUtNi4xMjctLjE0LS41MzUtLjQ5Ny0uNjItLjcwMy0uNjAxem0xMS41MTIgNC43NjJjLjQ5Ny0uMTI0LjktLjQwMS45LS44NCAwLS4wNDgtLjA4NC0uMDQ4LS4wODQgMCAwIC4yNTgtLjI5LjQ3Ny0uNjE5LjUyNS0uNzY5LjEyNC0yLjI4Ny0uNzkyLTMtMS43MzcuNzY5LjI5NiAyLjMzNC0uMTM0IDMuMDc1LS42NzguNjg0LS41MDUuOTU2LTEuMDU5IDEuMDAzLTEuNTA4LjA4NC0uNzQ0LS43MTItMS4xODMtMS44MjgtLjc0NC0uNzEyLjI5Ni0xLjU2Ni45MzUtMi40NTYgMi4xMzguOTM3LTEuNTc1IDIuNzg0LTQuMTUyIDQuNTk0LTUuNzkzIDIuMjAzLTEuOTk1IDMuNDc3LTEuNjEzIDEuNS41MDYtLjgxNi44NjgtMi4zNTQgMS45OTQtMy40MTMgMi40ODEtLjMyOC4xNDMtLjE2OS4zMzQuMDY2LjIzIDEuMTI1LS41MDcgMi42MjUtMS41NDcgMy41MzQtMi40MTUgMi42ODEtMi42MjUuNDQtNC42LTIuNTIyLTEuODIzLTIuMDE1IDEuODgtMy4zMjggMy44NjUtNC40NzIgNi40MzItLjM5My40ODctLjY4NC44ODgtMS4wNCAxLjE5My0uMDQ3LjAzOC0uMDc1LjA3Ni0uMTAzLjExNS0uOTg1Ljg1OC0yLjUzMSAyLjAyMy0zLjQ5NyAyLjAzMi0uNjg0LjAyLS45NzUtLjUwNi0uODUzLTEuMTgzLjE4Ny0xLjA2IDEuMjY1LTIuMzEgMi4xODQtMi43NCAxLjE5LS41NTMgMS44OTQuNTI2LjMyOCAxLjM4NS0uNi4zMTUtMS4zMTIuNDg2LTEuNjAzLjQ4Ni0uMzM3IDAtLjMxLjE0NC0uMDE5LjE1My40NzguMDIgMS4yNDctLjE5IDEuNzU0LS40MyAxLjYwMy0uNzgyIDEuNzA2LTIuMjQyLS4wMzgtMi4yOS0xLjg5NC0uMDY3LTQuMTYyIDEuNTc1LTQuMTQ0IDMuNjQ2LjAyLjkzNS43NSAxLjQ0IDEuNzU0IDEuNDQgMS42NzgtLjAxOCAzLjE2OC0xLjMxNiA0LjM5Ni0yLjQ2MS4xNzgtLjE1My4zNDctLjMxNS41MTYtLjQ4Ny0uNDMxIDEuMTA3LS42NDcgMi4xMzgtLjU0NCAyLjkwMS4wNjYuNTU0LjM3NS44MTEuNjE5IDEuMDIxLjA0Ny4wMzguMTUgMCAuMDg0LS4xMDUtLjM1Ni0uNDMtLjI1My0xLjcxNy4yMzUtMi45NjguNDIxLjg0IDIuMDI0IDEuOSAzLjY5MyAxLjUxOHpNMTkuODkgNy4zNzdjMS45NTktMS43ODQgMi43MjgtLjE5IDEuNDguNzgzLS42NDYuNTA2LTEuOTMuODg3LTIuMzMzLjY0bC0uMDg1LS4wNDljLS4wNDctLjA4NS0uMTAzLS4xNzEtLjE0LS4yNTcuMzI4LS40MDEuNzAzLS43NzMgMS4wNzgtMS4xMTd6bTEwLjg5My0yLjAyM2MuNzg3LjA4Ni40Ni0uODg3LS4zMzctLjY0LS4zNTcuMTA2LS43MDQuODAyLS45NTcgMS40MDQtLjc4NyAxLjE5My0yLjEgMi44MjQtMy4wMTggMy42ODMtLjgxNi43MTYtMS41NjYuOTA3LS42NDctLjQzLjM3NS0uNTM0Ljg1My0xLjEwNiAxLjEyNS0xLjY3OS42NDctMS40NC0uNzMxLTIuMDgtMS44NDctMS4yMTItLjY0Ny41MDYtMS41MTkgMS41NDYtMi4yMDMgMi4xMTktLjE4Ny4xNTMtLjE0LjM4Mi4wNDcuMjI5LjU0NC0uNDQ5IDEuNS0xLjQ4IDIuMzI1LTIuMDguNjg0LS41MzUuOTU2LS4xOTEuNTYyLjI1Ny0uNTQzLjY0LTEuNSAxLjc1Ni0xLjc0MyAyLjQ2Mi0uMzM4IDEuMDYuMDY1IDEuNTI3Ljc1IDEuNTI3LjkzNyAwIDIuMzM0LTEuNDg4IDMuMjcxLTIuNjcyLjMxLS40LjY0Ny0uODY4LjkzOC0xLjMxNy0uODE2IDEuNjEzLTEuNjY5IDMuMjQ1LTIuNzI4IDQuNzI0LTEuNSAyLjA4LTMuMzc1IDMuNjQ2LTUuMTU2IDMuNjQ2YTIuNjQzIDIuNjQzIDAgMDEtMi42MjUtMi4xODZjLS4wMi0uMTQzLS4xODgtLjE3Mi0uMTY5LjAyLjI5IDEuNzg0IDEuNjQgMi40OCAzLjI3MiAyLjQ4IDEuNzkgMCAzLjUxNS0xLjA1OSA0LjcyNS0yLjM1NyAyLjQzNy0yLjYyNCAyLjcyOC01LjU3MyAzLjQ3OC03LjIyNC4zNTYtLjc1NC42ODQtLjc5Mi45MzctLjc1NHpNNDAuNyAyLjgyNWMuMzU3LS42Mi4zMzgtMS4xMDctLjQ5Ni0xLjEwNy0uNjI5LjAyLTEuNzcyLjQ2OC0yLjMwNy44ODgtLjEyMS4xMjQtLjA2NS4xOS4wODUuMTI0LjEwMy0uMDM4LjIyNS0uMTA1LjMzNy0uMTUzLjYtLjMzNC4zNTcuMzYzLjIyNS42Mi0uNzEyIDEuMjctMS45NzggMy4wNTQtMi42NDMgMy45NDItLjMxNi40MzQtLjY1OC44NDgtMS4wMjIgMS4yNC0uNjM4LjYyLTEuOTAzIDEuNzE4LTIuODY5IDIuMDgtMy4xMDMgMS4xODQuODUzLTQuMTk4IDEuMTgxLTQuNjM3LjczMi0uOTM2IDIuMzcyLTIuNTY3IDIuODY5LTMuMzg4LjM1Ni0uNjIuMzM3LTEuMTA3LS40OTctMS4xMDctLjYyOC4wMTktMS43NzIuNDY3LTIuMzA2Ljg4Ny0uMTIyLjEyNC0uMDY2LjE5MS4wODQuMTI0LjEwMy0uMDM4LjIyNS0uMTA1LjMzOC0uMTUyLjYtLjMzNC4zNTYuMzYyLjIyNS42Mi0uNzEzIDEuMjctMS45NzggMy4wNTQtMi42NDQgMy45NDEtLjU0NC43NDUtMS4yMSAxLjQ5LTEuNzI1IDEuOTEtLjIwNi4xNy0uMDg0LjMzMy4xMjIuMTkuMTg4LS4xMjQuNDYtLjQuNzY5LS43MjUtLjU2MyAxLjE0NS0xLjAyMiAyLjc1OC40NiAyLjk0OSAxLjI2NS4xNzEgMi43NjUtMS4xMzYgMy43NC0yLjExbC4zNDctLjM1My4wODQtLjA4NmMtLjU2MyAxLjE0Ni0xLjAyMiAyLjc1OC40NiAyLjk1IDEuNjIxLjIyOCAzLjYzNy0xLjk5NSA0LjQxNS0yLjgxNi4xNS0uMTUzLjEwMy0uNDItLjE1LS4xNTMtLjQ2LjQ4Ny0yLjAxNiAxLjkyOC0zLjE0IDIuMzU4LTMuMTA0IDEuMTgzLjg1Mi00LjIgMS4xOC00LjYzOS43NS0uOTU0IDIuMzgyLTIuNTg2IDIuODc4LTMuMzk3eiIgZmlsbD0idXJsKCNjKSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxNy41ODQpIi8+PC9zdmc+" alt="Jekyll using Docker image logo">
-</div>
-    <div data-view-component="true" class="d-flex flex-column">
-      <span data-view-component="true" class="f5 text-bold ml-2 tmp-ml-2">Jekyll using Docker image</span>
-      <span data-view-component="true" class="color-fg-muted ml-2 tmp-ml-2 text-small"></span>
-</div>    <a href="/VishalManikandan1626/Task1/new/main?filename=.github%2Fworkflows%2Fjekyll-docker.yml&amp;workflow_template=ci%2Fjekyll-docker" data-hydro-click="{&quot;event_type&quot;:&quot;actions.onboarding_setup_workflow_click&quot;,&quot;payload&quot;:{&quot;repository_id&quot;:1277730479,&quot;workflow_template&quot;:&quot;ci/jekyll-docker&quot;,&quot;view_section&quot;:&quot;repository_sidebar&quot;,&quot;view_rank&quot;:1,&quot;templates_count&quot;:2,&quot;template_creator&quot;:null,&quot;new_with_filter_view&quot;:false,&quot;correlation_id&quot;:&quot;76F2:2FBBB1:59C8B6:674C0A:6A3A2776&quot;,&quot;category&quot;:&quot;Continuous integration&quot;,&quot;search_query&quot;:null,&quot;template_source_visibility&quot;:&quot;shared&quot;,&quot;originating_url&quot;:&quot;https://github.com/VishalManikandan1626/Task1&quot;,&quot;user_id&quot;:213896920}}" data-hydro-click-hmac="236f7a24926454af775afe792c7a37141e4801487a0f5c71136b006b045195cc" style="min-width: 80px" aria-describedby="jekyll-using-docker-image-description" data-view-component="true" class="Button--secondary Button--small Button ml-auto tmp-ml-auto">  <span class="Button-content">
-    <span class="Button-label">Configure<span class="sr-only">&nbsp;Jekyll using Docker image</span></span>
-  </span>
-</a>
-</div>  <span id="jekyll-using-docker-image-description" aria-hidden="true" data-view-component="true" class="tmp-ml-5 d-flex color-fg-muted f6 mt-1 tmp-mt-1 pl-2 tmp-pl-2">Package a Jekyll site using the jekyll/builder Docker image.</span>
-</div>
-        </li>
-        <li class="list-style-none">
-          <div data-view-component="true" class="mb-2 tmp-mb-2 p-3 tmp-p-3 border rounded-2">
-  <div data-view-component="true" class="d-flex flex-items-stretch">
-    <div aria-hidden="true" style="color: #00ADD8 !important; background-color: var(--bgColor-white, var(--color-scale-white)) !important; width: 32px !important; height: 32px !important; min-width: 32px !important;" data-view-component="true" class="CircleBadge">
-      <img class="CircleBadge-icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBmaWxsPSJub25lIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxNDAgMTQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzEpIiBjbGlwLXBhdGg9InVybCgjYSkiPgo8cGF0aCBkPSJtMTYxLjUzIDMuMDk5NGUtNSAwLjM4NS0wLjQzNTQzLTcuNDkzLTYuNjIyMi0zLjMxMSAzLjc0NjVjLTAuOTg5IDEuMTE4NC0xLjk5MSAyLjIyMjItMy4wMDggMy4zMTExaC0xMTcuMXY3Ljc5MTlsLTYuODc5OSA0LjI0MDMgMi42MjM0IDQuMjU2NWMxLjM3MzUgMi4yMjg1IDIuNzkyOSA0LjQxOTYgNC4yNTY1IDYuNTcyNHY5My40MjFjLTAuMDMzOSAxZS0zIC0wLjA2NzggMWUtMyAtMC4xMDE4IDJlLTNsLTQuOTk4OSAwLjEwMiAwLjIwMzUgOS45OTggNC44OTcyLTAuMXYxMy43MTZoMTQwdi04OC42ODRjMS40NC0yLjA3MzQgMi44NC00LjE4MyA0LjE5Ni02LjMyODIgMi4yNzktMy40MjkyIDMuOTcxLTYuMzYxMyA1LjEwMy04LjQ1NzkgMC41Ny0xLjA1NCAwLjk5OC0xLjg5ODYgMS4yOS0yLjQ5MTIgMC4xNDYtMC4yOTY0IDAuMjU4LTAuNTI5OSAwLjMzNi0wLjY5NTMgMC4wMzktMC4wODI3IDAuMDY5LTAuMTQ4NCAwLjA5MS0wLjE5NjRsMC4wMjctMC4wNTg3IDllLTMgLTAuMDE5MiAzZS0zIC0wLjAwNzEgMWUtMyAtMC4wMDI5IDFlLTMgLTAuMDAxM2MwLTZlLTQgMC0wLjAwMTEtNC41NTctMi4wNTc4bDQuNTU3IDIuMDU2NyAyLjA1Ny00LjU1NzUtOS4xMTUtNC4xMTMyLTIuMDU0IDQuNTUxOHYxZS0zbC0xZS0zIDllLTQgLTFlLTMgMC4wMDE3djJlLTNsLThlLTMgMC4wMTc0Yy0wLjAxMSAwLjAyMzQtMC4wMyAwLjA2NDItMC4wNTcgMC4xMjE2LTAuMDU0IDAuMTE1LTAuMTQxIDAuMjk2Ny0wLjI2MSAwLjUzOTktMC4yMzkgMC40ODY2LTAuNjExIDEuMjE4OC0xLjExNiAyLjE1NS0wLjE1NSAwLjI4NTktMC4zMjIgMC41OTA3LTAuNTAxIDAuOTEzMXYtMzIuNjl6bTAgMGgtMTMuNDI3Yy0yMi4wNDYgMjMuNjE4LTUwLjU5MSA0MC4yNDYtODEuOTkxIDQ3Ljc3OS0xMS44NzUtMTAuNTQxLTIyLjMwNS0yMi44NzEtMzAuODUxLTM2LjczN2wtMi42MjM0LTQuMjU2NS0xLjYzMzEgMS4wMDY1djE1LjA2OWM4LjcwNzYgMTIuODA3IDE4Ljk4MiAyNC4yNTkgMzAuNDgyIDM0LjE1NiAxNi41MyAxNC4yMjYgMzUuNTkxIDI1LjI0MiA1Ni4xNyAzMi40NjEtMTcuNDI0IDExLjM4Ny0zNi45NjIgMTkuNDQ4LTU3LjYxMiAyMy42MDUtOS40Nzc0IDEuOTA3LTE5LjE5IDIuOTkyLTI5LjA0IDMuMTk5djEwLjAwMmwwLjEwMTgtMmUtM2MxMC40ODQtMC4yMTMgMjAuODIzLTEuMzY1IDMwLjkxMS0zLjM5NiAyNS40MDMtNS4xMTMgNDkuMjE3LTE1Ljc5NiA2OS43ODYtMzEuMDkgMTUuMDEtMTEuMTYxIDI4LjI5Mi0yNC43NzkgMzkuMjAxLTQwLjQ4di0xOC42MjZjLTAuOTk2IDEuNzkwOC0yLjM4IDQuMTI3LTQuMTYzIDYuODA4bC0wLjAzMyAwLjA0OTEtMC4wMzEgMC4wNDk4Yy0xMC41MTIgMTYuNjM5LTIzLjc1OSAzMS4wMTUtMzguOTYyIDQyLjY4LTE4Ljg4MS01LjcwOS0zNi41NTUtMTQuNzU4LTUyLjE4LTI2LjY2MiAzMS45ODItOS4xMjkyIDYwLjgyNy0yNy4yNSA4Mi45NjktNTIuMzA0eiIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjZjAzMTAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJhIj4KPHBhdGggZD0ibTMxIDI4YzAtMTUuNDY0IDEyLjUzNi0yOCAyOC0yOGg4NGMxNS40NjQgMCAyOCAxMi41MzYgMjggMjh2ODRjMCAxNS40NjQtMTIuNTM2IDI4LTI4IDI4aC04NGMtMTUuNDY0IDAtMjgtMTIuNTM2LTI4LTI4eiIgZmlsbD0iI2ZmZiIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=" alt="SLSA Generic generator logo">
-</div>
-    <div data-view-component="true" class="d-flex flex-column">
-      <span data-view-component="true" class="f5 text-bold ml-2 tmp-ml-2">SLSA Generic generator</span>
-      <span data-view-component="true" class="color-fg-muted ml-2 tmp-ml-2 text-small"></span>
-</div>    <a href="/VishalManikandan1626/Task1/new/main?filename=.github%2Fworkflows%2Fgenerator-generic-ossf-slsa3-publish.yml&amp;workflow_template=ci%2Fgenerator-generic-ossf-slsa3-publish" data-hydro-click="{&quot;event_type&quot;:&quot;actions.onboarding_setup_workflow_click&quot;,&quot;payload&quot;:{&quot;repository_id&quot;:1277730479,&quot;workflow_template&quot;:&quot;ci/generator-generic-ossf-slsa3-publish&quot;,&quot;view_section&quot;:&quot;repository_sidebar&quot;,&quot;view_rank&quot;:2,&quot;templates_count&quot;:2,&quot;template_creator&quot;:&quot;Open Source Security Foundation (OpenSSF)&quot;,&quot;new_with_filter_view&quot;:false,&quot;correlation_id&quot;:&quot;76F2:2FBBB1:59C8B6:674C0A:6A3A2776&quot;,&quot;category&quot;:&quot;Continuous integration&quot;,&quot;search_query&quot;:null,&quot;template_source_visibility&quot;:&quot;shared&quot;,&quot;originating_url&quot;:&quot;https://github.com/VishalManikandan1626/Task1&quot;,&quot;user_id&quot;:213896920}}" data-hydro-click-hmac="cc5bdd38d44e2f7e0cc060edb2b8e7e72e804c8d64421868abc5112d20117fbd" style="min-width: 80px" aria-describedby="slsa-generic-generator-description" data-view-component="true" class="Button--secondary Button--small Button ml-auto tmp-ml-auto">  <span class="Button-content">
-    <span class="Button-label">Configure<span class="sr-only">&nbsp;SLSA Generic generator</span></span>
-  </span>
-</a>
-</div>  <span id="slsa-generic-generator-description" aria-hidden="true" data-view-component="true" class="tmp-ml-5 d-flex color-fg-muted f6 mt-1 tmp-mt-1 pl-2 tmp-pl-2">Generate SLSA3 provenance for your existing release workflows</span>
-</div>
-        </li>
-    </ol>
-    <div data-view-component="true" class="d-flex flex-justify-between">
-      <a data-analytics-event="{&quot;category&quot;:&quot;suggested_workflows_in_repository_sidebar&quot;,&quot;action&quot;:&quot;clicked_on_see_more_button&quot;,&quot;label&quot;:&quot;owner:213896920;ref_cta:configure;ref_loc:respository_sidebar&quot;}" href="/VishalManikandan1626/Task1/actions/new" data-view-component="true" class="Link">More workflows</a>
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-notice-dismiss" data-turbo="false" action="/users/VishalManikandan1626/dismiss_repository_notice" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete" autocomplete="off" /><input type="hidden" name="authenticity_token" value="shzvr9Qc4hdV2VgmlBdk8ISFyCkw6WZjffeuL-aGZbj0WA5HBTsKQF_5NpIr7qloNRJd9LHAXcCc2AcTWTiy1Q" autocomplete="off" />
-        <input type="hidden" name="notice_name" value="repo_suggested_workflows">
-        <input type="hidden" name="repository_id" value="1277730479">
-        <button data-analytics-event="{&quot;category&quot;:&quot;suggested_workflows_in_repository_sidebar&quot;,&quot;action&quot;:&quot;dismissed_component&quot;,&quot;label&quot;:&quot;owner:213896920;ref_cta:configure;ref_loc:respository_sidebar&quot;}" type="submit" data-view-component="true" class="Button--link Button--medium Button text-small color-fg-muted text-normal">  <span class="Button-content">
-    <span class="Button-label">Dismiss suggestions</span>
-  </span>
-</button>
-
-</form></div>  </div>
-</div>
-
-</div>
-</rails-partial></div><div class="prc-PageLayout-VerticalDivider-9QRmK prc-PageLayout-PaneVerticalDivider-le57g" data-component="PageLayout.VerticalDivider" data-variant-narrow="none" data-variant-regular="none" data-position="end" style="--spacing:var(--spacing-none)"></div></div></div></div></div></div></div></div></div></div></div><div class="ScrollMarksContainer-module__scrollMarksContainer__Eu7uU" id="find-result-marks-container"></div><div class="d-none"></div><div class="d-none"></div></div> <!-- --> <!-- --> <script type="application/json" id="__PRIMER_DATA__R_1___">{"resolvedServerColorMode":"day"}</script></div>
-</react-app>
-
-
-
-
-  </div>
-
-</turbo-frame>
-
-    </main>
-  </div>
-
-  </div>
-
-          <footer class="footer tmp-pt-7 tmp-pb-6 f6 color-fg-muted color-border-subtle p-responsive" role="contentinfo" >
-  <h2 class='sr-only'>Footer</h2>
-
-  
-
-
-  <div class="d-flex flex-justify-center flex-items-center flex-column-reverse flex-lg-row flex-wrap flex-lg-nowrap">
-    <div class="d-flex flex-items-center flex-shrink-0 mx-2">
-      <a aria-label="GitHub Homepage" class="footer-octicon mr-2" href="https://github.com">
-        <svg aria-hidden="true" data-component="Octicon" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
-    <path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"></path>
-</svg>
-</a>
-      <span>
-        &copy; 2026 GitHub,&nbsp;Inc.
-      </span>
-    </div>
-
-    <nav aria-label="Footer">
-      <h3 class="sr-only" id="sr-footer-heading">Footer navigation</h3>
-
-      <ul class="list-style-none d-flex flex-justify-center flex-wrap mb-2 mb-lg-0" aria-labelledby="sr-footer-heading">
-
-
-          <li class="mx-2">
-            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}" href="https://docs.github.com/site-policy/github-terms/github-terms-of-service" data-view-component="true" class="Link--secondary Link">Terms</a>
-          </li>
-
-          <li class="mx-2">
-            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}" href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" data-view-component="true" class="Link--secondary Link">Privacy</a>
-          </li>
-
-          <li class="mx-2">
-            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="https://github.com/security" data-view-component="true" class="Link--secondary Link">Security</a>
-          </li>
-
-          <li class="mx-2">
-            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;}" href="https://www.githubstatus.com/" data-view-component="true" class="Link--secondary Link">Status</a>
-          </li>
-
-          <li class="mx-2">
-            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to community&quot;,&quot;label&quot;:&quot;text:community&quot;}" href="https://github.community/" data-view-component="true" class="Link--secondary Link">Community</a>
-          </li>
-
-          <li class="mx-2">
-            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to docs&quot;,&quot;label&quot;:&quot;text:docs&quot;}" href="https://docs.github.com/" data-view-component="true" class="Link--secondary Link">Docs</a>
-          </li>
-
-          <li class="mx-2">
-            <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}" href="https://support.github.com?tags=dotcom-footer" data-view-component="true" class="Link--secondary Link">Contact</a>
-          </li>
-
-          <li class="mx-2" >
-  <cookie-consent-link>
-    <button
-      type="button"
-      class="Link--secondary underline-on-hover border-0 p-0 color-bg-transparent"
-      data-action="click:cookie-consent-link#showConsentManagement"
-      data-analytics-event="{&quot;location&quot;:&quot;footer&quot;,&quot;action&quot;:&quot;cookies&quot;,&quot;context&quot;:&quot;subfooter&quot;,&quot;tag&quot;:&quot;link&quot;,&quot;label&quot;:&quot;cookies_link_subfooter_footer&quot;}"
-    >
-       Manage cookies
-    </button>
-  </cookie-consent-link>
-</li>
-
-<li class="mx-2">
-  <cookie-consent-link>
-    <button
-      type="button"
-      class="Link--secondary underline-on-hover border-0 p-0 color-bg-transparent text-left"
-      data-action="click:cookie-consent-link#showConsentManagement"
-      data-analytics-event="{&quot;location&quot;:&quot;footer&quot;,&quot;action&quot;:&quot;dont_share_info&quot;,&quot;context&quot;:&quot;subfooter&quot;,&quot;tag&quot;:&quot;link&quot;,&quot;label&quot;:&quot;dont_share_info_link_subfooter_footer&quot;}"
-    >
-      Do not share my personal information
-    </button>
-  </cookie-consent-link>
-</li>
-
-      </ul>
-    </nav>
-  </div>
-</footer>
-
-
-
-    <ghcc-consent id="ghcc" class="position-fixed bottom-0 left-0" style="z-index: 999999"
-      data-locale="en"
-      data-initial-cookie-consent-allowed=""
-      data-cookie-consent-required="false"
-    ></ghcc-consent>
-
-
-
-
-  <div id="ajax-error-message" class="ajax-error-message flash flash-error" hidden>
-    <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
-    <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
-</svg>
-    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
-      <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-    </button>
-    You can’t perform that action at this time.
-  </div>
-
-    <template id="site-details-dialog">
-  <details class="details-reset details-overlay details-overlay-dark lh-default color-fg-default hx_rsm" open>
-    <summary role="button" aria-label="Close dialog"></summary>
-    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
-      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
-        <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-      </button>
-      <div class="octocat-spinner tmp-my-6 js-details-dialog-spinner"></div>
-    </details-dialog>
-  </details>
-</template>
-
-    <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;">
-  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box color-shadow-large" style="width:360px;">
-  </div>
-</div>
-
-    <template id="snippet-clipboard-copy-button">
-  <div class="zeroclipboard-container position-absolute right-0 top-0">
-    <clipboard-copy aria-label="Copy code to clipboard" class="ClipboardButton btn js-clipboard-copy m-2 p-0" data-copy-feedback="Copied!" data-tooltip-direction="w">
-      <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2 tmp-m-2">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2 tmp-m-2">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
-  </div>
-</template>
-<template id="snippet-clipboard-copy-button-unpositioned">
-  <div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy code to clipboard" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w">
-      <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
-  </div>
-</template>
-
-
-    <style>
-      .user-mention[href$="/VishalManikandan1626"] {
-        color: var(--color-user-mention-fg);
-        background-color: var(--bgColor-attention-muted, var(--color-attention-subtle));
-        border-radius: 2px;
-        margin-left: -2px;
-        margin-right: -2px;
+      function formatMoney(n) {
+        if (typeof n !== "number") return String(n);
+        return n.toLocaleString(undefined, { maximumFractionDigits: 0 });
       }
-      .user-mention[href$="/VishalManikandan1626"]:before,
-      .user-mention[href$="/VishalManikandan1626"]:after {
-        content: '';
-        display: inline-block;
-        width: 2px;
+
+      function showToast(title, subtitle = "", kind = "gold") {
+        const container = $("#toastContainer");
+        const toast = document.createElement("div");
+        toast.className = "toast";
+        const accent =
+          kind === "danger"
+            ? "rgba(227,93,106,1)"
+            : kind === "blue"
+              ? "rgba(77,163,255,1)"
+              : "var(--gold)";
+        toast.innerHTML = `
+          <div class="t" style="color:${accent};font-weight:800;">${title}</div>
+          ${subtitle ? `<div class="s">${subtitle}</div>` : ""}
+        `;
+        container.appendChild(toast);
+        const t = setTimeout(() => {
+          toast.style.opacity = "0";
+          toast.style.transform = "translateY(10px)";
+          toast.style.transition = "opacity 200ms ease, transform 200ms ease";
+        }, 2600);
+        const t2 = setTimeout(() => {
+          toast.remove();
+          clearTimeout(t);
+          clearTimeout(t2);
+        }, 2900);
       }
-    </style>
 
+      function setTheme(isLight) {
+        document.body.classList.toggle("light", isLight);
+        try {
+          localStorage.setItem("nexus-theme", isLight ? "light" : "dark");
+        } catch {
+          // ignore
+        }
+      }
 
-    </div>
-    <div id="js-global-screen-reader-notice" class="sr-only mt-n1" aria-live="polite" aria-atomic="true" ></div>
-    <div id="js-global-screen-reader-notice-assertive" class="sr-only mt-n1" aria-live="assertive" aria-atomic="true"></div>
+      function statusPill(status) {
+        const cls = statusToPillClass[status] || "";
+        return `<span class="pill ${cls}">${status}</span>`;
+      }
+
+      function priorityBadge(priority) {
+        const p = String(priority).toUpperCase();
+        const cls = p === "HIGH" ? "high" : p === "MEDIUM" ? "medium" : "low";
+        return `<span class="priority ${cls}">${p}</span>`;
+      }
+
+      function clamp(v, min, max) {
+        return Math.max(min, Math.min(max, v));
+      }
+
+      function extractYearFromLicenseExp(licenseExp) {
+        const s = String(licenseExp || "");
+        const m = s.match(/(19|20)\d{2}/);
+        return m ? m[0] : "";
+      }
+
+      function findBusinessIdByCompanyName(name) {
+        const q = String(name || "").trim().toLowerCase();
+        if (!q) return null;
+        const biz = mock.businesses.find((b) => {
+          const cn = String(b.companyName || "").toLowerCase();
+          const tn = String(b.tradeName || "").toLowerCase();
+          const rn = String(b.regNo || "").toLowerCase();
+          return cn === q || tn === q || rn === q || cn.includes(q) || tn.includes(q) || q.includes(cn) || q.includes(tn);
+        });
+        return biz ? biz.id : null;
+      }
+
+      function getOccupancyColor(occ) {
+        if (occ < 0.5) return "green";
+        if (occ < 0.8) return "amber";
+        return "red";
+      }
+
+      function occupancyFill(occ) {
+        if (occ < 0.5) return "rgba(47,227,139,0.24)";
+        if (occ < 0.8) return "rgba(242,184,75,0.22)";
+        return "rgba(227,93,106,0.22)";
+      }
+
+      // ---------------------------
+      // Navigation + view switching
+      // ---------------------------
+      const viewButtons = $$(".nav-btn");
+      const views = $$("section.view");
+      const viewTitleByKey = {
+        dashboard: "Dashboard",
+        registry: "Business Registry",
+        applications: "Applications & Approvals",
+        licenses: "License Management",
+        investors: "Investor Profiles",
+        infrastructure: "Zone Infrastructure",
+        fees: "Fees & Invoicing",
+        compliance: "Compliance & Audits",
+        analytics: "Analytics & Reports",
+        settings: "System Settings",
+        portal: "Portal Configuration",
+        permissions: "Access & Permissions",
+      };
+
+      function setActiveView(key) {
+        views.forEach((s) => {
+          s.classList.toggle("active", s.dataset.view === key);
+        });
+        viewButtons.forEach((b) => b.classList.toggle("active", b.dataset.view === key));
+
+        const title = viewTitleByKey[key] || "NEXUS ZONE";
+        $("#topbarTitle").textContent =
+          key === "dashboard" ? "Welcome back, Administrator" : title;
+
+        document.documentElement.scrollTop = 0;
+        fadeStaggerOnView();
+      }
+
+      function fadeStaggerOnView() {
+        // Re-trigger stagger effects for the active view
+        $$(".fade-stagger").forEach((el) => el.classList.remove("visible"));
+        const active = $("section.view.active");
+        if (!active) return;
+        const items = $$(":scope .fade-stagger", active);
+        items.forEach((el, idx) => {
+          const d = Math.min(420, idx * 45);
+          el.style.transitionDelay = `${d}ms`;
+          el.classList.add("visible");
+        });
+      }
+
+      viewButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          setActiveView(btn.dataset.view);
+          closeMobileSidebar();
+        });
+      });
+
+      // ---------------------------
+      // Sidebar: mobile + collapse
+      // ---------------------------
+      const sidebar = $("#sidebar");
+      const sidebarBackdrop = $("#sidebarBackdrop");
+      const mobileMenuBtn = $("#mobileMenuBtn");
+      const mobileGodBtn = $("#mobileGodBtn");
+      const godFloat = $("#godFloat");
+
+      function openMobileSidebar() {
+        sidebar.classList.add("open");
+        sidebarBackdrop.classList.add("show");
+      }
+      function closeMobileSidebar() {
+        sidebar.classList.remove("open");
+        sidebarBackdrop.classList.remove("show");
+      }
+
+      mobileMenuBtn?.addEventListener("click", () => {
+        if (sidebar.classList.contains("open")) closeMobileSidebar();
+        else openMobileSidebar();
+      });
+      sidebarBackdrop?.addEventListener("click", closeMobileSidebar);
+
+      // ---------------------------
+      // Theme toggle + date
+      // ---------------------------
+      const darkToggle = $("#darkToggle");
+      function initTheme() {
+        const stored = (() => {
+          try {
+            return localStorage.getItem("nexus-theme");
+          } catch {
+            return null;
+          }
+        })();
+        setTheme(stored === "light");
+      }
+      initTheme();
+
+      darkToggle?.addEventListener("click", () => {
+        setTheme(!document.body.classList.contains("light"));
+        showToast("Theme switched", "Dark/Light mode toggled", "blue");
+      });
+
+      function setNowDate() {
+        const d = new Date();
+        $("#topbarDate").textContent = d.toLocaleDateString(undefined, {
+          weekday: "short",
+          year: "numeric",
+          month: "short",
+          day: "2-digit",
+        });
+      }
+      setNowDate();
+      setInterval(setNowDate, 60 * 1000);
+
+      // ---------------------------
+      // Notifications
+      // ---------------------------
+      const notifBtn = $("#notifBtn");
+      const notifPanel = $("#notifPanel");
+      const notifList = $("#notifList");
+
+      const notifications = [
+        {
+          id: "n1",
+          color: "red",
+          title: "Compliance Alert",
+          body: "AML concern raised for Horizon Capital Offshore.",
+          pill: "Red",
+        },
+        {
+          id: "n2",
+          color: "amber",
+          title: "Expiry Warning",
+          body: "6 licenses nearing renewal window in Zone A.",
+          pill: "Amber",
+        },
+        {
+          id: "n3",
+          color: "blue",
+          title: "New Application",
+          body: "Vertex Holdings submitted a freezone transfer request.",
+          pill: "Blue",
+        },
+      ];
+
+      function buildNotifications() {
+        notifList.innerHTML = "";
+        notifications.forEach((n) => {
+          const item = document.createElement("div");
+          item.className = "notif-item";
+          const dot =
+            n.color === "red"
+              ? "background:rgba(227,93,106,0.95)"
+              : n.color === "amber"
+                ? "background:rgba(242,184,75,0.95)"
+                : "background:rgba(77,163,255,0.95)";
+          item.innerHTML = `
+            <div class="notif-dot" style="${dot}"></div>
+            <div class="txt">
+              <div class="a">${n.title}</div>
+              <div class="b">${n.body}</div>
+            </div>
+          `;
+          item.addEventListener("click", () => {
+            notifPanel.classList.remove("show");
+            showToast(n.title, n.body, n.color === "red" ? "danger" : "gold");
+          });
+          notifList.appendChild(item);
+        });
+      }
+      buildNotifications();
+
+      function toggleNotifPanel() {
+        const expanded = notifPanel.classList.toggle("show");
+        notifBtn?.setAttribute("aria-expanded", String(expanded));
+      }
+      notifBtn?.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleNotifPanel();
+      });
+      document.addEventListener("click", (e) => {
+        if (!notifPanel.contains(e.target) && e.target !== notifBtn) notifPanel.classList.remove("show");
+      });
+
+      // ---------------------------
+      // Floating God Mode badge + overlay
+      // ---------------------------
+      const godOverlayBackdrop = $("#godOverlayBackdrop");
+      const godOverlayClose = $("#godOverlayClose");
+      let godOverlayOpen = false;
+
+      function openGodOverlay() {
+        godOverlayBackdrop.classList.add("show");
+        godOverlayBackdrop.setAttribute("aria-hidden", "false");
+        godOverlayOpen = true;
+      }
+      function closeGodOverlay() {
+        godOverlayBackdrop.classList.remove("show");
+        godOverlayBackdrop.setAttribute("aria-hidden", "true");
+        godOverlayOpen = false;
+      }
+
+      godFloat?.addEventListener("click", () => {
+        godOverlayOpen ? closeGodOverlay() : openGodOverlay();
+      });
+      godOverlayClose?.addEventListener("click", closeGodOverlay);
+      godOverlayBackdrop?.addEventListener("click", (e) => {
+        if (e.target === godOverlayBackdrop) closeGodOverlay();
+      });
+      mobileGodBtn?.addEventListener("click", () => {
+        godOverlayOpen ? closeGodOverlay() : openGodOverlay();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : "";
+        const isTyping = tag === "input" || tag === "textarea" || e.target?.isContentEditable;
+        if (isTyping) return;
+        if (e.key === "g" || e.key === "G") {
+          e.preventDefault();
+          setActiveView("permissions");
+          godOverlayOpen ? closeGodOverlay() : openGodOverlay();
+        }
+        if (e.key === "Escape") {
+          closeGodOverlay();
+          closeDrawer();
+          closeInvestorModal();
+          closePinModal();
+          closeContextMenu();
+        }
+      });
+
+      // ---------------------------
+      // PIN modal flow (4-digit 1234)
+      // ---------------------------
+      const pinBackdrop = $("#pinBackdrop");
+      const pinCloseBtn = $("#pinCloseBtn");
+      const pinHidden = $("#pinHidden");
+      const pinDigs = [$("#pinD1"), $("#pinD2"), $("#pinD3"), $("#pinD4")];
+      const pinPrompt = $("#pinPrompt");
+      let pinResolve = null;
+      let pinReject = null;
+      let pinWrongOnce = false;
+
+      function openPinModal({ actionName, promptText }) {
+        pinWrongOnce = false;
+        pinPrompt.textContent = promptText || `Confirm with PIN to proceed: ${actionName}`;
+        pinBackdrop.classList.add("show");
+        pinBackdrop.setAttribute("aria-hidden", "false");
+        pinHidden.value = "";
+        pinHidden.focus();
+        pinDigs.forEach((d) => {
+          d.textContent = "";
+          d.classList.remove("error");
+        });
+      }
+
+      function closePinModal() {
+        pinBackdrop.classList.remove("show");
+        pinBackdrop.setAttribute("aria-hidden", "true");
+        pinResolve = null;
+        pinReject = null;
+      }
+
+      pinCloseBtn?.addEventListener("click", () => {
+        if (pinReject) pinReject(new Error("PIN cancelled"));
+        closePinModal();
+      });
+      document.addEventListener("click", (e) => {
+        if (e.target === pinBackdrop) {
+          if (pinReject) pinReject(new Error("PIN cancelled"));
+          closePinModal();
+        }
+      });
+
+      function updatePinDigits(val) {
+        const s = String(val);
+        pinDigs.forEach((d, i) => {
+          const ch = s[i] || " ";
+          d.textContent = ch === " " ? "" : ch;
+          d.classList.toggle("active", i === s.length - 1);
+          d.classList.remove("error");
+        });
+      }
+
+      pinHidden?.addEventListener("input", (e) => {
+        const raw = e.target.value.replace(/\D+/g, "").slice(0, 4);
+        e.target.value = raw;
+        updatePinDigits(raw);
+
+        if (raw.length === 4) {
+          if (raw === "1234") {
+            if (pinResolve) pinResolve();
+            closePinModal();
+            return;
+          }
+          if (!pinWrongOnce) {
+            pinWrongOnce = true;
+          }
+          pinDigs.forEach((d) => d.classList.add("error"));
+          pinPrompt.textContent = "Incorrect PIN. Try again.";
+          updatePinDigits("");
+          pinHidden.value = "";
+        }
+      });
+
+      // Promise wrapper
+      function requirePin(actionName, promptText) {
+        return new Promise((resolve, reject) => {
+          pinResolve = resolve;
+          pinReject = reject;
+          openPinModal({ actionName, promptText });
+        });
+      }
+
+      // ---------------------------
+      // Context menu: right-click on table rows
+      // ---------------------------
+      const contextMenu = $("#contextMenu");
+      let ctxTarget = null;
+
+      function openContextMenu(x, y, ctx) {
+        ctxTarget = ctx;
+        const maxX = window.innerWidth - contextMenu.offsetWidth - 10;
+        const maxY = window.innerHeight - contextMenu.offsetHeight - 10;
+        contextMenu.style.left = `${clamp(x, 10, maxX)}px`;
+        contextMenu.style.top = `${clamp(y, 10, maxY)}px`;
+        contextMenu.classList.add("show");
+      }
+
+      function closeContextMenu() {
+        ctxTarget = null;
+        contextMenu.classList.remove("show");
+      }
+
+      window.addEventListener("click", () => closeContextMenu());
+      window.addEventListener("scroll", () => closeContextMenu());
+
+      $$("[data-ctx]").forEach((item) => {
+        item.addEventListener("click", async (e) => {
+          e.stopPropagation();
+          const ctxAction = item.dataset.ctx;
+          const ctx = ctxTarget;
+          closeContextMenu();
+          if (!ctx) return;
+
+          // Resolve companyId from companyName when context came from other tables.
+          if (!ctx.companyId && ctx.companyName) {
+            ctx.companyId = findBusinessIdByCompanyName(ctx.companyName);
+          }
+
+          const needsCompany = ["view", "suspend", "audit", "delete"].includes(ctxAction);
+          if (needsCompany && !ctx.companyId) {
+            showToast("Not supported", "This row is not linked to a company in mock data.", "gold");
+            return;
+          }
+
+          if (ctxAction === "view") {
+            openBusinessDrawer(ctx.companyId);
+            return;
+          }
+          if (ctxAction === "suspend") {
+            try {
+              const ok = window.confirm(`Suspend entity: ${ctx.companyName}?`);
+              if (!ok) return;
+              await requirePin("Suspend", "Suspending requires PIN confirmation.");
+              updateBusinessStatus(ctx.companyId, "Suspended");
+              showToast("Suspended", ctx.companyName, "danger");
+            } catch {
+              showToast("Cancelled", "PIN confirmation cancelled.", "gold");
+            }
+            return;
+          }
+          if (ctxAction === "audit") {
+            openBusinessDrawer(ctx.companyId, "audit");
+            showToast("Audit Trail", `Opened audit log for ${ctx.companyName}`, "blue");
+            return;
+          }
+          if (ctxAction === "export") {
+            showToast("Downloading...", `Exporting profile for ${ctx.companyName}`, "blue");
+            setTimeout(() => showToast("Export ready", "Simulated download completed."), 900);
+            return;
+          }
+          if (ctxAction === "delete") {
+            try {
+              const ok = window.confirm(`Delete entity: ${ctx.companyName}? This is irreversible (mock).`);
+              if (!ok) return;
+              await requirePin("Delete", "Irreversible delete requires PIN.");
+              // mock deletion: set status deregistered
+              updateBusinessStatus(ctx.companyId, "Deregistered");
+              showToast("Deleted (mock)", ctx.companyName, "danger");
+            } catch {
+              showToast("Cancelled", "PIN confirmation cancelled.", "gold");
+            }
+            return;
+          }
+          if (ctxAction === "edit") {
+            showToast("Edit (mock)", `Opened editor for ${ctx.companyName}`, "blue");
+          }
+        });
+      });
+
+      // ---------------------------
+      // Drawer: Business profile
+      // ---------------------------
+      const drawerBackdrop = $("#drawerBackdrop");
+      const drawerCloseBtn = $("#drawerCloseBtn");
+      const businessDrawer = $("#businessDrawer");
+      const drawerTabs = $$(".tab", businessDrawer);
+
+      function openDrawer() {
+        drawerBackdrop.classList.add("show");
+        businessDrawer.classList.add("open");
+      }
+      function closeDrawer() {
+        drawerBackdrop.classList.remove("show");
+        businessDrawer.classList.remove("open");
+      }
+      drawerCloseBtn?.addEventListener("click", closeDrawer);
+      drawerBackdrop?.addEventListener("click", (e) => {
+        if (e.target === drawerBackdrop) closeDrawer();
+      });
+
+      // (Fix: use correct tabs with data-tab)
+      function setDrawerTab(tabKey) {
+        $$(".tab", businessDrawer).forEach((btn) => btn.classList.toggle("active", (btn.dataset.tab || btn.dataset.itab) === tabKey));
+        const map = {
+          overview: "drawerOverview",
+          documents: "drawerDocuments",
+          directors: "drawerDirectors",
+          licenses: "drawerLicenses",
+          invoices: "drawerInvoices",
+          compliance: "drawerCompliance",
+          audit: "drawerAudit",
+        };
+        const targets = $$(".drawer-section", businessDrawer);
+        targets.forEach((sec) => sec.classList.toggle("active", sec.id === map[tabKey]));
+      }
+
+      $$(`.tabs .tab`, businessDrawer).forEach((btn) => {
+        btn.addEventListener("click", () => setDrawerTab(btn.dataset.tab));
+      });
+
+      let currentBusinessId = null;
+
+      function updateDrawerWithBusiness(biz, tab = "overview") {
+        currentBusinessId = biz.id;
+        $("#drawerCompanyName").textContent = biz.companyName;
+        $("#drawerRegBadge").textContent = `Reg# ${biz.regNo}`;
+
+        const pillClass = statusToPillClass[biz.status] || "";
+        const statusPillEl = $("#drawerStatusPill");
+        statusPillEl.className = `pill ${pillClass}`; // reset
+        statusPillEl.textContent = biz.status;
+
+        $("#drawerRegDate").textContent = new Date(biz.regDate).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "2-digit" });
+        $("#drawerActivities").textContent = biz.activities;
+        $("#drawerAddress").textContent = biz.address;
+        $("#drawerCapital").textContent = biz.capital;
+        $("#drawerVisaQuota").textContent = `${biz.visaUsed} used / ${biz.visaTotal} total`;
+        $("#drawerBank").textContent = biz.bankMasked;
+        $("#drawerContact").textContent = biz.contact;
+        $("#drawerTradeName").textContent = biz.tradeName;
+
+        $("#drawerDocsList").innerHTML = "";
+        biz.documents.forEach((d) => {
+          const el = document.createElement("div");
+          el.className = "doc-item";
+          el.innerHTML = `
+            <div class="left">
+              <div class="a" title="${d.name}">${d.name}</div>
+              <div class="b">${d.meta}</div>
+            </div>
+            <div class="pill ${d.badge === "Verified" ? "active" : "pending"}" style="font-weight:800;">
+              ${d.badge}
+            </div>
+          `;
+          $("#drawerDocsList").appendChild(el);
+        });
+
+        $("#drawerDirectorsList").innerHTML = "";
+        biz.directors.forEach((name) => {
+          const el = document.createElement("div");
+          el.className = "doc-item";
+          el.innerHTML = `
+            <div class="left">
+              <div class="a" title="${name}">${name}</div>
+              <div class="b">Director profile (mock)</div>
+            </div>
+            <button class="btn small ghost" type="button" data-requires-pin="false" data-action="View Director" title="Mock action">View</button>
+          `;
+          $("#drawerDirectorsList").appendChild(el);
+        });
+
+        $("#drawerLicensesList").innerHTML = "";
+        if (biz.licenses.length === 0) {
+          $("#drawerLicensesList").innerHTML = `<div style="color:var(--muted2);font-size:12px;padding:10px 0;">No licenses linked (mock).</div>`;
+        } else {
+          biz.licenses.forEach((l) => {
+            const el = document.createElement("div");
+            el.className = "doc-item";
+            el.innerHTML = `
+              <div class="left">
+                <div class="a" title="${l.name}">${l.name}</div>
+                <div class="b">${l.type} • Expires: ${l.exp}</div>
+              </div>
+              ${statusPill(l.status === "Processing" ? "Processing" : l.status === "Pending" ? "Pending" : l.status)}
+            `;
+            $("#drawerLicensesList").appendChild(el);
+          });
+        }
+
+        $("#drawerInvoicesList").innerHTML = "";
+        biz.invoices.forEach((inv) => {
+          const el = document.createElement("div");
+          el.className = "doc-item";
+          const status = inv.status;
+          let pillCls = "pending";
+          if (status.includes("Paid")) pillCls = "active";
+          else if (status.includes("Overdue")) pillCls = "suspended";
+          else if (status.includes("Disputed")) pillCls = "processing";
+          else if (status.includes("Waived")) pillCls = "active";
+          el.innerHTML = `
+            <div class="left">
+              <div class="a" title="${inv.name}">${inv.name}</div>
+              <div class="b">${inv.service} • Amount: ${inv.amount}</div>
+            </div>
+            <span class="pill ${pillCls}">${inv.status}</span>
+          `;
+          $("#drawerInvoicesList").appendChild(el);
+        });
+
+        $("#drawerComplianceStatus").textContent = biz.compliance.status;
+        $("#drawerKyc").textContent = biz.compliance.kyc;
+        $("#drawerUbo").textContent = biz.compliance.ubo;
+        $("#drawerLastAudit").textContent = biz.compliance.lastAudit;
+
+        $("#drawerComplianceFlags").innerHTML = "";
+        if (biz.complianceFlags && biz.complianceFlags.length) {
+          biz.complianceFlags.forEach((f) => {
+            const el = document.createElement("div");
+            el.className = "doc-item";
+            const sevCls = f.severity === "HIGH" ? "suspended" : f.severity === "AMBER" ? "pending" : "processing";
+            el.innerHTML = `
+              <div class="left">
+                <div class="a" title="${f.reason}">${f.reason}</div>
+                <div class="b">Since: ${f.since} • Assigned: ${f.assignedTo || f.assigned || "—"}</div>
+              </div>
+              <span class="pill ${sevCls}">${f.severity || "—"}</span>
+            `;
+            $("#drawerComplianceFlags").appendChild(el);
+          });
+        } else {
+          $("#drawerComplianceFlags").innerHTML = `<div style="color:var(--muted2);font-size:12px;padding:10px 0;">No active compliance flags.</div>`;
+        }
+
+        // Audit
+        $("#drawerAuditTbody").innerHTML = "";
+        biz.audit.forEach((a) => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${a.ts}</td>
+            <td>${a.action}</td>
+            <td>${a.before}</td>
+            <td>${a.after}</td>
+            <td>${a.ip}</td>
+          `;
+          $("#drawerAuditTbody").appendChild(tr);
+        });
+
+        setDrawerTab(tab);
+      }
+
+      function openBusinessDrawer(companyId, tab = "overview") {
+        const biz = mock.businesses.find((b) => b.id === companyId) || mock.businesses[0];
+        updateDrawerWithBusiness(biz, tab);
+        openDrawer();
+      }
+
+      $("#drawerCompanyName")?.addEventListener("click", () => {});
+
+      function updateBusinessStatus(companyId, newStatus) {
+        const biz = mock.businesses.find((b) => b.id === companyId);
+        if (!biz) return;
+        biz.status = newStatus;
+
+        // Mirror business control state into linked mock licenses
+        mock.licenses.forEach((lic) => {
+          if (lic.companyId !== companyId) return;
+          if (newStatus === "Active") {
+            lic.status = "Active";
+            lic.renewalStatus = "Current";
+          } else if (newStatus === "Suspended" || newStatus === "Processing") {
+            lic.status = newStatus === "Processing" ? "Processing" : "Suspended";
+            lic.renewalStatus = newStatus === "Processing" ? "Processing" : "Suspended";
+          } else if (newStatus === "Deregistered") {
+            lic.status = "Suspended";
+            lic.renewalStatus = "Expired";
+          } else if (newStatus === "Pending") {
+            lic.status = "Pending";
+            lic.renewalStatus = "Pending";
+          }
+        });
+
+        // Refresh registry table row + drawer pill (if open)
+        renderRegistryTable();
+        if (currentBusinessId === companyId) {
+          const updated = mock.businesses.find((b) => b.id === companyId);
+          updateDrawerWithBusiness(updated, "overview");
+        }
+      }
+
+      // Drawer quick action buttons
+      $$("[data-action]", businessDrawer).forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const action = btn.dataset.action || "Action";
+          const requiresPin = btn.dataset.requiresPin === "true";
+          if (requiresPin) {
+            const ok = window.confirm(`Proceed with: ${action}?`);
+            if (!ok) return;
+            try {
+              await requirePin(action, `PIN required for: ${action}`);
+            } catch {
+              showToast("Cancelled", "PIN confirmation cancelled.", "gold");
+              return;
+            }
+          }
+
+          if (action === "Suspend") {
+            updateBusinessStatus(currentBusinessId, "Suspended");
+            showToast("Suspended", "Entity status updated (mock).", "danger");
+          } else if (action === "Delete") {
+            updateBusinessStatus(currentBusinessId, "Deregistered");
+            showToast("Deleted (mock)", "Entity deregistered.", "danger");
+          } else if (action === "Approve") {
+            updateBusinessStatus(currentBusinessId, "Active");
+            showToast("Approved", "Entity approved (mock).", "gold");
+          } else if (action === "Renew License") {
+            showToast("Renewal started", "Renewal process queued (mock).", "blue");
+          } else if (action === "Export Profile") {
+            showToast("Downloading...", `Exporting ${$("#drawerCompanyName").textContent} profile`, "blue");
+          } else if (action === "Flag for Audit") {
+            showToast("Flagged", "Compliance review queued (mock).", "gold");
+          } else {
+            showToast(action, "Executed (mock).", "blue");
+          }
+        });
+      });
+
+      // ---------------------------
+      // Investor modal
+      // ---------------------------
+      const investorModalBackdrop = $("#investorModalBackdrop");
+      const investorModal = $("#investorModal");
+      const investorModalClose = $("#investorModalClose");
+      const investorTabs = $$(".tabs .tab", investorModal);
+      let investorCurrentId = null;
+
+      function openInvestorModal(id) {
+        const inv = mock.investors.find((x) => x.id === id);
+        if (!inv) return;
+        investorCurrentId = id;
+        $("#investorModalName").textContent = `${inv.name} ${inv.nationality}`;
+        $("#investorModalKycSummary").textContent = `KYC: ${inv.kycBadge} • Associated companies: ${inv.associated.length}`;
+
+        $("#investorDOB").textContent = new Date(inv.dob).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "2-digit" });
+        $("#investorNationality").textContent = inv.nationality;
+        $("#investorPassport").textContent = inv.passportMasked;
+        $("#investorVisaStatus").textContent = inv.visaStatus;
+        $("#investorUboStatus").textContent = inv.ubo.status;
+        $("#investorUboDate").textContent = inv.ubo.date;
+
+        $("#investorEntitiesTbody").innerHTML = "";
+        inv.associated.forEach((a) => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `<td>${a.company}</td><td>${a.role}</td>`;
+          $("#investorEntitiesTbody").appendChild(tr);
+        });
+
+        $("#investorDocsList").innerHTML = "";
+        inv.documents.forEach((d) => {
+          const el = document.createElement("div");
+          el.className = "doc-item";
+          el.innerHTML = `
+            <div class="left">
+              <div class="a" title="${d.name}">${d.name}</div>
+              <div class="b">${d.meta}</div>
+            </div>
+            <span class="pill ${d.verified ? "active" : "pending"}">${d.verified ? "Verified" : "Pending"}</span>
+          `;
+          $("#investorDocsList").appendChild(el);
+        });
+
+        // default tab
+        investorTabs.forEach((t) => t.classList.toggle("active", t.dataset.itab === "personal"));
+        setInvestorTab("personal");
+
+        investorModalBackdrop.classList.add("show");
+        investorModalBackdrop.setAttribute("aria-hidden", "false");
+      }
+
+      function setInvestorTab(tabKey) {
+        investorTabs.forEach((btn) => btn.classList.toggle("active", btn.dataset.itab === tabKey));
+        const sections = $$(".drawer-section", investorModal);
+        sections.forEach((sec) => {
+          const active =
+            (tabKey === "personal" && sec.id === "investorTabPersonal") ||
+            (tabKey === "entities" && sec.id === "investorTabEntities") ||
+            (tabKey === "documents" && sec.id === "investorTabDocuments") ||
+            (tabKey === "ubo" && sec.id === "investorTabUbo");
+          sec.classList.toggle("active", active);
+        });
+      }
+
+      investorTabs.forEach((btn) => {
+        btn.addEventListener("click", () => setInvestorTab(btn.dataset.itab));
+      });
+
+      function closeInvestorModal() {
+        investorModalBackdrop.classList.remove("show");
+        investorModalBackdrop.setAttribute("aria-hidden", "true");
+        investorCurrentId = null;
+      }
+      investorModalClose?.addEventListener("click", closeInvestorModal);
+      investorModalBackdrop?.addEventListener("click", (e) => {
+        if (e.target === investorModalBackdrop) closeInvestorModal();
+      });
+
+      // Investor non-PIN actions (PIN actions are handled by the global PIN binder).
+      $$("[data-action]", investorModal)
+        .filter((btn) => btn.dataset.requiresPin !== "true")
+        .forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const actionName = btn.dataset.action || btn.textContent.trim();
+            showToast("Executed (mock)", actionName, "gold");
+          });
+        });
+
+      // ---------------------------
+      // Rendering: Dashboard
+      // ---------------------------
+      function buildActivityFeed() {
+        const feed = $("#activityFeed");
+        feed.innerHTML = "";
+        mock.activityFeed.forEach((a) => {
+          const item = document.createElement("div");
+          item.className = "feed-item";
+          item.setAttribute("role", "listitem");
+          item.innerHTML = `
+            <div class="avatar-mini" aria-hidden="true">${a.avatarText || "NZ"}</div>
+            <div class="t">
+              <div class="a" title="${a.company} — ${a.action}">
+                <span style="color:var(--text);font-weight:800;">${a.company}</span> — ${a.action}
+              </div>
+              <div class="b">${a.time}</div>
+            </div>
+          `;
+          feed.appendChild(item);
+        });
+      }
+
+      buildActivityFeed();
+
+      function renderApprovalQueue() {
+        const tbody = $("#approvalQueue");
+        tbody.innerHTML = "";
+        mock.approvalQueue?.forEach?.(() => {}); // not present; use mock.approvalQueue-like data; queue uses from activity feed
+        const top5 = mock.approvalQueue || [
+          { company: "Quantum Freight FZE", type: "New License", submitted: "2 days ago", priority: "HIGH", id: "APP-90012" },
+        ];
+      }
+
+      // We'll build queue using applications with status "DOCS PENDING" or "UNDER REVIEW"
+      function buildDashboardApprovalQueue() {
+        const tbody = $("#approvalQueue");
+        tbody.innerHTML = "";
+        const queue = mock.applications
+          .filter((a) => ["SUBMITTED", "UNDER REVIEW", "DOCS PENDING"].includes(a.status))
+          .slice(0, 5);
+
+        queue.forEach((app) => {
+          const tr = document.createElement("tr");
+          const status = app.priority;
+          tr.innerHTML = `
+            <td title="${app.applicant}">${app.companyName || app.applicant}</td>
+            <td>${app.type}</td>
+            <td>${app.submitted}</td>
+            <td>${priorityBadge(app.priority)}</td>
+            <td style="white-space:nowrap;">
+              <button class="btn small primary" type="button" data-quick="approve" data-app-id="${app.appId}">Quick Approve</button>
+              <button class="btn small" type="button" data-quick="review" data-app-id="${app.appId}">Review</button>
+            </td>
+          `;
+          tbody.appendChild(tr);
+          tr.querySelectorAll("button").forEach((b) => {
+            b.addEventListener("click", () => {
+              const act = b.dataset.quick;
+              showToast(act === "approve" ? "Approved (mock)" : "Review opened (mock)", `${app.applicant} • ${app.type}`, act === "approve" ? "gold" : "blue");
+            });
+          });
+        });
+
+        // If nothing, show placeholder
+        if (!queue.length) {
+          tbody.innerHTML = `<tr><td colspan="5" style="color:var(--muted2);padding:18px;">No pending approvals in mock data.</td></tr>`;
+        }
+      }
+      buildDashboardApprovalQueue();
+
+      // ---------------------------
+      // Rendering: Registry table
+      // ---------------------------
+      const registrySearch = $("#registrySearch");
+      const registryZone = $("#registryZone");
+      const registryEntityType = $("#registryEntityType");
+      const registryStatus = $("#registryStatus");
+      const registryIndustry = $("#registryIndustry");
+      const registryYear = $("#registryYear");
+
+      function initRegistryFilters() {
+        const zones = Array.from(new Set(mock.businesses.map((b) => b.zone))).sort();
+        const types = Array.from(new Set(mock.businesses.map((b) => b.entityType))).sort();
+        const statuses = Array.from(new Set(mock.businesses.map((b) => b.status))).sort();
+        const industries = Array.from(new Set(mock.businesses.map((b) => b.industry))).sort();
+        const years = Array.from(
+          new Set(mock.businesses.map((b) => extractYearFromLicenseExp(b.licenseExp)).filter(Boolean))
+        ).sort((a, b) => Number(a) - Number(b));
+
+        zones.forEach((z) => registryZone.insertAdjacentHTML("beforeend", `<option value="${z}">${z}</option>`));
+        types.forEach((t) => registryEntityType.insertAdjacentHTML("beforeend", `<option value="${t}">${t}</option>`));
+        statuses.forEach((s) => registryStatus.insertAdjacentHTML("beforeend", `<option value="${s}">${s}</option>`));
+        industries.forEach((i) => registryIndustry.insertAdjacentHTML("beforeend", `<option value="${i}">${i}</option>`));
+        years.forEach((y) => registryYear.insertAdjacentHTML("beforeend", `<option value="${y}">${y}</option>`));
+      }
+      initRegistryFilters();
+
+      function renderRegistryTable() {
+        const tbody = $("#registryTbody");
+        const search = (registrySearch.value || "").trim().toLowerCase();
+        const zone = registryZone.value;
+        const entityType = registryEntityType.value;
+        const status = registryStatus.value;
+        const industry = registryIndustry.value;
+        const year = registryYear.value;
+
+        let rows = [...mock.businesses];
+
+        if (search) {
+          rows = rows.filter((b) => {
+            const hay = `${b.companyName} ${b.regNo} ${b.tradeName}`.toLowerCase();
+            return hay.includes(search);
+          });
+        }
+        if (zone !== "all") rows = rows.filter((b) => b.zone === zone);
+        if (entityType !== "all") rows = rows.filter((b) => b.entityType === entityType);
+        if (status !== "all") rows = rows.filter((b) => b.status === status);
+        if (industry !== "all") rows = rows.filter((b) => b.industry === industry);
+        if (year !== "all") rows = rows.filter((b) => extractYearFromLicenseExp(b.licenseExp) === String(year));
+
+        // apply sorting state
+        const sortState = renderRegistryTable._sortState || { key: "regNo", dir: "asc" };
+        rows.sort((a, b) => {
+          const va = String(a[sortState.key] ?? "");
+          const vb = String(b[sortState.key] ?? "");
+          const cmp = va.localeCompare(vb, undefined, { numeric: true, sensitivity: "base" });
+          return sortState.dir === "asc" ? cmp : -cmp;
+        });
+
+        tbody.innerHTML = "";
+        rows.forEach((b) => {
+          const tr = document.createElement("tr");
+          tr.className = "row-actionable";
+          tr.dataset.companyId = b.id;
+          tr.dataset.companyName = b.companyName;
+          tr.innerHTML = `
+            <td style="width:46px;">
+              <input class="row-check" type="checkbox" data-row-id="${b.id}" aria-label="Select ${b.companyName}" />
+            </td>
+            <td title="${b.regNo}">${b.regNo}</td>
+            <td title="${b.companyName}">${b.companyName}</td>
+            <td title="${b.entityType}">${b.entityType}</td>
+            <td title="${b.industry}">${b.industry}</td>
+            <td title="${b.zone}">${b.zone}</td>
+            <td title="${b.licenseExp}">${b.licenseExp}</td>
+            <td>${statusPill(b.status)}</td>
+            <td title="${b.shareholders}">${b.shareholders}</td>
+            <td style="white-space:nowrap;">
+              <button class="btn small primary row-view" type="button" data-company-id="${b.id}">View Profile</button>
+            </td>
+          `;
+          tbody.appendChild(tr);
+
+          tr.addEventListener("click", (e) => {
+            const target = e.target;
+            if (
+              target &&
+              target.closest &&
+              (target.closest("button.row-view") || target.closest("input.row-check"))
+            ) {
+              return;
+            }
+            // Clicking row opens drawer
+            openBusinessDrawer(b.id, "overview");
+          });
+          tr.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            openContextMenu(e.clientX, e.clientY, { companyId: b.id, companyName: b.companyName });
+          });
+          tr.querySelector("button.row-view")?.addEventListener("click", (e) => {
+            e.stopPropagation();
+            openBusinessDrawer(b.id, "overview");
+          });
+        });
+
+        // update checkboxes state
+        $("#selectAllRegistry").checked = false;
+      }
+
+      renderRegistryTable();
+
+      // Sorting registry
+      $$(".sortable", $("#registryTbody").closest(".table-wrap")).forEach(() => {});
+      $$("section#view-registry .sortable").forEach((th) => {
+        th.addEventListener("click", () => {
+          const key = th.dataset.sort;
+          const state = renderRegistryTable._sortState || { key: "regNo", dir: "asc" };
+          if (state.key === key) state.dir = state.dir === "asc" ? "desc" : "asc";
+          else {
+            state.key = key;
+            state.dir = "asc";
+          }
+          renderRegistryTable._sortState = state;
+          renderRegistryTable();
+        });
+      });
+
+      // Filters
+      [registrySearch, registryZone, registryEntityType, registryStatus, registryIndustry, registryYear].forEach((el) => {
+        el?.addEventListener("input", renderRegistryTable);
+        el?.addEventListener("change", renderRegistryTable);
+      });
+
+      // Select all + bulk actions
+      const selectAllRegistry = $("#selectAllRegistry");
+      selectAllRegistry?.addEventListener("change", () => {
+        const checked = selectAllRegistry.checked;
+        $$("#registryTbody .row-check").forEach((c) => (c.checked = checked));
+      });
+
+      function getSelectedRegistryIds() {
+        return $$("#registryTbody .row-check:checked").map((c) => c.dataset.rowId);
+      }
+
+      $("#applyBulkBtn")?.addEventListener("click", async () => {
+        const action = $("#bulkAction").value;
+        const selected = getSelectedRegistryIds();
+        if (!selected.length) {
+          showToast("No selection", "Select one or more businesses first.", "gold");
+          return;
+        }
+        if (action === "suspend") {
+          const ok = window.confirm(`Suspend ${selected.length} selected entities?`);
+          if (!ok) return;
+          try {
+            await requirePin("Suspend Selected", "Suspending selected entities requires PIN.");
+            selected.forEach((id) => updateBusinessStatus(id, "Suspended"));
+            showToast("Bulk suspended", `${selected.length} entities updated (mock).`, "danger");
+          } catch {
+            showToast("Cancelled", "Bulk suspend cancelled.", "gold");
+          }
+          return;
+        }
+        if (action === "renew") {
+          showToast("Renewals queued", `Queued renewals for ${selected.length} entities (mock).`, "blue");
+          selected.forEach((id) => updateBusinessStatus(id, "Active"));
+          return;
+        }
+        if (action === "export") {
+          showToast("Downloading...", `Exporting ${selected.length} profiles (mock CSV)`, "blue");
+          setTimeout(() => showToast("Export ready", "Simulated bulk export completed."), 1000);
+          return;
+        }
+        showToast("Bulk action (mock)", "Action executed (or no-op).", "gold");
+      });
+
+      $("#exportCsvBtn")?.addEventListener("click", () => {
+        const selected = getSelectedRegistryIds();
+        if (!selected.length) {
+          showToast("Downloading...", "Exporting all businesses (mock CSV)", "blue");
+        } else {
+          showToast("Downloading...", `Exporting ${selected.length} selected (mock CSV)`, "blue");
+        }
+        setTimeout(() => showToast("Export ready", "Simulated CSV download completed."), 950);
+      });
+
+      $("#registerNewBtn")?.addEventListener("click", () => {
+        showToast("+ Register New Business", "Opened registration wizard (mock).", "gold");
+      });
+
+      // ---------------------------
+      // Rendering: Applications + Kanban + table
+      // ---------------------------
+      function renderApplications() {
+        const kanCounts = {
+          "SUBMITTED": $("#kanCount-submitted"),
+          "UNDER REVIEW": $("#kanCount-review"),
+          "DOCS PENDING": $("#kanCount-docspending"),
+          "APPROVED": $("#kanCount-approved"),
+          "REJECTED": $("#kanCount-rejected"),
+        };
+        const kanBoards = {
+          "SUBMITTED": $("#kanSubmitted"),
+          "UNDER REVIEW": $("#kanReview"),
+          "DOCS PENDING": $("#kanDocsPending"),
+          "APPROVED": $("#kanApproved"),
+          "REJECTED": $("#kanRejected"),
+        };
+
+        Object.values(kanBoards).forEach((el) => (el.innerHTML = ""));
+        const byStatus = {};
+        mock.applications.forEach((a) => {
+          byStatus[a.status] = byStatus[a.status] || [];
+          byStatus[a.status].push(a);
+        });
+
+        Object.entries(kanBoards).forEach(([status, el]) => {
+          const list = byStatus[status] || [];
+          kanCounts[status] && (kanCounts[status].textContent = String(list.length));
+          el.innerHTML = "";
+          list.slice(0, 4).forEach((app) => {
+            const card = document.createElement("div");
+            card.className = "kan-card";
+            const pr = priorityBadge(app.priority);
+            card.innerHTML = `
+              <div class="top">
+                <div style="min-width:0;">
+                  <div class="cn" title="${app.applicant}">${app.applicant}</div>
+                  <div class="meta">${app.type} • Submitted ${app.submitted}</div>
+                </div>
+                <div class="reviewer" title="Assigned reviewer">
+                  <div class="av">${app.reviewer}</div>
+                </div>
+              </div>
+              <div style="margin-top:10px;">${pr}</div>
+              <div class="act">
+                <button class="btn small primary" type="button" data-app-view="${app.appId}">View Details</button>
+              </div>
+            `;
+            card.querySelector("button")?.addEventListener("click", () => {
+              showToast("Details (mock)", `${app.applicant} • ${app.type}`, "blue");
+              openBusinessDrawer(app.companyId, "overview");
+            });
+            el.appendChild(card);
+          });
+        });
+
+        // Table
+        const tbody = $("#appsTbody");
+        tbody.innerHTML = "";
+        mock.applications.forEach((app) => {
+          const tr = document.createElement("tr");
+          tr.dataset.companyId = app.companyId;
+          tr.dataset.companyName = app.applicant;
+          tr.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            openContextMenu(e.clientX, e.clientY, { companyId: app.companyId, companyName: app.applicant });
+          });
+          const pctRemaining = app.slaDaysTotal
+            ? clamp((app.slaDaysLeft / app.slaDaysTotal) * 100, 0, 100)
+            : 50;
+          const slaColor = pctRemaining > 50 ? "" : pctRemaining >= 25 ? "amber" : "red";
+          const progressClass = pctRemaining > 50 ? "" : slaColor;
+          tr.innerHTML = `
+            <td>${app.appId}</td>
+            <td title="${app.applicant}">${app.applicant}</td>
+            <td>${app.type}</td>
+            <td>${app.submitted}</td>
+            <td>${app.reviewer}</td>
+            <td>
+              <div class="progress-sla ${pctRemaining > 50 ? "" : pctRemaining >= 25 ? "amber" : "red"}" title="SLA time remaining">
+                <div class="fill" style="width:${pctRemaining}%;"></div>
+              </div>
+              <div style="margin-top:8px;color:var(--muted2);font-size:12px;">${pctRemaining.toFixed(0)}% time</div>
+            </td>
+            <td>${statusPill(app.status === "SUBMITTED" ? "Pending" : app.status === "UNDER REVIEW" ? "Processing" : app.status === "DOCS PENDING" ? "Processing" : app.status === "APPROVED" ? "Active" : "Suspended")}</td>
+            <td style="white-space:nowrap;">
+              <button class="btn small primary" type="button" data-app-row="${app.appId}" data-requires-pin="false">View</button>
+            </td>
+          `;
+          tr.querySelector("button")?.addEventListener("click", () => {
+            showToast("Viewing application (mock)", `${app.applicant}`, "blue");
+            openBusinessDrawer(app.companyId, "overview");
+          });
+          tbody.appendChild(tr);
+        });
+      }
+      renderApplications();
+
+      // ---------------------------
+      // Rendering: Licenses
+      // ---------------------------
+      let licenseTypeFilter = "all";
+
+      function matchesLicenseGroup(license, group) {
+        if (group === "all") return true;
+        const t = String(license.type || "").toLowerCase();
+        const a = String(license.activities || "").toLowerCase();
+        const hay = `${t} ${a}`;
+
+        const groups = {
+          Trading: ["trading"],
+          Services: ["technology", "consult", "it services", "services"],
+          Industrial: ["industrial", "warehouse", "manufacturing"],
+          Financial: ["investment", "offshore", "finance"],
+          Media: ["media"],
+          Healthcare: ["healthcare", "pharma"],
+          Technology: ["technology", "it"],
+          Logistics: ["logistics", "freight", "warehouse", "cross-dock", "branch"],
+          Consulting: ["advisory", "consult"],
+          "Food & Beverage": ["food", "beverage", "f&b"],
+        };
+
+        const keywords = groups[group] || [];
+        return keywords.some((kw) => hay.includes(kw));
+      }
+
+      function renderLicenses() {
+        const tbody = $("#licensesTbody");
+        tbody.innerHTML = "";
+        const items = mock.licenses.filter((l) => matchesLicenseGroup(l, licenseTypeFilter));
+        items.forEach((l) => {
+          const tr = document.createElement("tr");
+          tr.className = "row-actionable";
+          tr.dataset.companyId = l.companyId;
+          tr.dataset.companyName = l.company;
+          tr.innerHTML = `
+            <td style="width:46px;">
+              <input class="row-check" type="checkbox" data-row-id="${l.id}" aria-label="Select license ${l.id}" />
+            </td>
+            <td title="${l.id}">${l.id}</td>
+            <td title="${l.company}">${l.company}</td>
+            <td>${l.type}</td>
+            <td title="${l.activities}">${l.activities}</td>
+            <td>${l.issue}</td>
+            <td>${l.expiry}</td>
+            <td>
+              <span class="pill ${l.status === "Active" ? "active" : l.status === "Suspended" ? "suspended" : l.status === "Processing" ? "processing" : "pending"}">
+                ${l.renewalStatus}
+              </span>
+            </td>
+            <td style="white-space:nowrap;">
+              <button class="btn small primary" type="button" data-license-view="${l.id}">Manage</button>
+              <button class="btn small danger" type="button" data-requires-pin="true" data-action-pin="Force Suspend" data-license-suspend="${l.id}">Suspend</button>
+            </td>
+          `;
+          tr.querySelector("button[data-license-view]")?.addEventListener("click", () => {
+            const biz = mock.businesses.find((b) => b.id === l.companyId);
+            if (biz) openBusinessDrawer(biz.id, "licenses");
+            showToast("License management", `Opened ${l.id} (mock).`, "blue");
+          });
+          tr.querySelector("button[data-license-suspend]")?.addEventListener("click", async () => {
+            const ok = window.confirm(`Force suspend license ${l.id}?`);
+            if (!ok) return;
+            try {
+              await requirePin("Force Suspend", "Force suspend requires PIN confirmation.");
+              // mock change: if biz exists, set suspended
+              updateBusinessStatus(l.companyId, "Suspended");
+              showToast("Force suspended", `${l.id} (mock)`, "danger");
+            } catch {
+              showToast("Cancelled", "PIN confirmation cancelled.", "gold");
+            }
+          });
+          tr.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            openContextMenu(e.clientX, e.clientY, { companyId: l.companyId, companyName: l.company });
+          });
+          tbody.appendChild(tr);
+        });
+        if (!items.length) {
+          tbody.innerHTML = `<tr><td colspan="9" style="color:var(--muted2);padding:18px;">No licenses match this filter (mock).</td></tr>`;
+        }
+        $("#selectAllLicenses").checked = false;
+      }
+      renderLicenses();
+      $("#selectAllLicenses")?.addEventListener("change", () => {
+        const checked = $("#selectAllLicenses").checked;
+        $$("#licensesTbody .row-check").forEach((c) => (c.checked = checked));
+      });
+
+      // License filter cards (simple)
+      const licenseFilterCards = $$(".filter-cards .fcard");
+      licenseFilterCards.forEach((c) => {
+        c.addEventListener("click", () => {
+          licenseFilterCards.forEach((x) => x.classList.toggle("active", x === c));
+          licenseTypeFilter = c.dataset.licenseType || "all";
+          showToast("Filter applied", `License type: ${licenseTypeFilter}`, "blue");
+          renderLicenses();
+        });
+      });
+
+      // ---------------------------
+      // Rendering: Investors
+      // ---------------------------
+      function renderInvestors() {
+        const grid = $("#investorGrid");
+        grid.innerHTML = "";
+        mock.investors.forEach((inv) => {
+          const card = document.createElement("div");
+          card.className = "profile-card card";
+          const kycCls = inv.kycStatus === "Verified" ? "active" : inv.kycStatus === "Pending" ? "pending" : "suspended";
+          card.innerHTML = `
+            <div class="profile-top">
+              <div class="av" aria-hidden="true">${inv.name.split(" ").map((x) => x[0]).slice(0, 2).join("")}</div>
+              <div class="nm">
+                <div class="a" title="${inv.name}">${inv.name}</div>
+                <div class="b">${inv.nationality}</div>
+              </div>
+            </div>
+            <div class="profile-kv">
+              <div class="row">
+                <div class="k">Passport</div>
+                <div class="v" title="Masked passport #">${inv.passportMasked}</div>
+              </div>
+              <div class="row">
+                <div class="k">KYC Status</div>
+                <div class="v">${inv.kycStatus} <span class="pill ${kycCls}" style="padding:4px 9px;font-size:12px;margin-left:8px;">${inv.kycStatus === "Verified" ? "Verified ✅" : inv.kycStatus === "Pending" ? "Pending 🟡" : "Expired 🔴"}</span></div>
+              </div>
+              <div class="row">
+                <div class="k">Associated companies</div>
+                <div class="v">${inv.associated.length} linked</div>
+              </div>
+            </div>
+            <div class="profile-act">
+              <button class="btn small primary" type="button" data-inv-view="${inv.id}">View Profile</button>
+            </div>
+          `;
+          card.querySelector("button[data-inv-view]")?.addEventListener("click", () => openInvestorModal(inv.id));
+          grid.appendChild(card);
+        });
+      }
+      renderInvestors();
+
+      // ---------------------------
+      // Rendering: Infrastructure map
+      // ---------------------------
+      const infraSVG = $("#infraZoneSectors");
+      const infra = [
+        { key: "Zone A", path: "M80 40 H320 V120 H80 Z", occupancy: 0.87, units: ["Office 2-09", "Warehouse W3-12"], breakdown: { office: 48, warehouse: 34, land: 18 }, tenants: 62, utilities: { power: "green", water: "amber", internet: "green" } },
+        { key: "Zone B", path: "M330 40 H560 V120 H330 Z", occupancy: 0.62, units: ["Office 1-02", "Office 1-05"], breakdown: { office: 44, warehouse: 22, land: 34 }, tenants: 39, utilities: { power: "green", water: "green", internet: "amber" } },
+        { key: "Zone C", path: "M80 130 H270 V210 H80 Z", occupancy: 0.45, units: ["Clinic Wing 4", "Lab Unit 8"], breakdown: { office: 28, warehouse: 26, land: 46 }, tenants: 21, utilities: { power: "amber", water: "amber", internet: "green" } },
+        { key: "Tech Cluster", path: "M290 130 H560 V210 H290 Z", occupancy: 0.91, units: ["Innovation Pod 7", "Studio 12"], breakdown: { office: 60, warehouse: 12, land: 28 }, tenants: 74, utilities: { power: "amber", water: "green", internet: "green" } },
+        { key: "Logistics Hub", path: "M570 40 H780 V120 H570 Z", occupancy: 0.78, units: ["Warehouse Row B-1", "Cross-dock C-3"], breakdown: { office: 18, warehouse: 62, land: 20 }, tenants: 58, utilities: { power: "green", water: "amber", internet: "amber" } },
+        { key: "Industrial Area", path: "M620 130 H820 V210 H620 Z", occupancy: 0.53, units: ["Manufacturing Bay 3", "Plant 9"], breakdown: { office: 22, warehouse: 34, land: 44 }, tenants: 33, utilities: { power: "amber", water: "green", internet: "red" } },
+      ];
+
+      function renderInfraSVG() {
+        infraSVG.innerHTML = "";
+        infra.forEach((z) => {
+          const color = occupancyFill(z.occupancy);
+          const sector = document.createElementNS("http://www.w3.org/2000/svg", "path");
+          sector.setAttribute("d", z.path);
+          sector.setAttribute("fill", color);
+          sector.setAttribute("stroke", "rgba(201,168,76,0.55)");
+          sector.setAttribute("stroke-width", "2");
+          sector.setAttribute("class", "zone-sector");
+          sector.dataset.zone = z.key;
+          sector.dataset.occupancy = String(z.occupancy);
+          sector.addEventListener("click", () => showInfraZone(z.key));
+          infraSVG.appendChild(sector);
+
+          const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+          text.setAttribute("x", z.key === "Zone A" ? "200" : z.key === "Zone B" ? "445" : z.key === "Zone C" ? "175" : z.key === "Tech Cluster" ? "425" : z.key === "Logistics Hub" ? "675" : "720");
+          text.setAttribute("y", z.key === "Zone A" || z.key === "Zone B" || z.key === "Logistics Hub" ? "85" : "175");
+          text.setAttribute("font-family", "JetBrains Mono, monospace");
+          text.setAttribute("font-size", "13");
+          text.setAttribute("fill", "rgba(234,240,255,0.92)");
+          text.setAttribute("text-anchor", "middle");
+          text.textContent = z.key;
+          infraSVG.appendChild(text);
+        });
+      }
+
+      function utilStatusColor(s) {
+        if (s === "green") return "rgba(47,227,139,0.7)";
+        if (s === "amber") return "rgba(242,184,75,0.85)";
+        return "rgba(227,93,106,0.85)";
+      }
+
+      function renderUtilities(utilities) {
+        const host = $("#infraUtilities");
+        host.innerHTML = "";
+        Object.entries(utilities).forEach(([k, v]) => {
+          const el = document.createElement("div");
+          el.className = "util-pill" + (v === "amber" ? " amber" : v === "red" ? " red" : "");
+          el.innerHTML = `
+            <span class="s" style="background:${utilStatusColor(v)};"></span>
+            <span>${k[0].toUpperCase() + k.slice(1)}: ${v.toUpperCase()}</span>
+          `;
+          host.appendChild(el);
+        });
+      }
+
+      function showInfraZone(key) {
+        const z = infra.find((x) => x.key === key);
+        if (!z) return;
+        $("#infraZoneName").textContent = key;
+        $("#infraZonePct").textContent = `${Math.round(z.occupancy * 100)}% occupied`;
+        $("#infraZoneBarFill").style.width = `${Math.round(z.occupancy * 100)}%`;
+
+        // breakdown text
+        const bd = z.breakdown;
+        $("#infraUnitBreakdown").textContent = `${bd.office} office • ${bd.warehouse} warehouse • ${bd.land} land (mock)`;
+        $("#infraTenantCount").textContent = `${z.tenants} tenants`;
+        renderUtilities(z.utilities);
+        renderUnitsTable(key);
+
+        // Derive tenant list from rendered unit rows (mock)
+        const tenantSet = new Set();
+        $$("#unitsTbody tr").forEach((tr) => {
+          const td = tr.children[3];
+          const t = td ? String(td.textContent || "").trim() : "";
+          if (t) tenantSet.add(t);
+        });
+        const availableUnits = Math.max(0, 120 - Number(z.tenants || 0));
+        $("#infraTenantDetails").textContent = `Tenants: ${Array.from(tenantSet).slice(0, 3).join(", ") || "—"} • Available units: ${availableUnits}`;
+      }
+
+      function renderUnitsTable(zoneKey) {
+        const units = [
+          { id: "U-A-102", type: "Office Suite", area: 980, tenant: "Al Masdar Trading LLC", leaseStart: "2023-06-01", leaseEnd: "2026-05-31", rent: "$146,000", status: "Active" },
+          { id: "U-A-331", type: "Warehouse Unit", area: 2450, tenant: "Meridian Foods", leaseStart: "2021-01-15", leaseEnd: "2026-01-14", rent: "$320,000", status: "Active" },
+          { id: "U-B-077", type: "Office Suite", area: 760, tenant: "Vertex Holdings", leaseStart: "2024-04-20", leaseEnd: "2027-04-19", rent: "$118,000", status: "Active" },
+          { id: "U-C-014", type: "Lab Unit", area: 1100, tenant: "Delta Pharma", leaseStart: "2022-11-30", leaseEnd: "2025-11-29", rent: "$185,000", status: "Active" },
+          { id: "U-D-208", type: "Innovation Pod", area: 640, tenant: "NovaTech Solutions", leaseStart: "2024-10-07", leaseEnd: "2027-10-06", rent: "$92,000", status: "Active" },
+          { id: "U-E-509", type: "Cross-dock Bay", area: 1500, tenant: "BlueSky Logistics", leaseStart: "2023-02-14", leaseEnd: "2026-02-13", rent: "$240,000", status: "Active" },
+          { id: "U-F-903", type: "Manufacturing Bay", area: 3200, tenant: "Atlas Energy Partners", leaseStart: "2022-06-01", leaseEnd: "2025-05-31", rent: "$510,000", status: "Active" },
+        ];
+        // simple mapping
+        const mapping = {
+          "Zone A": ["U-A-102", "U-A-331"],
+          "Zone B": ["U-B-077"],
+          "Zone C": ["U-C-014"],
+          "Tech Cluster": ["U-D-208"],
+          "Logistics Hub": ["U-E-509"],
+          "Industrial Area": ["U-F-903"],
+        };
+        const allowed = new Set(mapping[zoneKey] || []);
+        const rows = units.filter((u) => allowed.has(u.id));
+        const tbody = $("#unitsTbody");
+        tbody.innerHTML = "";
+        rows.forEach((u) => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${u.id}</td>
+            <td>${u.type}</td>
+            <td>${u.area.toLocaleString()}</td>
+            <td title="${u.tenant}">${u.tenant}</td>
+            <td>${u.leaseStart}</td>
+            <td>${u.leaseEnd}</td>
+            <td>${u.rent}</td>
+            <td>${statusPill(u.status === "Active" ? "Active" : "Pending")}</td>
+          `;
+          tr.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            openContextMenu(e.clientX, e.clientY, { companyName: u.tenant, companyId: findBusinessIdByCompanyName(u.tenant) });
+          });
+          tbody.appendChild(tr);
+        });
+        if (!rows.length) {
+          tbody.innerHTML = `<tr><td colspan="8" style="color:var(--muted2);padding:18px;">No unit records in mock data for ${zoneKey}.</td></tr>`;
+        }
+      }
+
+      renderInfraSVG();
+      showInfraZone("Zone A");
+
+      // Global hero zone activity map click in dashboard
+      $$("#zoneSectors .zone-sector").forEach((p) => {
+        p.addEventListener("click", () => {
+          const z = mock.zones.find((x) => {
+            const label = x.name === "Zone A" ? "Zone A" : x.name;
+            return label === p.dataset.zone;
+          });
+          const occ = parseFloat(p.dataset.occupancy || "0.5");
+          const color = getOccupancyColor(occ);
+          $("#zoneBarFill").style.width = `${Math.round(occ * 100)}%`;
+          const bd = z ? z.breakdown : { office: 0, warehouse: 0, land: 0 };
+          $("#zoneBreakdown").textContent = `office ${bd.office}% • warehouse ${bd.warehouse}% • land ${bd.land}% (mock)`;
+          $("#zoneTenantCount").textContent = z ? `${z.tenants} tenants` : "—";
+          const items = $("#zoneUtilities");
+          items.innerHTML = "";
+          if (z) {
+            const utils = z.utilities;
+            Object.entries(utils).forEach(([k, v]) => {
+              const el = document.createElement("div");
+              el.className = "util-pill" + (v === "amber" ? " amber" : v === "red" ? " red" : "");
+              el.innerHTML = `
+                <span class="s"></span>
+                <span>${k[0].toUpperCase() + k.slice(1)}: ${v.toUpperCase()}</span>
+              `;
+              items.appendChild(el);
+            });
+          }
+
+          // highlight selected
+          $$("#zoneSectors .zone-sector").forEach((pp) => pp.style.opacity = "0.65");
+          p.style.opacity = "1";
+          showToast("Zone selected", `${p.dataset.zone} occupancy ${(occ * 100).toFixed(0)}%`, color === "red" ? "danger" : color === "amber" ? "gold" : "blue");
+        });
+      });
+
+      // ---------------------------
+      // Rendering: Dashboard map initial coloring
+      // ---------------------------
+      function initDashboardMap() {
+        const sectors = $$("#zoneSectors .zone-sector");
+        sectors.forEach((s) => {
+          const occ = parseFloat(s.dataset.occupancy || "0.5");
+          s.setAttribute("fill", occupancyFill(occ));
+        });
+        // default detail for Zone A
+        const z = mock.zones[0];
+        if (!z) return;
+        const occ = z.occupancy;
+        $("#zoneBarFill").style.width = `${Math.round(occ * 100)}%`;
+        $("#zoneTenantCount").textContent = `${z.tenants} tenants`;
+        const bd = z.breakdown;
+        $("#zoneBreakdown").textContent = `office ${bd.office}% • warehouse ${bd.warehouse}% • land ${bd.land}% (mock)`;
+        $("#zoneUtilities").innerHTML = "";
+        Object.entries(z.utilities).forEach(([k, v]) => {
+          const el = document.createElement("div");
+          el.className = "util-pill" + (v === "amber" ? " amber" : v === "red" ? " red" : "");
+          el.innerHTML = `<span class="s"></span><span>${k[0].toUpperCase() + k.slice(1)}: ${v.toUpperCase()}</span>`;
+          $("#zoneUtilities").appendChild(el);
+        });
+      }
+      initDashboardMap();
+
+      // ---------------------------
+      // Revenue bars / trend charts (CSS-only visualizations sized in JS)
+      // ---------------------------
+      function renderRevenueBars() {
+        const host = $("#revenueBars");
+        host.innerHTML = "";
+        const months = ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar"];
+        const values = [220, 245, 260, 240, 270, 290, 310, 295, 330, 350, 325, 360]; // mock
+        const max = Math.max(...values);
+        months.forEach((m, i) => {
+          const pct = (values[i] / max) * 100;
+          const bar = document.createElement("div");
+          bar.className = "bar";
+          bar.style.height = `${pct}%`;
+          bar.title = `${m}: $${values[i]}k`;
+          host.appendChild(bar);
+        });
+      }
+      renderRevenueBars();
+
+      function renderTrendChart() {
+        const host = $("#trendChart");
+        host.innerHTML = "";
+        const values = [18, 22, 19, 25, 28, 30, 27, 32, 35, 33, 38, 40]; // mock
+        const max = Math.max(...values);
+        values.forEach((v, i) => {
+          const pct = (v / max) * 100;
+          const bar = document.createElement("div");
+          bar.className = "bar";
+          bar.style.height = `${pct}%`;
+          bar.style.background = "linear-gradient(180deg, rgba(201,168,76,0.8), rgba(77,163,255,0.18))";
+          bar.title = `Month ${i + 1}: ${v}%`;
+          host.appendChild(bar);
+        });
+      }
+      // trend bars uses .bars CSS, but trendChart container uses .bars styles; adapt:
+      renderTrendChart();
+      // Ensure container has .bars class styling
+      $("#trendChart").classList.add("bars");
+
+      function renderIndustryBars() {
+        const host = $("#industryBars");
+        host.innerHTML = "";
+        const data = [
+          { k: "Commodities", v: 36 },
+          { k: "Technology", v: 28 },
+          { k: "Logistics", v: 21 },
+          { k: "Healthcare", v: 15 },
+          { k: "F&B", v: 12 },
+        ];
+        const max = Math.max(...data.map((d) => d.v));
+        data.forEach((d) => {
+          const pct = (d.v / max) * 100;
+          const row = document.createElement("div");
+          row.style.display = "grid";
+          row.style.gridTemplateColumns = "130px 1fr 56px";
+          row.style.gap = "10px";
+          row.style.alignItems = "center";
+          row.style.marginBottom = "10px";
+          row.innerHTML = `
+            <div style="color:var(--muted2);font-family:var(--serif);font-size:14px;">${d.k}</div>
+            <div style="height:12px;border-radius:999px;background:rgba(120,150,255,0.12);border:1px solid rgba(120,150,255,0.12);overflow:hidden;">
+              <div style="height:100%;width:${pct}%;background:linear-gradient(90deg, rgba(201,168,76,0.55), rgba(77,163,255,0.25));"></div>
+            </div>
+            <div style="color:var(--text);font-weight:800;font-size:12px;text-align:right;">${d.v}%</div>
+          `;
+          host.appendChild(row);
+        });
+      }
+      renderIndustryBars();
+
+      function renderNationalityHeatmap() {
+        const host = $("#nationalityHeatmap");
+        host.innerHTML = "";
+        const data = [
+          { nat: "🇦🇪", k: "UAE", v: 26 },
+          { nat: "🇮🇳", k: "India", v: 17 },
+          { nat: "🇸🇬", k: "Singapore", v: 12 },
+          { nat: "🇩🇪", k: "Germany", v: 9 },
+          { nat: "🇯🇵", k: "Japan", v: 8 },
+          { nat: "🇸🇦", k: "Saudi", v: 7 },
+          { nat: "🇬🇧", k: "UK", v: 6 },
+          { nat: "🇨🇦", k: "Canada", v: 5 },
+          { nat: "🇪🇬", k: "Egypt", v: 4 },
+          { nat: "🇳🇬", k: "Nigeria", v: 3 },
+        ];
+        const max = Math.max(...data.map((d) => d.v));
+        data.forEach((d) => {
+          const pct = d.v / max;
+          const bg =
+            pct > 0.7 ? "rgba(201,168,76,0.18)" : pct > 0.4 ? "rgba(77,163,255,0.16)" : "rgba(120,150,255,0.10)";
+          const border = pct > 0.7 ? "rgba(201,168,76,0.32)" : pct > 0.4 ? "rgba(77,163,255,0.28)" : "rgba(120,150,255,0.18)";
+          const cell = document.createElement("div");
+          cell.style.display = "inline-flex";
+          cell.style.alignItems = "center";
+          cell.style.gap = "8px";
+          cell.style.padding = "10px 12px";
+          cell.style.borderRadius = "16px";
+          cell.style.border = `1px solid ${border}`;
+          cell.style.background = bg;
+          cell.style.margin = "0 8px 10px 0";
+          cell.style.color = "var(--text)";
+          cell.style.fontSize = "12px";
+          cell.title = `${d.k}: ${d.v}%`;
+          cell.innerHTML = `<span style="font-size:16px;">${d.nat}</span><span style="font-weight:900;">${d.k}</span><span style="color:var(--muted2)">${d.v}</span>`;
+          host.appendChild(cell);
+        });
+      }
+      renderNationalityHeatmap();
+
+      function renderRevenueVsTarget() {
+        const host = $("#revenueVsTarget");
+        host.innerHTML = "";
+        const data = [
+          { k: "Apr", a: 220, b: 210 },
+          { k: "May", a: 245, b: 235 },
+          { k: "Jun", a: 260, b: 250 },
+          { k: "Jul", a: 240, b: 260 },
+          { k: "Aug", a: 270, b: 265 },
+        ];
+        const max = Math.max(...data.map((d) => Math.max(d.a, d.b)));
+        data.forEach((d, i) => {
+          const pctA = (d.a / max) * 100;
+          const pctB = (d.b / max) * 100;
+          const wrap = document.createElement("div");
+          wrap.style.flex = "1";
+          wrap.style.minWidth = "64px";
+          wrap.style.display = "grid";
+          wrap.style.alignItems = "end";
+          wrap.style.gridTemplateRows = "1fr auto";
+          wrap.style.gap = "10px";
+          wrap.innerHTML = `
+            <div style="display:flex;align-items:flex-end;gap:8px;height:140px;">
+              <div title="Actual" style="flex:1;height:${pctA}%;background:linear-gradient(180deg, rgba(201,168,76,0.75), rgba(77,163,255,0.22));border:1px solid rgba(201,168,76,0.18);border-radius:12px;"></div>
+              <div title="Target" style="flex:1;height:${pctB}%;background:rgba(120,150,255,0.12);border:1px solid rgba(120,150,255,0.14);border-radius:12px;"></div>
+            </div>
+            <div style="color:var(--muted2);font-size:12px;text-align:center;">${d.k}</div>
+          `;
+          host.appendChild(wrap);
+        });
+        host.style.display = "flex";
+        host.style.gap = "10px";
+      }
+      renderRevenueVsTarget();
+
+      // ---------------------------
+      // Fee schedule / invoices tables
+      // ---------------------------
+      function renderFeeTables() {
+        const feeBody = $("#feeScheduleTbody");
+        feeBody.innerHTML = "";
+        mock.feeSchedule.forEach((f) => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${f.service}</td>
+            <td>${f.entityType}</td>
+            <td>$${f.fee.toLocaleString()}</td>
+            <td>${Math.round(f.vat * 100)}%</td>
+            <td>$${(f.total).toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
+            <td><button class="btn small" type="button" data-requires-pin="true" data-pin-action="Preview Fee">Preview</button></td>
+          `;
+          feeBody.appendChild(tr);
+        });
+
+        const invBody = $("#invoicesTbody");
+        invBody.innerHTML = "";
+        mock.invoices.forEach((inv) => {
+          const tr = document.createElement("tr");
+          let pillCls = "pending";
+          if (inv.status.includes("Paid")) pillCls = "active";
+          else if (inv.status.includes("Overdue")) pillCls = "suspended";
+          else if (inv.status.includes("Disputed")) pillCls = "processing";
+          else if (inv.status.includes("Waived")) pillCls = "active";
+          tr.innerHTML = `
+            <td>${inv.id}</td>
+            <td title="${inv.company}">${inv.company}</td>
+            <td>${inv.service}</td>
+            <td>${inv.amount}</td>
+            <td>${inv.due}</td>
+            <td>${inv.status ? `<span class="pill ${pillCls}">${inv.status}</span>` : "—"}</td>
+            <td style="white-space:nowrap;">
+              <button class="btn small primary" type="button" data-requires-pin="false" data-action-pin="View Invoice">View</button>
+              <button class="btn small danger" type="button" data-requires-pin="true" data-pin-action="Apply Waiver">Waive</button>
+            </td>
+          `;
+          tr.querySelectorAll("button").forEach((b) => {
+            b.addEventListener("click", async () => {
+              const req = b.dataset.requiresPin === "true";
+              const pinAction = b.dataset.pinAction || b.dataset.actionPin || "Action";
+              if (req) {
+                const ok = window.confirm(`Proceed: ${pinAction}?`);
+                if (!ok) return;
+                try {
+                  await requirePin(pinAction, `PIN required for: ${pinAction}`);
+                } catch {
+                  showToast("Cancelled", "PIN cancelled.", "gold");
+                  return;
+                }
+              }
+              if (b.textContent.includes("Waive")) showToast("Waiver applied (mock)", `${inv.id}`, "gold");
+              else showToast("Invoice opened (mock)", `${inv.id}`, "blue");
+            });
+          });
+          tr.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            openContextMenu(e.clientX, e.clientY, { companyName: inv.company, companyId: findBusinessIdByCompanyName(inv.company) });
+          });
+          invBody.appendChild(tr);
+        });
+      }
+      renderFeeTables();
+
+      // ---------------------------
+      // Global override buttons that require PIN
+      // ---------------------------
+      function bindPinActionButtons(root = document) {
+        $$("[data-requires-pin='true'][data-pin-action]", root).forEach((btn) => {
+          btn.addEventListener("click", async () => {
+            const actionName = btn.dataset.pinAction;
+            const ok = window.confirm(`⚠️ ${actionName}. Proceed (mock)?`);
+            if (!ok) return;
+            try {
+              await requirePin(actionName, `PIN required for: ${actionName}`);
+              showToast("Authority override", `${actionName} executed (mock).`, "gold");
+            } catch {
+              showToast("Cancelled", "PIN confirmation cancelled.", "gold");
+            }
+          });
+        });
+      }
+      bindPinActionButtons(document);
+
+      // ---------------------------
+      // Applications: dashboard action handlers
+      // ---------------------------
+      $$("[data-quick]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          showToast("Action queued (mock)", "Approval queue updated.", "gold");
+        });
+      });
+
+      // ---------------------------
+      // Bulk select checkboxes (licenses and registry)
+      // ---------------------------
+      // (UI already handles selection; not adding more)
+
+      // ---------------------------
+      // Export toast simulation for any export-like buttons
+      // ---------------------------
+      $$("button, .btn").forEach((b) => {
+        const t = (b.textContent || "").toLowerCase();
+        if (t.includes("export") || t.includes("download")) {
+          b.addEventListener("click", () => {
+            // Only show if not already a modal action
+            if (!b.dataset.pinAction) showToast("Downloading...", "Simulated export in progress...", "blue");
+          });
+        }
+      });
+
+      // ---------------------------
+      // Smooth scroll fade on load (stagger)
+      // ---------------------------
+      function initStaggerOnLoad() {
+        const items = $$(".fade-stagger");
+        items.forEach((el) => {
+          el.classList.remove("visible");
+          el.style.transitionDelay = `${Math.random() * 140}ms`;
+        });
+        setTimeout(() => {
+          const active = $("section.view.active") || views[0];
+          const scoped = active ? $$("#" + active.id + " .fade-stagger") : items;
+          scoped.forEach((el) => {
+            el.classList.add("visible");
+          });
+        }, 60);
+      }
+      // Ensure dashboard is visible first
+      setActiveView("dashboard");
+      initStaggerOnLoad();
+
+      // ---------------------------
+      // Global search across mock entities
+      // ---------------------------
+      const globalSearch = $("#globalSearch");
+      const searchResults = $("#searchResults");
+
+      const searchIndex = {
+        businesses: mock.businesses.map((b) => ({ id: b.id, type: "Company", label: b.companyName, sub: `${b.regNo} • ${b.entityType}`, targetView: "registry", action: () => openBusinessDrawer(b.id) })),
+        investors: mock.investors.map((i) => ({ id: i.id, type: "Investor", label: i.name, sub: `${i.nationality} • KYC: ${i.kycStatus}`, targetView: "investors", action: () => openInvestorModal(i.id) })),
+        licenses: mock.licenses.map((l) => ({ id: l.id, type: "License", label: l.id, sub: `${l.company} • ${l.type}`, targetView: "licenses", action: () => { setActiveView("licenses"); showToast("License selected", l.id, "blue"); const biz = mock.businesses.find((b) => b.id === l.companyId); if (biz) openBusinessDrawer(biz.id, "licenses"); } })),
+        invoices: mock.invoices.map((inv) => ({ id: inv.id, type: "Invoice", label: inv.id, sub: `${inv.company} • ${inv.service}`, targetView: "fees", action: () => { setActiveView("fees"); showToast("Invoice found", inv.id, "blue"); } })),
+      };
+
+      const allSearchItems = [
+        ...searchIndex.businesses,
+        ...searchIndex.investors,
+        ...searchIndex.licenses,
+        ...searchIndex.invoices,
+      ];
+
+      let searchTimer = null;
+
+      function runSearch(q) {
+        const query = q.trim().toLowerCase();
+        if (!query) {
+          searchResults.classList.remove("show");
+          searchResults.innerHTML = "";
+          return;
+        }
+        const matches = allSearchItems
+          .filter((it) => `${it.label} ${it.sub} ${it.type}`.toLowerCase().includes(query))
+          .slice(0, 8);
+
+        searchResults.innerHTML = "";
+        if (!matches.length) {
+          searchResults.innerHTML = `<div class="item" style="cursor:default;color:var(--muted2);">No results.</div>`;
+        } else {
+          matches.forEach((m) => {
+            const el = document.createElement("div");
+            el.className = "item";
+            el.setAttribute("role", "option");
+            el.innerHTML = `
+              <div class="pill">${m.type}</div>
+              <div class="txt">
+                <div class="a">${m.label}</div>
+                <div class="b">${m.sub}</div>
+              </div>
+            `;
+            el.addEventListener("click", () => {
+              searchResults.classList.remove("show");
+              globalSearch.value = m.label;
+              setActiveView(m.targetView);
+              setTimeout(() => m.action(), 30);
+            });
+            searchResults.appendChild(el);
+          });
+        }
+        searchResults.classList.add("show");
+      }
+
+      globalSearch?.addEventListener("input", () => {
+        window.clearTimeout(searchTimer);
+        searchTimer = window.setTimeout(() => runSearch(globalSearch.value), 120);
+      });
+      globalSearch?.addEventListener("focus", () => {
+        if (globalSearch.value.trim()) searchResults.classList.add("show");
+      });
+      document.addEventListener("click", (e) => {
+        if (e.target !== globalSearch && !searchResults.contains(e.target)) searchResults.classList.remove("show");
+      });
+
+      globalSearch?.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          searchResults.classList.remove("show");
+          globalSearch.blur();
+        }
+      });
+
+      // ---------------------------
+      // Dashboard KPI animated count-up
+      // ---------------------------
+      function countUp(el, target, durationMs) {
+        const start = performance.now();
+        const from = 0;
+        function tick(now) {
+          const t = clamp((now - start) / durationMs, 0, 1);
+          const eased = 1 - Math.pow(1 - t, 3);
+          const val = from + (target - from) * eased;
+          el.textContent = String(val).includes(".") ? val.toFixed(0) : Math.round(val).toLocaleString();
+          if (t < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+
+      function initKpiCountUp() {
+        const kpis = $$("[data-count]");
+        kpis.forEach((el, idx) => {
+          const raw = el.dataset.count;
+          const num = Number(raw.replace(/[$,]/g, ""));
+          const dur = 900 + idx * 100;
+          // Keep label format where possible
+          if (raw && raw.toString().includes("$")) {
+            // not expected
+          }
+          const isMoney = (el.textContent || "").includes("$");
+          const prefix = (el.textContent || "").includes("$") ? "$" : "";
+          const target = num;
+          const start = performance.now();
+          function tick(now) {
+            const t = clamp((now - start) / dur, 0, 1);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const v = startVal + (target - startVal) * eased;
+          }
+        });
+      }
+
+      // Correct count-up:
+      function initKpis() {
+        const kpis = $$(".kpi-card [data-count]");
+        kpis.forEach((el, idx) => {
+          const target = Number(String(el.dataset.count).replace(/[$,]/g, ""));
+          const dur = 1100 + idx * 120;
+          const isMoney = (el.textContent || "").includes("$") || target >= 1000000;
+          const format = (v) => {
+            if (isMoney && (el.textContent || "").includes("$")) {
+              // show in M if target is in millions
+              if (target >= 1000000) return `$${(v / 1000000).toFixed(1)}M`;
+              return `$${Math.round(v).toLocaleString()}`;
+            }
+            return Math.round(v).toLocaleString();
+          };
+          const start = performance.now();
+          const startVal = 0;
+          function tick(now) {
+            const t = clamp((now - start) / dur, 0, 1);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const v = startVal + (target - startVal) * eased;
+            el.textContent = format(v);
+            if (t < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        });
+      }
+
+      initKpis();
+
+      // ---------------------------
+      // Handle Export buttons precisely (simulated)
+      // ---------------------------
+      $$(".btn, button").forEach((btn) => {
+        const txt = (btn.textContent || "").toLowerCase();
+        if (txt.includes("export") || txt.includes("download") || txt.includes("generate batch certificates") || txt.includes("download pdf")) {
+          btn.addEventListener("click", (e) => {
+            if (btn.dataset.requiresPin === "true") return; // already handled with pin
+            if (txt.includes("export")) {
+              showToast("Downloading...", "Simulated export started...", "blue");
+            }
+          });
+        }
+      });
+
+      // ---------------------------
+      // Compliance rendering (risk matrix + tables)
+      // ---------------------------
+      function severityToDotClass(severity) {
+        const s = String(severity || "").toUpperCase();
+        if (s === "HIGH") return "red";
+        if (s === "AMBER") return "amber";
+        return ""; // LOW -> green by CSS default
+      }
+
+      function severityToPriorityClass(severity) {
+        const s = String(severity || "").toUpperCase();
+        if (s === "HIGH") return "high";
+        if (s === "AMBER") return "medium";
+        return "low";
+      }
+
+      function renderCompliance() {
+        // Risk matrix
+        const host = $("#riskMatrix");
+        host.innerHTML = "";
+
+        const likelihood = ["Low", "Medium", "High"];
+        const impact = ["Low", "Medium", "High"];
+
+        const cellDots = new Map();
+        for (let li = 0; li < 3; li++) {
+          for (let im = 0; im < 3; im++) {
+            const key = `${li}-${im}`;
+            const cell = document.createElement("div");
+            cell.className = "risk-cell";
+            cell.dataset.li = String(li);
+            cell.dataset.im = String(im);
+            cell.innerHTML = `
+              <div class="lab">${likelihood[li]} Likelihood • ${impact[im]} Impact</div>
+              <div class="dots"></div>
+            `;
+            host.appendChild(cell);
+            cellDots.set(key, cell.querySelector(".dots"));
+          }
+        }
+
+        const riskDots = [
+          { company: "Horizon Capital Offshore", severity: "HIGH", li: 2, im: 2 },
+          { company: "Vertex Holdings Ltd", severity: "HIGH", li: 1, im: 2 },
+          { company: "Pacific Rim Exports Ltd", severity: "AMBER", li: 0, im: 2 },
+          { company: "Atlas Energy Partners", severity: "HIGH", li: 2, im: 1 },
+          { company: "BlueSky Logistics Corp", severity: "LOW", li: 0, im: 0 },
+          { company: "NovaTech Solutions FZE", severity: "AMBER", li: 1, im: 1 },
+          { company: "GreenTech Innovations FZE", severity: "AMBER", li: 0, im: 1 },
+          { company: "Al Masdar Trading LLC", severity: "LOW", li: 1, im: 0 },
+        ];
+
+        riskDots.forEach((d) => {
+          const target = cellDots.get(`${d.li}-${d.im}`);
+          if (!target) return;
+          const dot = document.createElement("div");
+          dot.className = `risk-dot ${severityToDotClass(d.severity)}`.trim();
+          dot.title = `${d.company} • ${d.severity}`;
+          target.appendChild(dot);
+        });
+
+        // Flagged companies table
+        const flaggedTbody = $("#flaggedTbody");
+        flaggedTbody.innerHTML = "";
+        const flags = mock.flaggedCompanies || [];
+        if (flags.length) {
+          flags.forEach((f) => {
+            const cls = severityToPriorityClass(f.severity);
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td title="${f.company}">${f.company}</td>
+              <td title="${f.reason}">${f.reason}</td>
+              <td><span class="priority ${cls}">${String(f.severity).toUpperCase()}</span></td>
+              <td>${f.since}</td>
+              <td>${f.assigned}</td>
+              <td>${f.status}</td>
+            `;
+            tr.addEventListener("contextmenu", (e) => {
+              e.preventDefault();
+              openContextMenu(e.clientX, e.clientY, {
+                companyName: f.company,
+                companyId: findBusinessIdByCompanyName(f.company),
+              });
+            });
+            flaggedTbody.appendChild(tr);
+          });
+        } else {
+          flaggedTbody.innerHTML = `<tr><td colspan="6" style="color:var(--muted2);padding:18px;">No flagged companies (mock).</td></tr>`;
+        }
+
+        // Audit log table
+        const auditTbody = $("#auditTbody");
+        auditTbody.innerHTML = "";
+        const audit = mock.auditLog || [];
+        if (audit.length) {
+          audit.forEach((a) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td>${a.ts}</td>
+              <td>${a.action}</td>
+              <td>${a.entity}</td>
+              <td>${a.by}</td>
+              <td>${a.before}</td>
+              <td>${a.after}</td>
+              <td>${a.ip}</td>
+            `;
+            tr.addEventListener("contextmenu", (e) => {
+              e.preventDefault();
+              openContextMenu(e.clientX, e.clientY, {
+                companyName: a.entity,
+                companyId: findBusinessIdByCompanyName(a.entity),
+              });
+            });
+            auditTbody.appendChild(tr);
+          });
+        } else {
+          auditTbody.innerHTML = `<tr><td colspan="7" style="color:var(--muted2);padding:18px;">No audit records (mock).</td></tr>`;
+        }
+      }
+      renderCompliance();
+
+      // ---------------------------
+      // Analytics rendering (report builder + prebuilt report cards)
+      // ---------------------------
+      function renderAnalytics() {
+        // Populate entity + zone filters
+        const reportEntityType = $("#reportEntityType");
+        const reportZone = $("#reportZone");
+        const entityTypes = Array.from(new Set(mock.businesses.map((b) => b.entityType))).sort();
+        const zones = Array.from(new Set(mock.businesses.map((b) => b.zone))).sort();
+
+        // Clear except "all"
+        reportEntityType.innerHTML = `<option value="all">All</option>`;
+        entityTypes.forEach((t) => reportEntityType.insertAdjacentHTML("beforeend", `<option value="${t}">${t}</option>`));
+        reportZone.innerHTML = `<option value="all">All</option>`;
+        zones.forEach((z) => reportZone.insertAdjacentHTML("beforeend", `<option value="${z}">${z}</option>`));
+
+        const reportCardsHost = $("#reportCards");
+        const prebuiltReports = [
+          { id: "r1", title: "Monthly Registration Report", last: "2026-03-28" },
+          { id: "r2", title: "License Expiry Forecast (Next 90 days)", last: "2026-03-24" },
+          { id: "r3", title: "Revenue vs Budget Report", last: "2026-03-20" },
+          { id: "r4", title: "Nationality Distribution of Investors", last: "2026-03-12" },
+          { id: "r5", title: "Zone Occupancy Report", last: "2026-03-15" },
+          { id: "r6", title: "Compliance Risk Summary", last: "2026-03-10" },
+          { id: "r7", title: "Visa Utilization by Company", last: "2026-03-05" },
+        ];
+
+        reportCardsHost.innerHTML = "";
+        prebuiltReports.forEach((r, idx) => {
+          const card = document.createElement("div");
+          card.className = "card fade-stagger";
+          card.style.transitionDelay = `${80 + idx * 35}ms`;
+          card.innerHTML = `
+            <div class="card-head">
+              <div class="h">${r.title}</div>
+              <div class="meta">Last generated: ${r.last}</div>
+            </div>
+            <div class="controls" style="display:flex;gap:10px;flex-wrap:wrap;">
+              <button class="btn small primary" type="button" data-report-action="generate" data-report-id="${r.id}">Generate Now</button>
+              <button class="btn small" type="button" data-report-action="download" data-report-id="${r.id}">Download PDF</button>
+              <button class="btn small blue" type="button" data-report-action="schedule" data-report-id="${r.id}">Schedule Auto-Send</button>
+            </div>
+          `;
+          reportCardsHost.appendChild(card);
+        });
+
+        // Ensure staggered elements become visible when view is active
+        // (If user navigates away and back, fade triggers will be re-applied.)
+        $$(".fade-stagger", reportCardsHost).forEach((el) => {
+          setTimeout(() => el.classList.add("visible"), 60);
+        });
+
+        // Generate report builder
+        $("#generateReportBtn")?.addEventListener("click", () => {
+          const start = $("#reportStart").value || "—";
+          const end = $("#reportEnd").value || "—";
+          const entityType = $("#reportEntityType").value;
+          const zone = $("#reportZone").value;
+          const type = $("#reportType").value;
+          showToast("Report generation queued (mock)", `${type} • ${entityType} • ${zone}`, "gold");
+          showToast("Downloading preview…", `Time window: ${start} → ${end}`, "blue");
+        });
+
+        reportCardsHost.addEventListener("click", (e) => {
+          const btn = e.target.closest("button[data-report-action]");
+          if (!btn) return;
+          const action = btn.dataset.reportAction;
+          const id = btn.dataset.reportId;
+          const rep = prebuiltReports.find((x) => x.id === id);
+          const title = rep ? rep.title : id;
+          if (action === "generate") showToast("Generated report (mock)", title, "gold");
+          if (action === "download") showToast("Downloading PDF (mock)", title, "blue");
+          if (action === "schedule") showToast("Auto-send scheduled (mock)", title, "blue");
+        });
+      }
+      renderAnalytics();
+
+      // ---------------------------
+      // Access & Permissions rendering (users + permission matrix)
+      // ---------------------------
+      function renderAccessPermissions() {
+        // Users
+        const usersTbody = $("#usersTbody");
+        if (usersTbody) {
+          usersTbody.innerHTML = "";
+          mock.users.forEach((u) => {
+            const tr = document.createElement("tr");
+            const twoFa = u.twoFA === "Enabled" ? "Enabled" : "Disabled";
+            const statusCls = u.status === "Active" ? "active" : "suspended";
+            tr.innerHTML = `
+              <td title="${u.user}">${u.user}</td>
+              <td>${u.role}</td>
+              <td>${u.lastLogin}</td>
+              <td>${twoFa}</td>
+              <td>${statusPill(u.status)} </td>
+              <td style="white-space:nowrap;">
+                <button class="btn small ghost" type="button" data-user-action="Manage" title="Mock action">Manage</button>
+              </td>
+            `;
+            tr.addEventListener("contextmenu", (e) => {
+              e.preventDefault();
+              openContextMenu(e.clientX, e.clientY, { companyName: u.user, companyId: null });
+            });
+            tr.querySelector("button[data-user-action]")?.addEventListener("click", () => {
+              showToast("User action (mock)", `${u.user} • ${u.role}`, "blue");
+            });
+            usersTbody.appendChild(tr);
+          });
+        }
+
+        // Permission matrix
+        const permTbody = $("#permTbody");
+        if (permTbody) {
+          const roles = ["Super Admin", "Zone Admin", "Reviewer", "Finance Officer", "Compliance Officer", "Read Only"];
+          const modules = [
+            { key: "dashboard", label: "Dashboard" },
+            { key: "registry", label: "Business Registry" },
+            { key: "applications", label: "Applications & Approvals" },
+            { key: "licenses", label: "License Management" },
+            { key: "investors", label: "Investor Profiles" },
+            { key: "infrastructure", label: "Zone Infrastructure" },
+            { key: "fees", label: "Fees & Invoicing" },
+            { key: "compliance", label: "Compliance & Audits" },
+            { key: "analytics", label: "Analytics & Reports" },
+            { key: "settings", label: "System Settings" },
+            { key: "portal", label: "Portal Configuration" },
+            { key: "permissions", label: "Access & Permissions" },
+          ];
+
+          function isPermitted(role, modKey) {
+            if (role === "Super Admin") return true;
+            if (role === "Read Only") return !["settings", "permissions"].includes(modKey);
+            if (role === "Zone Admin") return ["dashboard", "registry", "infrastructure", "portal", "permissions", "settings"].includes(modKey);
+            if (role === "Reviewer") return ["applications", "registry", "compliance", "dashboard"].includes(modKey);
+            if (role === "Finance Officer") return ["fees", "licenses", "invoices", "registry", "dashboard"].includes(modKey);
+            if (role === "Compliance Officer") return ["compliance", "registry", "analytics", "dashboard"].includes(modKey);
+            return false;
+          }
+
+          permTbody.innerHTML = "";
+          modules.forEach((m) => {
+            const tr = document.createElement("tr");
+            const cells = roles
+              .map((r) => {
+                const allowed = isPermitted(r, m.key);
+                return `<td><input type="checkbox" ${allowed ? "checked" : ""} data-perm-role="${r}" data-perm-module="${m.key}" /></td>`;
+              })
+              .join("");
+
+            tr.innerHTML = `<td style="min-width:180px;">${m.label}</td>${cells}`;
+            permTbody.appendChild(tr);
+          });
+        }
+
+        $("#permTbody")?.addEventListener("change", (e) => {
+          const t = e.target;
+          if (!(t && t.matches && t.matches("input[type='checkbox'][data-perm-module]"))) return;
+          const mod = t.dataset.permModule;
+          const role = t.dataset.permRole;
+          showToast("Permission updated (mock)", `${role} • ${mod} => ${t.checked ? "ON" : "OFF"}`, "gold");
+        });
+      }
+
+      renderAccessPermissions();
+
+      // ---------------------------
+      // Switches (mock toggles)
+      // ---------------------------
+      function bindSwitches() {
+        $$("input[type='checkbox'][data-switch-key]").forEach((el) => {
+          const key = el.dataset.switchKey;
+          el.addEventListener("change", () => {
+            showToast("Toggle updated", `${key}: ${el.checked ? "ON" : "OFF"}`, el.checked ? "gold" : "blue");
+          });
+        });
+      }
+      bindSwitches();
+
+      // ---------------------------
+      // Fix: KPIs fade on load already done via initKpis
+      // ---------------------------
+      // ---------------------------
+      // Placeholder: register new business and others show toasts
+      // ---------------------------
+    </script>
   </body>
 </html>
